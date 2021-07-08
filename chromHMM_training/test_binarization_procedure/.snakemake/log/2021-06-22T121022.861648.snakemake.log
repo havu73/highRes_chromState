@@ -1,0 +1,66 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 3
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	115	bigwigAverageOverBed
+	115	binarize_one_bigwigAverageOverBed_output
+	1	calculate_mark_frequency_per_state
+	115	overlap_mark_binarized_and_roadmap_segment
+	347
+
+[Tue Jun 22 12:10:24 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.tab
+    jobid: 339
+    wildcards: mark=H3K9me3, chrom=2
+
+
+[Tue Jun 22 12:10:24 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.tab
+    jobid: 340
+    wildcards: mark=H3K9me3, chrom=3
+
+
+[Tue Jun 22 12:10:24 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.tab
+    jobid: 341
+    wildcards: mark=H3K9me3, chrom=4
+
+[Tue Jun 22 12:10:34 2021]
+Error in rule bigwigAverageOverBed:
+    jobid: 340
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.tab
+    shell:
+        
+		../../../program_source/ucsc_tools/bigWigAverageOverBed ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig ../../../data/hg19/K562/basic_bed/chr3.bed.gz ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.tab
+ 		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job bigwigAverageOverBed since they might be corrupted:
+../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.tab
+[Tue Jun 22 12:10:34 2021]
+Error in rule bigwigAverageOverBed:
+    jobid: 341
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.tab
+    shell:
+        
+		../../../program_source/ucsc_tools/bigWigAverageOverBed ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig ../../../data/hg19/K562/basic_bed/chr4.bed.gz ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.tab
+ 		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job bigwigAverageOverBed since they might be corrupted:
+../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.tab
+[Tue Jun 22 12:10:37 2021]
+Finished job 339.
+1 of 347 steps (0.29%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-22T121022.861648.snakemake.log

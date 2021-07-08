@@ -1,0 +1,2 @@
+SyntaxError in line 133 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile:
+Expected name or colon after rule or checkpoint keyword. (evaluate_multiple_models.snakefile, line 133)

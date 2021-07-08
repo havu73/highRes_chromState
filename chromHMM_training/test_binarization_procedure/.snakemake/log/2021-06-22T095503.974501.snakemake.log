@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	24	get_one_chrom_basic_bed
+	25
+
+[Tue Jun 22 09:55:04 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr10.bed
+    jobid: 10
+    wildcards: chrom=10
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-22T095503.974501.snakemake.log

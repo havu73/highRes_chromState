@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules binarize_one_bigwigAverageOverBed_output and bigwigAverageOverBed are ambiguous for the file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1_binarized.tab.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	binarize_one_bigwigAverageOverBed_output: chrom=1,mark=H3K4me3
+	bigwigAverageOverBed: chrom=1_binarized,mark=H3K4me3
+Expected input files:
+	binarize_one_bigwigAverageOverBed_output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.tab
+	bigwigAverageOverBed: ../../../data/hg19/K562/basic_bed/chr1_binarized.bed.gz ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwigExpected output files:
+	binarize_one_bigwigAverageOverBed_output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1_binarized.tab
+	bigwigAverageOverBed: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1_binarized.tab

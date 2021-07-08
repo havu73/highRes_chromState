@@ -1,0 +1,3344 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	66	bigwigAverageOverBed
+	110	binarize_one_bigwigAverageOverBed_output
+	1	calculate_mark_frequency_per_state
+	115	overlap_mark_binarized_and_roadmap_segment
+	1	plot_heatmap_emission
+	294
+
+[Wed Jun 23 17:47:27 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.binarized
+    jobid: 188
+    wildcards: mark=H3K27me3, chrom=2
+
+
+[Wed Jun 23 17:47:27 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.binarized
+    jobid: 211
+    wildcards: mark=H3K9me3, chrom=2
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.tab.
+[Wed Jun 23 17:47:32 2021]
+Finished job 188.
+1 of 294 steps (0.34%) done
+
+[Wed Jun 23 17:47:32 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.binarized
+    jobid: 212
+    wildcards: mark=H3K9me3, chrom=3
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.tab.
+[Wed Jun 23 17:47:32 2021]
+Finished job 211.
+2 of 294 steps (0.68%) done
+
+[Wed Jun 23 17:47:32 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr3.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr3.binarized
+    jobid: 189
+    wildcards: mark=H3K27me3, chrom=3
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.tab.
+[Wed Jun 23 17:47:36 2021]
+Finished job 212.
+3 of 294 steps (1%) done
+
+[Wed Jun 23 17:47:36 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.binarized
+    jobid: 213
+    wildcards: mark=H3K9me3, chrom=4
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr3.tab.
+[Wed Jun 23 17:47:36 2021]
+Finished job 189.
+4 of 294 steps (1%) done
+
+[Wed Jun 23 17:47:36 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr4.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr4.binarized
+    jobid: 190
+    wildcards: mark=H3K27me3, chrom=4
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.tab.
+[Wed Jun 23 17:47:40 2021]
+Finished job 213.
+5 of 294 steps (2%) done
+
+[Wed Jun 23 17:47:40 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr5.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr5.binarized
+    jobid: 214
+    wildcards: mark=H3K9me3, chrom=5
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr4.tab.
+[Wed Jun 23 17:47:40 2021]
+Finished job 190.
+6 of 294 steps (2%) done
+
+[Wed Jun 23 17:47:40 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr5.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr5.binarized
+    jobid: 191
+    wildcards: mark=H3K27me3, chrom=5
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr5.tab.
+[Wed Jun 23 17:47:43 2021]
+Finished job 214.
+7 of 294 steps (2%) done
+
+[Wed Jun 23 17:47:43 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr6.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr6.binarized
+    jobid: 215
+    wildcards: mark=H3K9me3, chrom=6
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr5.tab.
+[Wed Jun 23 17:47:44 2021]
+Finished job 191.
+8 of 294 steps (3%) done
+
+[Wed Jun 23 17:47:44 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr6.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr6.binarized
+    jobid: 192
+    wildcards: mark=H3K27me3, chrom=6
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr6.tab.
+[Wed Jun 23 17:47:47 2021]
+Finished job 215.
+9 of 294 steps (3%) done
+
+[Wed Jun 23 17:47:47 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr7.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr7.binarized
+    jobid: 216
+    wildcards: mark=H3K9me3, chrom=7
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr6.tab.
+[Wed Jun 23 17:47:47 2021]
+Finished job 192.
+10 of 294 steps (3%) done
+
+[Wed Jun 23 17:47:47 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr7.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr7.binarized
+    jobid: 193
+    wildcards: mark=H3K27me3, chrom=7
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr7.tab.
+[Wed Jun 23 17:47:50 2021]
+Finished job 216.
+11 of 294 steps (4%) done
+
+[Wed Jun 23 17:47:50 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chrX.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chrX.binarized
+    jobid: 232
+    wildcards: mark=H3K9me3, chrom=X
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr7.tab.
+[Wed Jun 23 17:47:50 2021]
+Finished job 193.
+12 of 294 steps (4%) done
+
+[Wed Jun 23 17:47:50 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chrX.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chrX.binarized
+    jobid: 209
+    wildcards: mark=H3K27me3, chrom=X
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chrX.tab.
+[Wed Jun 23 17:47:53 2021]
+Finished job 232.
+13 of 294 steps (4%) done
+
+[Wed Jun 23 17:47:53 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr8.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr8.binarized
+    jobid: 217
+    wildcards: mark=H3K9me3, chrom=8
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chrX.tab.
+[Wed Jun 23 17:47:53 2021]
+Finished job 209.
+14 of 294 steps (5%) done
+
+[Wed Jun 23 17:47:53 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr8.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr8.binarized
+    jobid: 194
+    wildcards: mark=H3K27me3, chrom=8
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr8.tab.
+[Wed Jun 23 17:47:56 2021]
+Finished job 217.
+15 of 294 steps (5%) done
+
+[Wed Jun 23 17:47:56 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr9.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr9.binarized
+    jobid: 218
+    wildcards: mark=H3K9me3, chrom=9
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr8.tab.
+[Wed Jun 23 17:47:56 2021]
+Finished job 194.
+16 of 294 steps (5%) done
+
+[Wed Jun 23 17:47:56 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr10.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr10.binarized
+    jobid: 219
+    wildcards: mark=H3K9me3, chrom=10
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr9.tab.
+[Wed Jun 23 17:47:59 2021]
+Finished job 218.
+17 of 294 steps (6%) done
+
+[Wed Jun 23 17:47:59 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr11.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr11.binarized
+    jobid: 220
+    wildcards: mark=H3K9me3, chrom=11
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr10.tab.
+[Wed Jun 23 17:47:59 2021]
+Finished job 219.
+18 of 294 steps (6%) done
+
+[Wed Jun 23 17:47:59 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr12.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr12.binarized
+    jobid: 221
+    wildcards: mark=H3K9me3, chrom=12
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr11.tab.
+[Wed Jun 23 17:48:01 2021]
+Finished job 220.
+19 of 294 steps (6%) done
+
+[Wed Jun 23 17:48:01 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr11.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr11.binarized
+    jobid: 197
+    wildcards: mark=H3K27me3, chrom=11
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr12.tab.
+[Wed Jun 23 17:48:02 2021]
+Finished job 221.
+20 of 294 steps (7%) done
+
+[Wed Jun 23 17:48:02 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr10.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr10.binarized
+    jobid: 196
+    wildcards: mark=H3K27me3, chrom=10
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr11.tab.
+[Wed Jun 23 17:48:04 2021]
+Finished job 197.
+21 of 294 steps (7%) done
+
+[Wed Jun 23 17:48:04 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr9.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr9.binarized
+    jobid: 195
+    wildcards: mark=H3K27me3, chrom=9
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr10.tab.
+[Wed Jun 23 17:48:04 2021]
+Finished job 196.
+22 of 294 steps (7%) done
+
+[Wed Jun 23 17:48:04 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr12.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr12.binarized
+    jobid: 198
+    wildcards: mark=H3K27me3, chrom=12
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr9.tab.
+[Wed Jun 23 17:48:07 2021]
+Finished job 195.
+23 of 294 steps (8%) done
+
+[Wed Jun 23 17:48:07 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr13.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr13.binarized
+    jobid: 222
+    wildcards: mark=H3K9me3, chrom=13
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr12.tab.
+[Wed Jun 23 17:48:07 2021]
+Finished job 198.
+24 of 294 steps (8%) done
+
+[Wed Jun 23 17:48:07 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr13.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr13.binarized
+    jobid: 199
+    wildcards: mark=H3K27me3, chrom=13
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr13.tab.
+[Wed Jun 23 17:48:09 2021]
+Finished job 222.
+25 of 294 steps (9%) done
+
+[Wed Jun 23 17:48:09 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr14.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr14.binarized
+    jobid: 223
+    wildcards: mark=H3K9me3, chrom=14
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr13.tab.
+[Wed Jun 23 17:48:09 2021]
+Finished job 199.
+26 of 294 steps (9%) done
+
+[Wed Jun 23 17:48:09 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr14.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr14.binarized
+    jobid: 200
+    wildcards: mark=H3K27me3, chrom=14
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr14.tab.
+[Wed Jun 23 17:48:11 2021]
+Finished job 223.
+27 of 294 steps (9%) done
+
+[Wed Jun 23 17:48:11 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr15.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr15.binarized
+    jobid: 224
+    wildcards: mark=H3K9me3, chrom=15
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr14.tab.
+[Wed Jun 23 17:48:12 2021]
+Finished job 200.
+28 of 294 steps (10%) done
+
+[Wed Jun 23 17:48:12 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr15.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr15.binarized
+    jobid: 201
+    wildcards: mark=H3K27me3, chrom=15
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr15.tab.
+[Wed Jun 23 17:48:13 2021]
+Finished job 224.
+29 of 294 steps (10%) done
+
+[Wed Jun 23 17:48:13 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr16.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr16.binarized
+    jobid: 225
+    wildcards: mark=H3K9me3, chrom=16
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr15.tab.
+[Wed Jun 23 17:48:14 2021]
+Finished job 201.
+30 of 294 steps (10%) done
+
+[Wed Jun 23 17:48:14 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr16.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr16.binarized
+    jobid: 202
+    wildcards: mark=H3K27me3, chrom=16
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr16.tab.
+[Wed Jun 23 17:48:15 2021]
+Finished job 225.
+31 of 294 steps (11%) done
+
+[Wed Jun 23 17:48:15 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr17.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr17.binarized
+    jobid: 226
+    wildcards: mark=H3K9me3, chrom=17
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr16.tab.
+[Wed Jun 23 17:48:15 2021]
+Finished job 202.
+32 of 294 steps (11%) done
+
+[Wed Jun 23 17:48:15 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr17.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr17.binarized
+    jobid: 203
+    wildcards: mark=H3K27me3, chrom=17
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr17.tab.
+[Wed Jun 23 17:48:17 2021]
+Finished job 226.
+33 of 294 steps (11%) done
+
+[Wed Jun 23 17:48:17 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr18.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr18.binarized
+    jobid: 227
+    wildcards: mark=H3K9me3, chrom=18
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr17.tab.
+[Wed Jun 23 17:48:17 2021]
+Finished job 203.
+34 of 294 steps (12%) done
+
+[Wed Jun 23 17:48:17 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr18.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr18.binarized
+    jobid: 204
+    wildcards: mark=H3K27me3, chrom=18
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr18.tab.
+[Wed Jun 23 17:48:18 2021]
+Finished job 227.
+35 of 294 steps (12%) done
+
+[Wed Jun 23 17:48:18 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr20.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr20.binarized
+    jobid: 229
+    wildcards: mark=H3K9me3, chrom=20
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr18.tab.
+[Wed Jun 23 17:48:19 2021]
+Finished job 204.
+36 of 294 steps (12%) done
+
+[Wed Jun 23 17:48:19 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr20.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr20.binarized
+    jobid: 206
+    wildcards: mark=H3K27me3, chrom=20
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr20.tab.
+[Wed Jun 23 17:48:19 2021]
+Finished job 229.
+37 of 294 steps (13%) done
+
+[Wed Jun 23 17:48:19 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr19.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr19.binarized
+    jobid: 228
+    wildcards: mark=H3K9me3, chrom=19
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr20.tab.
+[Wed Jun 23 17:48:20 2021]
+Finished job 206.
+38 of 294 steps (13%) done
+
+[Wed Jun 23 17:48:20 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr19.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr19.binarized
+    jobid: 205
+    wildcards: mark=H3K27me3, chrom=19
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr19.tab.
+[Wed Jun 23 17:48:21 2021]
+Finished job 228.
+39 of 294 steps (13%) done
+
+[Wed Jun 23 17:48:21 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr22.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr22.binarized
+    jobid: 231
+    wildcards: mark=H3K9me3, chrom=22
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr19.tab.
+[Wed Jun 23 17:48:21 2021]
+Finished job 205.
+40 of 294 steps (14%) done
+
+[Wed Jun 23 17:48:21 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr22.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr22.binarized
+    jobid: 208
+    wildcards: mark=H3K27me3, chrom=22
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr22.tab.
+[Wed Jun 23 17:48:22 2021]
+Finished job 231.
+41 of 294 steps (14%) done
+
+[Wed Jun 23 17:48:22 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr21.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr21.binarized
+    jobid: 230
+    wildcards: mark=H3K9me3, chrom=21
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr22.tab.
+[Wed Jun 23 17:48:22 2021]
+Finished job 208.
+42 of 294 steps (14%) done
+
+[Wed Jun 23 17:48:22 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr21.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr21.binarized
+    jobid: 207
+    wildcards: mark=H3K27me3, chrom=21
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr21.tab.
+[Wed Jun 23 17:48:23 2021]
+Finished job 230.
+43 of 294 steps (15%) done
+
+[Wed Jun 23 17:48:23 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr2.tab
+    jobid: 257
+    wildcards: mark=H3K4me1, chrom=2
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr21.tab.
+[Wed Jun 23 17:48:23 2021]
+Finished job 207.
+44 of 294 steps (15%) done
+
+[Wed Jun 23 17:48:23 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr3.tab
+    jobid: 258
+    wildcards: mark=H3K4me1, chrom=3
+
+[Wed Jun 23 17:48:35 2021]
+Finished job 258.
+45 of 294 steps (15%) done
+
+[Wed Jun 23 17:48:35 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr3.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr3.binarized
+    jobid: 143
+    wildcards: mark=H3K4me1, chrom=3
+
+[Wed Jun 23 17:48:36 2021]
+Finished job 257.
+46 of 294 steps (16%) done
+
+[Wed Jun 23 17:48:36 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr2.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr2.binarized
+    jobid: 142
+    wildcards: mark=H3K4me1, chrom=2
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr3.tab.
+[Wed Jun 23 17:48:39 2021]
+Finished job 143.
+47 of 294 steps (16%) done
+
+[Wed Jun 23 17:48:39 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr4.tab
+    jobid: 259
+    wildcards: mark=H3K4me1, chrom=4
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr2.tab.
+[Wed Jun 23 17:48:44 2021]
+Finished job 142.
+48 of 294 steps (16%) done
+
+[Wed Jun 23 17:48:44 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr5.tab
+    jobid: 260
+    wildcards: mark=H3K4me1, chrom=5
+
+[Wed Jun 23 17:48:50 2021]
+Finished job 259.
+49 of 294 steps (17%) done
+
+[Wed Jun 23 17:48:50 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr4.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr4.binarized
+    jobid: 144
+    wildcards: mark=H3K4me1, chrom=4
+
+[Wed Jun 23 17:48:51 2021]
+Finished job 260.
+50 of 294 steps (17%) done
+
+[Wed Jun 23 17:48:52 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr5.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr5.binarized
+    jobid: 145
+    wildcards: mark=H3K4me1, chrom=5
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr4.tab.
+[Wed Jun 23 17:48:53 2021]
+Finished job 144.
+51 of 294 steps (17%) done
+
+[Wed Jun 23 17:48:53 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr6.tab
+    jobid: 261
+    wildcards: mark=H3K4me1, chrom=6
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr5.tab.
+[Wed Jun 23 17:48:58 2021]
+Finished job 145.
+52 of 294 steps (18%) done
+
+[Wed Jun 23 17:48:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr7.tab
+    jobid: 262
+    wildcards: mark=H3K4me1, chrom=7
+
+[Wed Jun 23 17:49:03 2021]
+Finished job 261.
+53 of 294 steps (18%) done
+
+[Wed Jun 23 17:49:03 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr6.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr6.binarized
+    jobid: 146
+    wildcards: mark=H3K4me1, chrom=6
+
+[Wed Jun 23 17:49:05 2021]
+Finished job 262.
+54 of 294 steps (18%) done
+
+[Wed Jun 23 17:49:05 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr7.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr7.binarized
+    jobid: 147
+    wildcards: mark=H3K4me1, chrom=7
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr6.tab.
+[Wed Jun 23 17:49:07 2021]
+Finished job 146.
+55 of 294 steps (19%) done
+
+[Wed Jun 23 17:49:07 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chrX.tab
+    jobid: 278
+    wildcards: mark=H3K4me1, chrom=X
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr7.tab.
+[Wed Jun 23 17:49:10 2021]
+Finished job 147.
+56 of 294 steps (19%) done
+
+[Wed Jun 23 17:49:10 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr8.tab
+    jobid: 263
+    wildcards: mark=H3K4me1, chrom=8
+
+[Wed Jun 23 17:49:15 2021]
+Finished job 278.
+57 of 294 steps (19%) done
+
+[Wed Jun 23 17:49:15 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chrX.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chrX.binarized
+    jobid: 163
+    wildcards: mark=H3K4me1, chrom=X
+
+[Wed Jun 23 17:49:16 2021]
+Finished job 263.
+58 of 294 steps (20%) done
+
+[Wed Jun 23 17:49:16 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr8.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr8.binarized
+    jobid: 148
+    wildcards: mark=H3K4me1, chrom=8
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chrX.tab.
+[Wed Jun 23 17:49:18 2021]
+Finished job 163.
+59 of 294 steps (20%) done
+
+[Wed Jun 23 17:49:18 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr2.tab
+    jobid: 280
+    wildcards: mark=H3K36me3, chrom=2
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr8.tab.
+[Wed Jun 23 17:49:19 2021]
+Finished job 148.
+60 of 294 steps (20%) done
+
+[Wed Jun 23 17:49:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr9.tab
+    jobid: 264
+    wildcards: mark=H3K4me1, chrom=9
+
+[Wed Jun 23 17:49:28 2021]
+Finished job 264.
+61 of 294 steps (21%) done
+
+[Wed Jun 23 17:49:28 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr9.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr9.binarized
+    jobid: 149
+    wildcards: mark=H3K4me1, chrom=9
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr9.tab.
+[Wed Jun 23 17:49:30 2021]
+Finished job 149.
+62 of 294 steps (21%) done
+
+[Wed Jun 23 17:49:30 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr10.tab
+    jobid: 265
+    wildcards: mark=H3K4me1, chrom=10
+
+[Wed Jun 23 17:49:33 2021]
+Finished job 280.
+63 of 294 steps (21%) done
+
+[Wed Jun 23 17:49:33 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr2.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr2.binarized
+    jobid: 165
+    wildcards: mark=H3K36me3, chrom=2
+
+[Wed Jun 23 17:49:37 2021]
+Finished job 265.
+64 of 294 steps (22%) done
+
+[Wed Jun 23 17:49:37 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr10.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr10.binarized
+    jobid: 150
+    wildcards: mark=H3K4me1, chrom=10
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr2.tab.
+[Wed Jun 23 17:49:37 2021]
+Finished job 165.
+65 of 294 steps (22%) done
+
+[Wed Jun 23 17:49:37 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr11.tab
+    jobid: 266
+    wildcards: mark=H3K4me1, chrom=11
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr10.tab.
+[Wed Jun 23 17:49:41 2021]
+Finished job 150.
+66 of 294 steps (22%) done
+
+[Wed Jun 23 17:49:41 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr12.tab
+    jobid: 267
+    wildcards: mark=H3K4me1, chrom=12
+
+[Wed Jun 23 17:49:45 2021]
+Finished job 266.
+67 of 294 steps (23%) done
+
+[Wed Jun 23 17:49:45 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr11.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr11.binarized
+    jobid: 151
+    wildcards: mark=H3K4me1, chrom=11
+
+[Wed Jun 23 17:49:47 2021]
+Finished job 267.
+68 of 294 steps (23%) done
+
+[Wed Jun 23 17:49:47 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr12.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr12.binarized
+    jobid: 152
+    wildcards: mark=H3K4me1, chrom=12
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr11.tab.
+[Wed Jun 23 17:49:48 2021]
+Finished job 151.
+69 of 294 steps (23%) done
+
+[Wed Jun 23 17:49:48 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr13.tab
+    jobid: 268
+    wildcards: mark=H3K4me1, chrom=13
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr12.tab.
+[Wed Jun 23 17:49:51 2021]
+Finished job 152.
+70 of 294 steps (24%) done
+
+[Wed Jun 23 17:49:51 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr14.tab
+    jobid: 269
+    wildcards: mark=H3K4me1, chrom=14
+
+[Wed Jun 23 17:49:54 2021]
+Finished job 268.
+71 of 294 steps (24%) done
+
+[Wed Jun 23 17:49:54 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr13.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr13.binarized
+    jobid: 153
+    wildcards: mark=H3K4me1, chrom=13
+
+[Wed Jun 23 17:49:55 2021]
+Finished job 269.
+72 of 294 steps (24%) done
+
+[Wed Jun 23 17:49:55 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr14.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr14.binarized
+    jobid: 154
+    wildcards: mark=H3K4me1, chrom=14
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr13.tab.
+[Wed Jun 23 17:49:57 2021]
+Finished job 153.
+73 of 294 steps (25%) done
+
+[Wed Jun 23 17:49:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr15.tab
+    jobid: 270
+    wildcards: mark=H3K4me1, chrom=15
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr14.tab.
+[Wed Jun 23 17:49:57 2021]
+Finished job 154.
+74 of 294 steps (25%) done
+
+[Wed Jun 23 17:49:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr3.tab
+    jobid: 281
+    wildcards: mark=H3K36me3, chrom=3
+
+[Wed Jun 23 17:50:05 2021]
+Finished job 270.
+75 of 294 steps (26%) done
+
+[Wed Jun 23 17:50:05 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr15.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr15.binarized
+    jobid: 155
+    wildcards: mark=H3K4me1, chrom=15
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr15.tab.
+[Wed Jun 23 17:50:06 2021]
+Finished job 155.
+76 of 294 steps (26%) done
+
+[Wed Jun 23 17:50:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr4.tab
+    jobid: 282
+    wildcards: mark=H3K36me3, chrom=4
+
+[Wed Jun 23 17:50:10 2021]
+Finished job 281.
+77 of 294 steps (26%) done
+
+[Wed Jun 23 17:50:10 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr3.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr3.binarized
+    jobid: 166
+    wildcards: mark=H3K36me3, chrom=3
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr3.tab.
+[Wed Jun 23 17:50:13 2021]
+Finished job 166.
+78 of 294 steps (27%) done
+
+[Wed Jun 23 17:50:13 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr16.tab
+    jobid: 271
+    wildcards: mark=H3K4me1, chrom=16
+
+[Wed Jun 23 17:50:15 2021]
+Finished job 282.
+79 of 294 steps (27%) done
+
+[Wed Jun 23 17:50:15 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr4.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr4.binarized
+    jobid: 167
+    wildcards: mark=H3K36me3, chrom=4
+
+[Wed Jun 23 17:50:19 2021]
+Finished job 271.
+80 of 294 steps (27%) done
+
+[Wed Jun 23 17:50:19 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr16.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr16.binarized
+    jobid: 156
+    wildcards: mark=H3K4me1, chrom=16
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr4.tab.
+[Wed Jun 23 17:50:19 2021]
+Finished job 167.
+81 of 294 steps (28%) done
+
+[Wed Jun 23 17:50:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr5.tab
+    jobid: 283
+    wildcards: mark=H3K36me3, chrom=5
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr16.tab.
+[Wed Jun 23 17:50:22 2021]
+Finished job 156.
+82 of 294 steps (28%) done
+
+[Wed Jun 23 17:50:22 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr17.tab
+    jobid: 272
+    wildcards: mark=H3K4me1, chrom=17
+
+[Wed Jun 23 17:50:26 2021]
+Finished job 272.
+83 of 294 steps (28%) done
+
+[Wed Jun 23 17:50:26 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr17.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr17.binarized
+    jobid: 157
+    wildcards: mark=H3K4me1, chrom=17
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr17.tab.
+[Wed Jun 23 17:50:28 2021]
+Finished job 157.
+84 of 294 steps (29%) done
+
+[Wed Jun 23 17:50:28 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr18.tab
+    jobid: 273
+    wildcards: mark=H3K4me1, chrom=18
+
+[Wed Jun 23 17:50:30 2021]
+Finished job 283.
+85 of 294 steps (29%) done
+
+[Wed Jun 23 17:50:30 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr5.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr5.binarized
+    jobid: 168
+    wildcards: mark=H3K36me3, chrom=5
+
+[Wed Jun 23 17:50:32 2021]
+Finished job 273.
+86 of 294 steps (29%) done
+
+[Wed Jun 23 17:50:32 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr18.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr18.binarized
+    jobid: 158
+    wildcards: mark=H3K4me1, chrom=18
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr5.tab.
+[Wed Jun 23 17:50:33 2021]
+Finished job 168.
+87 of 294 steps (30%) done
+
+[Wed Jun 23 17:50:33 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr6.tab
+    jobid: 284
+    wildcards: mark=H3K36me3, chrom=6
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr18.tab.
+[Wed Jun 23 17:50:33 2021]
+Finished job 158.
+88 of 294 steps (30%) done
+
+[Wed Jun 23 17:50:33 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr20.tab
+    jobid: 275
+    wildcards: mark=H3K4me1, chrom=20
+
+[Wed Jun 23 17:50:39 2021]
+Finished job 275.
+89 of 294 steps (30%) done
+
+[Wed Jun 23 17:50:39 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr20.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr20.binarized
+    jobid: 160
+    wildcards: mark=H3K4me1, chrom=20
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr20.tab.
+[Wed Jun 23 17:50:40 2021]
+Finished job 160.
+90 of 294 steps (31%) done
+
+[Wed Jun 23 17:50:40 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr7.tab
+    jobid: 285
+    wildcards: mark=H3K36me3, chrom=7
+
+[Wed Jun 23 17:50:44 2021]
+Finished job 284.
+91 of 294 steps (31%) done
+
+[Wed Jun 23 17:50:44 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr6.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr6.binarized
+    jobid: 169
+    wildcards: mark=H3K36me3, chrom=6
+
+[Wed Jun 23 17:50:47 2021]
+Finished job 285.
+92 of 294 steps (31%) done
+
+[Wed Jun 23 17:50:47 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr7.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr7.binarized
+    jobid: 170
+    wildcards: mark=H3K36me3, chrom=7
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr6.tab.
+[Wed Jun 23 17:50:47 2021]
+Finished job 169.
+93 of 294 steps (32%) done
+
+[Wed Jun 23 17:50:47 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr19.tab
+    jobid: 274
+    wildcards: mark=H3K4me1, chrom=19
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr7.tab.
+[Wed Jun 23 17:50:50 2021]
+Finished job 170.
+94 of 294 steps (32%) done
+
+[Wed Jun 23 17:50:50 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chrX.tab
+    jobid: 301
+    wildcards: mark=H3K36me3, chrom=X
+
+[Wed Jun 23 17:50:51 2021]
+Finished job 274.
+95 of 294 steps (32%) done
+
+[Wed Jun 23 17:50:51 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr19.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr19.binarized
+    jobid: 159
+    wildcards: mark=H3K4me1, chrom=19
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr19.tab.
+[Wed Jun 23 17:50:54 2021]
+Finished job 159.
+96 of 294 steps (33%) done
+
+[Wed Jun 23 17:50:54 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr22.tab
+    jobid: 277
+    wildcards: mark=H3K4me1, chrom=22
+
+[Wed Jun 23 17:50:56 2021]
+Finished job 277.
+97 of 294 steps (33%) done
+
+[Wed Jun 23 17:50:56 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr22.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr22.binarized
+    jobid: 162
+    wildcards: mark=H3K4me1, chrom=22
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr22.tab.
+[Wed Jun 23 17:50:57 2021]
+Finished job 162.
+98 of 294 steps (33%) done
+
+[Wed Jun 23 17:50:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr21.tab
+    jobid: 276
+    wildcards: mark=H3K4me1, chrom=21
+
+[Wed Jun 23 17:50:58 2021]
+Finished job 301.
+99 of 294 steps (34%) done
+
+[Wed Jun 23 17:50:58 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chrX.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chrX.binarized
+    jobid: 186
+    wildcards: mark=H3K36me3, chrom=X
+
+[Wed Jun 23 17:50:59 2021]
+Finished job 276.
+100 of 294 steps (34%) done
+
+[Wed Jun 23 17:50:59 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr21.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr21.binarized
+    jobid: 161
+    wildcards: mark=H3K4me1, chrom=21
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr21.tab.
+[Wed Jun 23 17:51:00 2021]
+Finished job 161.
+101 of 294 steps (34%) done
+
+[Wed Jun 23 17:51:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr8.tab
+    jobid: 286
+    wildcards: mark=H3K36me3, chrom=8
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chrX.tab.
+[Wed Jun 23 17:51:03 2021]
+Finished job 186.
+102 of 294 steps (35%) done
+
+[Wed Jun 23 17:51:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr9.tab
+    jobid: 287
+    wildcards: mark=H3K36me3, chrom=9
+
+[Wed Jun 23 17:51:09 2021]
+Finished job 286.
+103 of 294 steps (35%) done
+
+[Wed Jun 23 17:51:09 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr8.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr8.binarized
+    jobid: 171
+    wildcards: mark=H3K36me3, chrom=8
+
+[Wed Jun 23 17:51:09 2021]
+Finished job 287.
+104 of 294 steps (35%) done
+
+[Wed Jun 23 17:51:09 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr9.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr9.binarized
+    jobid: 172
+    wildcards: mark=H3K36me3, chrom=9
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr8.tab.
+[Wed Jun 23 17:51:12 2021]
+Finished job 171.
+105 of 294 steps (36%) done
+
+[Wed Jun 23 17:51:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr10.tab
+    jobid: 288
+    wildcards: mark=H3K36me3, chrom=10
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr9.tab.
+[Wed Jun 23 17:51:12 2021]
+Finished job 172.
+106 of 294 steps (36%) done
+
+[Wed Jun 23 17:51:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr11.tab
+    jobid: 289
+    wildcards: mark=H3K36me3, chrom=11
+
+[Wed Jun 23 17:51:20 2021]
+Finished job 289.
+107 of 294 steps (36%) done
+
+[Wed Jun 23 17:51:20 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr11.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr11.binarized
+    jobid: 174
+    wildcards: mark=H3K36me3, chrom=11
+
+[Wed Jun 23 17:51:20 2021]
+Finished job 288.
+108 of 294 steps (37%) done
+
+[Wed Jun 23 17:51:20 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr10.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr10.binarized
+    jobid: 173
+    wildcards: mark=H3K36me3, chrom=10
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr11.tab.
+[Wed Jun 23 17:51:23 2021]
+Finished job 174.
+109 of 294 steps (37%) done
+
+[Wed Jun 23 17:51:23 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr12.tab
+    jobid: 290
+    wildcards: mark=H3K36me3, chrom=12
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr10.tab.
+[Wed Jun 23 17:51:23 2021]
+Finished job 173.
+110 of 294 steps (37%) done
+
+[Wed Jun 23 17:51:23 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr13.tab
+    jobid: 291
+    wildcards: mark=H3K36me3, chrom=13
+
+[Wed Jun 23 17:51:29 2021]
+Finished job 291.
+111 of 294 steps (38%) done
+
+[Wed Jun 23 17:51:29 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr13.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr13.binarized
+    jobid: 176
+    wildcards: mark=H3K36me3, chrom=13
+
+[Wed Jun 23 17:51:30 2021]
+Finished job 290.
+112 of 294 steps (38%) done
+
+[Wed Jun 23 17:51:30 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr12.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr12.binarized
+    jobid: 175
+    wildcards: mark=H3K36me3, chrom=12
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr13.tab.
+[Wed Jun 23 17:51:31 2021]
+Finished job 176.
+113 of 294 steps (38%) done
+
+[Wed Jun 23 17:51:31 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr14.tab
+    jobid: 292
+    wildcards: mark=H3K36me3, chrom=14
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr12.tab.
+[Wed Jun 23 17:51:34 2021]
+Finished job 175.
+114 of 294 steps (39%) done
+
+[Wed Jun 23 17:51:34 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr15.tab
+    jobid: 293
+    wildcards: mark=H3K36me3, chrom=15
+
+[Wed Jun 23 17:51:38 2021]
+Finished job 292.
+115 of 294 steps (39%) done
+
+[Wed Jun 23 17:51:38 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr14.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr14.binarized
+    jobid: 177
+    wildcards: mark=H3K36me3, chrom=14
+
+[Wed Jun 23 17:51:39 2021]
+Finished job 293.
+116 of 294 steps (39%) done
+
+[Wed Jun 23 17:51:39 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr15.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr15.binarized
+    jobid: 178
+    wildcards: mark=H3K36me3, chrom=15
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr14.tab.
+[Wed Jun 23 17:51:40 2021]
+Finished job 177.
+117 of 294 steps (40%) done
+
+[Wed Jun 23 17:51:40 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr16.tab
+    jobid: 294
+    wildcards: mark=H3K36me3, chrom=16
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr15.tab.
+[Wed Jun 23 17:51:42 2021]
+Finished job 178.
+118 of 294 steps (40%) done
+
+[Wed Jun 23 17:51:42 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr17.tab
+    jobid: 295
+    wildcards: mark=H3K36me3, chrom=17
+
+[Wed Jun 23 17:51:45 2021]
+Finished job 294.
+119 of 294 steps (40%) done
+
+[Wed Jun 23 17:51:45 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr16.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr16.binarized
+    jobid: 179
+    wildcards: mark=H3K36me3, chrom=16
+
+[Wed Jun 23 17:51:46 2021]
+Finished job 295.
+120 of 294 steps (41%) done
+
+[Wed Jun 23 17:51:46 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr17.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr17.binarized
+    jobid: 180
+    wildcards: mark=H3K36me3, chrom=17
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr16.tab.
+[Wed Jun 23 17:51:47 2021]
+Finished job 179.
+121 of 294 steps (41%) done
+
+[Wed Jun 23 17:51:47 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr18.tab
+    jobid: 296
+    wildcards: mark=H3K36me3, chrom=18
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr17.tab.
+[Wed Jun 23 17:51:49 2021]
+Finished job 180.
+122 of 294 steps (41%) done
+
+[Wed Jun 23 17:51:49 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr20.tab
+    jobid: 298
+    wildcards: mark=H3K36me3, chrom=20
+
+[Wed Jun 23 17:51:51 2021]
+Finished job 296.
+123 of 294 steps (42%) done
+
+[Wed Jun 23 17:51:51 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr18.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr18.binarized
+    jobid: 181
+    wildcards: mark=H3K36me3, chrom=18
+
+[Wed Jun 23 17:51:52 2021]
+Finished job 298.
+124 of 294 steps (42%) done
+
+[Wed Jun 23 17:51:52 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr20.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr20.binarized
+    jobid: 183
+    wildcards: mark=H3K36me3, chrom=20
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr18.tab.
+[Wed Jun 23 17:51:52 2021]
+Finished job 181.
+125 of 294 steps (43%) done
+
+[Wed Jun 23 17:51:52 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr19.tab
+    jobid: 297
+    wildcards: mark=H3K36me3, chrom=19
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr20.tab.
+[Wed Jun 23 17:51:54 2021]
+Finished job 183.
+126 of 294 steps (43%) done
+
+[Wed Jun 23 17:51:54 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr22.tab
+    jobid: 300
+    wildcards: mark=H3K36me3, chrom=22
+
+[Wed Jun 23 17:51:56 2021]
+Finished job 297.
+127 of 294 steps (43%) done
+
+[Wed Jun 23 17:51:56 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr19.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr19.binarized
+    jobid: 182
+    wildcards: mark=H3K36me3, chrom=19
+
+[Wed Jun 23 17:51:57 2021]
+Finished job 300.
+128 of 294 steps (44%) done
+
+[Wed Jun 23 17:51:57 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr22.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr22.binarized
+    jobid: 185
+    wildcards: mark=H3K36me3, chrom=22
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr19.tab.
+[Wed Jun 23 17:51:57 2021]
+Finished job 182.
+129 of 294 steps (44%) done
+
+[Wed Jun 23 17:51:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr21.tab
+    jobid: 299
+    wildcards: mark=H3K36me3, chrom=21
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr22.tab.
+[Wed Jun 23 17:51:58 2021]
+Finished job 185.
+130 of 294 steps (44%) done
+
+[Wed Jun 23 17:51:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr2.tab
+    jobid: 234
+    wildcards: mark=H3K4me3, chrom=2
+
+[Wed Jun 23 17:52:03 2021]
+Finished job 299.
+131 of 294 steps (45%) done
+
+[Wed Jun 23 17:52:03 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr21.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr21.binarized
+    jobid: 184
+    wildcards: mark=H3K36me3, chrom=21
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr21.tab.
+[Wed Jun 23 17:52:04 2021]
+Finished job 184.
+132 of 294 steps (45%) done
+
+[Wed Jun 23 17:52:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr3.tab
+    jobid: 235
+    wildcards: mark=H3K4me3, chrom=3
+
+[Wed Jun 23 17:52:12 2021]
+Finished job 234.
+133 of 294 steps (45%) done
+
+[Wed Jun 23 17:52:12 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr2.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr2.binarized
+    jobid: 119
+    wildcards: mark=H3K4me3, chrom=2
+
+[Wed Jun 23 17:52:12 2021]
+Finished job 235.
+134 of 294 steps (46%) done
+
+[Wed Jun 23 17:52:12 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr3.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr3.binarized
+    jobid: 120
+    wildcards: mark=H3K4me3, chrom=3
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr3.tab.
+[Wed Jun 23 17:52:16 2021]
+Finished job 120.
+135 of 294 steps (46%) done
+
+[Wed Jun 23 17:52:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr4.tab
+    jobid: 236
+    wildcards: mark=H3K4me3, chrom=4
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr2.tab.
+[Wed Jun 23 17:52:17 2021]
+Finished job 119.
+136 of 294 steps (46%) done
+
+[Wed Jun 23 17:52:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr5.tab
+    jobid: 237
+    wildcards: mark=H3K4me3, chrom=5
+
+[Wed Jun 23 17:52:27 2021]
+Finished job 237.
+137 of 294 steps (47%) done
+
+[Wed Jun 23 17:52:27 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr5.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr5.binarized
+    jobid: 122
+    wildcards: mark=H3K4me3, chrom=5
+
+[Wed Jun 23 17:52:27 2021]
+Finished job 236.
+138 of 294 steps (47%) done
+
+[Wed Jun 23 17:52:27 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr4.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr4.binarized
+    jobid: 121
+    wildcards: mark=H3K4me3, chrom=4
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr5.tab.
+[Wed Jun 23 17:52:30 2021]
+Finished job 122.
+139 of 294 steps (47%) done
+
+[Wed Jun 23 17:52:30 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr6.tab
+    jobid: 238
+    wildcards: mark=H3K4me3, chrom=6
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr4.tab.
+[Wed Jun 23 17:52:31 2021]
+Finished job 121.
+140 of 294 steps (48%) done
+
+[Wed Jun 23 17:52:31 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr7.tab
+    jobid: 239
+    wildcards: mark=H3K4me3, chrom=7
+
+[Wed Jun 23 17:52:40 2021]
+Finished job 239.
+141 of 294 steps (48%) done
+
+[Wed Jun 23 17:52:40 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr7.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr7.binarized
+    jobid: 124
+    wildcards: mark=H3K4me3, chrom=7
+
+[Wed Jun 23 17:52:41 2021]
+Finished job 238.
+142 of 294 steps (48%) done
+
+[Wed Jun 23 17:52:41 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr6.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr6.binarized
+    jobid: 123
+    wildcards: mark=H3K4me3, chrom=6
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr7.tab.
+[Wed Jun 23 17:52:43 2021]
+Finished job 124.
+143 of 294 steps (49%) done
+
+[Wed Jun 23 17:52:43 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chrX.tab
+    jobid: 255
+    wildcards: mark=H3K4me3, chrom=X
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr6.tab.
+[Wed Jun 23 17:52:44 2021]
+Finished job 123.
+144 of 294 steps (49%) done
+
+[Wed Jun 23 17:52:44 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr8.tab
+    jobid: 240
+    wildcards: mark=H3K4me3, chrom=8
+
+[Wed Jun 23 17:52:52 2021]
+Finished job 255.
+145 of 294 steps (49%) done
+
+[Wed Jun 23 17:52:52 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chrX.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chrX.binarized
+    jobid: 140
+    wildcards: mark=H3K4me3, chrom=X
+
+[Wed Jun 23 17:52:52 2021]
+Finished job 240.
+146 of 294 steps (50%) done
+
+[Wed Jun 23 17:52:52 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr8.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr8.binarized
+    jobid: 125
+    wildcards: mark=H3K4me3, chrom=8
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chrX.tab.
+[Wed Jun 23 17:52:55 2021]
+Finished job 140.
+147 of 294 steps (50%) done
+
+[Wed Jun 23 17:52:55 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr9.tab
+    jobid: 241
+    wildcards: mark=H3K4me3, chrom=9
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr8.tab.
+[Wed Jun 23 17:52:55 2021]
+Finished job 125.
+148 of 294 steps (50%) done
+
+[Wed Jun 23 17:52:55 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr10.tab
+    jobid: 242
+    wildcards: mark=H3K4me3, chrom=10
+
+[Wed Jun 23 17:53:03 2021]
+Finished job 242.
+149 of 294 steps (51%) done
+
+[Wed Jun 23 17:53:03 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr10.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr10.binarized
+    jobid: 127
+    wildcards: mark=H3K4me3, chrom=10
+
+[Wed Jun 23 17:53:03 2021]
+Finished job 241.
+150 of 294 steps (51%) done
+
+[Wed Jun 23 17:53:03 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr9.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr9.binarized
+    jobid: 126
+    wildcards: mark=H3K4me3, chrom=9
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr10.tab.
+[Wed Jun 23 17:53:05 2021]
+Finished job 127.
+151 of 294 steps (51%) done
+
+[Wed Jun 23 17:53:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr11.tab
+    jobid: 243
+    wildcards: mark=H3K4me3, chrom=11
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr9.tab.
+[Wed Jun 23 17:53:06 2021]
+Finished job 126.
+152 of 294 steps (52%) done
+
+[Wed Jun 23 17:53:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr12.tab
+    jobid: 244
+    wildcards: mark=H3K4me3, chrom=12
+
+[Wed Jun 23 17:53:13 2021]
+Finished job 244.
+153 of 294 steps (52%) done
+
+[Wed Jun 23 17:53:13 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr12.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr12.binarized
+    jobid: 129
+    wildcards: mark=H3K4me3, chrom=12
+
+[Wed Jun 23 17:53:13 2021]
+Finished job 243.
+154 of 294 steps (52%) done
+
+[Wed Jun 23 17:53:13 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr11.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr11.binarized
+    jobid: 128
+    wildcards: mark=H3K4me3, chrom=11
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr12.tab.
+[Wed Jun 23 17:53:16 2021]
+Finished job 129.
+155 of 294 steps (53%) done
+
+[Wed Jun 23 17:53:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr13.tab
+    jobid: 245
+    wildcards: mark=H3K4me3, chrom=13
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr11.tab.
+[Wed Jun 23 17:53:16 2021]
+Finished job 128.
+156 of 294 steps (53%) done
+
+[Wed Jun 23 17:53:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr14.tab
+    jobid: 246
+    wildcards: mark=H3K4me3, chrom=14
+
+[Wed Jun 23 17:53:22 2021]
+Finished job 246.
+157 of 294 steps (53%) done
+
+[Wed Jun 23 17:53:22 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr14.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr14.binarized
+    jobid: 131
+    wildcards: mark=H3K4me3, chrom=14
+
+[Wed Jun 23 17:53:22 2021]
+Finished job 245.
+158 of 294 steps (54%) done
+
+[Wed Jun 23 17:53:22 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr13.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr13.binarized
+    jobid: 130
+    wildcards: mark=H3K4me3, chrom=13
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr14.tab.
+[Wed Jun 23 17:53:24 2021]
+Finished job 131.
+159 of 294 steps (54%) done
+
+[Wed Jun 23 17:53:24 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr15.tab
+    jobid: 247
+    wildcards: mark=H3K4me3, chrom=15
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr13.tab.
+[Wed Jun 23 17:53:25 2021]
+Finished job 130.
+160 of 294 steps (54%) done
+
+[Wed Jun 23 17:53:25 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr16.tab
+    jobid: 248
+    wildcards: mark=H3K4me3, chrom=16
+
+[Wed Jun 23 17:53:30 2021]
+Finished job 248.
+161 of 294 steps (55%) done
+
+[Wed Jun 23 17:53:30 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr16.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr16.binarized
+    jobid: 133
+    wildcards: mark=H3K4me3, chrom=16
+
+[Wed Jun 23 17:53:30 2021]
+Finished job 247.
+162 of 294 steps (55%) done
+
+[Wed Jun 23 17:53:30 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr15.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr15.binarized
+    jobid: 132
+    wildcards: mark=H3K4me3, chrom=15
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr16.tab.
+[Wed Jun 23 17:53:32 2021]
+Finished job 133.
+163 of 294 steps (55%) done
+
+[Wed Jun 23 17:53:32 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr17.tab
+    jobid: 249
+    wildcards: mark=H3K4me3, chrom=17
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr15.tab.
+[Wed Jun 23 17:53:33 2021]
+Finished job 132.
+164 of 294 steps (56%) done
+
+[Wed Jun 23 17:53:33 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr18.tab
+    jobid: 250
+    wildcards: mark=H3K4me3, chrom=18
+
+[Wed Jun 23 17:53:37 2021]
+Finished job 249.
+165 of 294 steps (56%) done
+
+[Wed Jun 23 17:53:37 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr17.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr17.binarized
+    jobid: 134
+    wildcards: mark=H3K4me3, chrom=17
+
+[Wed Jun 23 17:53:37 2021]
+Finished job 250.
+166 of 294 steps (56%) done
+
+[Wed Jun 23 17:53:37 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr18.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr18.binarized
+    jobid: 135
+    wildcards: mark=H3K4me3, chrom=18
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr17.tab.
+[Wed Jun 23 17:53:38 2021]
+Finished job 134.
+167 of 294 steps (57%) done
+
+[Wed Jun 23 17:53:38 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr20.tab
+    jobid: 252
+    wildcards: mark=H3K4me3, chrom=20
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr18.tab.
+[Wed Jun 23 17:53:39 2021]
+Finished job 135.
+168 of 294 steps (57%) done
+
+[Wed Jun 23 17:53:39 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr19.tab
+    jobid: 251
+    wildcards: mark=H3K4me3, chrom=19
+
+[Wed Jun 23 17:53:42 2021]
+Finished job 251.
+169 of 294 steps (57%) done
+
+[Wed Jun 23 17:53:42 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr19.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr19.binarized
+    jobid: 136
+    wildcards: mark=H3K4me3, chrom=19
+
+[Wed Jun 23 17:53:42 2021]
+Finished job 252.
+170 of 294 steps (58%) done
+
+[Wed Jun 23 17:53:42 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr20.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr20.binarized
+    jobid: 137
+    wildcards: mark=H3K4me3, chrom=20
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr19.tab.
+[Wed Jun 23 17:53:43 2021]
+Finished job 136.
+171 of 294 steps (58%) done
+
+[Wed Jun 23 17:53:43 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr22.tab
+    jobid: 254
+    wildcards: mark=H3K4me3, chrom=22
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr20.tab.
+[Wed Jun 23 17:53:44 2021]
+Finished job 137.
+172 of 294 steps (59%) done
+
+[Wed Jun 23 17:53:44 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr21.tab
+    jobid: 253
+    wildcards: mark=H3K4me3, chrom=21
+
+[Wed Jun 23 17:53:46 2021]
+Finished job 254.
+173 of 294 steps (59%) done
+
+[Wed Jun 23 17:53:46 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr22.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr22.binarized
+    jobid: 139
+    wildcards: mark=H3K4me3, chrom=22
+
+[Wed Jun 23 17:53:46 2021]
+Finished job 253.
+174 of 294 steps (59%) done
+
+[Wed Jun 23 17:53:46 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr21.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr21.binarized
+    jobid: 138
+    wildcards: mark=H3K4me3, chrom=21
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr22.tab.
+[Wed Jun 23 17:53:47 2021]
+Finished job 139.
+175 of 294 steps (60%) done
+
+[Wed Jun 23 17:53:47 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr1.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr1.overlapSegment
+    jobid: 95
+    wildcards: mark=H3K9me3, chrom=1
+
+Removing temporary output file ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr21.tab.
+[Wed Jun 23 17:53:47 2021]
+Finished job 138.
+176 of 294 steps (60%) done
+
+[Wed Jun 23 17:53:47 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr1.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr1.overlapSegment
+    jobid: 26
+    wildcards: mark=H3K4me1, chrom=1
+
+[Wed Jun 23 17:53:58 2021]
+Finished job 95.
+177 of 294 steps (60%) done
+
+[Wed Jun 23 17:53:58 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr1.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr1.overlapSegment
+    jobid: 72
+    wildcards: mark=H3K27me3, chrom=1
+
+[Wed Jun 23 17:53:58 2021]
+Finished job 26.
+178 of 294 steps (61%) done
+
+[Wed Jun 23 17:53:58 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.overlapSegment
+    jobid: 3
+    wildcards: mark=H3K4me3, chrom=1
+
+[Wed Jun 23 17:54:08 2021]
+Finished job 3.
+179 of 294 steps (61%) done
+
+[Wed Jun 23 17:54:08 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr1.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr1.overlapSegment
+    jobid: 49
+    wildcards: mark=H3K36me3, chrom=1
+
+[Wed Jun 23 17:54:08 2021]
+Finished job 72.
+180 of 294 steps (61%) done
+
+[Wed Jun 23 17:54:08 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.overlapSegment
+    jobid: 96
+    wildcards: mark=H3K9me3, chrom=2
+
+[Wed Jun 23 17:54:18 2021]
+Finished job 96.
+181 of 294 steps (62%) done
+
+[Wed Jun 23 17:54:18 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr2.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr2.overlapSegment
+    jobid: 27
+    wildcards: mark=H3K4me1, chrom=2
+
+[Wed Jun 23 17:54:18 2021]
+Finished job 49.
+182 of 294 steps (62%) done
+
+[Wed Jun 23 17:54:18 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.overlapSegment
+    jobid: 73
+    wildcards: mark=H3K27me3, chrom=2
+
+[Wed Jun 23 17:54:28 2021]
+Finished job 27.
+183 of 294 steps (62%) done
+
+[Wed Jun 23 17:54:28 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr2.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr2.overlapSegment
+    jobid: 4
+    wildcards: mark=H3K4me3, chrom=2
+
+[Wed Jun 23 17:54:28 2021]
+Finished job 73.
+184 of 294 steps (63%) done
+
+[Wed Jun 23 17:54:28 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr2.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr2.overlapSegment
+    jobid: 50
+    wildcards: mark=H3K36me3, chrom=2
+
+[Wed Jun 23 17:54:37 2021]
+Finished job 4.
+185 of 294 steps (63%) done
+
+[Wed Jun 23 17:54:37 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.overlapSegment
+    jobid: 97
+    wildcards: mark=H3K9me3, chrom=3
+
+[Wed Jun 23 17:54:37 2021]
+Finished job 50.
+186 of 294 steps (63%) done
+
+[Wed Jun 23 17:54:37 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr3.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr3.overlapSegment
+    jobid: 28
+    wildcards: mark=H3K4me1, chrom=3
+
+[Wed Jun 23 17:54:45 2021]
+Finished job 28.
+187 of 294 steps (64%) done
+
+[Wed Jun 23 17:54:45 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr3.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr3.overlapSegment
+    jobid: 74
+    wildcards: mark=H3K27me3, chrom=3
+
+[Wed Jun 23 17:54:45 2021]
+Finished job 97.
+188 of 294 steps (64%) done
+
+[Wed Jun 23 17:54:45 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr3.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr3.overlapSegment
+    jobid: 5
+    wildcards: mark=H3K4me3, chrom=3
+
+[Wed Jun 23 17:54:54 2021]
+Finished job 74.
+189 of 294 steps (64%) done
+
+[Wed Jun 23 17:54:54 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr3.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr3.overlapSegment
+    jobid: 51
+    wildcards: mark=H3K36me3, chrom=3
+
+[Wed Jun 23 17:54:54 2021]
+Finished job 5.
+190 of 294 steps (65%) done
+
+[Wed Jun 23 17:54:54 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.overlapSegment
+    jobid: 98
+    wildcards: mark=H3K9me3, chrom=4
+
+[Wed Jun 23 17:55:02 2021]
+Finished job 51.
+191 of 294 steps (65%) done
+
+[Wed Jun 23 17:55:02 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr4.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr4.overlapSegment
+    jobid: 29
+    wildcards: mark=H3K4me1, chrom=4
+
+[Wed Jun 23 17:55:02 2021]
+Finished job 98.
+192 of 294 steps (65%) done
+
+[Wed Jun 23 17:55:02 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr4.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr4.overlapSegment
+    jobid: 75
+    wildcards: mark=H3K27me3, chrom=4
+
+[Wed Jun 23 17:55:09 2021]
+Finished job 29.
+193 of 294 steps (66%) done
+
+[Wed Jun 23 17:55:09 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr4.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr4.overlapSegment
+    jobid: 6
+    wildcards: mark=H3K4me3, chrom=4
+
+[Wed Jun 23 17:55:09 2021]
+Finished job 75.
+194 of 294 steps (66%) done
+
+[Wed Jun 23 17:55:09 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr4.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr4.overlapSegment
+    jobid: 52
+    wildcards: mark=H3K36me3, chrom=4
+
+[Wed Jun 23 17:55:17 2021]
+Finished job 6.
+195 of 294 steps (66%) done
+
+[Wed Jun 23 17:55:17 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr5.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr5.overlapSegment
+    jobid: 53
+    wildcards: mark=H3K36me3, chrom=5
+
+[Wed Jun 23 17:55:17 2021]
+Finished job 52.
+196 of 294 steps (67%) done
+
+[Wed Jun 23 17:55:17 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr5.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr5.overlapSegment
+    jobid: 99
+    wildcards: mark=H3K9me3, chrom=5
+
+[Wed Jun 23 17:55:24 2021]
+Finished job 53.
+197 of 294 steps (67%) done
+
+[Wed Jun 23 17:55:24 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr5.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr5.overlapSegment
+    jobid: 30
+    wildcards: mark=H3K4me1, chrom=5
+
+[Wed Jun 23 17:55:25 2021]
+Finished job 99.
+198 of 294 steps (67%) done
+
+[Wed Jun 23 17:55:25 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr5.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr5.overlapSegment
+    jobid: 76
+    wildcards: mark=H3K27me3, chrom=5
+
+[Wed Jun 23 17:55:32 2021]
+Finished job 30.
+199 of 294 steps (68%) done
+
+[Wed Jun 23 17:55:32 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr5.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr5.overlapSegment
+    jobid: 7
+    wildcards: mark=H3K4me3, chrom=5
+
+[Wed Jun 23 17:55:32 2021]
+Finished job 76.
+200 of 294 steps (68%) done
+
+[Wed Jun 23 17:55:32 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr6.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr6.overlapSegment
+    jobid: 8
+    wildcards: mark=H3K4me3, chrom=6
+
+[Wed Jun 23 17:55:39 2021]
+Finished job 7.
+201 of 294 steps (68%) done
+
+[Wed Jun 23 17:55:39 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr6.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr6.overlapSegment
+    jobid: 54
+    wildcards: mark=H3K36me3, chrom=6
+
+[Wed Jun 23 17:55:40 2021]
+Finished job 8.
+202 of 294 steps (69%) done
+
+[Wed Jun 23 17:55:40 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr6.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr6.overlapSegment
+    jobid: 100
+    wildcards: mark=H3K9me3, chrom=6
+
+[Wed Jun 23 17:55:46 2021]
+Finished job 54.
+203 of 294 steps (69%) done
+
+[Wed Jun 23 17:55:46 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr6.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr6.overlapSegment
+    jobid: 31
+    wildcards: mark=H3K4me1, chrom=6
+
+[Wed Jun 23 17:55:47 2021]
+Finished job 100.
+204 of 294 steps (69%) done
+
+[Wed Jun 23 17:55:47 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr6.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr6.overlapSegment
+    jobid: 77
+    wildcards: mark=H3K27me3, chrom=6
+
+[Wed Jun 23 17:55:53 2021]
+Finished job 31.
+205 of 294 steps (70%) done
+
+[Wed Jun 23 17:55:53 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr7.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr7.overlapSegment
+    jobid: 9
+    wildcards: mark=H3K4me3, chrom=7
+
+[Wed Jun 23 17:55:54 2021]
+Finished job 77.
+206 of 294 steps (70%) done
+
+[Wed Jun 23 17:55:54 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr7.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr7.overlapSegment
+    jobid: 55
+    wildcards: mark=H3K36me3, chrom=7
+
+[Wed Jun 23 17:56:00 2021]
+Finished job 9.
+207 of 294 steps (70%) done
+
+[Wed Jun 23 17:56:00 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr7.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr7.overlapSegment
+    jobid: 101
+    wildcards: mark=H3K9me3, chrom=7
+
+[Wed Jun 23 17:56:01 2021]
+Finished job 55.
+208 of 294 steps (71%) done
+
+[Wed Jun 23 17:56:01 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr7.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr7.overlapSegment
+    jobid: 32
+    wildcards: mark=H3K4me1, chrom=7
+
+[Wed Jun 23 17:56:07 2021]
+Finished job 101.
+209 of 294 steps (71%) done
+
+[Wed Jun 23 17:56:07 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr7.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr7.overlapSegment
+    jobid: 78
+    wildcards: mark=H3K27me3, chrom=7
+
+[Wed Jun 23 17:56:07 2021]
+Finished job 32.
+210 of 294 steps (71%) done
+
+[Wed Jun 23 17:56:07 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chrX.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chrX.overlapSegment
+    jobid: 117
+    wildcards: mark=H3K9me3, chrom=X
+
+[Wed Jun 23 17:56:13 2021]
+Finished job 78.
+211 of 294 steps (72%) done
+
+[Wed Jun 23 17:56:13 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chrX.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chrX.overlapSegment
+    jobid: 94
+    wildcards: mark=H3K27me3, chrom=X
+
+[Wed Jun 23 17:56:14 2021]
+Finished job 117.
+212 of 294 steps (72%) done
+
+[Wed Jun 23 17:56:14 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chrX.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chrX.overlapSegment
+    jobid: 25
+    wildcards: mark=H3K4me3, chrom=X
+
+[Wed Jun 23 17:56:20 2021]
+Finished job 94.
+213 of 294 steps (72%) done
+
+[Wed Jun 23 17:56:20 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chrX.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chrX.overlapSegment
+    jobid: 71
+    wildcards: mark=H3K36me3, chrom=X
+
+[Wed Jun 23 17:56:20 2021]
+Finished job 25.
+214 of 294 steps (73%) done
+
+[Wed Jun 23 17:56:20 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chrX.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chrX.overlapSegment
+    jobid: 48
+    wildcards: mark=H3K4me1, chrom=X
+
+[Wed Jun 23 17:56:26 2021]
+Finished job 71.
+215 of 294 steps (73%) done
+
+[Wed Jun 23 17:56:26 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr8.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr8.overlapSegment
+    jobid: 10
+    wildcards: mark=H3K4me3, chrom=8
+
+[Wed Jun 23 17:56:27 2021]
+Finished job 48.
+216 of 294 steps (73%) done
+
+[Wed Jun 23 17:56:27 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr8.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr8.overlapSegment
+    jobid: 56
+    wildcards: mark=H3K36me3, chrom=8
+
+[Wed Jun 23 17:56:32 2021]
+Finished job 10.
+217 of 294 steps (74%) done
+
+[Wed Jun 23 17:56:32 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr8.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr8.overlapSegment
+    jobid: 102
+    wildcards: mark=H3K9me3, chrom=8
+
+[Wed Jun 23 17:56:33 2021]
+Finished job 56.
+218 of 294 steps (74%) done
+
+[Wed Jun 23 17:56:33 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr8.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr8.overlapSegment
+    jobid: 33
+    wildcards: mark=H3K4me1, chrom=8
+
+[Wed Jun 23 17:56:38 2021]
+Finished job 102.
+219 of 294 steps (74%) done
+
+[Wed Jun 23 17:56:38 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr8.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr8.overlapSegment
+    jobid: 79
+    wildcards: mark=H3K27me3, chrom=8
+
+[Wed Jun 23 17:56:39 2021]
+Finished job 33.
+220 of 294 steps (75%) done
+
+[Wed Jun 23 17:56:39 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr9.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr9.overlapSegment
+    jobid: 11
+    wildcards: mark=H3K4me3, chrom=9
+
+[Wed Jun 23 17:56:44 2021]
+Finished job 79.
+221 of 294 steps (75%) done
+
+[Wed Jun 23 17:56:44 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr9.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr9.overlapSegment
+    jobid: 57
+    wildcards: mark=H3K36me3, chrom=9
+
+[Wed Jun 23 17:56:45 2021]
+Finished job 11.
+222 of 294 steps (76%) done
+
+[Wed Jun 23 17:56:45 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr9.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr9.overlapSegment
+    jobid: 103
+    wildcards: mark=H3K9me3, chrom=9
+
+[Wed Jun 23 17:56:50 2021]
+Finished job 57.
+223 of 294 steps (76%) done
+
+[Wed Jun 23 17:56:50 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr9.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr9.overlapSegment
+    jobid: 34
+    wildcards: mark=H3K4me1, chrom=9
+
+[Wed Jun 23 17:56:51 2021]
+Finished job 103.
+224 of 294 steps (76%) done
+
+[Wed Jun 23 17:56:51 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr9.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr9.overlapSegment
+    jobid: 80
+    wildcards: mark=H3K27me3, chrom=9
+
+[Wed Jun 23 17:56:56 2021]
+Finished job 34.
+225 of 294 steps (77%) done
+
+[Wed Jun 23 17:56:56 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr10.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr10.overlapSegment
+    jobid: 12
+    wildcards: mark=H3K4me3, chrom=10
+
+[Wed Jun 23 17:56:57 2021]
+Finished job 80.
+226 of 294 steps (77%) done
+
+[Wed Jun 23 17:56:57 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr10.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr10.overlapSegment
+    jobid: 58
+    wildcards: mark=H3K36me3, chrom=10
+
+[Wed Jun 23 17:57:02 2021]
+Finished job 12.
+227 of 294 steps (77%) done
+
+[Wed Jun 23 17:57:02 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr10.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr10.overlapSegment
+    jobid: 104
+    wildcards: mark=H3K9me3, chrom=10
+
+[Wed Jun 23 17:57:03 2021]
+Finished job 58.
+228 of 294 steps (78%) done
+
+[Wed Jun 23 17:57:03 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr10.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr10.overlapSegment
+    jobid: 35
+    wildcards: mark=H3K4me1, chrom=10
+
+[Wed Jun 23 17:57:08 2021]
+Finished job 104.
+229 of 294 steps (78%) done
+
+[Wed Jun 23 17:57:08 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr10.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr10.overlapSegment
+    jobid: 81
+    wildcards: mark=H3K27me3, chrom=10
+
+[Wed Jun 23 17:57:09 2021]
+Finished job 35.
+230 of 294 steps (78%) done
+
+[Wed Jun 23 17:57:09 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr11.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr11.overlapSegment
+    jobid: 13
+    wildcards: mark=H3K4me3, chrom=11
+
+[Wed Jun 23 17:57:14 2021]
+Finished job 81.
+231 of 294 steps (79%) done
+
+[Wed Jun 23 17:57:14 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr11.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr11.overlapSegment
+    jobid: 59
+    wildcards: mark=H3K36me3, chrom=11
+
+[Wed Jun 23 17:57:15 2021]
+Finished job 13.
+232 of 294 steps (79%) done
+
+[Wed Jun 23 17:57:15 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr11.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr11.overlapSegment
+    jobid: 105
+    wildcards: mark=H3K9me3, chrom=11
+
+[Wed Jun 23 17:57:20 2021]
+Finished job 59.
+233 of 294 steps (79%) done
+
+[Wed Jun 23 17:57:20 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr11.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr11.overlapSegment
+    jobid: 36
+    wildcards: mark=H3K4me1, chrom=11
+
+[Wed Jun 23 17:57:21 2021]
+Finished job 105.
+234 of 294 steps (80%) done
+
+[Wed Jun 23 17:57:21 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr11.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr11.overlapSegment
+    jobid: 82
+    wildcards: mark=H3K27me3, chrom=11
+
+[Wed Jun 23 17:57:26 2021]
+Finished job 36.
+235 of 294 steps (80%) done
+
+[Wed Jun 23 17:57:26 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr12.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr12.overlapSegment
+    jobid: 83
+    wildcards: mark=H3K27me3, chrom=12
+
+[Wed Jun 23 17:57:27 2021]
+Finished job 82.
+236 of 294 steps (80%) done
+
+[Wed Jun 23 17:57:27 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr12.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr12.overlapSegment
+    jobid: 14
+    wildcards: mark=H3K4me3, chrom=12
+
+[Wed Jun 23 17:57:32 2021]
+Finished job 83.
+237 of 294 steps (81%) done
+
+[Wed Jun 23 17:57:32 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr12.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr12.overlapSegment
+    jobid: 60
+    wildcards: mark=H3K36me3, chrom=12
+
+[Wed Jun 23 17:57:33 2021]
+Finished job 14.
+238 of 294 steps (81%) done
+
+[Wed Jun 23 17:57:33 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr12.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr12.overlapSegment
+    jobid: 106
+    wildcards: mark=H3K9me3, chrom=12
+
+[Wed Jun 23 17:57:38 2021]
+Finished job 60.
+239 of 294 steps (81%) done
+
+[Wed Jun 23 17:57:38 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr12.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr12.overlapSegment
+    jobid: 37
+    wildcards: mark=H3K4me1, chrom=12
+
+[Wed Jun 23 17:57:39 2021]
+Finished job 106.
+240 of 294 steps (82%) done
+
+[Wed Jun 23 17:57:39 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr13.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr13.overlapSegment
+    jobid: 84
+    wildcards: mark=H3K27me3, chrom=13
+
+[Wed Jun 23 17:57:43 2021]
+Finished job 37.
+241 of 294 steps (82%) done
+
+[Wed Jun 23 17:57:43 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr13.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr13.overlapSegment
+    jobid: 15
+    wildcards: mark=H3K4me3, chrom=13
+
+[Wed Jun 23 17:57:44 2021]
+Finished job 84.
+242 of 294 steps (82%) done
+
+[Wed Jun 23 17:57:44 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr13.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr13.overlapSegment
+    jobid: 38
+    wildcards: mark=H3K4me1, chrom=13
+
+[Wed Jun 23 17:57:48 2021]
+Finished job 15.
+243 of 294 steps (83%) done
+
+[Wed Jun 23 17:57:48 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr13.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr13.overlapSegment
+    jobid: 61
+    wildcards: mark=H3K36me3, chrom=13
+
+[Wed Jun 23 17:57:51 2021]
+Finished job 61.
+244 of 294 steps (83%) done
+
+[Wed Jun 23 17:57:51 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr13.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr13.overlapSegment
+    jobid: 107
+    wildcards: mark=H3K9me3, chrom=13
+
+[Wed Jun 23 17:57:52 2021]
+Finished job 38.
+245 of 294 steps (83%) done
+
+[Wed Jun 23 17:57:52 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr14.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr14.overlapSegment
+    jobid: 85
+    wildcards: mark=H3K27me3, chrom=14
+
+[Wed Jun 23 17:57:55 2021]
+Finished job 107.
+246 of 294 steps (84%) done
+
+[Wed Jun 23 17:57:55 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr14.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr14.overlapSegment
+    jobid: 16
+    wildcards: mark=H3K4me3, chrom=14
+
+[Wed Jun 23 17:57:56 2021]
+Finished job 85.
+247 of 294 steps (84%) done
+
+[Wed Jun 23 17:57:56 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr14.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr14.overlapSegment
+    jobid: 39
+    wildcards: mark=H3K4me1, chrom=14
+
+[Wed Jun 23 17:58:00 2021]
+Finished job 16.
+248 of 294 steps (84%) done
+
+[Wed Jun 23 17:58:00 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr14.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr14.overlapSegment
+    jobid: 62
+    wildcards: mark=H3K36me3, chrom=14
+
+[Wed Jun 23 17:58:01 2021]
+Finished job 39.
+249 of 294 steps (85%) done
+
+[Wed Jun 23 17:58:01 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr14.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr14.overlapSegment
+    jobid: 108
+    wildcards: mark=H3K9me3, chrom=14
+
+[Wed Jun 23 17:58:05 2021]
+Finished job 62.
+250 of 294 steps (85%) done
+
+[Wed Jun 23 17:58:05 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr15.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr15.overlapSegment
+    jobid: 86
+    wildcards: mark=H3K27me3, chrom=15
+
+[Wed Jun 23 17:58:06 2021]
+Finished job 108.
+251 of 294 steps (85%) done
+
+[Wed Jun 23 17:58:06 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr15.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr15.overlapSegment
+    jobid: 17
+    wildcards: mark=H3K4me3, chrom=15
+
+[Wed Jun 23 17:58:10 2021]
+Finished job 86.
+252 of 294 steps (86%) done
+
+[Wed Jun 23 17:58:10 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr15.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr15.overlapSegment
+    jobid: 40
+    wildcards: mark=H3K4me1, chrom=15
+
+[Wed Jun 23 17:58:10 2021]
+Finished job 17.
+253 of 294 steps (86%) done
+
+[Wed Jun 23 17:58:10 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr15.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr15.overlapSegment
+    jobid: 63
+    wildcards: mark=H3K36me3, chrom=15
+
+[Wed Jun 23 17:58:14 2021]
+Finished job 40.
+254 of 294 steps (86%) done
+
+[Wed Jun 23 17:58:14 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr15.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr15.overlapSegment
+    jobid: 109
+    wildcards: mark=H3K9me3, chrom=15
+
+[Wed Jun 23 17:58:15 2021]
+Finished job 63.
+255 of 294 steps (87%) done
+
+[Wed Jun 23 17:58:15 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr16.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr16.overlapSegment
+    jobid: 87
+    wildcards: mark=H3K27me3, chrom=16
+
+[Wed Jun 23 17:58:19 2021]
+Finished job 87.
+256 of 294 steps (87%) done
+
+[Wed Jun 23 17:58:19 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr16.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr16.overlapSegment
+    jobid: 18
+    wildcards: mark=H3K4me3, chrom=16
+
+[Wed Jun 23 17:58:19 2021]
+Finished job 109.
+257 of 294 steps (87%) done
+
+[Wed Jun 23 17:58:19 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr16.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr16.overlapSegment
+    jobid: 41
+    wildcards: mark=H3K4me1, chrom=16
+
+[Wed Jun 23 17:58:23 2021]
+Finished job 41.
+258 of 294 steps (88%) done
+
+[Wed Jun 23 17:58:23 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr16.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr16.overlapSegment
+    jobid: 64
+    wildcards: mark=H3K36me3, chrom=16
+
+[Wed Jun 23 17:58:23 2021]
+Finished job 18.
+259 of 294 steps (88%) done
+
+[Wed Jun 23 17:58:23 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr16.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr16.overlapSegment
+    jobid: 110
+    wildcards: mark=H3K9me3, chrom=16
+
+[Wed Jun 23 17:58:27 2021]
+Finished job 64.
+260 of 294 steps (88%) done
+
+[Wed Jun 23 17:58:27 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr17.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr17.overlapSegment
+    jobid: 88
+    wildcards: mark=H3K27me3, chrom=17
+
+[Wed Jun 23 17:58:27 2021]
+Finished job 110.
+261 of 294 steps (89%) done
+
+[Wed Jun 23 17:58:27 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr17.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr17.overlapSegment
+    jobid: 19
+    wildcards: mark=H3K4me3, chrom=17
+
+[Wed Jun 23 17:58:31 2021]
+Finished job 88.
+262 of 294 steps (89%) done
+
+[Wed Jun 23 17:58:31 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr17.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr17.overlapSegment
+    jobid: 42
+    wildcards: mark=H3K4me1, chrom=17
+
+[Wed Jun 23 17:58:31 2021]
+Finished job 19.
+263 of 294 steps (89%) done
+
+[Wed Jun 23 17:58:31 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr17.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr17.overlapSegment
+    jobid: 65
+    wildcards: mark=H3K36me3, chrom=17
+
+[Wed Jun 23 17:58:35 2021]
+Finished job 42.
+264 of 294 steps (90%) done
+
+[Wed Jun 23 17:58:35 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr17.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr17.overlapSegment
+    jobid: 111
+    wildcards: mark=H3K9me3, chrom=17
+
+[Wed Jun 23 17:58:35 2021]
+Finished job 65.
+265 of 294 steps (90%) done
+
+[Wed Jun 23 17:58:36 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr18.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr18.overlapSegment
+    jobid: 89
+    wildcards: mark=H3K27me3, chrom=18
+
+[Wed Jun 23 17:58:39 2021]
+Finished job 89.
+266 of 294 steps (90%) done
+
+[Wed Jun 23 17:58:39 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr18.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr18.overlapSegment
+    jobid: 20
+    wildcards: mark=H3K4me3, chrom=18
+
+[Wed Jun 23 17:58:39 2021]
+Finished job 111.
+267 of 294 steps (91%) done
+
+[Wed Jun 23 17:58:39 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr18.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr18.overlapSegment
+    jobid: 43
+    wildcards: mark=H3K4me1, chrom=18
+
+[Wed Jun 23 17:58:43 2021]
+Finished job 43.
+268 of 294 steps (91%) done
+
+[Wed Jun 23 17:58:43 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr18.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr18.overlapSegment
+    jobid: 66
+    wildcards: mark=H3K36me3, chrom=18
+
+[Wed Jun 23 17:58:43 2021]
+Finished job 20.
+269 of 294 steps (91%) done
+
+[Wed Jun 23 17:58:43 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr18.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr18.overlapSegment
+    jobid: 112
+    wildcards: mark=H3K9me3, chrom=18
+
+[Wed Jun 23 17:58:47 2021]
+Finished job 66.
+270 of 294 steps (92%) done
+
+[Wed Jun 23 17:58:47 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr20.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr20.overlapSegment
+    jobid: 114
+    wildcards: mark=H3K9me3, chrom=20
+
+[Wed Jun 23 17:58:47 2021]
+Finished job 112.
+271 of 294 steps (92%) done
+
+[Wed Jun 23 17:58:47 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr20.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr20.overlapSegment
+    jobid: 91
+    wildcards: mark=H3K27me3, chrom=20
+
+[Wed Jun 23 17:58:50 2021]
+Finished job 114.
+272 of 294 steps (93%) done
+
+[Wed Jun 23 17:58:50 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr20.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr20.overlapSegment
+    jobid: 22
+    wildcards: mark=H3K4me3, chrom=20
+
+[Wed Jun 23 17:58:50 2021]
+Finished job 91.
+273 of 294 steps (93%) done
+
+[Wed Jun 23 17:58:50 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr20.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr20.overlapSegment
+    jobid: 68
+    wildcards: mark=H3K36me3, chrom=20
+
+[Wed Jun 23 17:58:54 2021]
+Finished job 68.
+274 of 294 steps (93%) done
+
+[Wed Jun 23 17:58:54 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr20.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr20.overlapSegment
+    jobid: 45
+    wildcards: mark=H3K4me1, chrom=20
+
+[Wed Jun 23 17:58:54 2021]
+Finished job 22.
+275 of 294 steps (94%) done
+
+[Wed Jun 23 17:58:54 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr19.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr19.overlapSegment
+    jobid: 113
+    wildcards: mark=H3K9me3, chrom=19
+
+[Wed Jun 23 17:58:57 2021]
+Finished job 113.
+276 of 294 steps (94%) done
+
+[Wed Jun 23 17:58:57 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr19.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr19.overlapSegment
+    jobid: 90
+    wildcards: mark=H3K27me3, chrom=19
+
+[Wed Jun 23 17:58:57 2021]
+Finished job 45.
+277 of 294 steps (94%) done
+
+[Wed Jun 23 17:58:57 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr19.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr19.overlapSegment
+    jobid: 21
+    wildcards: mark=H3K4me3, chrom=19
+
+[Wed Jun 23 17:59:00 2021]
+Finished job 90.
+278 of 294 steps (95%) done
+
+[Wed Jun 23 17:59:00 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr19.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr19.overlapSegment
+    jobid: 44
+    wildcards: mark=H3K4me1, chrom=19
+
+[Wed Jun 23 17:59:00 2021]
+Finished job 21.
+279 of 294 steps (95%) done
+
+[Wed Jun 23 17:59:00 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr19.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr19.overlapSegment
+    jobid: 67
+    wildcards: mark=H3K36me3, chrom=19
+
+[Wed Jun 23 17:59:03 2021]
+Finished job 44.
+280 of 294 steps (95%) done
+
+[Wed Jun 23 17:59:03 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr22.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr22.overlapSegment
+    jobid: 116
+    wildcards: mark=H3K9me3, chrom=22
+
+[Wed Jun 23 17:59:03 2021]
+Finished job 67.
+281 of 294 steps (96%) done
+
+[Wed Jun 23 17:59:03 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr22.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr22.overlapSegment
+    jobid: 93
+    wildcards: mark=H3K27me3, chrom=22
+
+[Wed Jun 23 17:59:06 2021]
+Finished job 116.
+282 of 294 steps (96%) done
+
+[Wed Jun 23 17:59:06 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr22.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr22.overlapSegment
+    jobid: 24
+    wildcards: mark=H3K4me3, chrom=22
+
+[Wed Jun 23 17:59:06 2021]
+Finished job 93.
+283 of 294 steps (96%) done
+
+[Wed Jun 23 17:59:06 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr22.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr22.overlapSegment
+    jobid: 70
+    wildcards: mark=H3K36me3, chrom=22
+
+[Wed Jun 23 17:59:09 2021]
+Finished job 70.
+284 of 294 steps (97%) done
+
+[Wed Jun 23 17:59:09 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr22.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr22.overlapSegment
+    jobid: 47
+    wildcards: mark=H3K4me1, chrom=22
+
+[Wed Jun 23 17:59:09 2021]
+Finished job 24.
+285 of 294 steps (97%) done
+
+[Wed Jun 23 17:59:09 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr21.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr21.overlapSegment
+    jobid: 115
+    wildcards: mark=H3K9me3, chrom=21
+
+[Wed Jun 23 17:59:12 2021]
+Finished job 115.
+286 of 294 steps (97%) done
+
+[Wed Jun 23 17:59:12 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr21.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr21.overlapSegment
+    jobid: 92
+    wildcards: mark=H3K27me3, chrom=21
+
+[Wed Jun 23 17:59:12 2021]
+Finished job 47.
+287 of 294 steps (98%) done
+
+[Wed Jun 23 17:59:12 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr21.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr21.overlapSegment
+    jobid: 23
+    wildcards: mark=H3K4me3, chrom=21
+
+[Wed Jun 23 17:59:15 2021]
+Finished job 92.
+288 of 294 steps (98%) done
+
+[Wed Jun 23 17:59:15 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr21.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr21.overlapSegment
+    jobid: 69
+    wildcards: mark=H3K36me3, chrom=21
+
+[Wed Jun 23 17:59:15 2021]
+Finished job 23.
+289 of 294 steps (98%) done
+
+[Wed Jun 23 17:59:15 2021]
+rule overlap_mark_binarized_and_roadmap_segment:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr21.binarized, ../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr21.overlapSegment
+    jobid: 46
+    wildcards: mark=H3K4me1, chrom=21
+
+[Wed Jun 23 17:59:17 2021]
+Finished job 69.
+290 of 294 steps (99%) done
+[Wed Jun 23 17:59:17 2021]
+Finished job 46.
+291 of 294 steps (99%) done
+
+[Wed Jun 23 17:59:17 2021]
+rule calculate_mark_frequency_per_state:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr2.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr3.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr4.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr5.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr6.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr7.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr8.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr9.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr10.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr11.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr12.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr13.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr14.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr15.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr16.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr17.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr18.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr19.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr20.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr21.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr22.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chrX.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr1.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr2.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr3.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr4.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr5.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr6.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr7.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr8.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr9.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr10.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr11.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr12.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr13.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr14.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr15.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr16.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr17.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr18.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr19.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr20.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr21.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr22.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chrX.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr1.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr2.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr3.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr4.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr5.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr6.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr7.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr8.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr9.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr10.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr11.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr12.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr13.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr14.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr15.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr16.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr17.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr18.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr19.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr20.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr21.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr22.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chrX.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr1.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr3.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr4.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr5.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr6.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr7.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr8.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr9.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr10.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr11.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr12.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr13.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr14.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr15.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr16.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr17.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr18.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr19.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr20.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr21.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr22.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chrX.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr1.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr5.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr6.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr7.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr8.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr9.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr10.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr11.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr12.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr13.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr14.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr15.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr16.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr17.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr18.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr19.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr20.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr21.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr22.overlapSegment, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chrX.overlapSegment
+    output: ../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_gw.txt
+    jobid: 2
+
+[Wed Jun 23 18:00:08 2021]
+Finished job 2.
+292 of 294 steps (99%) done
+
+[Wed Jun 23 18:00:08 2021]
+rule plot_heatmap_emission:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_gw.txt
+    output: ../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_gw.png
+    jobid: 1
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-23T174725.089804.snakemake.log

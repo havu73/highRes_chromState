@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	5	binarize_one_bigwigAverageOverBed_output
+	6
+
+[Tue Jun 22 10:37:39 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.binarized
+    jobid: 1
+    wildcards: mark=H3K4me3, chrom=1
+
+[Tue Jun 22 10:37:39 2021]
+Error in rule binarize_one_bigwigAverageOverBed_output:
+    jobid: 1
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.binarized
+    shell:
+        
+		cat ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.tab | awk -F'	' '$4 < 2 {printf "0"; } $4>=2 {printf "1";}' > 
+		../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.binarized
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-22T103738.507608.snakemake.log

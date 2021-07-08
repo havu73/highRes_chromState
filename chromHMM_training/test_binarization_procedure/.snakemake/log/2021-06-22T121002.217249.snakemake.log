@@ -1,0 +1,26 @@
+Building DAG of jobs...
+MissingInputException in line 14 of /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/Snakefile:
+Missing input files for rule all:
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr2.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr4.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr12.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chrX.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr17.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr6.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr8.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr5.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr11.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr10.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr20.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr14.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr15.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chrY.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr3.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr21.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr22.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr9.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr16.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr19.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr18.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr13.txt
+../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_chr7.txt

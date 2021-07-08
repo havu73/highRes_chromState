@@ -1,0 +1,3 @@
+WildcardError in line 80 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/learn_model.snakefile:
+No values given for wildcard 'bin'.
+  File "/gstore/home/vuh6/source/chromHMM_training/train_big_model/learn_model.snakefile", line 80, in <module>

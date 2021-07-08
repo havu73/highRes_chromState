@@ -1,0 +1,1013 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	299	bigwigAverageOverBed
+	23	binarize_multiple_bigwigAverageOverBed_output
+	23	gzip_all_files
+	346
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr22.tab
+    jobid: 321
+    wildcards: mark=H2A.Z, chrom=22
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr1.tab
+    jobid: 59
+    wildcards: mark=H4K20me1, chrom=1
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr2.tab
+    jobid: 72
+    wildcards: mark=H4K20me1, chrom=2
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr3.tab
+    jobid: 85
+    wildcards: mark=H4K20me1, chrom=3
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr4.tab
+    jobid: 98
+    wildcards: mark=H4K20me1, chrom=4
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr5.tab
+    jobid: 111
+    wildcards: mark=H4K20me1, chrom=5
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr6.tab
+    jobid: 124
+    wildcards: mark=H4K20me1, chrom=6
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr7.tab
+    jobid: 137
+    wildcards: mark=H4K20me1, chrom=7
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr14.tab
+    jobid: 228
+    wildcards: mark=H4K20me1, chrom=14
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr16.tab
+    jobid: 254
+    wildcards: mark=H4K20me1, chrom=16
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr18.tab
+    jobid: 280
+    wildcards: mark=H4K20me1, chrom=18
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr7.tab
+    jobid: 125
+    wildcards: mark=DNase, chrom=7
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr6.tab
+    jobid: 112
+    wildcards: mark=DNase, chrom=6
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr2.tab
+    jobid: 60
+    wildcards: mark=DNase, chrom=2
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr3.tab
+    jobid: 73
+    wildcards: mark=DNase, chrom=3
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr4.tab
+    jobid: 86
+    wildcards: mark=DNase, chrom=4
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr5.tab
+    jobid: 99
+    wildcards: mark=DNase, chrom=5
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr8.tab
+    jobid: 138
+    wildcards: mark=DNase, chrom=8
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr15.tab
+    jobid: 229
+    wildcards: mark=DNase, chrom=15
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr17.tab
+    jobid: 255
+    wildcards: mark=DNase, chrom=17
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr19.tab
+    jobid: 281
+    wildcards: mark=DNase, chrom=19
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr6.tab
+    jobid: 113
+    wildcards: mark=H2A.Z, chrom=6
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr2.tab
+    jobid: 61
+    wildcards: mark=H2A.Z, chrom=2
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr3.tab
+    jobid: 74
+    wildcards: mark=H2A.Z, chrom=3
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr4.tab
+    jobid: 87
+    wildcards: mark=H2A.Z, chrom=4
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr5.tab
+    jobid: 100
+    wildcards: mark=H2A.Z, chrom=5
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr7.tab
+    jobid: 126
+    wildcards: mark=H2A.Z, chrom=7
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr8.tab
+    jobid: 139
+    wildcards: mark=H2A.Z, chrom=8
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr15.tab
+    jobid: 230
+    wildcards: mark=H2A.Z, chrom=15
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr17.tab
+    jobid: 256
+    wildcards: mark=H2A.Z, chrom=17
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr19.tab
+    jobid: 282
+    wildcards: mark=H2A.Z, chrom=19
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chrX.tab
+    jobid: 334
+    wildcards: mark=H2A.Z, chrom=X
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chrX.tab
+    jobid: 345
+    wildcards: mark=H4K20me1, chrom=X
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr21.tab
+    jobid: 317
+    wildcards: mark=H3K9me1, chrom=21
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr21.tab
+    jobid: 319
+    wildcards: mark=H4K20me1, chrom=21
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr2.tab
+    jobid: 70
+    wildcards: mark=H3K9me1, chrom=2
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr3.tab
+    jobid: 83
+    wildcards: mark=H3K9me1, chrom=3
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr4.tab
+    jobid: 96
+    wildcards: mark=H3K9me1, chrom=4
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr5.tab
+    jobid: 109
+    wildcards: mark=H3K9me1, chrom=5
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr6.tab
+    jobid: 122
+    wildcards: mark=H3K9me1, chrom=6
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr7.tab
+    jobid: 135
+    wildcards: mark=H3K9me1, chrom=7
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr8.tab
+    jobid: 148
+    wildcards: mark=H3K9me1, chrom=8
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr15.tab
+    jobid: 239
+    wildcards: mark=H3K9me1, chrom=15
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr17.tab
+    jobid: 265
+    wildcards: mark=H3K9me1, chrom=17
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr19.tab
+    jobid: 291
+    wildcards: mark=H3K9me1, chrom=19
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.tab
+    jobid: 71
+    wildcards: mark=H3K9me3, chrom=2
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.tab
+    jobid: 84
+    wildcards: mark=H3K9me3, chrom=3
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.tab
+    jobid: 97
+    wildcards: mark=H3K9me3, chrom=4
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr5.tab
+    jobid: 110
+    wildcards: mark=H3K9me3, chrom=5
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr6.tab
+    jobid: 123
+    wildcards: mark=H3K9me3, chrom=6
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr7.tab
+    jobid: 136
+    wildcards: mark=H3K9me3, chrom=7
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr22.tab
+    jobid: 330
+    wildcards: mark=H3K9me1, chrom=22
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr22.tab
+    jobid: 332
+    wildcards: mark=H4K20me1, chrom=22
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr8.tab
+    jobid: 150
+    wildcards: mark=H4K20me1, chrom=8
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr9.tab
+    jobid: 163
+    wildcards: mark=H4K20me1, chrom=9
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr10.tab
+    jobid: 176
+    wildcards: mark=H4K20me1, chrom=10
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr11.tab
+    jobid: 189
+    wildcards: mark=H4K20me1, chrom=11
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr12.tab
+    jobid: 202
+    wildcards: mark=H4K20me1, chrom=12
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr13.tab
+    jobid: 215
+    wildcards: mark=H4K20me1, chrom=13
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr15.tab
+    jobid: 241
+    wildcards: mark=H4K20me1, chrom=15
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr17.tab
+    jobid: 267
+    wildcards: mark=H4K20me1, chrom=17
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr19.tab
+    jobid: 293
+    wildcards: mark=H4K20me1, chrom=19
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr20.tab
+    jobid: 306
+    wildcards: mark=H4K20me1, chrom=20
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr1.tab
+    jobid: 47
+    wildcards: mark=DNase, chrom=1
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr9.tab
+    jobid: 151
+    wildcards: mark=DNase, chrom=9
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr10.tab
+    jobid: 164
+    wildcards: mark=DNase, chrom=10
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr11.tab
+    jobid: 177
+    wildcards: mark=DNase, chrom=11
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr12.tab
+    jobid: 190
+    wildcards: mark=DNase, chrom=12
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr13.tab
+    jobid: 203
+    wildcards: mark=DNase, chrom=13
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr14.tab
+    jobid: 216
+    wildcards: mark=DNase, chrom=14
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr16.tab
+    jobid: 242
+    wildcards: mark=DNase, chrom=16
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr18.tab
+    jobid: 268
+    wildcards: mark=DNase, chrom=18
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr20.tab
+    jobid: 294
+    wildcards: mark=DNase, chrom=20
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr1.tab
+    jobid: 48
+    wildcards: mark=H2A.Z, chrom=1
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr9.tab
+    jobid: 152
+    wildcards: mark=H2A.Z, chrom=9
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr10.tab
+    jobid: 165
+    wildcards: mark=H2A.Z, chrom=10
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr11.tab
+    jobid: 178
+    wildcards: mark=H2A.Z, chrom=11
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr12.tab
+    jobid: 191
+    wildcards: mark=H2A.Z, chrom=12
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr13.tab
+    jobid: 204
+    wildcards: mark=H2A.Z, chrom=13
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr14.tab
+    jobid: 217
+    wildcards: mark=H2A.Z, chrom=14
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr16.tab
+    jobid: 243
+    wildcards: mark=H2A.Z, chrom=16
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr18.tab
+    jobid: 269
+    wildcards: mark=H2A.Z, chrom=18
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr20.tab
+    jobid: 295
+    wildcards: mark=H2A.Z, chrom=20
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr21.tab
+    jobid: 307
+    wildcards: mark=DNase, chrom=21
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chrX.tab
+    jobid: 344
+    wildcards: mark=H3K9me3, chrom=X
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr21.tab
+    jobid: 308
+    wildcards: mark=H2A.Z, chrom=21
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr22.tab
+    jobid: 320
+    wildcards: mark=DNase, chrom=22
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:05 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chrX.tab
+    jobid: 343
+    wildcards: mark=H3K9me1, chrom=X
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr1.tab
+    jobid: 57
+    wildcards: mark=H3K9me1, chrom=1
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr9.tab
+    jobid: 161
+    wildcards: mark=H3K9me1, chrom=9
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr10.tab
+    jobid: 174
+    wildcards: mark=H3K9me1, chrom=10
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr11.tab
+    jobid: 187
+    wildcards: mark=H3K9me1, chrom=11
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr12.tab
+    jobid: 200
+    wildcards: mark=H3K9me1, chrom=12
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr13.tab
+    jobid: 213
+    wildcards: mark=H3K9me1, chrom=13
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr14.tab
+    jobid: 226
+    wildcards: mark=H3K9me1, chrom=14
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr16.tab
+    jobid: 252
+    wildcards: mark=H3K9me1, chrom=16
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr18.tab
+    jobid: 278
+    wildcards: mark=H3K9me1, chrom=18
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr20.tab
+    jobid: 304
+    wildcards: mark=H3K9me1, chrom=20
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr1.tab
+    jobid: 58
+    wildcards: mark=H3K9me3, chrom=1
+
+Error submitting jobscript (exit code 255):
+
+
+[Wed Jun 30 13:08:06 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chrX.tab
+    jobid: 333
+    wildcards: mark=DNase, chrom=X
+
+Error submitting jobscript (exit code 255):
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-30T130801.541046.snakemake.log

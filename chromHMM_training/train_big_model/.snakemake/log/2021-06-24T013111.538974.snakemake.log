@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	binarize_multiple_bigwigAverageOverBed_output
+	2
+
+[Thu Jun 24 01:31:13 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr10.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr10_0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr10_1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr10_2_binary.txt
+    jobid: 1
+    wildcards: chrom=10
+
+[Thu Jun 24 01:31:29 2021]
+Finished job 1.
+1 of 2 steps (50%) done
+
+[Thu Jun 24 01:31:29 2021]
+localrule all:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr10_0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr10_1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr10_2_binary.txt
+    jobid: 0
+
+Removing temporary output file ../../../data/hg19/K562/big_model_training/genome_chr10_2_binary.txt.
+Removing temporary output file ../../../data/hg19/K562/big_model_training/genome_chr10_1_binary.txt.
+Removing temporary output file ../../../data/hg19/K562/big_model_training/genome_chr10_0_binary.txt.
+[Thu Jun 24 01:31:29 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-24T013111.538974.snakemake.log

@@ -1,0 +1,206 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	17	get_one_chrom_basic_bed
+	18
+
+[Tue Jun 22 10:02:34 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr14.bed
+    jobid: 14
+    wildcards: chrom=14
+
+[Tue Jun 22 10:02:36 2021]
+Finished job 14.
+1 of 18 steps (6%) done
+
+[Tue Jun 22 10:02:36 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr1.bed
+    jobid: 1
+    wildcards: chrom=1
+
+[Tue Jun 22 10:02:40 2021]
+Finished job 1.
+2 of 18 steps (11%) done
+
+[Tue Jun 22 10:02:40 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr16.bed
+    jobid: 16
+    wildcards: chrom=16
+
+[Tue Jun 22 10:02:42 2021]
+Finished job 16.
+3 of 18 steps (17%) done
+
+[Tue Jun 22 10:02:42 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr5.bed
+    jobid: 5
+    wildcards: chrom=5
+
+[Tue Jun 22 10:02:45 2021]
+Finished job 5.
+4 of 18 steps (22%) done
+
+[Tue Jun 22 10:02:45 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr7.bed
+    jobid: 7
+    wildcards: chrom=7
+
+[Tue Jun 22 10:02:48 2021]
+Finished job 7.
+5 of 18 steps (28%) done
+
+[Tue Jun 22 10:02:48 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr9.bed
+    jobid: 9
+    wildcards: chrom=9
+
+[Tue Jun 22 10:02:51 2021]
+Finished job 9.
+6 of 18 steps (33%) done
+
+[Tue Jun 22 10:02:51 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr17.bed
+    jobid: 17
+    wildcards: chrom=17
+
+[Tue Jun 22 10:02:53 2021]
+Finished job 17.
+7 of 18 steps (39%) done
+
+[Tue Jun 22 10:02:53 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr20.bed
+    jobid: 20
+    wildcards: chrom=20
+
+[Tue Jun 22 10:02:54 2021]
+Finished job 20.
+8 of 18 steps (44%) done
+
+[Tue Jun 22 10:02:54 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr21.bed
+    jobid: 21
+    wildcards: chrom=21
+
+[Tue Jun 22 10:02:56 2021]
+Finished job 21.
+9 of 18 steps (50%) done
+
+[Tue Jun 22 10:02:56 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr22.bed
+    jobid: 22
+    wildcards: chrom=22
+
+[Tue Jun 22 10:02:57 2021]
+Finished job 22.
+10 of 18 steps (56%) done
+
+[Tue Jun 22 10:02:57 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chrY.bed
+    jobid: 24
+    wildcards: chrom=Y
+
+[Tue Jun 22 10:02:59 2021]
+Finished job 24.
+11 of 18 steps (61%) done
+
+[Tue Jun 22 10:02:59 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr13.bed
+    jobid: 13
+    wildcards: chrom=13
+
+[Tue Jun 22 10:03:01 2021]
+Finished job 13.
+12 of 18 steps (67%) done
+
+[Tue Jun 22 10:03:01 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr15.bed
+    jobid: 15
+    wildcards: chrom=15
+
+[Tue Jun 22 10:03:03 2021]
+Finished job 15.
+13 of 18 steps (72%) done
+
+[Tue Jun 22 10:03:03 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr3.bed
+    jobid: 3
+    wildcards: chrom=3
+
+[Tue Jun 22 10:03:06 2021]
+Finished job 3.
+14 of 18 steps (78%) done
+
+[Tue Jun 22 10:03:06 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr6.bed
+    jobid: 6
+    wildcards: chrom=6
+
+[Tue Jun 22 10:03:09 2021]
+Finished job 6.
+15 of 18 steps (83%) done
+
+[Tue Jun 22 10:03:09 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr8.bed
+    jobid: 8
+    wildcards: chrom=8
+
+[Tue Jun 22 10:03:12 2021]
+Finished job 8.
+16 of 18 steps (89%) done
+
+[Tue Jun 22 10:03:12 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chrX.bed
+    jobid: 23
+    wildcards: chrom=X
+
+[Tue Jun 22 10:03:15 2021]
+Finished job 23.
+17 of 18 steps (94%) done
+
+[Tue Jun 22 10:03:15 2021]
+localrule all:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed, ../../../data/hg19/K562/basic_bed/chr2.bed, ../../../data/hg19/K562/basic_bed/chr3.bed, ../../../data/hg19/K562/basic_bed/chr4.bed, ../../../data/hg19/K562/basic_bed/chr5.bed, ../../../data/hg19/K562/basic_bed/chr6.bed, ../../../data/hg19/K562/basic_bed/chr7.bed, ../../../data/hg19/K562/basic_bed/chr8.bed, ../../../data/hg19/K562/basic_bed/chr9.bed, ../../../data/hg19/K562/basic_bed/chr10.bed, ../../../data/hg19/K562/basic_bed/chr11.bed, ../../../data/hg19/K562/basic_bed/chr12.bed, ../../../data/hg19/K562/basic_bed/chr13.bed, ../../../data/hg19/K562/basic_bed/chr14.bed, ../../../data/hg19/K562/basic_bed/chr15.bed, ../../../data/hg19/K562/basic_bed/chr16.bed, ../../../data/hg19/K562/basic_bed/chr17.bed, ../../../data/hg19/K562/basic_bed/chr18.bed, ../../../data/hg19/K562/basic_bed/chr19.bed, ../../../data/hg19/K562/basic_bed/chr20.bed, ../../../data/hg19/K562/basic_bed/chr21.bed, ../../../data/hg19/K562/basic_bed/chr22.bed, ../../../data/hg19/K562/basic_bed/chrX.bed, ../../../data/hg19/K562/basic_bed/chrY.bed
+    jobid: 0
+
+[Tue Jun 22 10:03:15 2021]
+Finished job 0.
+18 of 18 steps (100%) done
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-22T100233.435935.snakemake.log

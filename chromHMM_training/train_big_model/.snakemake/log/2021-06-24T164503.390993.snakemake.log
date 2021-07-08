@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	neighborhood_enrichment
+	3
+
+[Thu Jun 24 16:45:06 2021]
+rule neighborhood_enrichment:
+    input: ../../../model_analysis/K562_hg19/new_model/genome_25_segments_clean.bed.gz
+    output: ../../../model_analysis/K562_hg19/new_model/neighborhood/neighborhood_enrichment_TES.txt
+    jobid: 15
+    wildcards: context=TES
+
+[Thu Jun 24 16:45:10 2021]
+Finished job 15.
+1 of 3 steps (33%) done
+
+[Thu Jun 24 16:45:10 2021]
+rule neighborhood_enrichment:
+    input: ../../../model_analysis/K562_hg19/new_model/genome_25_segments_clean.bed.gz
+    output: ../../../model_analysis/K562_hg19/new_model/neighborhood/neighborhood_enrichment_TSS.txt
+    jobid: 16
+    wildcards: context=TSS
+
+[Thu Jun 24 16:45:14 2021]
+Finished job 16.
+2 of 3 steps (67%) done
+
+[Thu Jun 24 16:45:14 2021]
+localrule all:
+    input: ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_DNase.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H2A.Z.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K27ac.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K27me3.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K36me3.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K4me1.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K4me2.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K4me3.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K79me2.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K9ac.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K9me1.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K9me3.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H4K20me1.txt, ../../../model_analysis/K562_hg19/new_model/overlap/overlap_enrichment_gc.txt, ../../../model_analysis/K562_hg19/new_model/neighborhood/neighborhood_enrichment_TES.txt, ../../../model_analysis/K562_hg19/new_model/neighborhood/neighborhood_enrichment_TSS.txt
+    jobid: 0
+
+[Thu Jun 24 16:45:14 2021]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-24T164503.390993.snakemake.log

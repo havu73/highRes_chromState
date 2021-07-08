@@ -1,0 +1,7 @@
+[package]
+name = "rust_exp"
+version = "0.1.0"
+authors = ["vuh6"]
+edition = "2018"
+
+[dependencies]

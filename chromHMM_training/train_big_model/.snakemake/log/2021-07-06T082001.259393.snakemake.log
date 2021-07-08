@@ -1,0 +1,10 @@
+KeyboardInterrupt in line 1 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile.
+  File "/gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile", line 1, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/pandas/__init__.py", line 42, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/pandas/core/api.py", line 10, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/pandas/core/groupby.py", line 46, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/pandas/core/index.py", line 2, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/pandas/core/indexes/api.py", line 1, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 6, in <module>
+  File "pandas/_libs/hashtable.pxd", line 7, in init pandas._libs.index
+  File "<frozen importlib._bootstrap>", line 194, in _lock_unlock_module

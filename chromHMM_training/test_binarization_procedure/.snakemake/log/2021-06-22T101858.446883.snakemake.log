@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 11 of /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/Snakefile:
+Missing input files for rule all:
+../../../data/hg19/K562/basic_bed/chr1.bed

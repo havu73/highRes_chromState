@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	468	calcualte_log_llh_one_chrom
+	1	compare_aic_bic_models
+	470
+
+[Tue Jul  6 08:28:47 2021]
+rule calcualte_log_llh_one_chrom:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/state_100/half_for_model_evaluation/model_100.txt, ../../../data/hg19/K562/big_model_training/test/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_100/half_for_model_evaluation/log_llh/log_llh_chr1.txt
+    jobid: 876
+    wildcards: num_state=100, chrom=1
+
+[Tue Jul  6 08:28:49 2021]
+Error in rule calcualte_log_llh_one_chrom:
+    jobid: 876
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_100/half_for_model_evaluation/log_llh/log_llh_chr1.txt
+    shell:
+        
+		python calculate_log_likelihood_forward_alg_one_chrom.py ../../../model_analysis/K562_hg19/all_mark_model/state_100/half_for_model_evaluation/model_100.txt ../../../data/hg19/K562/big_model_training/test ../../../model_analysis/K562_hg19/all_mark_model/state_100/half_for_model_evaluation/log_llh/log_llh_chr1.txt 1 
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-07-06T082830.785584.snakemake.log

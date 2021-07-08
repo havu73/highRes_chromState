@@ -1,0 +1,3 @@
+NameError in line 154 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile:
+name 'wildcards' is not defined
+  File "/gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile", line 154, in <module>

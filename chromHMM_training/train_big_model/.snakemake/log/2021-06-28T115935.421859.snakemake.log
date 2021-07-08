@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	calculate_state_overlap_two_models
+	2
+
+[Mon Jun 28 11:59:37 2021]
+rule calculate_state_overlap_two_models:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/genome_25_segments_clean.bed.gz, ../../../model_analysis/K562_hg19/three_mark_model/genome_5_segments_clean.bed.gz
+    output: ../../../model_analysis/K562_hg19/compare_models/confusionM_stateOverlap.txt.gz, ../../../model_analysis/K562_hg19/compare_models/confusionM_stateOverlap.png
+    jobid: 1
+
+[Mon Jun 28 12:00:17 2021]
+Finished job 1.
+1 of 2 steps (50%) done
+
+[Mon Jun 28 12:00:17 2021]
+localrule all:
+    input: ../../../model_analysis/K562_hg19/compare_models/confusionM_stateOverlap.txt.gz, ../../../model_analysis/K562_hg19/compare_models/confusionM_stateOverlap.png
+    jobid: 0
+
+[Mon Jun 28 12:00:17 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-28T115935.421859.snakemake.log

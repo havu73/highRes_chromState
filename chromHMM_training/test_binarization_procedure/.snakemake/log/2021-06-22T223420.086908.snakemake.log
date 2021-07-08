@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	plot_heatmap_emission
+	2
+
+[Tue Jun 22 22:34:22 2021]
+rule plot_heatmap_emission:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_gw.txt
+    output: ../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_gw.png
+    jobid: 1
+
+[Tue Jun 22 22:34:25 2021]
+Finished job 1.
+1 of 2 steps (50%) done
+
+[Tue Jun 22 22:34:25 2021]
+localrule all:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_gw.png
+    jobid: 0
+
+[Tue Jun 22 22:34:25 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-22T223420.086908.snakemake.log

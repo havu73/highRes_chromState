@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	plot_heatmap_emission
+	2
+
+[Tue Jun 22 21:46:26 2021]
+rule plot_heatmap_emission:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_gw.txt
+    output: ../../../data/hg19/K562/roadmap_pval_signals/test_binarization_procedure/logPval2/emission_gw.png
+    jobid: 1
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-22T214624.147126.snakemake.log

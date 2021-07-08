@@ -1,0 +1,74 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	5	binarize_one_bigwigAverageOverBed_output
+	6
+
+[Tue Jun 22 10:38:19 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.binarized
+    jobid: 1
+    wildcards: mark=H3K4me3, chrom=1
+
+[Tue Jun 22 10:38:21 2021]
+Finished job 1.
+1 of 6 steps (17%) done
+
+[Tue Jun 22 10:38:21 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr1.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr1.binarized
+    jobid: 3
+    wildcards: mark=H3K36me3, chrom=1
+
+[Tue Jun 22 10:38:22 2021]
+Finished job 3.
+2 of 6 steps (33%) done
+
+[Tue Jun 22 10:38:22 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr1.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr1.binarized
+    jobid: 2
+    wildcards: mark=H3K4me1, chrom=1
+
+[Tue Jun 22 10:38:24 2021]
+Finished job 2.
+3 of 6 steps (50%) done
+
+[Tue Jun 22 10:38:24 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr1.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr1.binarized
+    jobid: 5
+    wildcards: mark=H3K9me3, chrom=1
+
+[Tue Jun 22 10:38:26 2021]
+Finished job 5.
+4 of 6 steps (67%) done
+
+[Tue Jun 22 10:38:26 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr1.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr1.binarized
+    jobid: 4
+    wildcards: mark=H3K27me3, chrom=1
+
+[Tue Jun 22 10:38:27 2021]
+Finished job 4.
+5 of 6 steps (83%) done
+
+[Tue Jun 22 10:38:27 2021]
+localrule all:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.binarized, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr1.binarized, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr1.binarized, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr1.binarized, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr1.binarized
+    jobid: 0
+
+[Tue Jun 22 10:38:27 2021]
+Finished job 0.
+6 of 6 steps (100%) done
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-22T103818.186729.snakemake.log

@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	learn_model
+	2
+
+[Wed Jun 30 12:55:01 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_2/model_2.txt, ../../../model_analysis/K562_hg19/all_mark_model/state_2/genome_2_segments.bed.gz
+    jobid: 1
+    wildcards: num_state=2
+
+[Wed Jun 30 12:55:25 2021]
+Error in rule learn_model:
+    jobid: 1
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_2/model_2.txt, ../../../model_analysis/K562_hg19/all_mark_model/state_2/genome_2_segments.bed.gz
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/all_mark_model/state_2
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobrowser -r 5 ../../../data/hg19/K562/big_model_training/ ${model_folder} 2 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job learn_model since they might be corrupted:
+../../../model_analysis/K562_hg19/all_mark_model/state_2/model_2.txt
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-30T125459.324045.snakemake.log

@@ -1,0 +1,13 @@
+KeyboardInterrupt in line 3 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile.
+  File "/gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile", line 3, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/__init__.py", line 6, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/rcmod.py", line 8, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/palettes.py", line 12, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/utils.py", line 8, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/stats/__init__.py", line 348, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/stats/stats.py", line 175, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/special/__init__.py", line 642, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/special/basic.py", line 20, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/special/orthogonal.py", line 83, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/linalg/__init__.py", line 191, in <module>
+  File "_decomp_update.pyx", line 1, in init scipy.linalg._decomp_update

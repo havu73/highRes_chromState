@@ -1,0 +1,2 @@
+SyntaxError in line 133 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/learn_model.snakefile:
+Command must be given as string after the shell keyword. (learn_model.snakefile, line 133)

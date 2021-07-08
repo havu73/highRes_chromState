@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	1	learn_model
+	2
+
+[Thu Jun 24 01:46:48 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr1_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr1_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr1_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22_2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX_2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/stuffs.txt
+    jobid: 1
+
+Submitted job 1 with external jobid 'Submitted batch job 66891519'.
+[Thu Jun 24 02:10:46 2021]
+Error in rule learn_model:
+    jobid: 1
+    output: ../../../model_analysis/K562_hg19/stuffs.txt
+    shell:
+        
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip ../../../data/hg19/K562/big_model_training ../../../model_analysis/K562_hg19 25 hg19
+		nano 'hello' > ../../../model_analysis/K562_hg19/stuffs.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 66891519
+
+Error executing rule learn_model on cluster (jobid: 1, external: Submitted batch job 66891519, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.w4hhvt89/snakejob.learn_model.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-24T014645.441511.snakemake.log

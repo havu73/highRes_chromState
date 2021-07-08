@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in line 17 of /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/choose_threshold_for_k9me4_k27me3.snakefile:
+Missing input files for rule all:
+test_binarization_procedure/logPval2/H3K9me3_histogram.png
+test_binarization_procedure/logPval2/H3K27me3_histogram.png

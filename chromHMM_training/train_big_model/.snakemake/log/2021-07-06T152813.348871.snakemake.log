@@ -1,0 +1,119 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	220	calcualte_log_llh_one_chrom
+	221
+
+[Tue Jul  6 15:28:19 2021]
+rule calcualte_log_llh_one_chrom:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt, ../../../data/hg19/K562/big_model_training/test/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr2.txt
+    jobid: 639
+    wildcards: num_state=200, chrom=2
+
+
+[Tue Jul  6 15:28:19 2021]
+rule calcualte_log_llh_one_chrom:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt, ../../../data/hg19/K562/big_model_training/test/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr4.txt
+    jobid: 640
+    wildcards: num_state=200, chrom=4
+
+
+[Tue Jul  6 15:28:19 2021]
+rule calcualte_log_llh_one_chrom:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt, ../../../data/hg19/K562/big_model_training/test/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr6.txt
+    jobid: 641
+    wildcards: num_state=200, chrom=6
+
+
+[Tue Jul  6 15:28:19 2021]
+rule calcualte_log_llh_one_chrom:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt, ../../../data/hg19/K562/big_model_training/test/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr8.txt
+    jobid: 642
+    wildcards: num_state=200, chrom=8
+
+
+[Tue Jul  6 15:28:19 2021]
+rule calcualte_log_llh_one_chrom:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt, ../../../data/hg19/K562/big_model_training/test/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr10.txt
+    jobid: 643
+    wildcards: num_state=200, chrom=10
+
+
+[Tue Jul  6 15:28:19 2021]
+rule calcualte_log_llh_one_chrom:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt, ../../../data/hg19/K562/big_model_training/test/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr2.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr4.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr6.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr8.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr10.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr12.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr14.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr16.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr18.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr20.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/test/genome_chr22.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr12.txt
+    jobid: 644
+    wildcards: num_state=200, chrom=12
+
+Terminating processes on user request, this might take some time.
+[Tue Jul  6 18:06:30 2021]
+Error in rule calcualte_log_llh_one_chrom:
+    jobid: 641
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr6.txt
+    shell:
+        
+		python calculate_log_likelihood_forward_alg_one_chrom.py ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt ../../../data/hg19/K562/big_model_training/test ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr6.txt 6 
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  6 18:06:30 2021]
+Error in rule calcualte_log_llh_one_chrom:
+    jobid: 643
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr10.txt
+    shell:
+        
+		python calculate_log_likelihood_forward_alg_one_chrom.py ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt ../../../data/hg19/K562/big_model_training/test ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr10.txt 10 
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  6 18:06:30 2021]
+Error in rule calcualte_log_llh_one_chrom:
+    jobid: 642
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr8.txt
+    shell:
+        
+		python calculate_log_likelihood_forward_alg_one_chrom.py ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt ../../../data/hg19/K562/big_model_training/test ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr8.txt 8 
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  6 18:06:30 2021]
+Error in rule calcualte_log_llh_one_chrom:
+    jobid: 640
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr4.txt
+    shell:
+        
+		python calculate_log_likelihood_forward_alg_one_chrom.py ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt ../../../data/hg19/K562/big_model_training/test ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr4.txt 4 
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  6 18:06:30 2021]
+Error in rule calcualte_log_llh_one_chrom:
+    jobid: 639
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr2.txt
+    shell:
+        
+		python calculate_log_likelihood_forward_alg_one_chrom.py ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt ../../../data/hg19/K562/big_model_training/test ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr2.txt 2 
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jul  6 18:06:30 2021]
+Error in rule calcualte_log_llh_one_chrom:
+    jobid: 644
+    output: ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr12.txt
+    shell:
+        
+		python calculate_log_likelihood_forward_alg_one_chrom.py ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/model_200.txt ../../../data/hg19/K562/big_model_training/test ../../../model_analysis/K562_hg19/all_mark_model/state_200/half_for_model_evaluation/log_llh/log_llh_chr12.txt 12 
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Cancelling snakemake on user request.

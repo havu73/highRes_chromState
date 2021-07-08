@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	get_train_test_bed_fn
+	2
+
+[Tue Jul  6 15:34:23 2021]
+rule get_train_test_bed_fn:
+    input: ../../model_analysis/hg19_chrom_length_for_segmentation.bed
+    output: ../../model_analysis/train_segments.bed.gz, ../../model_analysis/test_segments.bed.gz
+    jobid: 1
+
+[Tue Jul  6 15:35:59 2021]
+Finished job 1.
+1 of 2 steps (50%) done
+
+[Tue Jul  6 15:35:59 2021]
+localrule all:
+    input: ../../model_analysis/train_segments.bed.gz, ../../model_analysis/test_segments.bed.gz
+    jobid: 0
+
+[Tue Jul  6 15:35:59 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-06T153423.429677.snakemake.log

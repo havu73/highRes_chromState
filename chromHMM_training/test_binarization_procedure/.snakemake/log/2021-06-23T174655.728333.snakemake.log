@@ -1,0 +1,55 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	66	bigwigAverageOverBed
+	110	binarize_one_bigwigAverageOverBed_output
+	1	calculate_mark_frequency_per_state
+	115	overlap_mark_binarized_and_roadmap_segment
+	1	plot_heatmap_emission
+	294
+
+[Wed Jun 23 17:46:58 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.binarized
+    jobid: 188
+    wildcards: mark=H3K27me3, chrom=2
+
+
+[Wed Jun 23 17:46:58 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.binarized
+    jobid: 211
+    wildcards: mark=H3K9me3, chrom=2
+
+Terminating processes on user request, this might take some time.
+[Wed Jun 23 17:46:59 2021]
+Error in rule binarize_one_bigwigAverageOverBed_output:
+    jobid: 188
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.binarized
+    shell:
+        
+		cat ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.tab | awk -F'	' -v threshold=1.825 '{print ($5 >= threshold)? "1":"0"}' | awk -v c="chr2" 'BEGIN{OFS="	"}{start=(NR-1)*200; end=NR*200; print c,start,end,$1}'> ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.binarized
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job binarize_one_bigwigAverageOverBed_output since they might be corrupted:
+../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.binarized
+[Wed Jun 23 17:46:59 2021]
+Error in rule binarize_one_bigwigAverageOverBed_output:
+    jobid: 211
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.binarized
+    shell:
+        
+		cat ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.tab | awk -F'	' -v threshold=1.23 '{print ($5 >= threshold)? "1":"0"}' | awk -v c="chr2" 'BEGIN{OFS="	"}{start=(NR-1)*200; end=NR*200; print c,start,end,$1}'> ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.binarized
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job binarize_one_bigwigAverageOverBed_output since they might be corrupted:
+../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.binarized
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-23T174655.728333.snakemake.log

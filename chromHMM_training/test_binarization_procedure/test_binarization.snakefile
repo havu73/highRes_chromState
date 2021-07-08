@@ -1,0 +1,122 @@
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+plt.switch_backend('agg')
+import os 
+hg19_chromSize_fn = '../../../data/hg19.chrom-sizes'
+CHROMOSOME_LIST = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', 'X'] # there was actually no data of chromatin state for chromosome Y
+# CHROMOSOME_LIST = ['1']
+ct_folder = '../../../data/hg19/K562'
+ct_code = 'E123'
+raw_logPval_dir = '../../../data/hg19/K562/roadmap_pval_signals'
+# CHROM_MARK_LIST = ['H3K4me3', 'H3K4me1', 'H3K36me3', 'H3K27me3', 'H3K9me3']
+CHROM_MARK_LIST = ['DNase', 'H2A.Z', 'H3K27ac', 'H3K27me3', 'H3K36me3', 'H3K4me1', 'H3K4me2', 'H3K4me3', 'H3K79me2', 'H3K9ac', 'H3K9me1', 'H3K9me3', 'H4K20me1']
+CHROM_MARK_LOGPVAL_THRESHOLD = {'H3K4me3':2.0, 'H3K4me1':2.0 , 'H3K36me3':2.0, 'H3K27me3': 1.825, 'H3K9me3': 1.23, 'DNase': 2.0, 'H3K27ac': 2.0}
+roadmap_segment_fn = '../../../data/hg19/K562/roadmap_published_chromHMM/E123_15_coreMarks_segments.bed.gz'
+NUM_STATE = 15
+
+rule all:
+	input:
+		# get_one_chrom_basic_bed
+		# bigwigAverageOverBed
+		# binarize_one_bigwigAverageOverBed_output
+		# overlap_mark_binarized_and_roadmap_segment
+		# calculate_mark_frequency_per_state
+		# expand(os.path.join(raw_logPval_dir, 'test_binarization_procedure', 'logPval2', 'emission_gw.png'))
+		# expand(os.path.join(raw_logPval_dir, '{mark}_chr{chrom}.tab'), mark = CHROM_MARK_LIST, chrom = CHROMOSOME_LIST),
+		expand(os.path.join(raw_logPval_dir, '{mark}_chr{chrom}.binarized.gz'), mark = ['DNase', 'H3K27ac', 'H3K4me3'], chrom = CHROMOSOME_LIST),
+
+rule get_one_chrom_basic_bed:
+	# get basic bed: chrom, start, end, index(0-based). Each segment 200bp apart based on the length of the chromosome
+	input:
+		hg19_chromSize_fn,
+	output:
+		os.path.join(ct_folder, 'basic_bed', 'chr{chrom}.bed.gz'),
+	params: 
+		NUM_BP_PER_BIN = 200
+	run: 
+		this_chrom = 'chr' + wildcards.chrom
+		chromSize_df = pd.read_csv(input[0], header = None, sep = '\t', index_col = None)
+		chrom_len = chromSize_df[chromSize_df[0] == this_chrom].iloc[0,1]
+		num_bins = int(np.floor(chrom_len / params.NUM_BP_PER_BIN))
+		result_df = pd.DataFrame({'chrom' : np.repeat(this_chrom, num_bins)})
+		result_df['start'] = np.arange(num_bins) * params.NUM_BP_PER_BIN
+		result_df['end'] = result_df['start'] + params.NUM_BP_PER_BIN
+		result_df['bin_index'] = np.arange(num_bins)
+		result_df.to_csv(output[0], header = False, sep = '\t', index = False, compression = 'gzip')
+
+rule bigwigAverageOverBed:
+	input:
+		os.path.join(ct_folder, 'basic_bed', 'chr{chrom}.bed.gz'),
+		os.path.join(raw_logPval_dir, ct_code + '-{mark}.pval.signal.bigwig')
+	output:
+		(os.path.join(raw_logPval_dir, '{mark}_chr{chrom}.tab')), 
+		# 6 columns: name (same as the fourth column in get_one_chrom_basic_bed, size: 200bp, covered: mostly 200bp, sum, mean0: mean when non-covered bases are 0, mean: average of only covered bases)
+	shell: 
+		"""
+		../../../program_source/ucsc_tools/bigWigAverageOverBed {input[1]} {input[0]} {output}
+ 		"""
+
+rule binarize_one_bigwigAverageOverBed_output:
+	input: 
+		os.path.join(raw_logPval_dir, '{mark}_chr{chrom}.tab'),  # from bigwigAverageOverBed
+		# 6 columns: name (same as the fourth column in get_one_chrom_basic_bed, size: 200bp, covered: mostly 200bp, sum, mean0: mean when non-covered bases are 0, mean: average of only covered bases)
+	output: 
+		(os.path.join(raw_logPval_dir, '{mark}_chr{chrom}.binarized.gz')) # 4 column: chrom, start, end, 0 or 1 (5th column input >= 2 --> 1, otherwise 0)
+	params:
+		threshold = lambda w: CHROM_MARK_LOGPVAL_THRESHOLD[w.mark],
+		output_no_tail = os.path.join(raw_logPval_dir, '{mark}_chr{chrom}.binarized')
+	shell:
+		"""
+		cat {input} | awk -F\'\t\' -v threshold={params.threshold} '{{print ($5 >= threshold)? "1":"0"}}' | awk -v c="chr{wildcards.chrom}" 'BEGIN{{OFS="\t"}}{{start=(NR-1)*200; end=NR*200; print c,start,end,$1}}'> {params.output_no_tail}
+		gzip {params.output_no_tail}
+		"""
+
+rule overlap_mark_binarized_and_roadmap_segment:
+	input:
+		os.path.join(raw_logPval_dir, '{mark}_chr{chrom}.binarized.gz'), # from binarize_one_bigwigAverageOverBed_output
+		roadmap_segment_fn
+	output:
+		(os.path.join(raw_logPval_dir, '{mark}_chr{chrom}.overlapSegment')) # columns: chrom, start, end, 0/1 for signals of the mark, chromatin state
+	shell:
+		"""
+		bedtools intersect -a {input[0]} -b {input[1]} -wa -wb | awk -F'\t' 'BEGIN{{OFS="\t"}}{{print $1,$2,$3,$4,$8}}' > {output}
+		"""
+
+rule calculate_mark_frequency_per_state:
+	input:
+		expand(os.path.join(raw_logPval_dir, '{mark}_chr{chrom}.overlapSegment'), mark = CHROM_MARK_LIST, chrom = CHROMOSOME_LIST) # columns: chrom, start, end, 0/1 for signals of the mark, chromatin state
+	output:
+		os.path.join(raw_logPval_dir, 'test_binarization_procedure', 'logPval2', 'emission_gw.txt')
+	run:
+		result_df = pd.DataFrame(0, index = list(map(lambda x: 'E' + str(x+1), range(NUM_STATE))), columns = CHROM_MARK_LIST + ['num_bins_in_state'])
+		for fn in input:
+			mark = fn.split('/')[-1].split('_')[0]
+			try:
+				df = pd.read_csv(fn, header = None, sep = '\t', index_col = None)
+			except:
+				print(fn + " File issue")
+				continue
+			df.columns = ['chrom', 'start', 'end', mark, 'state']
+			if mark == CHROM_MARK_LIST[0]:
+				result_df['num_bins_in_state'] += df.groupby('state').size() # only do this once per chromosome
+			mark_emission = df.groupby('state')[mark].sum()
+			result_df[mark] += mark_emission
+		for mark in CHROM_MARK_LIST:
+			result_df[mark] = result_df[mark] / result_df['num_bins_in_state']
+		result_df.reset_index(inplace = True)
+		result_df = result_df.rename(columns = {'index': 'state'})
+		result_df.to_csv(output[0], header = True, index = False, sep = ',')
+
+rule plot_heatmap_emission:
+	input:
+		os.path.join(raw_logPval_dir, 'test_binarization_procedure', 'logPval2', 'emission_gw.txt')
+	output:
+		os.path.join(raw_logPval_dir, 'test_binarization_procedure', 'logPval2', 'emission_gw.png')
+	run:
+		result_df = pd.read_csv(input[0], header = 0, index_col = 0, sep = ',')
+		plot_df = result_df.drop(['num_bins_in_state'], axis = 1)
+		ax = sns.heatmap(plot_df, vmin = 0, vmax = 1, cmap = sns.color_palette('Blues', n_colors = 30), annot = True, fmt='.2f')
+		plt.savefig(output[0])
+

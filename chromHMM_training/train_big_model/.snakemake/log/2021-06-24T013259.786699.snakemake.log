@@ -1,0 +1,52 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	3	gzip_all_files
+	4
+
+[Thu Jun 24 01:33:01 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr10_0_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr10_0_binary.txt.gz
+    jobid: 1
+    wildcards: chrom=10, bin=0
+
+[Thu Jun 24 01:33:01 2021]
+Finished job 1.
+1 of 4 steps (25%) done
+
+[Thu Jun 24 01:33:01 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr10_2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr10_2_binary.txt.gz
+    jobid: 3
+    wildcards: chrom=10, bin=2
+
+[Thu Jun 24 01:33:01 2021]
+Finished job 3.
+2 of 4 steps (50%) done
+
+[Thu Jun 24 01:33:01 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr10_1_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr10_1_binary.txt.gz
+    jobid: 2
+    wildcards: chrom=10, bin=1
+
+[Thu Jun 24 01:33:02 2021]
+Finished job 2.
+3 of 4 steps (75%) done
+
+[Thu Jun 24 01:33:02 2021]
+localrule all:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr10_0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10_1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10_2_binary.txt.gz
+    jobid: 0
+
+[Thu Jun 24 01:33:02 2021]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-24T013259.786699.snakemake.log

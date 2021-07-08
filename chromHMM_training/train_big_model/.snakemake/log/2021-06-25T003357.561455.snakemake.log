@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	combine_marks_eval_subset
+	2
+
+[Fri Jun 25 00:34:00 2021]
+rule combine_marks_eval_subset:
+    input: ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_DNase.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H2A.Z.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K27ac.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K27me3.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K36me3.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K4me1.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K4me2.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K4me3.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K79me2.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K9ac.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K9me1.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H3K9me3.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/missing_H4K20me1.txt
+    output: ../../../model_analysis/K562_hg19/new_model/eval_subset/sum_diag_all_marks.txt, ../../../model_analysis/K562_hg19/new_model/eval_subset/sum_diag_all_marks.png
+    jobid: 1
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-25T003357.561455.snakemake.log

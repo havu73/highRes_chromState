@@ -1,0 +1,3 @@
+NameError in line 130 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_diffState_small_model.py:
+name 'CHROMOSOME_LIST' is not defined
+  File "/gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_diffState_small_model.py", line 130, in <module>

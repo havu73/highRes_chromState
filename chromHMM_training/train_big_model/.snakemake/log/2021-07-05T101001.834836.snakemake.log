@@ -1,0 +1,3 @@
+TypeError in line 20 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile:
+unsupported operand type(s) for +: 'range' and 'range'
+  File "/gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile", line 20, in <module>

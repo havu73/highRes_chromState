@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	23	binarize_multiple_bigwigAverageOverBed_output
+	23	gzip_all_files
+	47
+
+[Tue Jul  6 12:24:52 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr5.tab
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr5.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr5.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr5.2_binary.txt
+    jobid: 28
+    wildcards: chrom=5
+
+Terminating processes on user request, this might take some time.
+Will exit after finishing currently running jobs.
+Cancelling snakemake on user request.

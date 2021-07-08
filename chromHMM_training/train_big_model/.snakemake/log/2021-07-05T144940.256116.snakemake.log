@@ -1,0 +1,324 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	154	calcualte_log_llh_one_chrom
+	1	compare_aic_bic_models
+	14	learn_model
+	170
+
+[Mon Jul  5 14:49:47 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_17/model_17.txt
+    jobid: 39
+    wildcards: num_state=17
+
+Submitted job 39 with external jobid 'Submitted batch job 1448976'.
+
+[Mon Jul  5 14:49:47 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_19/model_19.txt
+    jobid: 41
+    wildcards: num_state=19
+
+Submitted job 41 with external jobid 'Submitted batch job 1448977'.
+
+[Mon Jul  5 14:49:48 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_21/model_21.txt
+    jobid: 43
+    wildcards: num_state=21
+
+Submitted job 43 with external jobid 'Submitted batch job 1448978'.
+
+[Mon Jul  5 14:49:48 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_23/model_23.txt
+    jobid: 45
+    wildcards: num_state=23
+
+Submitted job 45 with external jobid 'Submitted batch job 1448979'.
+
+[Mon Jul  5 14:49:49 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_25/model_25.txt
+    jobid: 47
+    wildcards: num_state=25
+
+Submitted job 47 with external jobid 'Submitted batch job 1448980'.
+
+[Mon Jul  5 14:49:49 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_27/model_27.txt
+    jobid: 49
+    wildcards: num_state=27
+
+Submitted job 49 with external jobid 'Submitted batch job 1448981'.
+
+[Mon Jul  5 14:49:50 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_29/model_29.txt
+    jobid: 51
+    wildcards: num_state=29
+
+Submitted job 51 with external jobid 'Submitted batch job 1448982'.
+
+[Mon Jul  5 14:49:50 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_16/model_16.txt
+    jobid: 38
+    wildcards: num_state=16
+
+Submitted job 38 with external jobid 'Submitted batch job 1448983'.
+
+[Mon Jul  5 14:49:50 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_18/model_18.txt
+    jobid: 40
+    wildcards: num_state=18
+
+Submitted job 40 with external jobid 'Submitted batch job 1448984'.
+
+[Mon Jul  5 14:49:50 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_20/model_20.txt
+    jobid: 42
+    wildcards: num_state=20
+
+Submitted job 42 with external jobid 'Submitted batch job 1448985'.
+
+[Mon Jul  5 14:49:50 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_22/model_22.txt
+    jobid: 44
+    wildcards: num_state=22
+
+Submitted job 44 with external jobid 'Submitted batch job 1448986'.
+
+[Mon Jul  5 14:49:50 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_24/model_24.txt
+    jobid: 46
+    wildcards: num_state=24
+
+Submitted job 46 with external jobid 'Submitted batch job 1448987'.
+
+[Mon Jul  5 14:49:50 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_26/model_26.txt
+    jobid: 48
+    wildcards: num_state=26
+
+Submitted job 48 with external jobid 'Submitted batch job 1448988'.
+
+[Mon Jul  5 14:49:50 2021]
+rule learn_model:
+    input: ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/four_mark_model_training/train/genome_chrX.2_binary.txt.gz
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_28/model_28.txt
+    jobid: 50
+    wildcards: num_state=28
+
+Submitted job 50 with external jobid 'Submitted batch job 1448989'.
+[Mon Jul  5 14:50:41 2021]
+Error in rule learn_model:
+    jobid: 41
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_19/model_19.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_19
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 19 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448977
+
+Error executing rule learn_model on cluster (jobid: 41, external: Submitted batch job 1448977, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.41.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:41 2021]
+Error in rule learn_model:
+    jobid: 43
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_21/model_21.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_21
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 21 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448978
+
+Error executing rule learn_model on cluster (jobid: 43, external: Submitted batch job 1448978, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.43.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:41 2021]
+Error in rule learn_model:
+    jobid: 45
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_23/model_23.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_23
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 23 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448979
+
+Error executing rule learn_model on cluster (jobid: 45, external: Submitted batch job 1448979, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.45.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:41 2021]
+Error in rule learn_model:
+    jobid: 49
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_27/model_27.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_27
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 27 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448981
+
+Error executing rule learn_model on cluster (jobid: 49, external: Submitted batch job 1448981, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.49.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:41 2021]
+Error in rule learn_model:
+    jobid: 40
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_18/model_18.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_18
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 18 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448984
+
+Error executing rule learn_model on cluster (jobid: 40, external: Submitted batch job 1448984, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.40.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:42 2021]
+Error in rule learn_model:
+    jobid: 42
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_20/model_20.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_20
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 20 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448985
+
+Error executing rule learn_model on cluster (jobid: 42, external: Submitted batch job 1448985, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.42.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:42 2021]
+Error in rule learn_model:
+    jobid: 44
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_22/model_22.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_22
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 22 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448986
+
+Error executing rule learn_model on cluster (jobid: 44, external: Submitted batch job 1448986, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.44.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:42 2021]
+Error in rule learn_model:
+    jobid: 46
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_24/model_24.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_24
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 24 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448987
+
+Error executing rule learn_model on cluster (jobid: 46, external: Submitted batch job 1448987, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.46.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:42 2021]
+Error in rule learn_model:
+    jobid: 48
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_26/model_26.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_26
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 26 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448988
+
+Error executing rule learn_model on cluster (jobid: 48, external: Submitted batch job 1448988, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.48.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:42 2021]
+Error in rule learn_model:
+    jobid: 50
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_28/model_28.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_28
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 28 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448989
+
+Error executing rule learn_model on cluster (jobid: 50, external: Submitted batch job 1448989, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.50.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:52 2021]
+Error in rule learn_model:
+    jobid: 39
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_17/model_17.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_17
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 17 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448976
+
+Error executing rule learn_model on cluster (jobid: 39, external: Submitted batch job 1448976, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.39.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:52 2021]
+Error in rule learn_model:
+    jobid: 47
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_25/model_25.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_25
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 25 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448980
+
+Error executing rule learn_model on cluster (jobid: 47, external: Submitted batch job 1448980, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.47.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:50:52 2021]
+Error in rule learn_model:
+    jobid: 51
+    output: ../../../model_analysis/K562_hg19/four_mark_model/state_29/model_29.txt
+    shell:
+        
+		model_folder=../../../model_analysis/K562_hg19/four_mark_model/state_29
+		mkdir -p ${model_folder}
+		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar LearnModel -splitrows -holdcolumnorder -pseudo -many -p 6 -n 300 -d -1 -lowmem -gzip -noenrich -nobed -nobrowser ../../../data/hg19/K562/four_mark_model_training/train ${model_folder} 29 hg19
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1448982
+
+Error executing rule learn_model on cluster (jobid: 51, external: Submitted batch job 1448982, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.ueuxctpc/snakejob.learn_model.51.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul  5 14:54:53 2021]
+Finished job 38.
+1 of 170 steps (0.59%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-07-05T144940.256116.snakemake.log

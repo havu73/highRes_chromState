@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	all
+	1	get_train_test_bed_fn
+	2
+
+[Tue Jul  6 15:34:07 2021]
+rule get_train_test_bed_fn:
+    input: ../../model_analysis/hg19_chrom_length_for_segmentation.bed
+    output: ../../model_analysis/train_segments.bed.gz, ../../model_analysis/test_segments.bed.gz
+    jobid: 1
+
+RuleException in line 9 of /gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile:
+NameError: The name 'param' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 115, in run_jobs
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 120, in run
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 131, in _run
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 151, in printjob
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 137, in printjob

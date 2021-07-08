@@ -1,0 +1,4160 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	299	bigwigAverageOverBed
+	23	binarize_multiple_bigwigAverageOverBed_output
+	23	gzip_all_files
+	346
+
+[Wed Jun 30 13:14:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr22.tab
+    jobid: 321
+    wildcards: mark=H2A.Z, chrom=22
+
+Submitted job 321 with external jobid 'Submitted batch job 940455'.
+
+[Wed Jun 30 13:14:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr1.tab
+    jobid: 59
+    wildcards: mark=H4K20me1, chrom=1
+
+Submitted job 59 with external jobid 'Submitted batch job 940456'.
+
+[Wed Jun 30 13:14:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr2.tab
+    jobid: 72
+    wildcards: mark=H4K20me1, chrom=2
+
+Submitted job 72 with external jobid 'Submitted batch job 940457'.
+
+[Wed Jun 30 13:14:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr3.tab
+    jobid: 85
+    wildcards: mark=H4K20me1, chrom=3
+
+Submitted job 85 with external jobid 'Submitted batch job 940458'.
+
+[Wed Jun 30 13:14:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr4.tab
+    jobid: 98
+    wildcards: mark=H4K20me1, chrom=4
+
+Submitted job 98 with external jobid 'Submitted batch job 940459'.
+
+[Wed Jun 30 13:14:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr5.tab
+    jobid: 111
+    wildcards: mark=H4K20me1, chrom=5
+
+Submitted job 111 with external jobid 'Submitted batch job 940460'.
+
+[Wed Jun 30 13:14:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr6.tab
+    jobid: 124
+    wildcards: mark=H4K20me1, chrom=6
+
+Submitted job 124 with external jobid 'Submitted batch job 940461'.
+
+[Wed Jun 30 13:14:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr7.tab
+    jobid: 137
+    wildcards: mark=H4K20me1, chrom=7
+
+Submitted job 137 with external jobid 'Submitted batch job 940462'.
+
+[Wed Jun 30 13:14:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr14.tab
+    jobid: 228
+    wildcards: mark=H4K20me1, chrom=14
+
+Submitted job 228 with external jobid 'Submitted batch job 940463'.
+
+[Wed Jun 30 13:14:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr16.tab
+    jobid: 254
+    wildcards: mark=H4K20me1, chrom=16
+
+Submitted job 254 with external jobid 'Submitted batch job 940464'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr18.tab
+    jobid: 280
+    wildcards: mark=H4K20me1, chrom=18
+
+Submitted job 280 with external jobid 'Submitted batch job 940465'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr20.tab
+    jobid: 304
+    wildcards: mark=H3K9me1, chrom=20
+
+Submitted job 304 with external jobid 'Submitted batch job 940466'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chrX.tab
+    jobid: 343
+    wildcards: mark=H3K9me1, chrom=X
+
+Submitted job 343 with external jobid 'Submitted batch job 940467'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr7.tab
+    jobid: 125
+    wildcards: mark=DNase, chrom=7
+
+Submitted job 125 with external jobid 'Submitted batch job 940468'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr6.tab
+    jobid: 112
+    wildcards: mark=DNase, chrom=6
+
+Submitted job 112 with external jobid 'Submitted batch job 940469'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr2.tab
+    jobid: 60
+    wildcards: mark=DNase, chrom=2
+
+Submitted job 60 with external jobid 'Submitted batch job 940470'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr3.tab
+    jobid: 73
+    wildcards: mark=DNase, chrom=3
+
+Submitted job 73 with external jobid 'Submitted batch job 940471'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr4.tab
+    jobid: 86
+    wildcards: mark=DNase, chrom=4
+
+Submitted job 86 with external jobid 'Submitted batch job 940472'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr5.tab
+    jobid: 99
+    wildcards: mark=DNase, chrom=5
+
+Submitted job 99 with external jobid 'Submitted batch job 940473'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr8.tab
+    jobid: 138
+    wildcards: mark=DNase, chrom=8
+
+Submitted job 138 with external jobid 'Submitted batch job 940474'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr15.tab
+    jobid: 229
+    wildcards: mark=DNase, chrom=15
+
+Submitted job 229 with external jobid 'Submitted batch job 940475'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr17.tab
+    jobid: 255
+    wildcards: mark=DNase, chrom=17
+
+Submitted job 255 with external jobid 'Submitted batch job 940476'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr19.tab
+    jobid: 281
+    wildcards: mark=DNase, chrom=19
+
+Submitted job 281 with external jobid 'Submitted batch job 940477'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr6.tab
+    jobid: 113
+    wildcards: mark=H2A.Z, chrom=6
+
+Submitted job 113 with external jobid 'Submitted batch job 940478'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr2.tab
+    jobid: 61
+    wildcards: mark=H2A.Z, chrom=2
+
+Submitted job 61 with external jobid 'Submitted batch job 940479'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr3.tab
+    jobid: 74
+    wildcards: mark=H2A.Z, chrom=3
+
+Submitted job 74 with external jobid 'Submitted batch job 940480'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr4.tab
+    jobid: 87
+    wildcards: mark=H2A.Z, chrom=4
+
+Submitted job 87 with external jobid 'Submitted batch job 940481'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr5.tab
+    jobid: 100
+    wildcards: mark=H2A.Z, chrom=5
+
+Submitted job 100 with external jobid 'Submitted batch job 940482'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr7.tab
+    jobid: 126
+    wildcards: mark=H2A.Z, chrom=7
+
+Submitted job 126 with external jobid 'Submitted batch job 940483'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr8.tab
+    jobid: 139
+    wildcards: mark=H2A.Z, chrom=8
+
+Submitted job 139 with external jobid 'Submitted batch job 940484'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr15.tab
+    jobid: 230
+    wildcards: mark=H2A.Z, chrom=15
+
+Submitted job 230 with external jobid 'Submitted batch job 940485'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr17.tab
+    jobid: 256
+    wildcards: mark=H2A.Z, chrom=17
+
+Submitted job 256 with external jobid 'Submitted batch job 940486'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr19.tab
+    jobid: 282
+    wildcards: mark=H2A.Z, chrom=19
+
+Submitted job 282 with external jobid 'Submitted batch job 940487'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chrX.tab
+    jobid: 344
+    wildcards: mark=H3K9me3, chrom=X
+
+Submitted job 344 with external jobid 'Submitted batch job 940488'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr21.tab
+    jobid: 319
+    wildcards: mark=H4K20me1, chrom=21
+
+Submitted job 319 with external jobid 'Submitted batch job 940489'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr2.tab
+    jobid: 70
+    wildcards: mark=H3K9me1, chrom=2
+
+Submitted job 70 with external jobid 'Submitted batch job 940490'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr3.tab
+    jobid: 83
+    wildcards: mark=H3K9me1, chrom=3
+
+Submitted job 83 with external jobid 'Submitted batch job 940491'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr4.tab
+    jobid: 96
+    wildcards: mark=H3K9me1, chrom=4
+
+Submitted job 96 with external jobid 'Submitted batch job 940492'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr5.tab
+    jobid: 109
+    wildcards: mark=H3K9me1, chrom=5
+
+Submitted job 109 with external jobid 'Submitted batch job 940493'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr6.tab
+    jobid: 122
+    wildcards: mark=H3K9me1, chrom=6
+
+Submitted job 122 with external jobid 'Submitted batch job 940494'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr7.tab
+    jobid: 135
+    wildcards: mark=H3K9me1, chrom=7
+
+Submitted job 135 with external jobid 'Submitted batch job 940495'.
+
+[Wed Jun 30 13:14:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr8.tab
+    jobid: 148
+    wildcards: mark=H3K9me1, chrom=8
+
+Submitted job 148 with external jobid 'Submitted batch job 940496'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr15.tab
+    jobid: 239
+    wildcards: mark=H3K9me1, chrom=15
+
+Submitted job 239 with external jobid 'Submitted batch job 940497'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr17.tab
+    jobid: 265
+    wildcards: mark=H3K9me1, chrom=17
+
+Submitted job 265 with external jobid 'Submitted batch job 940498'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr19.tab
+    jobid: 291
+    wildcards: mark=H3K9me1, chrom=19
+
+Submitted job 291 with external jobid 'Submitted batch job 940499'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.tab
+    jobid: 71
+    wildcards: mark=H3K9me3, chrom=2
+
+Submitted job 71 with external jobid 'Submitted batch job 940500'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.tab
+    jobid: 84
+    wildcards: mark=H3K9me3, chrom=3
+
+Submitted job 84 with external jobid 'Submitted batch job 940501'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.tab
+    jobid: 97
+    wildcards: mark=H3K9me3, chrom=4
+
+Submitted job 97 with external jobid 'Submitted batch job 940502'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr5.tab
+    jobid: 110
+    wildcards: mark=H3K9me3, chrom=5
+
+Submitted job 110 with external jobid 'Submitted batch job 940503'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr6.tab
+    jobid: 123
+    wildcards: mark=H3K9me3, chrom=6
+
+Submitted job 123 with external jobid 'Submitted batch job 940504'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr7.tab
+    jobid: 136
+    wildcards: mark=H3K9me3, chrom=7
+
+Submitted job 136 with external jobid 'Submitted batch job 940505'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr20.tab
+    jobid: 294
+    wildcards: mark=DNase, chrom=20
+
+Submitted job 294 with external jobid 'Submitted batch job 940506'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr22.tab
+    jobid: 330
+    wildcards: mark=H3K9me1, chrom=22
+
+Submitted job 330 with external jobid 'Submitted batch job 940507'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chrX.tab
+    jobid: 333
+    wildcards: mark=DNase, chrom=X
+
+Submitted job 333 with external jobid 'Submitted batch job 940508'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr8.tab
+    jobid: 150
+    wildcards: mark=H4K20me1, chrom=8
+
+Submitted job 150 with external jobid 'Submitted batch job 940509'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr9.tab
+    jobid: 163
+    wildcards: mark=H4K20me1, chrom=9
+
+Submitted job 163 with external jobid 'Submitted batch job 940510'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr10.tab
+    jobid: 176
+    wildcards: mark=H4K20me1, chrom=10
+
+Submitted job 176 with external jobid 'Submitted batch job 940511'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr11.tab
+    jobid: 189
+    wildcards: mark=H4K20me1, chrom=11
+
+Submitted job 189 with external jobid 'Submitted batch job 940512'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr12.tab
+    jobid: 202
+    wildcards: mark=H4K20me1, chrom=12
+
+Submitted job 202 with external jobid 'Submitted batch job 940513'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr13.tab
+    jobid: 215
+    wildcards: mark=H4K20me1, chrom=13
+
+Submitted job 215 with external jobid 'Submitted batch job 940514'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr15.tab
+    jobid: 241
+    wildcards: mark=H4K20me1, chrom=15
+
+Submitted job 241 with external jobid 'Submitted batch job 940515'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr17.tab
+    jobid: 267
+    wildcards: mark=H4K20me1, chrom=17
+
+Submitted job 267 with external jobid 'Submitted batch job 940516'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr20.tab
+    jobid: 306
+    wildcards: mark=H4K20me1, chrom=20
+
+Submitted job 306 with external jobid 'Submitted batch job 940517'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chrX.tab
+    jobid: 345
+    wildcards: mark=H4K20me1, chrom=X
+
+Submitted job 345 with external jobid 'Submitted batch job 940518'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr1.tab
+    jobid: 47
+    wildcards: mark=DNase, chrom=1
+
+Submitted job 47 with external jobid 'Submitted batch job 940519'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr9.tab
+    jobid: 151
+    wildcards: mark=DNase, chrom=9
+
+Submitted job 151 with external jobid 'Submitted batch job 940520'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr10.tab
+    jobid: 164
+    wildcards: mark=DNase, chrom=10
+
+Submitted job 164 with external jobid 'Submitted batch job 940521'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr11.tab
+    jobid: 177
+    wildcards: mark=DNase, chrom=11
+
+Submitted job 177 with external jobid 'Submitted batch job 940522'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr12.tab
+    jobid: 190
+    wildcards: mark=DNase, chrom=12
+
+Submitted job 190 with external jobid 'Submitted batch job 940523'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr13.tab
+    jobid: 203
+    wildcards: mark=DNase, chrom=13
+
+Submitted job 203 with external jobid 'Submitted batch job 940524'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr14.tab
+    jobid: 216
+    wildcards: mark=DNase, chrom=14
+
+Submitted job 216 with external jobid 'Submitted batch job 940525'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr16.tab
+    jobid: 242
+    wildcards: mark=DNase, chrom=16
+
+Submitted job 242 with external jobid 'Submitted batch job 940526'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr18.tab
+    jobid: 268
+    wildcards: mark=DNase, chrom=18
+
+Submitted job 268 with external jobid 'Submitted batch job 940527'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr21.tab
+    jobid: 307
+    wildcards: mark=DNase, chrom=21
+
+Submitted job 307 with external jobid 'Submitted batch job 940528'.
+
+[Wed Jun 30 13:14:03 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr20.tab
+    jobid: 295
+    wildcards: mark=H2A.Z, chrom=20
+
+Submitted job 295 with external jobid 'Submitted batch job 940529'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chrX.tab
+    jobid: 334
+    wildcards: mark=H2A.Z, chrom=X
+
+Submitted job 334 with external jobid 'Submitted batch job 940530'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr1.tab
+    jobid: 48
+    wildcards: mark=H2A.Z, chrom=1
+
+Submitted job 48 with external jobid 'Submitted batch job 940531'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr9.tab
+    jobid: 152
+    wildcards: mark=H2A.Z, chrom=9
+
+Submitted job 152 with external jobid 'Submitted batch job 940532'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr10.tab
+    jobid: 165
+    wildcards: mark=H2A.Z, chrom=10
+
+Submitted job 165 with external jobid 'Submitted batch job 940533'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr11.tab
+    jobid: 178
+    wildcards: mark=H2A.Z, chrom=11
+
+Submitted job 178 with external jobid 'Submitted batch job 940534'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr12.tab
+    jobid: 191
+    wildcards: mark=H2A.Z, chrom=12
+
+Submitted job 191 with external jobid 'Submitted batch job 940535'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr13.tab
+    jobid: 204
+    wildcards: mark=H2A.Z, chrom=13
+
+Submitted job 204 with external jobid 'Submitted batch job 940536'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr14.tab
+    jobid: 217
+    wildcards: mark=H2A.Z, chrom=14
+
+Submitted job 217 with external jobid 'Submitted batch job 940537'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr16.tab
+    jobid: 243
+    wildcards: mark=H2A.Z, chrom=16
+
+Submitted job 243 with external jobid 'Submitted batch job 940538'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr18.tab
+    jobid: 269
+    wildcards: mark=H2A.Z, chrom=18
+
+Submitted job 269 with external jobid 'Submitted batch job 940539'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H2A.Z.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr21.tab
+    jobid: 308
+    wildcards: mark=H2A.Z, chrom=21
+
+Submitted job 308 with external jobid 'Submitted batch job 940540'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr22.tab
+    jobid: 320
+    wildcards: mark=DNase, chrom=22
+
+Submitted job 320 with external jobid 'Submitted batch job 940541'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr1.tab
+    jobid: 57
+    wildcards: mark=H3K9me1, chrom=1
+
+Submitted job 57 with external jobid 'Submitted batch job 940542'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr9.tab
+    jobid: 161
+    wildcards: mark=H3K9me1, chrom=9
+
+Submitted job 161 with external jobid 'Submitted batch job 940543'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr10.tab
+    jobid: 174
+    wildcards: mark=H3K9me1, chrom=10
+
+Submitted job 174 with external jobid 'Submitted batch job 940544'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr11.tab
+    jobid: 187
+    wildcards: mark=H3K9me1, chrom=11
+
+Submitted job 187 with external jobid 'Submitted batch job 940545'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr12.tab
+    jobid: 200
+    wildcards: mark=H3K9me1, chrom=12
+
+Submitted job 200 with external jobid 'Submitted batch job 940546'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr13.tab
+    jobid: 213
+    wildcards: mark=H3K9me1, chrom=13
+
+Submitted job 213 with external jobid 'Submitted batch job 940547'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr14.tab
+    jobid: 226
+    wildcards: mark=H3K9me1, chrom=14
+
+Submitted job 226 with external jobid 'Submitted batch job 940548'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr16.tab
+    jobid: 252
+    wildcards: mark=H3K9me1, chrom=16
+
+Submitted job 252 with external jobid 'Submitted batch job 940549'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr18.tab
+    jobid: 278
+    wildcards: mark=H3K9me1, chrom=18
+
+Submitted job 278 with external jobid 'Submitted batch job 940550'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr21.tab
+    jobid: 317
+    wildcards: mark=H3K9me1, chrom=21
+
+Submitted job 317 with external jobid 'Submitted batch job 940551'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr1.tab
+    jobid: 58
+    wildcards: mark=H3K9me3, chrom=1
+
+Submitted job 58 with external jobid 'Submitted batch job 940552'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr19.tab
+    jobid: 293
+    wildcards: mark=H4K20me1, chrom=19
+
+Submitted job 293 with external jobid 'Submitted batch job 940553'.
+
+[Wed Jun 30 13:14:04 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H4K20me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr22.tab
+    jobid: 332
+    wildcards: mark=H4K20me1, chrom=22
+
+Submitted job 332 with external jobid 'Submitted batch job 940554'.
+[Wed Jun 30 13:18:01 2021]
+Finished job 252.
+1 of 346 steps (0.29%) done
+
+[Wed Jun 30 13:18:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr8.tab
+    jobid: 149
+    wildcards: mark=H3K9me3, chrom=8
+
+Submitted job 149 with external jobid 'Submitted batch job 940598'.
+[Wed Jun 30 13:18:12 2021]
+Finished job 321.
+2 of 346 steps (0.58%) done
+
+[Wed Jun 30 13:18:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr9.tab
+    jobid: 162
+    wildcards: mark=H3K9me3, chrom=9
+
+[Wed Jun 30 13:18:12 2021]
+Finished job 59.
+3 of 346 steps (0.87%) done
+[Wed Jun 30 13:18:12 2021]
+Finished job 85.
+4 of 346 steps (1%) done
+[Wed Jun 30 13:18:12 2021]
+Finished job 98.
+5 of 346 steps (1%) done
+Submitted job 162 with external jobid 'Submitted batch job 940697'.
+[Wed Jun 30 13:18:12 2021]
+Finished job 111.
+6 of 346 steps (2%) done
+
+[Wed Jun 30 13:18:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr10.tab
+    jobid: 175
+    wildcards: mark=H3K9me3, chrom=10
+
+[Wed Jun 30 13:18:12 2021]
+Finished job 124.
+7 of 346 steps (2%) done
+Submitted job 175 with external jobid 'Submitted batch job 940703'.
+
+[Wed Jun 30 13:18:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr11.tab
+    jobid: 188
+    wildcards: mark=H3K9me3, chrom=11
+
+[Wed Jun 30 13:18:12 2021]
+Finished job 137.
+8 of 346 steps (2%) done
+[Wed Jun 30 13:18:12 2021]
+Finished job 228.
+9 of 346 steps (3%) done
+Submitted job 188 with external jobid 'Submitted batch job 940707'.
+
+[Wed Jun 30 13:18:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr12.tab
+    jobid: 201
+    wildcards: mark=H3K9me3, chrom=12
+
+[Wed Jun 30 13:18:12 2021]
+Finished job 254.
+10 of 346 steps (3%) done
+Submitted job 201 with external jobid 'Submitted batch job 940711'.
+
+[Wed Jun 30 13:18:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr13.tab
+    jobid: 214
+    wildcards: mark=H3K9me3, chrom=13
+
+Submitted job 214 with external jobid 'Submitted batch job 940715'.
+
+[Wed Jun 30 13:18:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr15.tab
+    jobid: 240
+    wildcards: mark=H3K9me3, chrom=15
+
+Submitted job 240 with external jobid 'Submitted batch job 940720'.
+
+[Wed Jun 30 13:18:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr17.tab
+    jobid: 266
+    wildcards: mark=H3K9me3, chrom=17
+
+Submitted job 266 with external jobid 'Submitted batch job 940724'.
+
+[Wed Jun 30 13:18:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr14.tab
+    jobid: 227
+    wildcards: mark=H3K9me3, chrom=14
+
+Submitted job 227 with external jobid 'Submitted batch job 940727'.
+
+[Wed Jun 30 13:18:12 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr16.tab
+    jobid: 253
+    wildcards: mark=H3K9me3, chrom=16
+
+Submitted job 253 with external jobid 'Submitted batch job 940731'.
+[Wed Jun 30 13:18:13 2021]
+Finished job 280.
+11 of 346 steps (3%) done
+
+[Wed Jun 30 13:18:13 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr18.tab
+    jobid: 279
+    wildcards: mark=H3K9me3, chrom=18
+
+Submitted job 279 with external jobid 'Submitted batch job 940756'.
+[Wed Jun 30 13:18:13 2021]
+Finished job 304.
+12 of 346 steps (3%) done
+
+[Wed Jun 30 13:18:13 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr1.tab
+    jobid: 50
+    wildcards: mark=H3K27me3, chrom=1
+
+[Wed Jun 30 13:18:13 2021]
+Finished job 343.
+13 of 346 steps (4%) done
+Submitted job 50 with external jobid 'Submitted batch job 940761'.
+[Wed Jun 30 13:18:13 2021]
+Finished job 125.
+14 of 346 steps (4%) done
+
+[Wed Jun 30 13:18:13 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.tab
+    jobid: 63
+    wildcards: mark=H3K27me3, chrom=2
+
+[Wed Jun 30 13:18:13 2021]
+Finished job 112.
+15 of 346 steps (4%) done
+Submitted job 63 with external jobid 'Submitted batch job 940765'.
+
+[Wed Jun 30 13:18:13 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr20.tab
+    jobid: 305
+    wildcards: mark=H3K9me3, chrom=20
+
+[Wed Jun 30 13:18:13 2021]
+Finished job 73.
+16 of 346 steps (5%) done
+Submitted job 305 with external jobid 'Submitted batch job 940767'.
+[Wed Jun 30 13:18:13 2021]
+Finished job 99.
+17 of 346 steps (5%) done
+
+[Wed Jun 30 13:18:13 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr19.tab
+    jobid: 292
+    wildcards: mark=H3K9me3, chrom=19
+
+[Wed Jun 30 13:18:13 2021]
+Finished job 138.
+18 of 346 steps (5%) done
+Submitted job 292 with external jobid 'Submitted batch job 940769'.
+
+[Wed Jun 30 13:18:13 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr22.tab
+    jobid: 331
+    wildcards: mark=H3K9me3, chrom=22
+
+Submitted job 331 with external jobid 'Submitted batch job 940773'.
+
+[Wed Jun 30 13:18:13 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr21.tab
+    jobid: 318
+    wildcards: mark=H3K9me3, chrom=21
+
+Submitted job 318 with external jobid 'Submitted batch job 940777'.
+
+[Wed Jun 30 13:18:13 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr3.tab
+    jobid: 76
+    wildcards: mark=H3K27me3, chrom=3
+
+Submitted job 76 with external jobid 'Submitted batch job 940781'.
+[Wed Jun 30 13:18:14 2021]
+Finished job 229.
+19 of 346 steps (5%) done
+
+[Wed Jun 30 13:18:14 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr1.tab
+    jobid: 56
+    wildcards: mark=H3K9ac, chrom=1
+
+Submitted job 56 with external jobid 'Submitted batch job 940793'.
+[Wed Jun 30 13:18:14 2021]
+Finished job 255.
+20 of 346 steps (6%) done
+
+[Wed Jun 30 13:18:14 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr4.tab
+    jobid: 89
+    wildcards: mark=H3K27me3, chrom=4
+
+[Wed Jun 30 13:18:14 2021]
+Finished job 281.
+21 of 346 steps (6%) done
+Submitted job 89 with external jobid 'Submitted batch job 940799'.
+
+[Wed Jun 30 13:18:14 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr2.tab
+    jobid: 69
+    wildcards: mark=H3K9ac, chrom=2
+
+[Wed Jun 30 13:18:14 2021]
+Finished job 113.
+22 of 346 steps (6%) done
+Submitted job 69 with external jobid 'Submitted batch job 940803'.
+[Wed Jun 30 13:18:14 2021]
+Finished job 61.
+23 of 346 steps (7%) done
+
+[Wed Jun 30 13:18:14 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr6.tab
+    jobid: 115
+    wildcards: mark=H3K27me3, chrom=6
+
+[Wed Jun 30 13:18:14 2021]
+Finished job 74.
+24 of 346 steps (7%) done
+Submitted job 115 with external jobid 'Submitted batch job 940807'.
+
+[Wed Jun 30 13:18:14 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr5.tab
+    jobid: 102
+    wildcards: mark=H3K27me3, chrom=5
+
+[Wed Jun 30 13:18:14 2021]
+Finished job 87.
+25 of 346 steps (7%) done
+Submitted job 102 with external jobid 'Submitted batch job 940808'.
+[Wed Jun 30 13:18:14 2021]
+Finished job 100.
+26 of 346 steps (8%) done
+
+[Wed Jun 30 13:18:14 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr7.tab
+    jobid: 128
+    wildcards: mark=H3K27me3, chrom=7
+
+[Wed Jun 30 13:18:14 2021]
+Finished job 126.
+27 of 346 steps (8%) done
+Submitted job 128 with external jobid 'Submitted batch job 940809'.
+
+[Wed Jun 30 13:18:14 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr8.tab
+    jobid: 141
+    wildcards: mark=H3K27me3, chrom=8
+
+[Wed Jun 30 13:18:14 2021]
+Finished job 139.
+28 of 346 steps (8%) done
+Submitted job 141 with external jobid 'Submitted batch job 940810'.
+
+[Wed Jun 30 13:18:14 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chrX.tab
+    jobid: 336
+    wildcards: mark=H3K27me3, chrom=X
+
+Submitted job 336 with external jobid 'Submitted batch job 940811'.
+
+[Wed Jun 30 13:18:14 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr3.tab
+    jobid: 82
+    wildcards: mark=H3K9ac, chrom=3
+
+Submitted job 82 with external jobid 'Submitted batch job 940812'.
+
+[Wed Jun 30 13:18:14 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr9.tab
+    jobid: 154
+    wildcards: mark=H3K27me3, chrom=9
+
+Submitted job 154 with external jobid 'Submitted batch job 940815'.
+[Wed Jun 30 13:18:15 2021]
+Finished job 230.
+29 of 346 steps (8%) done
+
+[Wed Jun 30 13:18:15 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr4.tab
+    jobid: 95
+    wildcards: mark=H3K9ac, chrom=4
+
+[Wed Jun 30 13:18:15 2021]
+Finished job 256.
+30 of 346 steps (9%) done
+Submitted job 95 with external jobid 'Submitted batch job 940833'.
+
+[Wed Jun 30 13:18:15 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr10.tab
+    jobid: 167
+    wildcards: mark=H3K27me3, chrom=10
+
+Submitted job 167 with external jobid 'Submitted batch job 940837'.
+[Wed Jun 30 13:18:15 2021]
+Finished job 282.
+31 of 346 steps (9%) done
+
+[Wed Jun 30 13:18:15 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr11.tab
+    jobid: 180
+    wildcards: mark=H3K27me3, chrom=11
+
+Submitted job 180 with external jobid 'Submitted batch job 940841'.
+[Wed Jun 30 13:18:15 2021]
+Finished job 344.
+32 of 346 steps (9%) done
+
+[Wed Jun 30 13:18:15 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr12.tab
+    jobid: 193
+    wildcards: mark=H3K27me3, chrom=12
+
+[Wed Jun 30 13:18:15 2021]
+Finished job 319.
+33 of 346 steps (10%) done
+Submitted job 193 with external jobid 'Submitted batch job 940846'.
+
+[Wed Jun 30 13:18:15 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr1.tab
+    jobid: 52
+    wildcards: mark=H3K4me1, chrom=1
+
+[Wed Jun 30 13:18:15 2021]
+Finished job 70.
+34 of 346 steps (10%) done
+Submitted job 52 with external jobid 'Submitted batch job 940850'.
+
+[Wed Jun 30 13:18:15 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr5.tab
+    jobid: 108
+    wildcards: mark=H3K9ac, chrom=5
+
+Submitted job 108 with external jobid 'Submitted batch job 940851'.
+[Wed Jun 30 13:18:15 2021]
+Finished job 83.
+35 of 346 steps (10%) done
+
+[Wed Jun 30 13:18:15 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr2.tab
+    jobid: 65
+    wildcards: mark=H3K4me1, chrom=2
+
+Submitted job 65 with external jobid 'Submitted batch job 940852'.
+[Wed Jun 30 13:18:15 2021]
+Finished job 96.
+36 of 346 steps (10%) done
+
+[Wed Jun 30 13:18:15 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr6.tab
+    jobid: 121
+    wildcards: mark=H3K9ac, chrom=6
+
+Submitted job 121 with external jobid 'Submitted batch job 940853'.
+[Wed Jun 30 13:18:15 2021]
+Finished job 109.
+37 of 346 steps (11%) done
+
+[Wed Jun 30 13:18:15 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr13.tab
+    jobid: 206
+    wildcards: mark=H3K27me3, chrom=13
+
+Submitted job 206 with external jobid 'Submitted batch job 940857'.
+[Wed Jun 30 13:18:15 2021]
+Finished job 122.
+38 of 346 steps (11%) done
+
+[Wed Jun 30 13:18:15 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr14.tab
+    jobid: 219
+    wildcards: mark=H3K27me3, chrom=14
+
+Submitted job 219 with external jobid 'Submitted batch job 940861'.
+[Wed Jun 30 13:18:16 2021]
+Finished job 135.
+39 of 346 steps (11%) done
+
+[Wed Jun 30 13:18:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr7.tab
+    jobid: 134
+    wildcards: mark=H3K9ac, chrom=7
+
+Submitted job 134 with external jobid 'Submitted batch job 940878'.
+[Wed Jun 30 13:18:16 2021]
+Finished job 148.
+40 of 346 steps (12%) done
+
+[Wed Jun 30 13:18:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr15.tab
+    jobid: 232
+    wildcards: mark=H3K27me3, chrom=15
+
+Submitted job 232 with external jobid 'Submitted batch job 940880'.
+[Wed Jun 30 13:18:16 2021]
+Finished job 239.
+41 of 346 steps (12%) done
+
+[Wed Jun 30 13:18:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chrX.tab
+    jobid: 342
+    wildcards: mark=H3K9ac, chrom=X
+
+Submitted job 342 with external jobid 'Submitted batch job 940881'.
+[Wed Jun 30 13:18:16 2021]
+Finished job 265.
+42 of 346 steps (12%) done
+
+[Wed Jun 30 13:18:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr8.tab
+    jobid: 147
+    wildcards: mark=H3K9ac, chrom=8
+
+Submitted job 147 with external jobid 'Submitted batch job 940882'.
+[Wed Jun 30 13:18:16 2021]
+Finished job 291.
+43 of 346 steps (12%) done
+
+[Wed Jun 30 13:18:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr16.tab
+    jobid: 245
+    wildcards: mark=H3K27me3, chrom=16
+
+Submitted job 245 with external jobid 'Submitted batch job 940883'.
+[Wed Jun 30 13:18:16 2021]
+Finished job 71.
+44 of 346 steps (13%) done
+
+[Wed Jun 30 13:18:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr9.tab
+    jobid: 160
+    wildcards: mark=H3K9ac, chrom=9
+
+[Wed Jun 30 13:18:16 2021]
+Finished job 84.
+45 of 346 steps (13%) done
+Submitted job 160 with external jobid 'Submitted batch job 940884'.
+
+[Wed Jun 30 13:18:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr17.tab
+    jobid: 258
+    wildcards: mark=H3K27me3, chrom=17
+
+[Wed Jun 30 13:18:16 2021]
+Finished job 97.
+46 of 346 steps (13%) done
+Submitted job 258 with external jobid 'Submitted batch job 940885'.
+
+[Wed Jun 30 13:18:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr10.tab
+    jobid: 173
+    wildcards: mark=H3K9ac, chrom=10
+
+[Wed Jun 30 13:18:16 2021]
+Finished job 110.
+47 of 346 steps (14%) done
+Submitted job 173 with external jobid 'Submitted batch job 940886'.
+[Wed Jun 30 13:18:16 2021]
+Finished job 123.
+48 of 346 steps (14%) done
+
+[Wed Jun 30 13:18:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr18.tab
+    jobid: 271
+    wildcards: mark=H3K27me3, chrom=18
+
+Submitted job 271 with external jobid 'Submitted batch job 940887'.
+
+[Wed Jun 30 13:18:16 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr11.tab
+    jobid: 186
+    wildcards: mark=H3K9ac, chrom=11
+
+Submitted job 186 with external jobid 'Submitted batch job 940888'.
+[Wed Jun 30 13:18:17 2021]
+Finished job 136.
+49 of 346 steps (14%) done
+
+[Wed Jun 30 13:18:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr12.tab
+    jobid: 199
+    wildcards: mark=H3K9ac, chrom=12
+
+[Wed Jun 30 13:18:17 2021]
+Finished job 294.
+50 of 346 steps (14%) done
+Submitted job 199 with external jobid 'Submitted batch job 940889'.
+
+[Wed Jun 30 13:18:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr3.tab
+    jobid: 78
+    wildcards: mark=H3K4me1, chrom=3
+
+Submitted job 78 with external jobid 'Submitted batch job 940890'.
+[Wed Jun 30 13:18:17 2021]
+Finished job 330.
+51 of 346 steps (15%) done
+
+[Wed Jun 30 13:18:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr4.tab
+    jobid: 91
+    wildcards: mark=H3K4me1, chrom=4
+
+[Wed Jun 30 13:18:17 2021]
+Finished job 333.
+52 of 346 steps (15%) done
+Submitted job 91 with external jobid 'Submitted batch job 940891'.
+
+[Wed Jun 30 13:18:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr20.tab
+    jobid: 297
+    wildcards: mark=H3K27me3, chrom=20
+
+[Wed Jun 30 13:18:17 2021]
+Finished job 150.
+53 of 346 steps (15%) done
+Submitted job 297 with external jobid 'Submitted batch job 940892'.
+
+[Wed Jun 30 13:18:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr13.tab
+    jobid: 212
+    wildcards: mark=H3K9ac, chrom=13
+
+Submitted job 212 with external jobid 'Submitted batch job 940893'.
+[Wed Jun 30 13:18:17 2021]
+Finished job 163.
+54 of 346 steps (16%) done
+
+[Wed Jun 30 13:18:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr5.tab
+    jobid: 104
+    wildcards: mark=H3K4me1, chrom=5
+
+Submitted job 104 with external jobid 'Submitted batch job 940894'.
+[Wed Jun 30 13:18:17 2021]
+Finished job 176.
+55 of 346 steps (16%) done
+
+[Wed Jun 30 13:18:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr19.tab
+    jobid: 284
+    wildcards: mark=H3K27me3, chrom=19
+
+Submitted job 284 with external jobid 'Submitted batch job 940895'.
+[Wed Jun 30 13:18:17 2021]
+Finished job 189.
+56 of 346 steps (16%) done
+
+[Wed Jun 30 13:18:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr14.tab
+    jobid: 225
+    wildcards: mark=H3K9ac, chrom=14
+
+Submitted job 225 with external jobid 'Submitted batch job 940896'.
+[Wed Jun 30 13:18:17 2021]
+Finished job 202.
+57 of 346 steps (16%) done
+
+[Wed Jun 30 13:18:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr22.tab
+    jobid: 323
+    wildcards: mark=H3K27me3, chrom=22
+
+[Wed Jun 30 13:18:17 2021]
+Finished job 215.
+58 of 346 steps (17%) done
+Submitted job 323 with external jobid 'Submitted batch job 940897'.
+
+[Wed Jun 30 13:18:17 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr6.tab
+    jobid: 117
+    wildcards: mark=H3K4me1, chrom=6
+
+Submitted job 117 with external jobid 'Submitted batch job 940898'.
+[Wed Jun 30 13:18:18 2021]
+Finished job 241.
+59 of 346 steps (17%) done
+
+[Wed Jun 30 13:18:18 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr21.tab
+    jobid: 310
+    wildcards: mark=H3K27me3, chrom=21
+
+[Wed Jun 30 13:18:18 2021]
+Finished job 267.
+60 of 346 steps (17%) done
+Submitted job 310 with external jobid 'Submitted batch job 940899'.
+
+[Wed Jun 30 13:18:18 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr15.tab
+    jobid: 238
+    wildcards: mark=H3K9ac, chrom=15
+
+Submitted job 238 with external jobid 'Submitted batch job 940900'.
+[Wed Jun 30 13:18:18 2021]
+Finished job 306.
+61 of 346 steps (18%) done
+
+[Wed Jun 30 13:18:18 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr7.tab
+    jobid: 130
+    wildcards: mark=H3K4me1, chrom=7
+
+[Wed Jun 30 13:18:18 2021]
+Finished job 345.
+62 of 346 steps (18%) done
+Submitted job 130 with external jobid 'Submitted batch job 940901'.
+[Wed Jun 30 13:18:18 2021]
+Finished job 47.
+63 of 346 steps (18%) done
+
+[Wed Jun 30 13:18:18 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chrX.tab
+    jobid: 338
+    wildcards: mark=H3K4me1, chrom=X
+
+Submitted job 338 with external jobid 'Submitted batch job 940902'.
+
+[Wed Jun 30 13:18:18 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr16.tab
+    jobid: 251
+    wildcards: mark=H3K9ac, chrom=16
+
+[Wed Jun 30 13:18:18 2021]
+Finished job 151.
+64 of 346 steps (18%) done
+Submitted job 251 with external jobid 'Submitted batch job 940903'.
+
+[Wed Jun 30 13:18:18 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr1.tab
+    jobid: 51
+    wildcards: mark=H3K36me3, chrom=1
+
+[Wed Jun 30 13:18:18 2021]
+Finished job 164.
+65 of 346 steps (19%) done
+Submitted job 51 with external jobid 'Submitted batch job 940904'.
+
+[Wed Jun 30 13:18:18 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr17.tab
+    jobid: 264
+    wildcards: mark=H3K9ac, chrom=17
+
+[Wed Jun 30 13:18:18 2021]
+Finished job 177.
+66 of 346 steps (19%) done
+Submitted job 264 with external jobid 'Submitted batch job 940905'.
+
+[Wed Jun 30 13:18:18 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr8.tab
+    jobid: 143
+    wildcards: mark=H3K4me1, chrom=8
+
+[Wed Jun 30 13:18:18 2021]
+Finished job 190.
+67 of 346 steps (19%) done
+Submitted job 143 with external jobid 'Submitted batch job 940906'.
+[Wed Jun 30 13:18:18 2021]
+Finished job 203.
+68 of 346 steps (20%) done
+
+[Wed Jun 30 13:18:18 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr1.tab
+    jobid: 55
+    wildcards: mark=H3K79me2, chrom=1
+
+Submitted job 55 with external jobid 'Submitted batch job 940907'.
+
+[Wed Jun 30 13:18:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr18.tab
+    jobid: 277
+    wildcards: mark=H3K9ac, chrom=18
+
+Submitted job 277 with external jobid 'Submitted batch job 940908'.
+[Wed Jun 30 13:18:19 2021]
+Finished job 216.
+69 of 346 steps (20%) done
+
+[Wed Jun 30 13:18:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr2.tab
+    jobid: 64
+    wildcards: mark=H3K36me3, chrom=2
+
+Submitted job 64 with external jobid 'Submitted batch job 940909'.
+[Wed Jun 30 13:18:19 2021]
+Finished job 242.
+70 of 346 steps (20%) done
+
+[Wed Jun 30 13:18:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr9.tab
+    jobid: 156
+    wildcards: mark=H3K4me1, chrom=9
+
+Submitted job 156 with external jobid 'Submitted batch job 940910'.
+[Wed Jun 30 13:18:19 2021]
+Finished job 268.
+71 of 346 steps (21%) done
+
+[Wed Jun 30 13:18:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr2.tab
+    jobid: 68
+    wildcards: mark=H3K79me2, chrom=2
+
+Submitted job 68 with external jobid 'Submitted batch job 940911'.
+[Wed Jun 30 13:18:19 2021]
+Finished job 307.
+72 of 346 steps (21%) done
+
+[Wed Jun 30 13:18:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr10.tab
+    jobid: 169
+    wildcards: mark=H3K4me1, chrom=10
+
+Submitted job 169 with external jobid 'Submitted batch job 940912'.
+[Wed Jun 30 13:18:19 2021]
+Finished job 295.
+73 of 346 steps (21%) done
+
+[Wed Jun 30 13:18:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr11.tab
+    jobid: 182
+    wildcards: mark=H3K4me1, chrom=11
+
+Submitted job 182 with external jobid 'Submitted batch job 940913'.
+[Wed Jun 30 13:18:19 2021]
+Finished job 334.
+74 of 346 steps (21%) done
+
+[Wed Jun 30 13:18:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr12.tab
+    jobid: 195
+    wildcards: mark=H3K4me1, chrom=12
+
+Submitted job 195 with external jobid 'Submitted batch job 940914'.
+[Wed Jun 30 13:18:19 2021]
+Finished job 48.
+75 of 346 steps (22%) done
+
+[Wed Jun 30 13:18:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr20.tab
+    jobid: 303
+    wildcards: mark=H3K9ac, chrom=20
+
+Submitted job 303 with external jobid 'Submitted batch job 940915'.
+[Wed Jun 30 13:18:19 2021]
+Finished job 152.
+76 of 346 steps (22%) done
+
+[Wed Jun 30 13:18:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr19.tab
+    jobid: 290
+    wildcards: mark=H3K9ac, chrom=19
+
+[Wed Jun 30 13:18:19 2021]
+Finished job 165.
+77 of 346 steps (22%) done
+Submitted job 290 with external jobid 'Submitted batch job 940916'.
+
+[Wed Jun 30 13:18:19 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr22.tab
+    jobid: 329
+    wildcards: mark=H3K9ac, chrom=22
+
+[Wed Jun 30 13:18:20 2021]
+Finished job 178.
+78 of 346 steps (23%) done
+Submitted job 329 with external jobid 'Submitted batch job 940917'.
+
+[Wed Jun 30 13:18:20 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr13.tab
+    jobid: 208
+    wildcards: mark=H3K4me1, chrom=13
+
+Submitted job 208 with external jobid 'Submitted batch job 940918'.
+[Wed Jun 30 13:18:20 2021]
+Finished job 191.
+79 of 346 steps (23%) done
+
+[Wed Jun 30 13:18:20 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K9ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr21.tab
+    jobid: 316
+    wildcards: mark=H3K9ac, chrom=21
+
+Submitted job 316 with external jobid 'Submitted batch job 940919'.
+[Wed Jun 30 13:18:20 2021]
+Finished job 204.
+80 of 346 steps (23%) done
+
+[Wed Jun 30 13:18:20 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr14.tab
+    jobid: 221
+    wildcards: mark=H3K4me1, chrom=14
+
+Submitted job 221 with external jobid 'Submitted batch job 940920'.
+[Wed Jun 30 13:18:20 2021]
+Finished job 217.
+81 of 346 steps (23%) done
+
+[Wed Jun 30 13:18:20 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr15.tab
+    jobid: 234
+    wildcards: mark=H3K4me1, chrom=15
+
+Submitted job 234 with external jobid 'Submitted batch job 940921'.
+[Wed Jun 30 13:18:20 2021]
+Finished job 243.
+82 of 346 steps (24%) done
+
+[Wed Jun 30 13:18:20 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr3.tab
+    jobid: 77
+    wildcards: mark=H3K36me3, chrom=3
+
+Submitted job 77 with external jobid 'Submitted batch job 940922'.
+[Wed Jun 30 13:18:20 2021]
+Finished job 269.
+83 of 346 steps (24%) done
+
+[Wed Jun 30 13:18:20 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr3.tab
+    jobid: 81
+    wildcards: mark=H3K79me2, chrom=3
+
+Submitted job 81 with external jobid 'Submitted batch job 940923'.
+[Wed Jun 30 13:18:20 2021]
+Finished job 308.
+84 of 346 steps (24%) done
+
+[Wed Jun 30 13:18:20 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr4.tab
+    jobid: 90
+    wildcards: mark=H3K36me3, chrom=4
+
+Submitted job 90 with external jobid 'Submitted batch job 940924'.
+[Wed Jun 30 13:18:20 2021]
+Finished job 320.
+85 of 346 steps (25%) done
+
+[Wed Jun 30 13:18:20 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr16.tab
+    jobid: 247
+    wildcards: mark=H3K4me1, chrom=16
+
+[Wed Jun 30 13:18:20 2021]
+Finished job 57.
+86 of 346 steps (25%) done
+Submitted job 247 with external jobid 'Submitted batch job 940925'.
+
+[Wed Jun 30 13:18:20 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr4.tab
+    jobid: 94
+    wildcards: mark=H3K79me2, chrom=4
+
+[Wed Jun 30 13:18:20 2021]
+Finished job 161.
+87 of 346 steps (25%) done
+Submitted job 94 with external jobid 'Submitted batch job 940926'.
+
+[Wed Jun 30 13:18:20 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr5.tab
+    jobid: 103
+    wildcards: mark=H3K36me3, chrom=5
+
+[Wed Jun 30 13:18:21 2021]
+Finished job 174.
+88 of 346 steps (25%) done
+Submitted job 103 with external jobid 'Submitted batch job 940927'.
+
+[Wed Jun 30 13:18:21 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr17.tab
+    jobid: 260
+    wildcards: mark=H3K4me1, chrom=17
+
+Submitted job 260 with external jobid 'Submitted batch job 940928'.
+[Wed Jun 30 13:18:21 2021]
+Finished job 187.
+89 of 346 steps (26%) done
+
+[Wed Jun 30 13:18:21 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr18.tab
+    jobid: 273
+    wildcards: mark=H3K4me1, chrom=18
+
+Submitted job 273 with external jobid 'Submitted batch job 940929'.
+[Wed Jun 30 13:18:21 2021]
+Finished job 200.
+90 of 346 steps (26%) done
+
+[Wed Jun 30 13:18:21 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr5.tab
+    jobid: 107
+    wildcards: mark=H3K79me2, chrom=5
+
+Submitted job 107 with external jobid 'Submitted batch job 940930'.
+[Wed Jun 30 13:18:21 2021]
+Finished job 213.
+91 of 346 steps (26%) done
+
+[Wed Jun 30 13:18:21 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr6.tab
+    jobid: 116
+    wildcards: mark=H3K36me3, chrom=6
+
+[Wed Jun 30 13:18:21 2021]
+Finished job 226.
+92 of 346 steps (27%) done
+Submitted job 116 with external jobid 'Submitted batch job 940931'.
+
+[Wed Jun 30 13:18:21 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr6.tab
+    jobid: 120
+    wildcards: mark=H3K79me2, chrom=6
+
+[Wed Jun 30 13:18:21 2021]
+Finished job 278.
+93 of 346 steps (27%) done
+Submitted job 120 with external jobid 'Submitted batch job 940932'.
+
+[Wed Jun 30 13:18:21 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr20.tab
+    jobid: 299
+    wildcards: mark=H3K4me1, chrom=20
+
+[Wed Jun 30 13:18:21 2021]
+Finished job 317.
+94 of 346 steps (27%) done
+Submitted job 299 with external jobid 'Submitted batch job 940933'.
+
+[Wed Jun 30 13:18:21 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr7.tab
+    jobid: 129
+    wildcards: mark=H3K36me3, chrom=7
+
+Submitted job 129 with external jobid 'Submitted batch job 940934'.
+[Wed Jun 30 13:18:21 2021]
+Finished job 58.
+95 of 346 steps (27%) done
+
+[Wed Jun 30 13:18:21 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr19.tab
+    jobid: 286
+    wildcards: mark=H3K4me1, chrom=19
+
+Submitted job 286 with external jobid 'Submitted batch job 940935'.
+[Wed Jun 30 13:18:42 2021]
+Finished job 72.
+96 of 346 steps (28%) done
+
+[Wed Jun 30 13:18:42 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chrX.tab
+    jobid: 337
+    wildcards: mark=H3K36me3, chrom=X
+
+[Wed Jun 30 13:18:42 2021]
+Finished job 60.
+97 of 346 steps (28%) done
+Submitted job 337 with external jobid 'Submitted batch job 940938'.
+
+[Wed Jun 30 13:18:42 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr7.tab
+    jobid: 133
+    wildcards: mark=H3K79me2, chrom=7
+
+[Wed Jun 30 13:18:42 2021]
+Finished job 86.
+98 of 346 steps (28%) done
+Submitted job 133 with external jobid 'Submitted batch job 940939'.
+
+[Wed Jun 30 13:18:44 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chrX.tab
+    jobid: 341
+    wildcards: mark=H3K79me2, chrom=X
+
+Submitted job 341 with external jobid 'Submitted batch job 940940'.
+[Wed Jun 30 13:18:53 2021]
+Finished job 162.
+99 of 346 steps (29%) done
+
+[Wed Jun 30 13:18:53 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr22.tab
+    jobid: 325
+    wildcards: mark=H3K4me1, chrom=22
+
+[Wed Jun 30 13:18:53 2021]
+Finished job 175.
+100 of 346 steps (29%) done
+[Wed Jun 30 13:18:53 2021]
+Finished job 188.
+101 of 346 steps (29%) done
+Submitted job 325 with external jobid 'Submitted batch job 940943'.
+[Wed Jun 30 13:18:53 2021]
+Finished job 214.
+102 of 346 steps (29%) done
+
+[Wed Jun 30 13:18:53 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr8.tab
+    jobid: 142
+    wildcards: mark=H3K36me3, chrom=8
+
+[Wed Jun 30 13:18:53 2021]
+Finished job 240.
+103 of 346 steps (30%) done
+Submitted job 142 with external jobid 'Submitted batch job 940944'.
+
+[Wed Jun 30 13:18:53 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr8.tab
+    jobid: 146
+    wildcards: mark=H3K79me2, chrom=8
+
+[Wed Jun 30 13:18:53 2021]
+Finished job 266.
+104 of 346 steps (30%) done
+[Wed Jun 30 13:18:53 2021]
+Finished job 227.
+105 of 346 steps (30%) done
+[Wed Jun 30 13:18:53 2021]
+Finished job 253.
+106 of 346 steps (31%) done
+[Wed Jun 30 13:18:54 2021]
+Finished job 279.
+107 of 346 steps (31%) done
+[Wed Jun 30 13:18:54 2021]
+Finished job 50.
+108 of 346 steps (31%) done
+[Wed Jun 30 13:18:54 2021]
+Finished job 63.
+109 of 346 steps (32%) done
+[Wed Jun 30 13:18:54 2021]
+Finished job 305.
+110 of 346 steps (32%) done
+[Wed Jun 30 13:18:54 2021]
+Finished job 292.
+111 of 346 steps (32%) done
+[Wed Jun 30 13:18:54 2021]
+Finished job 331.
+112 of 346 steps (32%) done
+[Wed Jun 30 13:18:54 2021]
+Finished job 318.
+113 of 346 steps (33%) done
+[Wed Jun 30 13:18:54 2021]
+Finished job 76.
+114 of 346 steps (33%) done
+[Wed Jun 30 13:18:54 2021]
+Finished job 56.
+115 of 346 steps (33%) done
+[Wed Jun 30 13:18:54 2021]
+Finished job 89.
+116 of 346 steps (34%) done
+Submitted job 146 with external jobid 'Submitted batch job 940946'.
+
+[Wed Jun 30 13:18:54 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me1.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr21.tab
+    jobid: 312
+    wildcards: mark=H3K4me1, chrom=21
+
+Submitted job 312 with external jobid 'Submitted batch job 940947'.
+
+[Wed Jun 30 13:18:54 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr15.tab
+    jobid: 233
+    wildcards: mark=H3K36me3, chrom=15
+
+Submitted job 233 with external jobid 'Submitted batch job 940948'.
+
+[Wed Jun 30 13:18:54 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr15.tab
+    jobid: 237
+    wildcards: mark=H3K79me2, chrom=15
+
+Submitted job 237 with external jobid 'Submitted batch job 940949'.
+
+[Wed Jun 30 13:18:54 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr9.tab
+    jobid: 155
+    wildcards: mark=H3K36me3, chrom=9
+
+Submitted job 155 with external jobid 'Submitted batch job 940950'.
+
+[Wed Jun 30 13:18:54 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr10.tab
+    jobid: 168
+    wildcards: mark=H3K36me3, chrom=10
+
+Submitted job 168 with external jobid 'Submitted batch job 940951'.
+
+[Wed Jun 30 13:18:55 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr11.tab
+    jobid: 181
+    wildcards: mark=H3K36me3, chrom=11
+
+Submitted job 181 with external jobid 'Submitted batch job 940952'.
+
+[Wed Jun 30 13:18:55 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr12.tab
+    jobid: 194
+    wildcards: mark=H3K36me3, chrom=12
+
+[Wed Jun 30 13:18:55 2021]
+Finished job 69.
+117 of 346 steps (34%) done
+[Wed Jun 30 13:18:55 2021]
+Finished job 115.
+118 of 346 steps (34%) done
+Submitted job 194 with external jobid 'Submitted batch job 940953'.
+
+[Wed Jun 30 13:18:55 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr13.tab
+    jobid: 207
+    wildcards: mark=H3K36me3, chrom=13
+
+[Wed Jun 30 13:18:55 2021]
+Finished job 102.
+119 of 346 steps (34%) done
+[Wed Jun 30 13:18:55 2021]
+Finished job 128.
+120 of 346 steps (35%) done
+[Wed Jun 30 13:18:55 2021]
+Finished job 141.
+121 of 346 steps (35%) done
+[Wed Jun 30 13:18:55 2021]
+Finished job 336.
+122 of 346 steps (35%) done
+[Wed Jun 30 13:18:55 2021]
+Finished job 82.
+123 of 346 steps (36%) done
+[Wed Jun 30 13:18:55 2021]
+Finished job 154.
+124 of 346 steps (36%) done
+[Wed Jun 30 13:18:55 2021]
+Finished job 95.
+125 of 346 steps (36%) done
+[Wed Jun 30 13:18:55 2021]
+Finished job 167.
+126 of 346 steps (36%) done
+Submitted job 207 with external jobid 'Submitted batch job 940954'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr14.tab
+    jobid: 220
+    wildcards: mark=H3K36me3, chrom=14
+
+[Wed Jun 30 13:18:56 2021]
+Finished job 180.
+127 of 346 steps (37%) done
+Submitted job 220 with external jobid 'Submitted batch job 940955'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr9.tab
+    jobid: 159
+    wildcards: mark=H3K79me2, chrom=9
+
+[Wed Jun 30 13:18:56 2021]
+Finished job 193.
+128 of 346 steps (37%) done
+Submitted job 159 with external jobid 'Submitted batch job 940956'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr10.tab
+    jobid: 172
+    wildcards: mark=H3K79me2, chrom=10
+
+[Wed Jun 30 13:18:56 2021]
+Finished job 52.
+129 of 346 steps (37%) done
+Submitted job 172 with external jobid 'Submitted batch job 940957'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr11.tab
+    jobid: 185
+    wildcards: mark=H3K79me2, chrom=11
+
+[Wed Jun 30 13:18:56 2021]
+Finished job 108.
+130 of 346 steps (38%) done
+Submitted job 185 with external jobid 'Submitted batch job 940958'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr12.tab
+    jobid: 198
+    wildcards: mark=H3K79me2, chrom=12
+
+[Wed Jun 30 13:18:56 2021]
+Finished job 65.
+131 of 346 steps (38%) done
+Submitted job 198 with external jobid 'Submitted batch job 940959'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr13.tab
+    jobid: 211
+    wildcards: mark=H3K79me2, chrom=13
+
+[Wed Jun 30 13:18:56 2021]
+Finished job 121.
+132 of 346 steps (38%) done
+Submitted job 211 with external jobid 'Submitted batch job 940960'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr14.tab
+    jobid: 224
+    wildcards: mark=H3K79me2, chrom=14
+
+[Wed Jun 30 13:18:56 2021]
+Finished job 206.
+133 of 346 steps (38%) done
+Submitted job 224 with external jobid 'Submitted batch job 940961'.
+[Wed Jun 30 13:18:56 2021]
+Finished job 219.
+134 of 346 steps (39%) done
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr20.tab
+    jobid: 298
+    wildcards: mark=H3K36me3, chrom=20
+
+[Wed Jun 30 13:18:56 2021]
+Finished job 134.
+135 of 346 steps (39%) done
+Submitted job 298 with external jobid 'Submitted batch job 940962'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr22.tab
+    jobid: 328
+    wildcards: mark=H3K79me2, chrom=22
+
+[Wed Jun 30 13:18:56 2021]
+Finished job 232.
+136 of 346 steps (39%) done
+Submitted job 328 with external jobid 'Submitted batch job 940963'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr17.tab
+    jobid: 259
+    wildcards: mark=H3K36me3, chrom=17
+
+Submitted job 259 with external jobid 'Submitted batch job 940964'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr19.tab
+    jobid: 285
+    wildcards: mark=H3K36me3, chrom=19
+
+Submitted job 285 with external jobid 'Submitted batch job 940965'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr2.tab
+    jobid: 67
+    wildcards: mark=H3K4me3, chrom=2
+
+Submitted job 67 with external jobid 'Submitted batch job 940966'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr3.tab
+    jobid: 80
+    wildcards: mark=H3K4me3, chrom=3
+
+Submitted job 80 with external jobid 'Submitted batch job 940967'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr4.tab
+    jobid: 93
+    wildcards: mark=H3K4me3, chrom=4
+
+Submitted job 93 with external jobid 'Submitted batch job 940968'.
+
+[Wed Jun 30 13:18:56 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr17.tab
+    jobid: 263
+    wildcards: mark=H3K79me2, chrom=17
+
+Submitted job 263 with external jobid 'Submitted batch job 940969'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr19.tab
+    jobid: 289
+    wildcards: mark=H3K79me2, chrom=19
+
+Submitted job 289 with external jobid 'Submitted batch job 940970'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr22.tab
+    jobid: 324
+    wildcards: mark=H3K36me3, chrom=22
+
+Submitted job 324 with external jobid 'Submitted batch job 940971'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr16.tab
+    jobid: 246
+    wildcards: mark=H3K36me3, chrom=16
+
+Submitted job 246 with external jobid 'Submitted batch job 940972'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr18.tab
+    jobid: 272
+    wildcards: mark=H3K36me3, chrom=18
+
+Submitted job 272 with external jobid 'Submitted batch job 940973'.
+[Wed Jun 30 13:18:57 2021]
+Finished job 342.
+137 of 346 steps (40%) done
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K36me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr21.tab
+    jobid: 311
+    wildcards: mark=H3K36me3, chrom=21
+
+Submitted job 311 with external jobid 'Submitted batch job 940974'.
+[Wed Jun 30 13:18:57 2021]
+Finished job 147.
+138 of 346 steps (40%) done
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr20.tab
+    jobid: 302
+    wildcards: mark=H3K79me2, chrom=20
+
+Submitted job 302 with external jobid 'Submitted batch job 940975'.
+[Wed Jun 30 13:18:57 2021]
+Finished job 245.
+139 of 346 steps (40%) done
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.tab
+    jobid: 54
+    wildcards: mark=H3K4me3, chrom=1
+
+Submitted job 54 with external jobid 'Submitted batch job 940976'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr16.tab
+    jobid: 250
+    wildcards: mark=H3K79me2, chrom=16
+
+[Wed Jun 30 13:18:57 2021]
+Finished job 160.
+140 of 346 steps (40%) done
+[Wed Jun 30 13:18:57 2021]
+Finished job 258.
+141 of 346 steps (41%) done
+Submitted job 250 with external jobid 'Submitted batch job 940977'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr18.tab
+    jobid: 276
+    wildcards: mark=H3K79me2, chrom=18
+
+Submitted job 276 with external jobid 'Submitted batch job 940978'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K79me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr21.tab
+    jobid: 315
+    wildcards: mark=H3K79me2, chrom=21
+
+Submitted job 315 with external jobid 'Submitted batch job 940979'.
+[Wed Jun 30 13:18:57 2021]
+Finished job 173.
+142 of 346 steps (41%) done
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr5.tab
+    jobid: 106
+    wildcards: mark=H3K4me3, chrom=5
+
+[Wed Jun 30 13:18:57 2021]
+Finished job 271.
+143 of 346 steps (41%) done
+Submitted job 106 with external jobid 'Submitted batch job 940980'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr6.tab
+    jobid: 119
+    wildcards: mark=H3K4me3, chrom=6
+
+Submitted job 119 with external jobid 'Submitted batch job 940981'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr7.tab
+    jobid: 132
+    wildcards: mark=H3K4me3, chrom=7
+
+Submitted job 132 with external jobid 'Submitted batch job 940982'.
+[Wed Jun 30 13:18:57 2021]
+Finished job 186.
+144 of 346 steps (42%) done
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr8.tab
+    jobid: 145
+    wildcards: mark=H3K4me3, chrom=8
+
+Submitted job 145 with external jobid 'Submitted batch job 940983'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chrX.tab
+    jobid: 340
+    wildcards: mark=H3K4me3, chrom=X
+
+[Wed Jun 30 13:18:57 2021]
+Finished job 199.
+145 of 346 steps (42%) done
+Submitted job 340 with external jobid 'Submitted batch job 940984'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr9.tab
+    jobid: 158
+    wildcards: mark=H3K4me3, chrom=9
+
+[Wed Jun 30 13:18:57 2021]
+Finished job 78.
+146 of 346 steps (42%) done
+Submitted job 158 with external jobid 'Submitted batch job 940985'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr10.tab
+    jobid: 171
+    wildcards: mark=H3K4me3, chrom=10
+
+Submitted job 171 with external jobid 'Submitted batch job 940986'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr11.tab
+    jobid: 184
+    wildcards: mark=H3K4me3, chrom=11
+
+Submitted job 184 with external jobid 'Submitted batch job 940987'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr15.tab
+    jobid: 236
+    wildcards: mark=H3K4me3, chrom=15
+
+Submitted job 236 with external jobid 'Submitted batch job 940988'.
+
+[Wed Jun 30 13:18:57 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr12.tab
+    jobid: 197
+    wildcards: mark=H3K4me3, chrom=12
+
+Submitted job 197 with external jobid 'Submitted batch job 940989'.
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr13.tab
+    jobid: 210
+    wildcards: mark=H3K4me3, chrom=13
+
+Submitted job 210 with external jobid 'Submitted batch job 940990'.
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr14.tab
+    jobid: 223
+    wildcards: mark=H3K4me3, chrom=14
+
+Submitted job 223 with external jobid 'Submitted batch job 940991'.
+[Wed Jun 30 13:18:58 2021]
+Finished job 91.
+147 of 346 steps (42%) done
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr16.tab
+    jobid: 249
+    wildcards: mark=H3K4me3, chrom=16
+
+Submitted job 249 with external jobid 'Submitted batch job 940992'.
+[Wed Jun 30 13:18:58 2021]
+Finished job 297.
+148 of 346 steps (43%) done
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr17.tab
+    jobid: 262
+    wildcards: mark=H3K4me3, chrom=17
+
+Submitted job 262 with external jobid 'Submitted batch job 940993'.
+[Wed Jun 30 13:18:58 2021]
+Finished job 212.
+149 of 346 steps (43%) done
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr18.tab
+    jobid: 275
+    wildcards: mark=H3K4me3, chrom=18
+
+Submitted job 275 with external jobid 'Submitted batch job 940994'.
+[Wed Jun 30 13:18:58 2021]
+Finished job 104.
+150 of 346 steps (43%) done
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr20.tab
+    jobid: 301
+    wildcards: mark=H3K4me3, chrom=20
+
+[Wed Jun 30 13:18:58 2021]
+Finished job 284.
+151 of 346 steps (44%) done
+Submitted job 301 with external jobid 'Submitted batch job 940995'.
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr19.tab
+    jobid: 288
+    wildcards: mark=H3K4me3, chrom=19
+
+Submitted job 288 with external jobid 'Submitted batch job 940996'.
+[Wed Jun 30 13:18:58 2021]
+Finished job 225.
+152 of 346 steps (44%) done
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr22.tab
+    jobid: 327
+    wildcards: mark=H3K4me3, chrom=22
+
+Submitted job 327 with external jobid 'Submitted batch job 940997'.
+[Wed Jun 30 13:18:58 2021]
+Finished job 323.
+153 of 346 steps (44%) done
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me3.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr21.tab
+    jobid: 314
+    wildcards: mark=H3K4me3, chrom=21
+
+Submitted job 314 with external jobid 'Submitted batch job 940998'.
+[Wed Jun 30 13:18:58 2021]
+Finished job 117.
+154 of 346 steps (45%) done
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr1.tab
+    jobid: 53
+    wildcards: mark=H3K4me2, chrom=1
+
+Submitted job 53 with external jobid 'Submitted batch job 940999'.
+[Wed Jun 30 13:18:58 2021]
+Finished job 310.
+155 of 346 steps (45%) done
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr2.tab
+    jobid: 66
+    wildcards: mark=H3K4me2, chrom=2
+
+Submitted job 66 with external jobid 'Submitted batch job 941000'.
+[Wed Jun 30 13:18:58 2021]
+Finished job 238.
+156 of 346 steps (45%) done
+
+[Wed Jun 30 13:18:58 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr1.tab
+    jobid: 49
+    wildcards: mark=H3K27ac, chrom=1
+
+Submitted job 49 with external jobid 'Submitted batch job 941001'.
+[Wed Jun 30 13:18:59 2021]
+Finished job 130.
+157 of 346 steps (45%) done
+
+[Wed Jun 30 13:18:59 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr2.tab
+    jobid: 62
+    wildcards: mark=H3K27ac, chrom=2
+
+[Wed Jun 30 13:18:59 2021]
+Finished job 338.
+158 of 346 steps (46%) done
+Submitted job 62 with external jobid 'Submitted batch job 941002'.
+
+[Wed Jun 30 13:18:59 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr3.tab
+    jobid: 79
+    wildcards: mark=H3K4me2, chrom=3
+
+[Wed Jun 30 13:18:59 2021]
+Finished job 251.
+159 of 346 steps (46%) done
+Submitted job 79 with external jobid 'Submitted batch job 941003'.
+
+[Wed Jun 30 13:18:59 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr4.tab
+    jobid: 92
+    wildcards: mark=H3K4me2, chrom=4
+
+Submitted job 92 with external jobid 'Submitted batch job 941004'.
+[Wed Jun 30 13:18:59 2021]
+Finished job 51.
+160 of 346 steps (46%) done
+
+[Wed Jun 30 13:18:59 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr3.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr3.tab
+    jobid: 75
+    wildcards: mark=H3K27ac, chrom=3
+
+[Wed Jun 30 13:18:59 2021]
+Finished job 264.
+161 of 346 steps (47%) done
+Submitted job 75 with external jobid 'Submitted batch job 941005'.
+
+[Wed Jun 30 13:18:59 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr4.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr4.tab
+    jobid: 88
+    wildcards: mark=H3K27ac, chrom=4
+
+Submitted job 88 with external jobid 'Submitted batch job 941006'.
+[Wed Jun 30 13:18:59 2021]
+Finished job 143.
+162 of 346 steps (47%) done
+
+[Wed Jun 30 13:18:59 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr5.tab
+    jobid: 105
+    wildcards: mark=H3K4me2, chrom=5
+
+Submitted job 105 with external jobid 'Submitted batch job 941007'.
+[Wed Jun 30 13:18:59 2021]
+Finished job 55.
+163 of 346 steps (47%) done
+
+[Wed Jun 30 13:18:59 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr5.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr5.tab
+    jobid: 101
+    wildcards: mark=H3K27ac, chrom=5
+
+Submitted job 101 with external jobid 'Submitted batch job 941008'.
+[Wed Jun 30 13:18:59 2021]
+Finished job 277.
+164 of 346 steps (47%) done
+
+[Wed Jun 30 13:18:59 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr6.tab
+    jobid: 118
+    wildcards: mark=H3K4me2, chrom=6
+
+Submitted job 118 with external jobid 'Submitted batch job 941009'.
+[Wed Jun 30 13:18:59 2021]
+Finished job 64.
+165 of 346 steps (48%) done
+
+[Wed Jun 30 13:18:59 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr6.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr6.tab
+    jobid: 114
+    wildcards: mark=H3K27ac, chrom=6
+
+Submitted job 114 with external jobid 'Submitted batch job 941010'.
+[Wed Jun 30 13:18:59 2021]
+Finished job 156.
+166 of 346 steps (48%) done
+
+[Wed Jun 30 13:18:59 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr7.tab
+    jobid: 131
+    wildcards: mark=H3K4me2, chrom=7
+
+Submitted job 131 with external jobid 'Submitted batch job 941011'.
+[Wed Jun 30 13:19:00 2021]
+Finished job 68.
+167 of 346 steps (48%) done
+
+[Wed Jun 30 13:19:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chrX.tab
+    jobid: 339
+    wildcards: mark=H3K4me2, chrom=X
+
+Submitted job 339 with external jobid 'Submitted batch job 941012'.
+[Wed Jun 30 13:19:00 2021]
+Finished job 169.
+168 of 346 steps (49%) done
+
+[Wed Jun 30 13:19:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr7.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr7.tab
+    jobid: 127
+    wildcards: mark=H3K27ac, chrom=7
+
+Submitted job 127 with external jobid 'Submitted batch job 941013'.
+[Wed Jun 30 13:19:00 2021]
+Finished job 182.
+169 of 346 steps (49%) done
+
+[Wed Jun 30 13:19:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr8.tab
+    jobid: 144
+    wildcards: mark=H3K4me2, chrom=8
+
+Submitted job 144 with external jobid 'Submitted batch job 941014'.
+[Wed Jun 30 13:19:00 2021]
+Finished job 195.
+170 of 346 steps (49%) done
+
+[Wed Jun 30 13:19:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chrX.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chrX.tab
+    jobid: 335
+    wildcards: mark=H3K27ac, chrom=X
+
+Submitted job 335 with external jobid 'Submitted batch job 941015'.
+[Wed Jun 30 13:19:00 2021]
+Finished job 303.
+171 of 346 steps (49%) done
+
+[Wed Jun 30 13:19:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr9.tab
+    jobid: 157
+    wildcards: mark=H3K4me2, chrom=9
+
+Submitted job 157 with external jobid 'Submitted batch job 941016'.
+[Wed Jun 30 13:19:00 2021]
+Finished job 290.
+172 of 346 steps (50%) done
+
+[Wed Jun 30 13:19:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr8.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr8.tab
+    jobid: 140
+    wildcards: mark=H3K27ac, chrom=8
+
+Submitted job 140 with external jobid 'Submitted batch job 941017'.
+[Wed Jun 30 13:19:00 2021]
+Finished job 329.
+173 of 346 steps (50%) done
+
+[Wed Jun 30 13:19:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr10.tab
+    jobid: 170
+    wildcards: mark=H3K4me2, chrom=10
+
+Submitted job 170 with external jobid 'Submitted batch job 941018'.
+[Wed Jun 30 13:19:00 2021]
+Finished job 208.
+174 of 346 steps (50%) done
+
+[Wed Jun 30 13:19:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr11.tab
+    jobid: 183
+    wildcards: mark=H3K4me2, chrom=11
+
+Submitted job 183 with external jobid 'Submitted batch job 941019'.
+[Wed Jun 30 13:19:00 2021]
+Finished job 316.
+175 of 346 steps (51%) done
+
+[Wed Jun 30 13:19:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr12.tab
+    jobid: 196
+    wildcards: mark=H3K4me2, chrom=12
+
+Submitted job 196 with external jobid 'Submitted batch job 941020'.
+[Wed Jun 30 13:19:00 2021]
+Finished job 221.
+176 of 346 steps (51%) done
+
+[Wed Jun 30 13:19:00 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr9.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr9.tab
+    jobid: 153
+    wildcards: mark=H3K27ac, chrom=9
+
+Submitted job 153 with external jobid 'Submitted batch job 941021'.
+[Wed Jun 30 13:19:01 2021]
+Finished job 234.
+177 of 346 steps (51%) done
+
+[Wed Jun 30 13:19:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr10.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr10.tab
+    jobid: 166
+    wildcards: mark=H3K27ac, chrom=10
+
+[Wed Jun 30 13:19:01 2021]
+Finished job 77.
+178 of 346 steps (51%) done
+Submitted job 166 with external jobid 'Submitted batch job 941022'.
+
+[Wed Jun 30 13:19:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr11.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr11.tab
+    jobid: 179
+    wildcards: mark=H3K27ac, chrom=11
+
+Submitted job 179 with external jobid 'Submitted batch job 941023'.
+[Wed Jun 30 13:19:01 2021]
+Finished job 81.
+179 of 346 steps (52%) done
+
+[Wed Jun 30 13:19:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr12.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr12.tab
+    jobid: 192
+    wildcards: mark=H3K27ac, chrom=12
+
+Submitted job 192 with external jobid 'Submitted batch job 941024'.
+[Wed Jun 30 13:19:01 2021]
+Finished job 90.
+180 of 346 steps (52%) done
+
+[Wed Jun 30 13:19:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr13.tab
+    jobid: 209
+    wildcards: mark=H3K4me2, chrom=13
+
+Submitted job 209 with external jobid 'Submitted batch job 941025'.
+[Wed Jun 30 13:19:01 2021]
+Finished job 247.
+181 of 346 steps (52%) done
+
+[Wed Jun 30 13:19:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr14.tab
+    jobid: 222
+    wildcards: mark=H3K4me2, chrom=14
+
+Submitted job 222 with external jobid 'Submitted batch job 941026'.
+[Wed Jun 30 13:19:01 2021]
+Finished job 94.
+182 of 346 steps (53%) done
+
+[Wed Jun 30 13:19:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr13.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr13.tab
+    jobid: 205
+    wildcards: mark=H3K27ac, chrom=13
+
+[Wed Jun 30 13:19:01 2021]
+Finished job 103.
+183 of 346 steps (53%) done
+Submitted job 205 with external jobid 'Submitted batch job 941027'.
+
+[Wed Jun 30 13:19:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr15.tab
+    jobid: 235
+    wildcards: mark=H3K4me2, chrom=15
+
+[Wed Jun 30 13:19:01 2021]
+Finished job 260.
+184 of 346 steps (53%) done
+Submitted job 235 with external jobid 'Submitted batch job 941028'.
+
+[Wed Jun 30 13:19:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr14.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr14.tab
+    jobid: 218
+    wildcards: mark=H3K27ac, chrom=14
+
+[Wed Jun 30 13:19:01 2021]
+Finished job 273.
+185 of 346 steps (53%) done
+Submitted job 218 with external jobid 'Submitted batch job 941029'.
+
+[Wed Jun 30 13:19:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr15.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr15.tab
+    jobid: 231
+    wildcards: mark=H3K27ac, chrom=15
+
+[Wed Jun 30 13:19:01 2021]
+Finished job 107.
+186 of 346 steps (54%) done
+Submitted job 231 with external jobid 'Submitted batch job 941030'.
+
+[Wed Jun 30 13:19:01 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr16.tab
+    jobid: 248
+    wildcards: mark=H3K4me2, chrom=16
+
+Submitted job 248 with external jobid 'Submitted batch job 941031'.
+[Wed Jun 30 13:19:02 2021]
+Finished job 116.
+187 of 346 steps (54%) done
+
+[Wed Jun 30 13:19:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr16.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr16.tab
+    jobid: 244
+    wildcards: mark=H3K27ac, chrom=16
+
+[Wed Jun 30 13:19:02 2021]
+Finished job 120.
+188 of 346 steps (54%) done
+Submitted job 244 with external jobid 'Submitted batch job 941032'.
+
+[Wed Jun 30 13:19:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr17.tab
+    jobid: 261
+    wildcards: mark=H3K4me2, chrom=17
+
+Submitted job 261 with external jobid 'Submitted batch job 941033'.
+[Wed Jun 30 13:19:02 2021]
+Finished job 299.
+189 of 346 steps (55%) done
+
+[Wed Jun 30 13:19:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr18.tab
+    jobid: 274
+    wildcards: mark=H3K4me2, chrom=18
+
+Submitted job 274 with external jobid 'Submitted batch job 941034'.
+[Wed Jun 30 13:19:02 2021]
+Finished job 129.
+190 of 346 steps (55%) done
+
+[Wed Jun 30 13:19:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr17.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr17.tab
+    jobid: 257
+    wildcards: mark=H3K27ac, chrom=17
+
+Submitted job 257 with external jobid 'Submitted batch job 941035'.
+[Wed Jun 30 13:19:02 2021]
+Finished job 286.
+191 of 346 steps (55%) done
+
+[Wed Jun 30 13:19:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr18.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr18.tab
+    jobid: 270
+    wildcards: mark=H3K27ac, chrom=18
+
+Submitted job 270 with external jobid 'Submitted batch job 941036'.
+[Wed Jun 30 13:19:02 2021]
+Finished job 293.
+192 of 346 steps (55%) done
+
+[Wed Jun 30 13:19:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr20.tab
+    jobid: 300
+    wildcards: mark=H3K4me2, chrom=20
+
+Submitted job 300 with external jobid 'Submitted batch job 941037'.
+[Wed Jun 30 13:19:02 2021]
+Finished job 332.
+193 of 346 steps (56%) done
+
+[Wed Jun 30 13:19:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr19.tab
+    jobid: 287
+    wildcards: mark=H3K4me2, chrom=19
+
+Submitted job 287 with external jobid 'Submitted batch job 941038'.
+[Wed Jun 30 13:19:02 2021]
+Finished job 149.
+194 of 346 steps (56%) done
+
+[Wed Jun 30 13:19:02 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr20.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr20.tab
+    jobid: 296
+    wildcards: mark=H3K27ac, chrom=20
+
+Submitted job 296 with external jobid 'Submitted batch job 941039'.
+[Wed Jun 30 13:19:22 2021]
+Finished job 201.
+195 of 346 steps (56%) done
+
+[Wed Jun 30 13:19:22 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr22.tab
+    jobid: 326
+    wildcards: mark=H3K4me2, chrom=22
+
+Submitted job 326 with external jobid 'Submitted batch job 941049'.
+[Wed Jun 30 13:19:35 2021]
+Finished job 289.
+196 of 346 steps (57%) done
+
+[Wed Jun 30 13:19:35 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr19.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr19.tab
+    jobid: 283
+    wildcards: mark=H3K27ac, chrom=19
+
+Submitted job 283 with external jobid 'Submitted batch job 941050'.
+[Wed Jun 30 13:19:35 2021]
+Finished job 324.
+197 of 346 steps (57%) done
+
+[Wed Jun 30 13:19:35 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K4me2.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr21.tab
+    jobid: 313
+    wildcards: mark=H3K4me2, chrom=21
+
+Submitted job 313 with external jobid 'Submitted batch job 941051'.
+[Wed Jun 30 13:19:36 2021]
+Finished job 302.
+198 of 346 steps (57%) done
+
+[Wed Jun 30 13:19:36 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr22.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr22.tab
+    jobid: 322
+    wildcards: mark=H3K27ac, chrom=22
+
+[Wed Jun 30 13:19:36 2021]
+Finished job 250.
+199 of 346 steps (58%) done
+[Wed Jun 30 13:19:36 2021]
+Finished job 276.
+200 of 346 steps (58%) done
+[Wed Jun 30 13:19:36 2021]
+Finished job 315.
+201 of 346 steps (58%) done
+Submitted job 322 with external jobid 'Submitted batch job 941052'.
+
+[Wed Jun 30 13:19:36 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr21.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-H3K27ac.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr21.tab
+    jobid: 309
+    wildcards: mark=H3K27ac, chrom=21
+
+Submitted job 309 with external jobid 'Submitted batch job 941053'.
+[Wed Jun 30 13:19:37 2021]
+Finished job 340.
+202 of 346 steps (58%) done
+[Wed Jun 30 13:19:37 2021]
+Finished job 158.
+203 of 346 steps (59%) done
+[Wed Jun 30 13:19:37 2021]
+Finished job 171.
+204 of 346 steps (59%) done
+[Wed Jun 30 13:19:37 2021]
+Finished job 184.
+205 of 346 steps (59%) done
+[Wed Jun 30 13:19:37 2021]
+Finished job 210.
+206 of 346 steps (60%) done
+[Wed Jun 30 13:19:37 2021]
+Finished job 223.
+207 of 346 steps (60%) done
+[Wed Jun 30 13:19:37 2021]
+Finished job 249.
+208 of 346 steps (60%) done
+[Wed Jun 30 13:19:37 2021]
+Finished job 262.
+209 of 346 steps (60%) done
+[Wed Jun 30 13:19:38 2021]
+Finished job 327.
+210 of 346 steps (61%) done
+[Wed Jun 30 13:19:38 2021]
+Finished job 314.
+211 of 346 steps (61%) done
+[Wed Jun 30 13:19:39 2021]
+Finished job 88.
+212 of 346 steps (61%) done
+[Wed Jun 30 13:19:39 2021]
+Finished job 105.
+213 of 346 steps (62%) done
+[Wed Jun 30 13:19:39 2021]
+Finished job 101.
+214 of 346 steps (62%) done
+[Wed Jun 30 13:19:39 2021]
+Finished job 118.
+215 of 346 steps (62%) done
+[Wed Jun 30 13:19:39 2021]
+Finished job 114.
+216 of 346 steps (62%) done
+[Wed Jun 30 13:19:39 2021]
+Finished job 131.
+217 of 346 steps (63%) done
+[Wed Jun 30 13:19:40 2021]
+Finished job 339.
+218 of 346 steps (63%) done
+[Wed Jun 30 13:19:40 2021]
+Finished job 127.
+219 of 346 steps (63%) done
+[Wed Jun 30 13:19:40 2021]
+Finished job 144.
+220 of 346 steps (64%) done
+[Wed Jun 30 13:19:40 2021]
+Finished job 335.
+221 of 346 steps (64%) done
+[Wed Jun 30 13:19:40 2021]
+Finished job 157.
+222 of 346 steps (64%) done
+[Wed Jun 30 13:19:40 2021]
+Finished job 140.
+223 of 346 steps (64%) done
+[Wed Jun 30 13:19:40 2021]
+Finished job 170.
+224 of 346 steps (65%) done
+[Wed Jun 30 13:19:40 2021]
+Finished job 183.
+225 of 346 steps (65%) done
+[Wed Jun 30 13:19:41 2021]
+Finished job 179.
+226 of 346 steps (65%) done
+[Wed Jun 30 13:19:41 2021]
+Finished job 192.
+227 of 346 steps (66%) done
+[Wed Jun 30 13:19:41 2021]
+Finished job 209.
+228 of 346 steps (66%) done
+[Wed Jun 30 13:19:41 2021]
+Finished job 222.
+229 of 346 steps (66%) done
+[Wed Jun 30 13:19:41 2021]
+Finished job 205.
+230 of 346 steps (66%) done
+[Wed Jun 30 13:19:41 2021]
+Finished job 235.
+231 of 346 steps (67%) done
+[Wed Jun 30 13:19:41 2021]
+Finished job 218.
+232 of 346 steps (67%) done
+[Wed Jun 30 13:19:41 2021]
+Finished job 231.
+233 of 346 steps (67%) done
+[Wed Jun 30 13:19:42 2021]
+Finished job 248.
+234 of 346 steps (68%) done
+[Wed Jun 30 13:19:42 2021]
+Finished job 244.
+235 of 346 steps (68%) done
+[Wed Jun 30 13:19:42 2021]
+Finished job 261.
+236 of 346 steps (68%) done
+[Wed Jun 30 13:19:42 2021]
+Finished job 274.
+237 of 346 steps (68%) done
+[Wed Jun 30 13:19:42 2021]
+Finished job 257.
+238 of 346 steps (69%) done
+[Wed Jun 30 13:19:42 2021]
+Finished job 270.
+239 of 346 steps (69%) done
+[Wed Jun 30 13:19:42 2021]
+Finished job 300.
+240 of 346 steps (69%) done
+[Wed Jun 30 13:19:42 2021]
+Finished job 287.
+241 of 346 steps (70%) done
+[Wed Jun 30 13:19:42 2021]
+Finished job 296.
+242 of 346 steps (70%) done
+[Wed Jun 30 13:19:43 2021]
+Finished job 133.
+243 of 346 steps (70%) done
+[Wed Jun 30 13:19:43 2021]
+Finished job 341.
+244 of 346 steps (71%) done
+[Wed Jun 30 13:19:43 2021]
+Finished job 326.
+245 of 346 steps (71%) done
+[Wed Jun 30 13:19:53 2021]
+Finished job 325.
+246 of 346 steps (71%) done
+[Wed Jun 30 13:19:53 2021]
+Finished job 142.
+247 of 346 steps (71%) done
+[Wed Jun 30 13:19:53 2021]
+Finished job 146.
+248 of 346 steps (72%) done
+[Wed Jun 30 13:19:53 2021]
+Finished job 312.
+249 of 346 steps (72%) done
+[Wed Jun 30 13:19:53 2021]
+Finished job 233.
+250 of 346 steps (72%) done
+[Wed Jun 30 13:19:53 2021]
+Finished job 237.
+251 of 346 steps (73%) done
+[Wed Jun 30 13:19:54 2021]
+Finished job 155.
+252 of 346 steps (73%) done
+[Wed Jun 30 13:19:54 2021]
+Finished job 168.
+253 of 346 steps (73%) done
+[Wed Jun 30 13:19:54 2021]
+Finished job 181.
+254 of 346 steps (73%) done
+[Wed Jun 30 13:19:54 2021]
+Finished job 194.
+255 of 346 steps (74%) done
+[Wed Jun 30 13:19:54 2021]
+Finished job 207.
+256 of 346 steps (74%) done
+[Wed Jun 30 13:19:54 2021]
+Finished job 220.
+257 of 346 steps (74%) done
+[Wed Jun 30 13:19:54 2021]
+Finished job 159.
+258 of 346 steps (75%) done
+[Wed Jun 30 13:19:54 2021]
+Finished job 172.
+259 of 346 steps (75%) done
+[Wed Jun 30 13:19:54 2021]
+Finished job 185.
+260 of 346 steps (75%) done
+
+[Wed Jun 30 13:19:54 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr11.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr11.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr11.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr11.2_binary.txt
+    jobid: 34
+    wildcards: chrom=11
+
+[Wed Jun 30 13:19:54 2021]
+Finished job 198.
+261 of 346 steps (75%) done
+Submitted job 34 with external jobid 'Submitted batch job 941056'.
+[Wed Jun 30 13:19:55 2021]
+Finished job 211.
+262 of 346 steps (76%) done
+
+[Wed Jun 30 13:19:55 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr13.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr13.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr13.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr13.2_binary.txt
+    jobid: 36
+    wildcards: chrom=13
+
+[Wed Jun 30 13:19:55 2021]
+Finished job 224.
+263 of 346 steps (76%) done
+[Wed Jun 30 13:19:55 2021]
+Finished job 298.
+264 of 346 steps (76%) done
+[Wed Jun 30 13:19:55 2021]
+Finished job 328.
+265 of 346 steps (77%) done
+[Wed Jun 30 13:19:55 2021]
+Finished job 259.
+266 of 346 steps (77%) done
+[Wed Jun 30 13:19:55 2021]
+Finished job 285.
+267 of 346 steps (77%) done
+[Wed Jun 30 13:19:55 2021]
+Finished job 67.
+268 of 346 steps (77%) done
+[Wed Jun 30 13:19:55 2021]
+Finished job 80.
+269 of 346 steps (78%) done
+[Wed Jun 30 13:19:55 2021]
+Finished job 93.
+270 of 346 steps (78%) done
+[Wed Jun 30 13:19:55 2021]
+Finished job 263.
+271 of 346 steps (78%) done
+Submitted job 36 with external jobid 'Submitted batch job 941057'.
+
+[Wed Jun 30 13:19:56 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr17.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr17.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr17.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr17.2_binary.txt
+    jobid: 40
+    wildcards: chrom=17
+
+Submitted job 40 with external jobid 'Submitted batch job 941058'.
+
+[Wed Jun 30 13:19:56 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr14.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr14.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr14.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr14.2_binary.txt
+    jobid: 37
+    wildcards: chrom=14
+
+Submitted job 37 with external jobid 'Submitted batch job 941059'.
+[Wed Jun 30 13:19:56 2021]
+Finished job 246.
+272 of 346 steps (79%) done
+
+[Wed Jun 30 13:19:56 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr16.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr16.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr16.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr16.2_binary.txt
+    jobid: 39
+    wildcards: chrom=16
+
+Submitted job 39 with external jobid 'Submitted batch job 941060'.
+[Wed Jun 30 13:19:56 2021]
+Finished job 272.
+273 of 346 steps (79%) done
+[Wed Jun 30 13:19:56 2021]
+Finished job 311.
+274 of 346 steps (79%) done
+[Wed Jun 30 13:19:56 2021]
+Finished job 54.
+275 of 346 steps (79%) done
+[Wed Jun 30 13:19:56 2021]
+Finished job 106.
+276 of 346 steps (80%) done
+
+[Wed Jun 30 13:19:56 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr5.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr5.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr5.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr5.2_binary.txt
+    jobid: 28
+    wildcards: chrom=5
+
+[Wed Jun 30 13:19:56 2021]
+Finished job 119.
+277 of 346 steps (80%) done
+Submitted job 28 with external jobid 'Submitted batch job 941061'.
+[Wed Jun 30 13:19:56 2021]
+Finished job 132.
+278 of 346 steps (80%) done
+
+[Wed Jun 30 13:19:56 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr6.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr6.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr6.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr6.2_binary.txt
+    jobid: 29
+    wildcards: chrom=6
+
+[Wed Jun 30 13:19:56 2021]
+Finished job 145.
+279 of 346 steps (81%) done
+[Wed Jun 30 13:19:56 2021]
+Finished job 236.
+280 of 346 steps (81%) done
+Submitted job 29 with external jobid 'Submitted batch job 941062'.
+
+[Wed Jun 30 13:19:56 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr7.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr7.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr7.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr7.2_binary.txt
+    jobid: 30
+    wildcards: chrom=7
+
+[Wed Jun 30 13:19:56 2021]
+Finished job 197.
+281 of 346 steps (81%) done
+Submitted job 30 with external jobid 'Submitted batch job 941063'.
+
+[Wed Jun 30 13:19:56 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr8.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr8.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr8.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr8.2_binary.txt
+    jobid: 31
+    wildcards: chrom=8
+
+Submitted job 31 with external jobid 'Submitted batch job 941064'.
+
+[Wed Jun 30 13:19:56 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr15.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr15.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr15.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr15.2_binary.txt
+    jobid: 38
+    wildcards: chrom=15
+
+Submitted job 38 with external jobid 'Submitted batch job 941065'.
+[Wed Jun 30 13:19:57 2021]
+Finished job 275.
+282 of 346 steps (82%) done
+
+[Wed Jun 30 13:19:57 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr18.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr18.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr18.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr18.2_binary.txt
+    jobid: 41
+    wildcards: chrom=18
+
+[Wed Jun 30 13:19:57 2021]
+Finished job 301.
+283 of 346 steps (82%) done
+Submitted job 41 with external jobid 'Submitted batch job 941068'.
+[Wed Jun 30 13:19:57 2021]
+Finished job 288.
+284 of 346 steps (82%) done
+
+[Wed Jun 30 13:19:57 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr20.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr20.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr20.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr20.2_binary.txt
+    jobid: 43
+    wildcards: chrom=20
+
+[Wed Jun 30 13:19:57 2021]
+Finished job 53.
+285 of 346 steps (82%) done
+Submitted job 43 with external jobid 'Submitted batch job 941069'.
+[Wed Jun 30 13:19:57 2021]
+Finished job 66.
+286 of 346 steps (83%) done
+[Wed Jun 30 13:19:57 2021]
+Finished job 49.
+287 of 346 steps (83%) done
+
+[Wed Jun 30 13:19:57 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr1.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr1.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr1.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr1.2_binary.txt
+    jobid: 24
+    wildcards: chrom=1
+
+[Wed Jun 30 13:19:57 2021]
+Finished job 62.
+288 of 346 steps (83%) done
+Submitted job 24 with external jobid 'Submitted batch job 941070'.
+[Wed Jun 30 13:19:57 2021]
+Finished job 79.
+289 of 346 steps (84%) done
+
+[Wed Jun 30 13:19:57 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr2.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr2.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr2.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr2.2_binary.txt
+    jobid: 25
+    wildcards: chrom=2
+
+[Wed Jun 30 13:19:57 2021]
+Finished job 92.
+290 of 346 steps (84%) done
+Submitted job 25 with external jobid 'Submitted batch job 941071'.
+[Wed Jun 30 13:19:57 2021]
+Finished job 75.
+291 of 346 steps (84%) done
+
+[Wed Jun 30 13:19:57 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr4.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr4.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr4.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr4.2_binary.txt
+    jobid: 27
+    wildcards: chrom=4
+
+Submitted job 27 with external jobid 'Submitted batch job 941072'.
+
+[Wed Jun 30 13:19:57 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr3.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr3.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr3.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr3.2_binary.txt
+    jobid: 26
+    wildcards: chrom=3
+
+Submitted job 26 with external jobid 'Submitted batch job 941073'.
+[Wed Jun 30 13:19:58 2021]
+Finished job 196.
+292 of 346 steps (84%) done
+
+[Wed Jun 30 13:19:58 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr12.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr12.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr12.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr12.2_binary.txt
+    jobid: 35
+    wildcards: chrom=12
+
+[Wed Jun 30 13:19:58 2021]
+Finished job 153.
+293 of 346 steps (85%) done
+[Wed Jun 30 13:19:58 2021]
+Finished job 166.
+294 of 346 steps (85%) done
+Submitted job 35 with external jobid 'Submitted batch job 941074'.
+
+[Wed Jun 30 13:19:58 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr9.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr9.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr9.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr9.2_binary.txt
+    jobid: 32
+    wildcards: chrom=9
+
+Submitted job 32 with external jobid 'Submitted batch job 941075'.
+[Wed Jun 30 13:19:58 2021]
+Finished job 337.
+295 of 346 steps (85%) done
+
+[Wed Jun 30 13:19:58 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr10.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr10.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr10.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr10.2_binary.txt
+    jobid: 33
+    wildcards: chrom=10
+
+Submitted job 33 with external jobid 'Submitted batch job 941076'.
+
+[Wed Jun 30 13:19:58 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chrX.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chrX.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chrX.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chrX.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chrX.2_binary.txt
+    jobid: 46
+    wildcards: chrom=X
+
+Submitted job 46 with external jobid 'Submitted batch job 941077'.
+[Wed Jun 30 13:20:34 2021]
+Finished job 309.
+296 of 346 steps (86%) done
+[Wed Jun 30 13:20:44 2021]
+Finished job 36.
+297 of 346 steps (86%) done
+
+[Wed Jun 30 13:20:44 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr13.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr13.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr13.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13.2_binary.txt.gz
+    jobid: 13
+    wildcards: chrom=13
+
+Submitted job 13 with external jobid 'Submitted batch job 941087'.
+[Wed Jun 30 13:20:44 2021]
+Finished job 40.
+298 of 346 steps (86%) done
+
+[Wed Jun 30 13:20:44 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr17.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr17.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr17.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17.2_binary.txt.gz
+    jobid: 17
+    wildcards: chrom=17
+
+Submitted job 17 with external jobid 'Submitted batch job 941088'.
+[Wed Jun 30 13:20:44 2021]
+Finished job 37.
+299 of 346 steps (86%) done
+
+[Wed Jun 30 13:20:44 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr14.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr14.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr14.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14.2_binary.txt.gz
+    jobid: 14
+    wildcards: chrom=14
+
+Submitted job 14 with external jobid 'Submitted batch job 941089'.
+[Wed Jun 30 13:20:45 2021]
+Finished job 39.
+300 of 346 steps (87%) done
+
+[Wed Jun 30 13:20:45 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr16.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr16.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr16.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16.2_binary.txt.gz
+    jobid: 16
+    wildcards: chrom=16
+
+[Wed Jun 30 13:20:45 2021]
+Finished job 38.
+301 of 346 steps (87%) done
+Submitted job 16 with external jobid 'Submitted batch job 941090'.
+
+[Wed Jun 30 13:20:45 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr15.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr15.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr15.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15.2_binary.txt.gz
+    jobid: 15
+    wildcards: chrom=15
+
+Submitted job 15 with external jobid 'Submitted batch job 941091'.
+[Wed Jun 30 13:20:45 2021]
+Finished job 41.
+302 of 346 steps (87%) done
+
+[Wed Jun 30 13:20:45 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr18.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr18.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr18.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18.2_binary.txt.gz
+    jobid: 18
+    wildcards: chrom=18
+
+[Wed Jun 30 13:20:45 2021]
+Finished job 43.
+303 of 346 steps (88%) done
+[Wed Jun 30 13:20:46 2021]
+Finished job 283.
+304 of 346 steps (88%) done
+[Wed Jun 30 13:20:46 2021]
+Finished job 313.
+305 of 346 steps (88%) done
+[Wed Jun 30 13:20:46 2021]
+Finished job 322.
+306 of 346 steps (88%) done
+[Wed Jun 30 13:20:46 2021]
+Finished job 33.
+307 of 346 steps (89%) done
+Submitted job 18 with external jobid 'Submitted batch job 941092'.
+
+[Wed Jun 30 13:20:47 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr19.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr19.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr19.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr19.2_binary.txt
+    jobid: 42
+    wildcards: chrom=19
+
+Submitted job 42 with external jobid 'Submitted batch job 941093'.
+
+[Wed Jun 30 13:20:47 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr22.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr22.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr22.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr22.2_binary.txt
+    jobid: 45
+    wildcards: chrom=22
+
+Submitted job 45 with external jobid 'Submitted batch job 941094'.
+
+[Wed Jun 30 13:20:47 2021]
+rule binarize_multiple_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H2A.Z_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27ac_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K36me3_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me1_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me2_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K4me3_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K79me2_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9ac_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me1_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H4K20me1_chr21.tab
+    output: ../../../data/hg19/K562/big_model_training/genome_chr21.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr21.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr21.2_binary.txt
+    jobid: 44
+    wildcards: chrom=21
+
+Submitted job 44 with external jobid 'Submitted batch job 941095'.
+
+[Wed Jun 30 13:20:47 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr10.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr10.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr10.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10.2_binary.txt.gz
+    jobid: 10
+    wildcards: chrom=10
+
+Submitted job 10 with external jobid 'Submitted batch job 941096'.
+
+[Wed Jun 30 13:20:47 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr20.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr20.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr20.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20.2_binary.txt.gz
+    jobid: 20
+    wildcards: chrom=20
+
+Submitted job 20 with external jobid 'Submitted batch job 941097'.
+[Wed Jun 30 13:20:57 2021]
+Finished job 34.
+308 of 346 steps (89%) done
+
+[Wed Jun 30 13:20:57 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr11.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr11.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr11.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11.2_binary.txt.gz
+    jobid: 11
+    wildcards: chrom=11
+
+Submitted job 11 with external jobid 'Submitted batch job 941099'.
+[Wed Jun 30 13:20:57 2021]
+Finished job 28.
+309 of 346 steps (89%) done
+
+[Wed Jun 30 13:20:57 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr5.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr5.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr5.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5.2_binary.txt.gz
+    jobid: 5
+    wildcards: chrom=5
+
+Submitted job 5 with external jobid 'Submitted batch job 941100'.
+[Wed Jun 30 13:20:57 2021]
+Finished job 29.
+310 of 346 steps (90%) done
+
+[Wed Jun 30 13:20:57 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr6.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr6.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr6.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6.2_binary.txt.gz
+    jobid: 6
+    wildcards: chrom=6
+
+Submitted job 6 with external jobid 'Submitted batch job 941101'.
+[Wed Jun 30 13:20:57 2021]
+Finished job 30.
+311 of 346 steps (90%) done
+
+[Wed Jun 30 13:20:57 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr7.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr7.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr7.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7.2_binary.txt.gz
+    jobid: 7
+    wildcards: chrom=7
+
+Submitted job 7 with external jobid 'Submitted batch job 941102'.
+[Wed Jun 30 13:20:57 2021]
+Finished job 31.
+312 of 346 steps (90%) done
+
+[Wed Jun 30 13:20:57 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr8.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr8.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr8.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8.2_binary.txt.gz
+    jobid: 8
+    wildcards: chrom=8
+
+Submitted job 8 with external jobid 'Submitted batch job 941103'.
+[Wed Jun 30 13:20:58 2021]
+Finished job 27.
+313 of 346 steps (90%) done
+
+[Wed Jun 30 13:20:58 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr4.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr4.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr4.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4.2_binary.txt.gz
+    jobid: 4
+    wildcards: chrom=4
+
+Submitted job 4 with external jobid 'Submitted batch job 941104'.
+[Wed Jun 30 13:20:58 2021]
+Finished job 26.
+314 of 346 steps (91%) done
+
+[Wed Jun 30 13:20:58 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr3.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr3.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr3.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3.2_binary.txt.gz
+    jobid: 3
+    wildcards: chrom=3
+
+Submitted job 3 with external jobid 'Submitted batch job 941105'.
+[Wed Jun 30 13:20:58 2021]
+Finished job 35.
+315 of 346 steps (91%) done
+
+[Wed Jun 30 13:20:58 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr12.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr12.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr12.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12.2_binary.txt.gz
+    jobid: 12
+    wildcards: chrom=12
+
+Submitted job 12 with external jobid 'Submitted batch job 941106'.
+[Wed Jun 30 13:20:58 2021]
+Finished job 32.
+316 of 346 steps (91%) done
+
+[Wed Jun 30 13:20:58 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr9.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr9.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr9.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9.2_binary.txt.gz
+    jobid: 9
+    wildcards: chrom=9
+
+Submitted job 9 with external jobid 'Submitted batch job 941107'.
+[Wed Jun 30 13:20:58 2021]
+Finished job 46.
+317 of 346 steps (92%) done
+
+[Wed Jun 30 13:20:58 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chrX.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chrX.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chrX.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX.2_binary.txt.gz
+    jobid: 23
+    wildcards: chrom=X
+
+Submitted job 23 with external jobid 'Submitted batch job 941108'.
+[Wed Jun 30 13:21:10 2021]
+Finished job 24.
+318 of 346 steps (92%) done
+
+[Wed Jun 30 13:21:10 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr1.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr1.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr1.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr1.2_binary.txt.gz
+    jobid: 1
+    wildcards: chrom=1
+
+[Wed Jun 30 13:21:10 2021]
+Finished job 25.
+319 of 346 steps (92%) done
+Submitted job 1 with external jobid 'Submitted batch job 941116'.
+
+[Wed Jun 30 13:21:10 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr2.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr2.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr2.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2.2_binary.txt.gz
+    jobid: 2
+    wildcards: chrom=2
+
+Submitted job 2 with external jobid 'Submitted batch job 941117'.
+[Wed Jun 30 13:21:45 2021]
+Finished job 11.
+320 of 346 steps (92%) done
+[Wed Jun 30 13:21:46 2021]
+Finished job 17.
+321 of 346 steps (93%) done
+[Wed Jun 30 13:21:46 2021]
+Finished job 14.
+322 of 346 steps (93%) done
+[Wed Jun 30 13:21:46 2021]
+Finished job 16.
+323 of 346 steps (93%) done
+[Wed Jun 30 13:21:47 2021]
+Finished job 15.
+324 of 346 steps (94%) done
+[Wed Jun 30 13:21:47 2021]
+Finished job 42.
+325 of 346 steps (94%) done
+
+[Wed Jun 30 13:21:47 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr19.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr19.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr19.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19.2_binary.txt.gz
+    jobid: 19
+    wildcards: chrom=19
+
+[Wed Jun 30 13:21:47 2021]
+Finished job 45.
+326 of 346 steps (94%) done
+[Wed Jun 30 13:21:47 2021]
+Finished job 44.
+327 of 346 steps (95%) done
+[Wed Jun 30 13:21:47 2021]
+Finished job 10.
+328 of 346 steps (95%) done
+[Wed Jun 30 13:21:47 2021]
+Finished job 20.
+329 of 346 steps (95%) done
+Submitted job 19 with external jobid 'Submitted batch job 941146'.
+
+[Wed Jun 30 13:21:49 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr22.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr22.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr22.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22.2_binary.txt.gz
+    jobid: 22
+    wildcards: chrom=22
+
+Submitted job 22 with external jobid 'Submitted batch job 941147'.
+
+[Wed Jun 30 13:21:49 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr21.0_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr21.1_binary.txt, ../../../data/hg19/K562/big_model_training/genome_chr21.2_binary.txt
+    output: ../../../data/hg19/K562/big_model_training/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21.2_binary.txt.gz
+    jobid: 21
+    wildcards: chrom=21
+
+Submitted job 21 with external jobid 'Submitted batch job 941148'.
+[Wed Jun 30 13:21:57 2021]
+Finished job 1.
+330 of 346 steps (95%) done
+[Wed Jun 30 13:21:57 2021]
+Finished job 2.
+331 of 346 steps (96%) done
+[Wed Jun 30 13:21:57 2021]
+Finished job 5.
+332 of 346 steps (96%) done
+[Wed Jun 30 13:21:57 2021]
+Finished job 6.
+333 of 346 steps (96%) done
+[Wed Jun 30 13:21:57 2021]
+Finished job 7.
+334 of 346 steps (97%) done
+[Wed Jun 30 13:21:57 2021]
+Finished job 8.
+335 of 346 steps (97%) done
+[Wed Jun 30 13:21:57 2021]
+Finished job 4.
+336 of 346 steps (97%) done
+[Wed Jun 30 13:21:57 2021]
+Finished job 3.
+337 of 346 steps (97%) done
+[Wed Jun 30 13:21:57 2021]
+Finished job 12.
+338 of 346 steps (98%) done
+[Wed Jun 30 13:21:57 2021]
+Finished job 9.
+339 of 346 steps (98%) done
+[Wed Jun 30 13:21:58 2021]
+Finished job 23.
+340 of 346 steps (98%) done
+[Wed Jun 30 13:21:58 2021]
+Finished job 13.
+341 of 346 steps (99%) done
+[Wed Jun 30 13:21:58 2021]
+Finished job 18.
+342 of 346 steps (99%) done
+[Wed Jun 30 13:22:39 2021]
+Finished job 21.
+343 of 346 steps (99%) done
+[Wed Jun 30 13:22:49 2021]
+Finished job 19.
+344 of 346 steps (99%) done
+[Wed Jun 30 13:22:49 2021]
+Finished job 22.
+345 of 346 steps (100%) done
+
+[Wed Jun 30 13:22:49 2021]
+localrule all:
+    input: ../../../data/hg19/K562/big_model_training/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr1.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr2.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr3.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr4.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr5.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr6.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr7.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr8.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr9.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr10.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr11.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr12.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr13.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr14.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr15.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr16.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr17.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr18.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr19.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr20.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr21.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chr22.2_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/big_model_training/genome_chrX.2_binary.txt.gz
+    jobid: 0
+
+[Wed Jun 30 13:22:49 2021]
+Finished job 0.
+346 of 346 steps (100%) done
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-30T131358.688847.snakemake.log

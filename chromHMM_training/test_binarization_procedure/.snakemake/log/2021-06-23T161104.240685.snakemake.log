@@ -1,0 +1,3 @@
+NameError in line 79 of /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/choose_threshold_for_k9me4_k27me3.snakefile:
+name 'NUM_BINS_PER_ONE' is not defined
+  File "/gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/choose_threshold_for_k9me4_k27me3.snakefile", line 79, in <module>

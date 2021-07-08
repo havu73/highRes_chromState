@@ -1,0 +1,17 @@
+KeyboardInterrupt in line 3 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_diffState_small_model.snakefile.
+  File "/gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_diffState_small_model.snakefile", line 3, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/__init__.py", line 6, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/rcmod.py", line 8, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/palettes.py", line 12, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/utils.py", line 8, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/stats/__init__.py", line 348, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/stats/stats.py", line 175, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/special/__init__.py", line 648, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/special/_ellip_harm.py", line 7, in <module>
+  File "_ellip_harm_2.pyx", line 5, in init scipy.special._ellip_harm_2
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/integrate/__init__.py", line 59, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/integrate/_bvp.py", line 9, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/sparse/__init__.py", line 241, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/scipy/sparse/csgraph/__init__.py", line 167, in <module>
+  File "_shortest_path.pyx", line 12, in init scipy.sparse.csgraph._shortest_path
+  File "<frozen importlib._bootstrap>", line 966, in _find_and_load

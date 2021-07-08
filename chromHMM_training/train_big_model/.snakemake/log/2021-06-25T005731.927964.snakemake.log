@@ -1,0 +1,499 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	1	clean_segment_file
+	23	gzip_all_files
+	1	learn_model
+	2	neighborhood_enrichment
+	1	overlap_enrichment
+	29
+
+[Fri Jun 25 00:57:36 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr14.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr14.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr14.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr14.2_binary.txt.gz
+    jobid: 19
+    wildcards: chrom=14
+
+Submitted job 19 with external jobid 'Submitted batch job 79191'.
+
+[Fri Jun 25 00:57:37 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr7.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr7.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr7.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr7.2_binary.txt.gz
+    jobid: 12
+    wildcards: chrom=7
+
+Submitted job 12 with external jobid 'Submitted batch job 79194'.
+
+[Fri Jun 25 00:57:37 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr22.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr22.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr22.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr22.2_binary.txt.gz
+    jobid: 27
+    wildcards: chrom=22
+
+Submitted job 27 with external jobid 'Submitted batch job 79195'.
+
+[Fri Jun 25 00:57:37 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr15.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr15.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr15.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr15.2_binary.txt.gz
+    jobid: 20
+    wildcards: chrom=15
+
+Submitted job 20 with external jobid 'Submitted batch job 79197'.
+
+[Fri Jun 25 00:57:37 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr8.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr8.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr8.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr8.2_binary.txt.gz
+    jobid: 13
+    wildcards: chrom=8
+
+Submitted job 13 with external jobid 'Submitted batch job 79198'.
+
+[Fri Jun 25 00:57:37 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chrX.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chrX.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chrX.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chrX.2_binary.txt.gz
+    jobid: 28
+    wildcards: chrom=X
+
+Submitted job 28 with external jobid 'Submitted batch job 79200'.
+
+[Fri Jun 25 00:57:37 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr1.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr1.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr1.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr1.2_binary.txt.gz
+    jobid: 6
+    wildcards: chrom=1
+
+Submitted job 6 with external jobid 'Submitted batch job 79215'.
+
+[Fri Jun 25 00:57:38 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr16.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr16.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr16.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr16.2_binary.txt.gz
+    jobid: 21
+    wildcards: chrom=16
+
+Submitted job 21 with external jobid 'Submitted batch job 79217'.
+
+[Fri Jun 25 00:57:38 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr9.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr9.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr9.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr9.2_binary.txt.gz
+    jobid: 14
+    wildcards: chrom=9
+
+Submitted job 14 with external jobid 'Submitted batch job 79218'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr2.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr2.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr2.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr2.2_binary.txt.gz
+    jobid: 7
+    wildcards: chrom=2
+
+Submitted job 7 with external jobid 'Submitted batch job 79220'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr17.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr17.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr17.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr17.2_binary.txt.gz
+    jobid: 22
+    wildcards: chrom=17
+
+Submitted job 22 with external jobid 'Submitted batch job 79222'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr10.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr10.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr10.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr10.2_binary.txt.gz
+    jobid: 15
+    wildcards: chrom=10
+
+Submitted job 15 with external jobid 'Submitted batch job 79224'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr6.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr6.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr6.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr6.2_binary.txt.gz
+    jobid: 11
+    wildcards: chrom=6
+
+Submitted job 11 with external jobid 'Submitted batch job 79226'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr3.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr3.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr3.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr3.2_binary.txt.gz
+    jobid: 8
+    wildcards: chrom=3
+
+Submitted job 8 with external jobid 'Submitted batch job 79227'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr18.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr18.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr18.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr18.2_binary.txt.gz
+    jobid: 23
+    wildcards: chrom=18
+
+Submitted job 23 with external jobid 'Submitted batch job 79229'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr11.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr11.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr11.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr11.2_binary.txt.gz
+    jobid: 16
+    wildcards: chrom=11
+
+Submitted job 16 with external jobid 'Submitted batch job 79230'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr4.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr4.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr4.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr4.2_binary.txt.gz
+    jobid: 9
+    wildcards: chrom=4
+
+Submitted job 9 with external jobid 'Submitted batch job 79232'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr19.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr19.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr19.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr19.2_binary.txt.gz
+    jobid: 24
+    wildcards: chrom=19
+
+Submitted job 24 with external jobid 'Submitted batch job 79233'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr12.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr12.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr12.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr12.2_binary.txt.gz
+    jobid: 17
+    wildcards: chrom=12
+
+Submitted job 17 with external jobid 'Submitted batch job 79235'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr5.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr5.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr5.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr5.2_binary.txt.gz
+    jobid: 10
+    wildcards: chrom=5
+
+Submitted job 10 with external jobid 'Submitted batch job 79236'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr20.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr20.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr20.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr20.2_binary.txt.gz
+    jobid: 25
+    wildcards: chrom=20
+
+Submitted job 25 with external jobid 'Submitted batch job 79238'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr13.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr13.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr13.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr13.2_binary.txt.gz
+    jobid: 18
+    wildcards: chrom=13
+
+Submitted job 18 with external jobid 'Submitted batch job 79240'.
+
+[Fri Jun 25 00:57:39 2021]
+rule gzip_all_files:
+    input: ../../../data/hg19/K562/three_mark_model_training/genome_chr21.0_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr21.1_binary.txt, ../../../data/hg19/K562/three_mark_model_training/genome_chr21.2_binary.txt
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr21.2_binary.txt.gz
+    jobid: 26
+    wildcards: chrom=21
+
+Submitted job 26 with external jobid 'Submitted batch job 79241'.
+[Fri Jun 25 00:57:46 2021]
+Error in rule gzip_all_files:
+    jobid: 19
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr14.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr14.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr14.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr14_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79191
+
+Error executing rule gzip_all_files on cluster (jobid: 19, external: Submitted batch job 79191, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.19.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:46 2021]
+Error in rule gzip_all_files:
+    jobid: 12
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr7.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr7.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr7.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr7_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79194
+
+Error executing rule gzip_all_files on cluster (jobid: 12, external: Submitted batch job 79194, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.12.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:46 2021]
+Error in rule gzip_all_files:
+    jobid: 27
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr22.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr22.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr22.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr22_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79195
+
+Error executing rule gzip_all_files on cluster (jobid: 27, external: Submitted batch job 79195, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.27.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:46 2021]
+Error in rule gzip_all_files:
+    jobid: 20
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr15.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr15.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr15.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr15_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79197
+
+Error executing rule gzip_all_files on cluster (jobid: 20, external: Submitted batch job 79197, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.20.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:46 2021]
+Error in rule gzip_all_files:
+    jobid: 13
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr8.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr8.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr8.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr8_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79198
+
+Error executing rule gzip_all_files on cluster (jobid: 13, external: Submitted batch job 79198, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.13.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:46 2021]
+Error in rule gzip_all_files:
+    jobid: 21
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr16.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr16.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr16.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr16_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79217
+
+Error executing rule gzip_all_files on cluster (jobid: 21, external: Submitted batch job 79217, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.21.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:46 2021]
+Error in rule gzip_all_files:
+    jobid: 14
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr9.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr9.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr9.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr9_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79218
+
+Error executing rule gzip_all_files on cluster (jobid: 14, external: Submitted batch job 79218, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.14.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:47 2021]
+Error in rule gzip_all_files:
+    jobid: 22
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr17.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr17.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr17.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr17_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79222
+
+Error executing rule gzip_all_files on cluster (jobid: 22, external: Submitted batch job 79222, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.22.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:47 2021]
+Error in rule gzip_all_files:
+    jobid: 15
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr10.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr10.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr10.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr10_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79224
+
+Error executing rule gzip_all_files on cluster (jobid: 15, external: Submitted batch job 79224, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.15.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:58 2021]
+Error in rule gzip_all_files:
+    jobid: 28
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chrX.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chrX.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chrX.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chrX_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79200
+
+Error executing rule gzip_all_files on cluster (jobid: 28, external: Submitted batch job 79200, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.28.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:58 2021]
+Error in rule gzip_all_files:
+    jobid: 6
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr1.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr1.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr1.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr1_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79215
+
+Error executing rule gzip_all_files on cluster (jobid: 6, external: Submitted batch job 79215, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.6.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:58 2021]
+Error in rule gzip_all_files:
+    jobid: 7
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr2.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr2.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr2.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr2_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79220
+
+Error executing rule gzip_all_files on cluster (jobid: 7, external: Submitted batch job 79220, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.7.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:58 2021]
+Error in rule gzip_all_files:
+    jobid: 11
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr6.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr6.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr6.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr6_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79226
+
+Error executing rule gzip_all_files on cluster (jobid: 11, external: Submitted batch job 79226, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:58 2021]
+Error in rule gzip_all_files:
+    jobid: 8
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr3.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr3.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr3.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr3_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79227
+
+Error executing rule gzip_all_files on cluster (jobid: 8, external: Submitted batch job 79227, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:58 2021]
+Error in rule gzip_all_files:
+    jobid: 23
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr18.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr18.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr18.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr18_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79229
+
+Error executing rule gzip_all_files on cluster (jobid: 23, external: Submitted batch job 79229, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.23.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:58 2021]
+Error in rule gzip_all_files:
+    jobid: 16
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr11.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr11.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr11.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr11_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79230
+
+Error executing rule gzip_all_files on cluster (jobid: 16, external: Submitted batch job 79230, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.16.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:58 2021]
+Error in rule gzip_all_files:
+    jobid: 9
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr4.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr4.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr4.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr4_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79232
+
+Error executing rule gzip_all_files on cluster (jobid: 9, external: Submitted batch job 79232, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.9.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:58 2021]
+Error in rule gzip_all_files:
+    jobid: 24
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr19.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr19.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr19.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr19_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79233
+
+Error executing rule gzip_all_files on cluster (jobid: 24, external: Submitted batch job 79233, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.24.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:59 2021]
+Error in rule gzip_all_files:
+    jobid: 10
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr5.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr5.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr5.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr5_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79236
+
+Error executing rule gzip_all_files on cluster (jobid: 10, external: Submitted batch job 79236, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.10.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:59 2021]
+Error in rule gzip_all_files:
+    jobid: 25
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr20.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr20.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr20.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr20_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79238
+
+Error executing rule gzip_all_files on cluster (jobid: 25, external: Submitted batch job 79238, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.25.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:59 2021]
+Error in rule gzip_all_files:
+    jobid: 18
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr13.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr13.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr13.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr13_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79240
+
+Error executing rule gzip_all_files on cluster (jobid: 18, external: Submitted batch job 79240, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.18.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:57:59 2021]
+Error in rule gzip_all_files:
+    jobid: 26
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr21.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr21.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr21.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr21_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79241
+
+Error executing rule gzip_all_files on cluster (jobid: 26, external: Submitted batch job 79241, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.26.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Jun 25 00:58:09 2021]
+Error in rule gzip_all_files:
+    jobid: 17
+    output: ../../../data/hg19/K562/three_mark_model_training/genome_chr12.0_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr12.1_binary.txt.gz, ../../../data/hg19/K562/three_mark_model_training/genome_chr12.2_binary.txt.gz
+    shell:
+        	
+		gzip -f ../../../data/hg19/K562/three_mark_model_training/genome_chr12_*_binary.txt
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 79235
+
+Error executing rule gzip_all_files on cluster (jobid: 17, external: Submitted batch job 79235, jobscript: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/tmp.3z17jz3n/snakejob.gzip_all_files.17.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Terminating processes on user request, this might take some time.
+Will exit after finishing currently running jobs.
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-25T005731.927964.snakemake.log

@@ -1,0 +1,10 @@
+KeyboardInterrupt in line 3 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile.
+  File "/gstore/home/vuh6/source/chromHMM_training/train_big_model/evaluate_multiple_models.snakefile", line 3, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/__init__.py", line 9, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/regression.py", line 27, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/axisgrid.py", line 16, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/seaborn/distributions.py", line 13, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/statsmodels/nonparametric/api.py", line 2, in <module>
+  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/site-packages/statsmodels/nonparametric/smoothers_lowess.py", line 11, in <module>
+  File "statsmodels\nonparametric\_smoothers_lowess.pyx", line 18, in init statsmodels.nonparametric._smoothers_lowess (statsmodels/nonparametric/_smoothers_lowess.c:8233)
+  File "<frozen importlib._bootstrap>", line 966, in _find_and_load

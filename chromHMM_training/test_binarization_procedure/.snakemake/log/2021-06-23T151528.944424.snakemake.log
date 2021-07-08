@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	count_pval_occurrences
+	3
+
+[Wed Jun 23 15:15:31 2021]
+rule count_pval_occurrences:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_chrX.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_gw_count_logPval.tab
+    jobid: 2
+    wildcards: mark=H3K9me3
+
+
+[Wed Jun 23 15:15:32 2021]
+rule count_pval_occurrences:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr1.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr2.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr3.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr4.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr5.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr6.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr7.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr8.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr9.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr10.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr11.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr12.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr13.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr14.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr15.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr16.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr17.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr18.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr19.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr20.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr21.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chr22.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_chrX.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_gw_count_logPval.tab
+    jobid: 1
+    wildcards: mark=H3K27me3
+
+[Wed Jun 23 15:18:15 2021]
+Finished job 1.
+1 of 3 steps (33%) done
+[Wed Jun 23 15:18:15 2021]
+Finished job 2.
+2 of 3 steps (67%) done
+
+[Wed Jun 23 15:18:15 2021]
+localrule all:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/H3K27me3_gw_count_logPval.tab, ../../../data/hg19/K562/roadmap_pval_signals/H3K9me3_gw_count_logPval.tab
+    jobid: 0
+
+[Wed Jun 23 15:18:15 2021]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-23T151528.944424.snakemake.log

@@ -1,0 +1,231 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	24	get_one_chrom_basic_bed
+	25
+
+[Tue Jun 22 09:58:22 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr10.bed
+    jobid: 10
+    wildcards: chrom=10
+
+[Tue Jun 22 09:58:25 2021]
+Finished job 10.
+1 of 25 steps (4%) done
+
+[Tue Jun 22 09:58:25 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr2.bed
+    jobid: 2
+    wildcards: chrom=2
+
+[Tue Jun 22 09:58:28 2021]
+Finished job 2.
+2 of 25 steps (8%) done
+
+[Tue Jun 22 09:58:28 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr18.bed
+    jobid: 18
+    wildcards: chrom=18
+
+[Tue Jun 22 09:58:30 2021]
+Finished job 18.
+3 of 25 steps (12%) done
+
+[Tue Jun 22 09:58:30 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr11.bed
+    jobid: 11
+    wildcards: chrom=11
+
+[Tue Jun 22 09:58:32 2021]
+Finished job 11.
+4 of 25 steps (16%) done
+
+[Tue Jun 22 09:58:32 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr19.bed
+    jobid: 19
+    wildcards: chrom=19
+
+[Tue Jun 22 09:58:33 2021]
+Finished job 19.
+5 of 25 steps (20%) done
+
+[Tue Jun 22 09:58:33 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr4.bed
+    jobid: 4
+    wildcards: chrom=4
+
+[Tue Jun 22 09:58:36 2021]
+Finished job 4.
+6 of 25 steps (24%) done
+
+[Tue Jun 22 09:58:36 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr12.bed
+    jobid: 12
+    wildcards: chrom=12
+
+[Tue Jun 22 09:58:38 2021]
+Finished job 12.
+7 of 25 steps (28%) done
+
+[Tue Jun 22 09:58:38 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr5.bed
+    jobid: 5
+    wildcards: chrom=5
+
+[Tue Jun 22 09:58:40 2021]
+Finished job 5.
+8 of 25 steps (32%) done
+
+[Tue Jun 22 09:58:40 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr20.bed
+    jobid: 20
+    wildcards: chrom=20
+
+[Tue Jun 22 09:58:42 2021]
+Finished job 20.
+9 of 25 steps (36%) done
+
+[Tue Jun 22 09:58:42 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr3.bed
+    jobid: 3
+    wildcards: chrom=3
+
+[Tue Jun 22 09:58:44 2021]
+Finished job 3.
+10 of 25 steps (40%) done
+
+[Tue Jun 22 09:58:44 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr13.bed
+    jobid: 13
+    wildcards: chrom=13
+
+[Tue Jun 22 09:58:46 2021]
+Finished job 13.
+11 of 25 steps (44%) done
+
+[Tue Jun 22 09:58:46 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr21.bed
+    jobid: 21
+    wildcards: chrom=21
+
+[Tue Jun 22 09:58:48 2021]
+Finished job 21.
+12 of 25 steps (48%) done
+
+[Tue Jun 22 09:58:48 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr6.bed
+    jobid: 6
+    wildcards: chrom=6
+
+[Tue Jun 22 09:58:50 2021]
+Finished job 6.
+13 of 25 steps (52%) done
+
+[Tue Jun 22 09:58:50 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr14.bed
+    jobid: 14
+    wildcards: chrom=14
+
+[Tue Jun 22 09:58:52 2021]
+Finished job 14.
+14 of 25 steps (56%) done
+
+[Tue Jun 22 09:58:52 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr7.bed
+    jobid: 7
+    wildcards: chrom=7
+
+[Tue Jun 22 09:58:54 2021]
+Finished job 7.
+15 of 25 steps (60%) done
+
+[Tue Jun 22 09:58:54 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr22.bed
+    jobid: 22
+    wildcards: chrom=22
+
+[Tue Jun 22 09:58:56 2021]
+Finished job 22.
+16 of 25 steps (64%) done
+
+[Tue Jun 22 09:58:56 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr15.bed
+    jobid: 15
+    wildcards: chrom=15
+
+[Tue Jun 22 09:58:58 2021]
+Finished job 15.
+17 of 25 steps (68%) done
+
+[Tue Jun 22 09:58:58 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr8.bed
+    jobid: 8
+    wildcards: chrom=8
+
+[Tue Jun 22 09:59:00 2021]
+Finished job 8.
+18 of 25 steps (72%) done
+
+[Tue Jun 22 09:59:00 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chrX.bed
+    jobid: 23
+    wildcards: chrom=X
+
+[Tue Jun 22 09:59:03 2021]
+Finished job 23.
+19 of 25 steps (76%) done
+
+[Tue Jun 22 09:59:03 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr1.bed
+    jobid: 1
+    wildcards: chrom=1
+
+Terminating processes on user request, this might take some time.
+Removing output files of failed job get_one_chrom_basic_bed since they might be corrupted:
+../../../data/hg19/K562/basic_bed/chr1.bed
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-22T095821.962563.snakemake.log
+Cancelling snakemake on user request.

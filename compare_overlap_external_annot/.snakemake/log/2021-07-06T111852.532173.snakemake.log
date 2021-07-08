@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	prepare_candidate_DEG_gasperini19
+	2
+
+[Tue Jul  6 11:18:52 2021]
+rule prepare_candidate_DEG_gasperini19:
+    input: ../../data/hg19/K562/gasperini_2019/raw_data/gasperini_2019_altScale_664_enhancerGenePairs_ST2B.csv, ../../data/hg19/K562/gasperini_2019/raw_data/gasperini_2019_pilot_145_EnhancerGenePairs_ST1B.csv
+    output: ../../data/hg19/K562/gasperini_2019/for_enrichment/gasperini_2019_altScale_664_enhancerGenePairs_ST2B.bed, ../../data/hg19/K562/gasperini_2019/for_enrichment/gasperini_2019_pilot_145_EnhancerGenePairs_ST1B.bed
+    jobid: 3
+
+[Tue Jul  6 11:18:52 2021]
+Finished job 3.
+1 of 2 steps (50%) done
+
+[Tue Jul  6 11:18:52 2021]
+localrule all:
+    input: ../../data/hg19/K562/fulco_2019/significant_DE_G_ST6a.txt, ../../data/hg19/K562/klann_2021/for_enrichment/S1_discovery_K562_sgrna.bed, ../../data/hg19/K562/klann_2021/for_enrichment/S2_discovery_K562_bin2.bed, ../../data/hg19/K562/klann_2021/for_enrichment/S3_discovery_K562_bin3.bed, ../../data/hg19/K562/klann_2021/for_enrichment/S5_discovery_K562_dhs.bed, ../../data/hg19/K562/klann_2021/for_enrichment/S6_validation_K562_sgrna.bed, ../../data/hg19/K562/klann_2021/for_enrichment/S7_validation_K562_bin2.bed, ../../data/hg19/K562/klann_2021/for_enrichment/S8_validation_K562_bin3.bed, ../../data/hg19/K562/gasperini_2019/for_enrichment/gasperini_2019_altScale_664_enhancerGenePairs_ST2B.bed, ../../data/hg19/K562/gasperini_2019/for_enrichment/gasperini_2019_pilot_145_EnhancerGenePairs_ST1B.bed
+    jobid: 0
+
+[Tue Jul  6 11:18:52 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-06T111852.532173.snakemake.log

@@ -1,0 +1,43 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	294	bigwigAverageOverBed
+	295
+
+[Wed Jun 23 21:59:09 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr2.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr2.tab
+    jobid: 2
+    wildcards: mark=DNase, chrom=2
+
+
+[Wed Jun 23 21:59:09 2021]
+rule bigwigAverageOverBed:
+    input: ../../../data/hg19/K562/basic_bed/chr1.bed.gz, ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr1.tab
+    jobid: 1
+    wildcards: mark=DNase, chrom=1
+
+[Wed Jun 23 21:59:18 2021]
+Error in rule bigwigAverageOverBed:
+    jobid: 2
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr2.tab
+    shell:
+        
+		../../../program_source/ucsc_tools/bigWigAverageOverBed ../../../data/hg19/K562/roadmap_pval_signals/E123-DNase.pval.signal.bigwig ../../../data/hg19/K562/basic_bed/chr2.bed.gz ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr2.tab
+ 		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job bigwigAverageOverBed since they might be corrupted:
+../../../data/hg19/K562/roadmap_pval_signals/DNase_chr2.tab
+[Wed Jun 23 21:59:23 2021]
+Finished job 1.
+1 of 295 steps (0.34%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-23T215841.223499.snakemake.log

@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	all
+	69	binarize_one_bigwigAverageOverBed_output
+	70
+
+[Thu Jul  8 09:04:00 2021]
+rule binarize_one_bigwigAverageOverBed_output:
+    input: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr8.tab
+    output: ../../../data/hg19/K562/roadmap_pval_signals/DNase_chr8.binarized.gz
+    jobid: 8
+    wildcards: mark=DNase, chrom=8
+
+InputFunctionException in line 60 of /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/test_binarization.snakefile:
+Error:
+  KeyError: 'DNase'
+Wildcards:
+  mark=DNase
+  chrom=8
+Traceback:
+  File "/gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/test_binarization.snakefile", line 67, in <lambda>
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 115, in run_jobs
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 120, in run
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 131, in _run
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 151, in printjob
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 137, in printjob

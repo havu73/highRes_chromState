@@ -1,0 +1,51 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	calculate_train_test_overlap
+	2
+
+[Wed Jul  7 14:46:00 2021]
+rule calculate_train_test_overlap:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/test_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/train_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/test_overlap.txt
+    output: ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/auc_Fulco19_significant_DE_G_ST6a.txt
+    jobid: 1
+
+[Wed Jul  7 14:46:01 2021]
+Error in rule calculate_train_test_overlap:
+    jobid: 1
+    output: ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/auc_Fulco19_significant_DE_G_ST6a.txt
+    shell:
+        
+		model_type="all_mark_model three_mark_model"
+		all_mark_max_nState=25
+		three_mark_max_nState=8
+		overlap_folder_list=""
+		model_name_list=""
+		num_model=0
+		for ns in `seq 2 ${all_mark_max_nState}`
+		do
+			this_overlap_folder=../../model_analysis/K562_hg19/all_mark_model/state_${ns}/full_model/overlap_crispr_mpra/
+			overlap_folder_list="$overlap_folder_list $this_overlap_folder"
+			this_model_name="M13_S${ns}"
+			model_name_list="$model_name_list $this_model_name"
+			num_model=$(( $num_model + 1 ))
+		done
+		for ns in `seq 2 ${three_mark_max_nState}`
+		do
+			this_overlap_folder=../../model_analysis/K562_hg19/three_mark_model/state_${ns}/full_model/overlap_crispr_mpra/
+			overlap_folder_list="$overlap_folder_list $this_overlap_folder"
+			this_model_name="M3_S${ns}"
+			model_name_list="$model_name_list $this_model_name"
+			num_model=$(( $num_model + 1 ))
+		done
+		python ./scripts/calculate_roc_train_test_enrichment.py $num_model ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra ${overlap_folder_list} ${model_name_list}
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-07T144600.118037.snakemake.log

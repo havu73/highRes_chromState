@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	clean_segment_file
+	1	overlap_enrichment
+	3
+
+[Thu Jun 24 16:05:38 2021]
+rule clean_segment_file:
+    input: ../../../model_analysis/K562_hg19/new_model/genome_25_segments.bed.gz
+    output: ../../../model_analysis/K562_hg19/new_model/genome_25_segments_clean.bed.gz
+    jobid: 39
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-24T160535.132505.snakemake.log

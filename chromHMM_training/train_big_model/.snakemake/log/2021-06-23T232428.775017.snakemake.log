@@ -1,0 +1,4 @@
+KeyError in line 30 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/learn_model.snakefile:
+'chr1'
+  File "/gstore/home/vuh6/source/chromHMM_training/train_big_model/learn_model.snakefile", line 37, in <module>
+  File "/gstore/home/vuh6/source/chromHMM_training/train_big_model/learn_model.snakefile", line 30, in get_all_regions_binarized_fn_list

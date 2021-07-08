@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 23 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/compare_big_small_models.snakefile:
+Missing input files for rule all:
+../../../model_analysis/K562_hg19/compare_models/confusionM_stateOverlap.txt

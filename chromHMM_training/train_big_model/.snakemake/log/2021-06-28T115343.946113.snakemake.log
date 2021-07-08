@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	calculate_state_overlap_two_models
+	2
+
+[Mon Jun 28 11:53:46 2021]
+rule calculate_state_overlap_two_models:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/genome_25_segments_clean.bed.gz, ../../../model_analysis/K562_hg19/three_mark_model/genome_5_segments_clean.bed.gz
+    output: ../../../model_analysis/K562_hg19/compare_models/confusionM_stateOverlap.txt, ../../../model_analysis/K562_hg19/compare_models/confusionM_stateOverlap.png
+    jobid: 1
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 28 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/compare_big_small_models.snakefile:
+Job completed successfully, but some output files are missing. Missing files after 5 seconds:
+../../../model_analysis/K562_hg19/compare_models/confusionM_stateOverlap.txt
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 544, in handle_job_success
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 231, in handle_job_success
+Removing output files of failed job calculate_state_overlap_two_models since they might be corrupted:
+../../../model_analysis/K562_hg19/compare_models/confusionM_stateOverlap.png
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-06-28T115343.946113.snakemake.log

@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 109 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/learn_model.snakefile:
+Missing input files for rule learn_model:
+../../../data/hg19/K562/big_model_training/genome_chr10_0_binary.txt.gz

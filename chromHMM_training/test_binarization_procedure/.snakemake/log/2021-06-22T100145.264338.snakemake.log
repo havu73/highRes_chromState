@@ -1,0 +1,97 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	24	get_one_chrom_basic_bed
+	25
+
+[Tue Jun 22 10:01:47 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr10.bed
+    jobid: 10
+    wildcards: chrom=10
+
+[Tue Jun 22 10:01:50 2021]
+Finished job 10.
+1 of 25 steps (4%) done
+
+[Tue Jun 22 10:01:50 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr2.bed
+    jobid: 2
+    wildcards: chrom=2
+
+[Tue Jun 22 10:01:54 2021]
+Finished job 2.
+2 of 25 steps (8%) done
+
+[Tue Jun 22 10:01:54 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr18.bed
+    jobid: 18
+    wildcards: chrom=18
+
+[Tue Jun 22 10:01:56 2021]
+Finished job 18.
+3 of 25 steps (12%) done
+
+[Tue Jun 22 10:01:56 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr11.bed
+    jobid: 11
+    wildcards: chrom=11
+
+[Tue Jun 22 10:01:59 2021]
+Finished job 11.
+4 of 25 steps (16%) done
+
+[Tue Jun 22 10:01:59 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr19.bed
+    jobid: 19
+    wildcards: chrom=19
+
+[Tue Jun 22 10:02:00 2021]
+Finished job 19.
+5 of 25 steps (20%) done
+
+[Tue Jun 22 10:02:00 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr4.bed
+    jobid: 4
+    wildcards: chrom=4
+
+[Tue Jun 22 10:02:03 2021]
+Finished job 4.
+6 of 25 steps (24%) done
+
+[Tue Jun 22 10:02:03 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr12.bed
+    jobid: 12
+    wildcards: chrom=12
+
+[Tue Jun 22 10:02:06 2021]
+Finished job 12.
+7 of 25 steps (28%) done
+
+[Tue Jun 22 10:02:06 2021]
+rule get_one_chrom_basic_bed:
+    input: ../../../data/hg19.chrom-sizes
+    output: ../../../data/hg19/K562/basic_bed/chr5.bed
+    jobid: 5
+    wildcards: chrom=5
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/.snakemake/log/2021-06-22T100145.264338.snakemake.log

@@ -1,0 +1,3 @@
+WildcardError in line 14 of /gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/Snakefile:
+No values given for wildcard 'chrom'.
+  File "/gstore/home/vuh6/source/chromHMM_training/test_binarization_procedure/Snakefile", line 14, in <module>

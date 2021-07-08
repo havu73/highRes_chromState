@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 26 of /gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile:
+Missing input files for rule sort_segment_file:
+../../model_analysis/K562_hg19/three_mark_model/state__2/full_model/genome__2_segments.bed.gz
