@@ -1,12 +1,15 @@
 library(ggplot2)
 library(dplyr)
 library(tidyr)
+library(ggpubr)
 ##########################################################################
 ############ ALL THE FUNCTIONS ###########################################
 
-get_enrichment_context_name <- function(roc_fn) {
+get_enrichment_context_name <- function(roc_fn, tail_to_cut) {
+	# tail_to_cut should be : '_prec_recall.csv' or '_roc.csv'
 	roc_fn <- unlist(strsplit(roc_fn, "/")) %>% last() # last file name in a string of full fill path, each component separated by '/'
-	return(substr(roc_fn, 1, nchar(roc_fn) - 15)) # get rid of the '.bed.gz_roc.csv' tail
+	gc_name <- unlist(strsplit(roc_fn, tail_to_cut)) %>% first()
+	return(gc_name) # get rid of the '.bed.gz_roc.csv' tail
 }
 
 get_roc_df <- function(roc_fn){
@@ -17,149 +20,68 @@ get_roc_df <- function(roc_fn){
 	return(df)
 }
 
-get_max_auc_df <- function(auc_fn){
-	auc_df <- read.table(auc_fn, sep = "\t", header = FALSE) 
-	colnames(auc_df) <- c('ct', 'auc')
-	full_auc <- auc_df[1,'auc']
-	auc_df <- auc_df[-1,] # get rid of the first row, which is the full stack model auc. We can skip it because we will draw it anyway.
-	auc_df <- auc_df %>% dplyr::left_join(metadata, by = c("ct" = "CT_NAME"))
-	max_auc_df <- auc_df %>% group_by(ANATOMY) %>% filter(auc == max(auc)) #For each group of tissue type, get the cell type whose model yields the highest auc
-	return(list('max_auc_df' = max_auc_df, 'full_auc' = full_auc))
+draw_precall_three_models <- function(precall_fn){
+	df <- get_roc_df (precall_fn)
+	df <- df %>% select(c('M3_S8_recall', 'M3_S8_precision', 'M13_S25_recall', 'M13_S25_precision', 'roadmap_S25_recall', 'roadmap_S25_precision'))
+	context_name <- get_enrichment_context_name(precall_fn, '_prec_recall.csv')
+	p <- ggplot() +
+  geom_point(data = df, aes(x = M3_S8_recall, y = M3_S8_precision, color = 'M3_S8', alpha = 0.5)) +
+  theme_bw()+ 
+  geom_point(data = df, aes(x = M13_S25_recall, y = M13_S25_precision, color = 'M13_S25', alpha = 0.5)) + 
+  geom_point(data = df, aes(x = roadmap_S25_recall, y = roadmap_S25_precision, color = 'roadmap_S25', alpha = 0.5)) + 
+  scale_color_manual(values = c('M3_S8' = 'blue', 'M13_S25' = 'red', 'roadmap_S25' = 'green')) +
+  theme(legend.position = 'bottom') +
+  ggtitle(context_name)
+  # ggsave(save_fn) 
+  return (p)
 }
 
-get_bound_auc_df <- function(auc_fn){
-  auc_df <- read.table(auc_fn, sep = "\t", header = FALSE) 
-  colnames(auc_df) <- c('ct', 'auc')
-  full_auc <- auc_df[1,'auc']
-  auc_df <- auc_df[-1,] # get rid of the first row, which is the full stack model auc. We can skip it because we will draw it anyway.
-  auc_df <- auc_df %>% dplyr::left_join(metadata, by = c("ct" = "CT_NAME"))
-  result_df <- as.data.frame(matrix(nrow = 0, ncol = 4))
-  colnames(result_df) <- c('ct', 'auc', 'auc_type', 'ANATOMY')
-  min_df <- auc_df %>% filter(auc == min(auc)) %>% select(c('ct', 'auc', 'ANATOMY'))
-  min_df['auc_type'] <- c('min_auc')
-  max_df <- auc_df %>% filter(auc == max(auc)) %>% select(c('ct', 'auc', 'ANATOMY'))
-  max_df['auc_type'] <- c('max_auc')
-  med_df <- auc_df %>% arrange(abs(auc - median(auc))) %>% slice(1) %>% select(c('ct', 'auc', 'ANATOMY'))
-  med_df['auc_type'] <- c('med_auc')
-  result_df <- bind_rows(min_df, max_df, med_df)
-  return(list('sum_df' = result_df, 'full_auc' = full_auc)) # ct, auc, ANATOMY, auc_type (min_auc, med_auc, max_auc)
+draw_roc_three_models <- function(roc_fn){
+	df <- get_roc_df(roc_fn)
+	df <- df %>% select(c('M3_S8_false_pos', 'M3_S8_true_pos', 'M13_S25_false_pos', 'M13_S25_true_pos', 'roadmap_S25_false_pos', 'roadmap_S25_true_pos'))
+	context_name <- get_enrichment_context_name(roc_fn, '_roc.csv')
+	p <- ggplot() +
+  geom_point(data = df, aes(x = M3_S8_false_pos, y = M3_S8_true_pos, color = 'M3_S8', alpha = 0.5)) +
+  theme_bw()+ 
+  geom_point(data = df, aes(x = M13_S25_false_pos, y = M13_S25_true_pos, color = 'M13_S25', alpha = 0.5)) + 
+  geom_point(data = df, aes(x = roadmap_S25_false_pos, y = roadmap_S25_true_pos, color = 'roadmap_S25', alpha = 0.5)) + 
+  scale_color_manual(values = c('M3_S8' = 'blue', 'M13_S25' = 'red', 'roadmap_S25' = 'green')) +
+  theme(legend.position = 'bottom') +
+  ggtitle(context_name)
+  # ggsave(save_fn) 
+  return (p)
 }
 
-draw_auc_plot_rep_tissue_model <- function(roc_fn, auc_fn, save_fn){
-	roc_df <- get_roc_df(roc_fn) # full_false_pos, full_true_pos, <ct>_false_pos, <ct>_true_pos
-	auc_data <- get_max_auc_df(auc_fn) # ct, auc, GROUP, COLOR, TYPE, Epig_name, ANATOMY
-	max_auc_df <- auc_data$max_auc_df
-	full_auc <- auc_data$full_auc
-	uniq_tissue_list <- sort(unique(max_auc_df$ANATOMY)) # unique tissue types
-	# first draw the full stack data fp and tp
-	full_df <- data.frame('full_false_pos' = roc_df$full_false_pos, 'full_true_pos' = roc_df$full_true_pos, 'ana' = rep('full', length(roc_df$full_false_pos)))
-	full_auc_label <- paste("full_auc ==" , full_auc)
-	p <- ggplot() + 
-	geom_line(data = full_df, aes(x=full_false_pos, y = full_true_pos, color  = ana)) + 
-	scale_color_manual(values = ANATOMY_COLOR_CODE)+
-	theme_bw() +
-	annotate('text', x = 0.1, y = 0.9, label = full_auc_label, parse = TRUE)
-
-	for (ana in uniq_tissue_list){
-		this_ana_max_auc_ct <- (max_auc_df %>% filter(ANATOMY == ana) %>% select('ct'))
-		this_ana_max_auc_ct <- (this_ana_max_auc_ct$ct)[1]
-		fp_colname <- paste0(this_ana_max_auc_ct, '_false_pos')
-		tp_colname <- paste0(this_ana_max_auc_ct, '_true_pos')
-		num_state_this_ct_model <- length(roc_df[fp_colname])
-		this_ct_df <- data.frame('fp' = roc_df[fp_colname], 'tp' = roc_df[tp_colname], 'ana' = rep(ana, num_state_this_ct_model)) %>% drop_na()
-		colnames(this_ct_df) <- c('fp', 'tp', 'ana')
-		p <- p + 
-		geom_line(data = this_ct_df, aes(x = fp, y = tp, color = ana), alpha = 0.3) +
-		scale_colour_manual(values = ANATOMY_COLOR_CODE)
-	}
-	enrichment_context_name <- get_enrichment_context_name(roc_fn) # get the name of the enrichment context thatwe are looking at, so that we can write the title of the graph
-	print(enrichment_context_name)
-	p <- p +
-	ggtitle(enrichment_context_name) +
-	scale_x_continuous(name = 'false_pos') +
-	scale_y_continuous(name = 'true_pos') + 
-	theme(legend.position="bottom")
-	ggsave(save_fn)
+arrange_10_plots <- function(plot_list, save_fn){
+	ggarrange(plot_list[[1]], plot_list[[2]], plot_list[[3]], plot_list[[4]], plot_list[[5]], plot_list[[6]], plot_list[[7]], plot_list[[8]], plot_list[[9]], plot_list[[10]], ncol = 2, nrow = 5)
+	ggsave(save_fn, width = 15, height = 30)
 }
 
-get_ct_names_from_header <- function(header){
-	# E003_false_pos --> E003
-	# return(unlist(strsplit(header, '_'))[1])
-  return (unlist(strsplit(header, '\\_false_|\\_true_| '))[1])
+get_all_precall_plots <- function(compare_folder, save_fn){
+	precall_fn_list <- Sys.glob(paste0(compare_folder, '/*_prec_recall.csv'))
+	precall_plot_list <- lapply(precall_fn_list, draw_precall_three_models)
+	arrange_10_plots(precall_plot_list, save_fn)
 }
 
-draw_auc_plot_bounds_tissue_model <- function(roc_fn, auc_fn, save_fn){
-  roc_df <- get_roc_df(roc_fn) # full_false_pos, full_true_pos, <ct>_false_pos, <ct>_true_pos
-  auc_data <- get_bound_auc_df(auc_fn) # ct, auc, GROUP, COLOR, TYPE, Epig_name, ANATOMY
-  sum_auc_df <- auc_data$sum_df
-  print(sum_auc_df)
-  full_auc <- auc_data$full_auc
-  # first draw the full stack data fp and tp
-  full_df <- data.frame('full_false_pos' = roc_df$full_false_pos, 'full_true_pos' = roc_df$full_true_pos, 'ana' = rep('full', length(roc_df$full_false_pos)))
-  full_auc_label <- paste("full_auc ==" , full_auc)
-  p <- ggplot() + 
-    geom_line(data = full_df, aes(x=full_false_pos, y = full_true_pos, color  = 'full')) + 
-    scale_color_manual(values = c('full' = 'grey0')) +
-    theme_bw() +
-    annotate('text', x = 0.2, y = 0.9, label = full_auc_label, parse = TRUE) 
-  min_auc_ct <- sum_auc_df %>% filter(auc_type == 'min_auc') %>% select('ct')
-  max_auc_ct <- sum_auc_df %>% filter(auc_type == 'max_auc') %>% select('ct')
-  med_auc_ct <- sum_auc_df %>% filter(auc_type == 'med_auc') %>% select('ct')
-  plot_title <- get_enrichment_context_name(save_fn)
-  print(min_auc_ct)
-  p <- p +
-    geom_line(data = roc_df, aes_string(x = paste0(min_auc_ct, '_false_pos'), y = paste0(min_auc_ct, '_true_pos'), na.rm = TRUE, color = shQuote("min_ct_model_auc")), alpha = 0.7) + 
-    geom_line(data = roc_df, aes_string(x = paste0(max_auc_ct, '_false_pos'), y = paste0(max_auc_ct, '_true_pos'), na.rm = TRUE, color = shQuote('max_ct_model_auc')), alpha = 0.7) + 
-    geom_line(data = roc_df, aes_string(x = paste0(med_auc_ct, '_false_pos'), y = paste0(med_auc_ct, '_true_pos'), na.rm = TRUE, color = shQuote('med_ct_model_auc')), alpha = 0.8) + 
-    scale_color_manual(values = c("full" = 'grey0', "min_ct_model_auc" = 'red', "max_ct_model_auc" = 'blue', "med_ct_model_auc" = 'green')) +
-    theme(legend.position = 'bottom') +
-    ggtitle(plot_title)
-  ggsave(save_fn)
-  return(p)
+get_all_roc_plots <- function(compare_folder, save_fn){
+	roc_fn_list <- Sys.glob(paste0(compare_folder, '/*_roc.csv'))
+	roc_plot_list <- lapply(roc_fn_list, draw_roc_three_models)
+	arrange_10_plots(roc_plot_list, save_fn)
 }
-
-draw_roc_plot_cell_type_blurred <- function(roc_fn, auc_fn, save_fn){
-	roc_df <- get_roc_df(roc_fn) # full_false_pos, full_true_pos, <ct>_false_pos, <ct>_true_pos
-	plot_title <- get_enrichment_context_name(save_fn)
-	auc_data <- get_bound_auc_df(auc_fn) # ct, auc, GROUP, COLOR, TYPE, Epig_name, ANATOMY
-	full_auc <- auc_data$full_auc
-
-	# first draw the full stack data fp and tp
-	full_df <- data.frame('full_false_pos' = roc_df$full_false_pos, 'full_true_pos' = roc_df$full_true_pos, 'ana' = rep('full', length(roc_df$full_false_pos)))
-	full_auc_label <- paste("full_auc ==" , full_auc)
-	p <- ggplot() + 
-	geom_line(data = full_df, aes(x=full_false_pos, y = full_true_pos, color  = 'full')) + 
-	scale_color_manual(values = c('full' = 'grey0')) +
-	theme_bw() +
-	annotate('text', x = 0.2, y = 0.9, label = full_auc_label, parse = TRUE) 
-	ct_list <- sapply(colnames(roc_df), FUN = get_ct_names_from_header) 
-	ct_list <- unique(ct_list)[-1] # get the list of cell types that we have in the roc data file, get rid of the first element because it's 'full'
-	for (ct in ct_list){
-		p <- p + 
-		geom_line(data = roc_df, aes_string(x = paste0(ct, '_false_pos'), y = paste0(ct, '_true_pos'), na.rm = TRUE), color = "blue", alpha = 0.1)
-	}
-	p <- p + 
-	theme(legend.position = 'None')+
-    ggtitle(plot_title)
-    ggsave(save_fn)
-    return(p)
-}
-
-# this program will takes as input the file that has auc data of all cell type specific model's auc and the full stack model's auc. It also take in roc_fn: the file that contains information about the true and false positive rates of different models. 
-# It will draw a plots of roc lines: full stack model will be black line. And all other tissue types' models will be represented by the cell type of that tissue that has the most auc. The plot will be stored in save_fn
 #!/usr/bin/env Rscript
 ################ GETTING THE COMMAND LINE ARGUMENTS #####################
 args = commandArgs(trailingOnly=TRUE)
-if (length(args) != 3)
+if (length(args) != 2)
 {
         stop("wrong command line argument format", call.=FALSE)
 }
-roc_fn <- args[1] # roc_fn is the output of /u/home/h/havu73/project-ernst/source/model_evaluation/create_roc_curve_overlap_enrichment.py
-auc_fn <- args[2] # the output of /u/home/h/havu73/project-ernst/source/model_evaluation/create_roc_curve_overlap_enrichment.py
-save_fn <- args[3] # where the figure will be saved
-
+compare_folder <- args[1] # roc_fn is the output of /u/home/h/havu73/project-ernst/source/model_evaluation/create_roc_curve_overlap_enrichment.py
+output_folder <- args[2] # the output of /u/home/h/havu73/project-ernst/source/model_evaluation/create_roc_curve_overlap_enrichment.py
+dir.create(output_folder, recursive = TRUE)
 
 ################ CALLING FUNCTIONS FOR THIS PROGRAM ######################
-# draw_roc_plot_each_model_one_color(roc_fn, auc_fn, save_fn)
-draw_roc_plot_cell_type_blurred(roc_fn, auc_fn, save_fn)
+precall_save_fn <- file.path(output_folder, 'precall_all_contexts.png')
+roc_save_fn <- file.path(output_folder, 'roc_all_contexts.png')
+get_all_precall_plots(compare_folder, precall_save_fn)
+get_all_roc_plots(compare_folder, roc_save_fn)
 ##########################################################################

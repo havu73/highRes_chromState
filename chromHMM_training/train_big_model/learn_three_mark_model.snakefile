@@ -42,10 +42,10 @@ def get_all_regions_binarized_fn_list():
 rule all:
 	input:
 		# get_all_regions_binarized_fn_list()
-		expand(os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model','model_{num_state}.txt'), num_state = NUM_STATE_LIST), # to create the chromatin state model 
-		# os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'eval_subset', 'sum_diag_all_marks.txt'), # to do eval subset of different marks
-		# os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'overlap', 'overlap_enrichment_gc.txt'), # to evalute and characterize the states
-		# expand(os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'neighborhood', 'neighborhood_enrichment_{context}.txt'), context = ['TES', 'TSS'])
+		# expand(os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'full_model','model_{num_state}.txt'), num_state = [8]), # to create the chromatin state model 
+		# os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'eval_subset', 'sum_diag_all_marks.txt'), # to do eval subset of different marks
+		expand(os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'overlap', 'overlap_enrichment_GC_gc.txt'), num_state = [8]), # to evalute and characterize the states
+		expand(os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'neighborhood', 'neighborhood_enrichment_{context}.txt'), context = ['TES', 'TSS'], num_state = [8])
 
 rule get_one_chrom_basic_bed:
 	# get basic bed: chrom, start, end, index(0-based). Each segment 200bp apart based on the length of the chromosome
@@ -127,13 +127,13 @@ rule learn_model:
 		"""
 
 
-rule overlap_enrichment: # overlap enrichment with genomcin contexts
+rule overlap_enrichment_GC: # overlap enrichment with genomcin contexts
 	input:
-		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'genome_{num_state}_segments_clean.bed.gz'),
+		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'genome_{num_state}_segments.bed.gz'),
 	output: 
-		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}','overlap', 'overlap_enrichment_gc.txt')
+		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model','overlap', 'overlap_enrichment_GC_gc.txt')
 	params:
-		output_no_tail = os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'overlap', 'overlap_enrichment_gc')
+		output_no_tail = os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'overlap', 'overlap_enrichment_GC_gc')
 	shell:
 		"""	
 		java -jar ../../../program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment {input[0]} {COORD_DIR_FOR_ENRICHMENT} {params.output_no_tail}
@@ -141,11 +141,11 @@ rule overlap_enrichment: # overlap enrichment with genomcin contexts
 
 rule neighborhood_enrichment: # overlap with the neighboring regions of TSS and TES
 	input:
-		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'genome_{num_state}_segments_clean.bed.gz'),	
+		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'genome_{num_state}_segments.bed.gz'),	
 	output:
-		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}','neighborhood', 'neighborhood_enrichment_{context}.txt')
+		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model','neighborhood', 'neighborhood_enrichment_{context}.txt')
 	params:
-		output_no_tail = os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'neighborhood', 'neighborhood_enrichment_{context}'),
+		output_no_tail = os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'neighborhood', 'neighborhood_enrichment_{context}'),
 		anchor_fn = os.path.join(COORD_DIR_FOR_NEIGHBORHOOD,'RefSeq{context}.hg19.txt.gz'),
 	shell:
 		"""
@@ -161,12 +161,12 @@ def helper_evalSubset_marks_to_include(wildcards):
 
 rule eval_subset:
 	input:
-		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'model_{num_state}.txt'),
+		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'model_{num_state}.txt'),
 		expand(os.path.join(binarized_for_chromHMM_dir, 'genome_chr{chrom}.{bin}_binary.txt.gz'), chrom = CHROMOSOME_LIST, bin = range(3))
 	output:
-		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'eval_subset', 'missing_{mark}.txt')
+		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'eval_subset', 'missing_{mark}.txt')
 	params:
-		output_no_tail = os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'eval_subset', 'missing_{mark}'),
+		output_no_tail = os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'eval_subset', 'missing_{mark}'),
 		mark_to_include_string = helper_evalSubset_marks_to_include,
 		segment_dir = os.path.join(model_outdir, 'K562_hg19', 'three_mark_model')
 	shell:
@@ -178,8 +178,8 @@ rule combine_marks_eval_subset:
 	input:
 		expand(os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{{num_state}}', 'eval_subset', 'missing_{mark}.txt'), mark = CHROM_MARK_LIST) # from rule eval_subset
 	output:
-		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'eval_subset', 'sum_diag_all_marks.txt'),
-		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'eval_subset', 'sum_diag_all_marks.png')
+		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'eval_subset', 'sum_diag_all_marks.txt'),
+		os.path.join(model_outdir, 'K562_hg19', 'three_mark_model', 'state_{num_state}', 'full_model', 'eval_subset', 'sum_diag_all_marks.png')
 	params:
 	run:
 		result_df = pd.DataFrame(columns = ['missing_mark', 'sum_diag'])
