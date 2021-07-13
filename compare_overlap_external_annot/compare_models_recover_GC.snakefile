@@ -1,19 +1,21 @@
-hg19_chrom_length_fn = '/gstore/home/vuh6/model_analysis/hg19_chrom_length_for_segmentation.bed' # chrom, start, end, start is always 0
-model_analysis_dir = '/gstore/home/vuh6/model_analysis'
-all_model_dir = '/gstore/home/vuh6/model_analysis/K562_hg19'
-COORD_CRISPR_MPRA_DIR = '/gstore/home/vuh6/data/hg19/K562/COORD_CRISPR_MPRA_DATA/for_enrichment'
+hg19_chrom_length_fn = '../../model_analysis/hg19_chrom_length_for_segmentation.bed' # chrom, start, end, start is always 0
+model_analysis_dir = '../../model_analysis'
+all_model_dir = '../../model_analysis/K562_hg19'
+COORD_CRISPR_MPRA_DIR = '../../data/hg19/K562/COORD_CRISPR_MPRA_DATA/for_enrichment'
 COORD_CRISPR_MPRA_COLUMN_MATCH_FN = os.path.join(COORD_CRISPR_MPRA_DIR, 'match_foreground_background')
 context_list = ['Fulco19_significant_DE_G_ST6a', 'gasperini19_altScale_664_enhancerGenePairs_ST2B', 'gasperini19_pilot_145_EnhancerGenePairs_ST1B', 'klann21_S1_discovery_K562_sgrna', 'klann21_S2_discovery_K562_bin2', 'klann21_S3_discovery_K562_bin3', 'klann21_S5_discovery_K562_dhs', 'klann21_S6_validation_K562_sgrna', 'klann21_S7_validation_K562_bin2', 'klann21_S8_validation_K562_bin3']
-ROADMAP_dir = '/gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/'
-simple_rule_annot_dir = '/gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie'
-
+ROADMAP_dir = '../../data/hg19/K562/roadmap_published_chromHMM/'
+simple_rule_annot_dir = '../../model_analysis/K562_hg19/simple_rules_from_natalie'
+		
 rule all:
 	input:
 		# os.path.join(model_analysis_dir, 'train_segments.bed.gz'),
 		# os.path.join(model_analysis_dir, 'test_segments.bed.gz'),
+		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'POSTERIOR', 'entropy','entropy_chr{chrom}.txt.gz'), num_mark_model = ['all_mark_model'], num_state = range(2,26), chrom = ['1', 'X']),
+		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'POSTERIOR', 'entropy','entropy_chr{chrom}.txt.gz'), num_mark_model = ['three_mark_model'], num_state = range(2,9), chrom = ['1', 'X'])
 		# expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'overlap_crispr_mpra','fg_against_bg','{TT}_overlap_against_bg.txt'), num_mark_model = ['three_mark_model'], num_state = range(2, 9), TT = ['train', 'test']),
 		# expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'overlap_crispr_mpra', 'fg_against_bg','{TT}_overlap_against_bg.txt'), num_mark_model = ['all_mark_model'], num_state = range(2, 26), TT = ['train', 'test']),
-		expand(os.path.join(all_model_dir, 'compare_models_recover_crispr_mpra', 'fg_against_bg', 'auc_{context}.txt'), context = context_list),
+		# expand(os.path.join(all_model_dir, 'compare_models_recover_crispr_mpra', 'fg_against_bg', 'auc_{context}.txt'), context = context_list),
 
 rule get_train_test_bed_fn:
 	input:
@@ -34,25 +36,25 @@ rule get_train_test_bed_fn:
 		gzip {params.test_fn_no_gz}
 		"""
 
-rule soft_link_segments: #we need to soft link so that all the segmentation files inside different models' folder will have the same name. This will be helpful beacue it makes the code more managable 
-	input: 
-		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'genome_{num_state}_segments.bed.gz'), num_mark_model = ['all_mark_model'], num_state = range(2,26)),
-		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'genome_{num_state}_segments.bed.gz'), num_mark_model = ['three_mark_model'], num_state = range(3,9)),
-		os.path.join(ROADMAP_dir, '25_state', 'E123_25_imputed12marks_segments.bed.gz'), # roadmap published model
-		os.path.join(simple_rule_annot_dir, 'genome_simple_3_segments.bed.gz'), # simple rules from Natalie
-	output:
-		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'genome_segments.bed.gz'), num_mark_model = ['all_mark_model'], num_state = range(2,26)),
-		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'genome_segments.bed.gz'), num_mark_model = ['three_mark_model'], num_state = range(3,9)),
-		os.path.join(ROADMAP_dir, '25_state', 'genome_segments.bed.gz'), # roadmap published model
-		os.path.join(simple_rule_annot_dir, 'genome_segments.bed.gz'), # simple rules from Natalie
-	shell:
-		"""
-		for f in {input}
-		do
-			model_folder=$(dirname $f) # function dirname in bash shows the directory of a file
-			ln -s $f ${{model_folder}}/genome_segments.bed.gz
-		done
-		"""
+# rule soft_link_segments: #we need to soft link so that all the segmentation files inside different models' folder will have the same name. This will be helpful beacue it makes the code more managable 
+# 	input: 
+# 		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'genome_{num_state}_segments.bed.gz'), num_mark_model = ['all_mark_model'], num_state = range(2,26)),
+# 		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'genome_{num_state}_segments.bed.gz'), num_mark_model = ['three_mark_model'], num_state = range(3,9)),
+# 		os.path.join(ROADMAP_dir, '25_state', 'E123_25_imputed12marks_segments.bed.gz'), # roadmap published model
+# 		os.path.join(simple_rule_annot_dir, 'genome_segments_chromHMM_format.bed.gz'), # simple rules from Natalie
+# 	output:
+# 		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'genome_segments.bed.gz'), num_mark_model = ['all_mark_model'], num_state = range(2,26)),
+# 		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'genome_segments.bed.gz'), num_mark_model = ['three_mark_model'], num_state = range(3,9)),
+# 		os.path.join(ROADMAP_dir, '25_state', 'genome_segments.bed.gz'), # roadmap published model
+# 		os.path.join(simple_rule_annot_dir, 'genome_segments.bed.gz'), # simple rules from Natalie
+# 	shell:
+# 		"""
+# 		for f in {input}
+# 		do
+# 			model_folder=$(dirname $f) # function dirname in bash shows the directory of a file
+# 			ln -s $f ${{model_folder}}/genome_segments.bed.gz
+# 		done
+# 		"""
 
 
 rule sort_segment_file:
@@ -97,8 +99,8 @@ rule overlap_with_genome_contexts: # for both the model trained by me and roadma
 		test_out_prefix = os.path.join('{model_folder}', 'overlap_crispr_mpra', '{fore_or_back}', 'test_overlap')
 	shell:
 		"""
-		java -jar /gstore/home/vuh6/program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage {input[0]} {COORD_CRISPR_MPRA_DIR}/{wildcards.fore_or_back} {params.train_out_prefix}
-		java -jar /gstore/home/vuh6/program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage {input[1]} {COORD_CRISPR_MPRA_DIR}/{wildcards.fore_or_back} {params.test_out_prefix}
+		java -jar ../../program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage {input[0]} {COORD_CRISPR_MPRA_DIR}/{wildcards.fore_or_back} {params.train_out_prefix}
+		java -jar ../../program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage {input[1]} {COORD_CRISPR_MPRA_DIR}/{wildcards.fore_or_back} {params.test_out_prefix}
 		"""
 
 rule overlap_against_background:
