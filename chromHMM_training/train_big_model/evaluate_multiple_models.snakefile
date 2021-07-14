@@ -171,10 +171,11 @@ rule calcualte_log_llh_one_chrom:
 		"""
 
 def count_gw_bins():
-	chrom_length_df = pd.read_csv(hg19_chromSize_fn, index_col = 0, header = None, sep = '\t', squeeze = True)
-	chrom_length_df.columns = ['chrom', 'length_bp']
-	num_bin_list = list(map(lambda x: np.floor(chrom_length_df['chr{chrom}'.format(chrom = x)] / NUM_BP_PER_BIN).astype(int), TEST_CHROMOSOME_LIST))
-	return np.sum(num_bin_list).astype(int)
+	chrom_length_df = pd.read_csv(hg19_chromSize_fn, index_col = 0, header = None, sep = '\t', squeeze = False)
+	chrom_length_df.columns = ['length_bp']
+	chrom_length_df['num_bins'] = np.floor(chrom_length_df['length_bp'].astype(float) / NUM_BP_PER_BIN).astype(int)
+	num_bin_test_chrom_list = list(map(lambda x: chrom_length_df.loc['chr{chrom}'.format(chrom = x)]['num_bins'], TEST_CHROMOSOME_LIST))
+	return chrom_length_df, np.sum(num_bin_list).astype(int)
 
 rule compare_aic_bic_models:
 	input:
@@ -187,8 +188,52 @@ rule compare_aic_bic_models:
 		aic_list = []
 		bic_list = []
 		gw_2neg_logLlh_list = []
-		gw_bins = count_gw_bins()
+		_ , gw_bins = count_gw_bins()
 		print(gw_bins)
+		for nstate in NUM_STATE_LIST: # for each model, calculate 
+			llh_fn_list = list(map(lambda x: os.path.join(model_outdir, 'K562_hg19','all_mark_model', 'state_{nstate}'.format(nstate = nstate), 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'.format(chrom = x)), TEST_CHROMOSOME_LIST)) 
+			llh_list = list(map(lambda x: pd.read_csv(x, header = None, index_col = None, squeeze = True)[0], llh_fn_list)) # read a bunch of 1-line files , outputing a list of numbers, each representing the log llh in one chromosome
+			gw_log_llh = np.sum(llh_list)
+			gw_2neg_logLlh_list.append(- 2 * gw_log_llh)
+			num_params = nstate + nstate ** 2 + nstate * len(CHROM_MARK_LIST) # init, transition, emission 
+			aic = 2 * num_params - 2 * gw_log_llh
+			aic_list.append(aic)
+			bic = num_params * np.log(gw_bins) - 2 * gw_log_llh
+			bic_list.append(bic)
+		result_df = pd.DataFrame(data = {'num_state': NUM_STATE_LIST, 'aic': aic_list, 'bic': bic_list, 'log_llh': gw_2neg_logLlh_list}) 
+		result_df.to_csv(output[0], header = True, index = False, sep = '\t')
+		plot_df = pd.melt(result_df, id_vars = ['num_state'], value_vars = ['aic', 'bic', 'log_llh'])
+		plot_df.columns = ['num_state', 'aic_or_bic', 'values']
+		ax = sns.pointplot(data = plot_df, x = 'num_state', y = 'values', hue = 'aic_or_bic', plot_kws=dict(alpha=0.3))
+		ax.set_xticklabels(plot_df['num_state'], size = 5, rotation = 270) 
+		plt.tight_layout()
+		plt.savefig(os.path.join(params.out_dir, 'aic_bic.png'))
+
+
+def calculate_AIC(num_state, chrom, chrom_length_df):
+	# chrom_length_df: index are of forms chr1, etc.
+	# columns: length and num_bins
+	log_llh_fn = os.path.join(model_outdir, 'K562_hg19','all_mark_model', 'state_{nstate}'.format(nstate = nstate), 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'.format(chrom = chrom)) # there file where we can get the calculation of log likelihood 
+	log_llh = pd.read_csv(llh_fn, header = None, index_col = None, squeeze = True)[0]
+	num_params = nstate + nstate ** 2 + nstate * len(CHROM_MARK_LIST)
+	num_bins_this_chrom = chrom_length_df.loc['chr{chrom}'.format(chrom = chrom)]['num_bins']
+	aic = 2 * num_params - 2 * gw_log_llh
+
+rule compare_aic_bic_models:
+	input:
+		expand(os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'state_{num_state}', 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'), num_state = NUM_STATE_LIST, chrom = TEST_CHROMOSOME_LIST), # each file is produced by each time calling rule calcualte_log_llh_one_chrom
+	output:
+		os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'aic_bic_compare_num_states', 'train_then_test', 'aic_bic_by_chrom.txt'),
+	params:
+		out_dir = os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'aic_bic_compare_num_states', 'train_then_test')
+	run:	
+		aic_list = []
+		bic_list = []
+		gw_2neg_logLlh_list = []
+		chrom_length_df , _ = count_gw_bins()
+		print(chrom_length_df.head())
+		columns = ['num_state'] + list(map(lambda x: 'AIC_' + x, TEST_CHROMOSOME_LIST)) + list(map(lambda x: 'BIC_' + x), TEST_CHROMOSOME_LIST)
+		result_df = pd.DataFrame(columns = columns)
 		for nstate in NUM_STATE_LIST: # for each model, calculate 
 			llh_fn_list = list(map(lambda x: os.path.join(model_outdir, 'K562_hg19','all_mark_model', 'state_{nstate}'.format(nstate = nstate), 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'.format(chrom = x)), TEST_CHROMOSOME_LIST)) 
 			llh_list = list(map(lambda x: pd.read_csv(x, header = None, index_col = None, squeeze = True)[0], llh_fn_list)) # read a bunch of 1-line files , outputing a list of numbers, each representing the log llh in one chromosome
