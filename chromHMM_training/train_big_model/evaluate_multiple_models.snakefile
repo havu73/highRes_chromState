@@ -56,7 +56,8 @@ rule all:
 		# get_all_regions_binarized_fn_list()
 		#expand(os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'state_{num_state}', 'half_for_model_evaluation', 'model_{num_state}.txt'), num_state = NUM_STATE_LIST), # to create the chromatin state model 
 		# expand(os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'state_{num_state}', 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'), num_state = NUM_STATE_LIST, chrom = TEST_CHROMOSOME_LIST),
-		os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'aic_bic_compare_num_states', 'train_then_test', 'aic_bic.txt'),
+		os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'aic_bic_compare_num_states', 'train_then_test', 'aic_bic_all_test_chrom.png'),
+		os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'aic_bic_compare_num_states', 'train_then_test', 'optimal_state_by_chrom.txt'),
 
 ##### SOME RULES TO BINARIZE THE SIGNALS AND PREPARE DATA FOR LEARNING THE CHROMHMM MODEL #####
 rule get_one_chrom_basic_bed:
@@ -175,9 +176,9 @@ def count_gw_bins():
 	chrom_length_df.columns = ['length_bp']
 	chrom_length_df['num_bins'] = np.floor(chrom_length_df['length_bp'].astype(float) / NUM_BP_PER_BIN).astype(int)
 	num_bin_test_chrom_list = list(map(lambda x: chrom_length_df.loc['chr{chrom}'.format(chrom = x)]['num_bins'], TEST_CHROMOSOME_LIST))
-	return chrom_length_df, np.sum(num_bin_list).astype(int)
+	return chrom_length_df, np.sum(num_bin_test_chrom_list).astype(int)
 
-rule compare_aic_bic_models:
+rule compare_aic_bic_models_all_test_chrom:
 	input:
 		expand(os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'state_{num_state}', 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'), num_state = NUM_STATE_LIST, chrom = TEST_CHROMOSOME_LIST), # each file is produced by each time calling rule calcualte_log_llh_one_chrom
 	output:
@@ -187,20 +188,20 @@ rule compare_aic_bic_models:
 	run:	
 		aic_list = []
 		bic_list = []
-		gw_2neg_logLlh_list = []
+		gw_neg2_logLlh_list = []
 		_ , gw_bins = count_gw_bins()
 		print(gw_bins)
-		for nstate in NUM_STATE_LIST: # for each model, calculate 
-			llh_fn_list = list(map(lambda x: os.path.join(model_outdir, 'K562_hg19','all_mark_model', 'state_{nstate}'.format(nstate = nstate), 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'.format(chrom = x)), TEST_CHROMOSOME_LIST)) 
+		for num_state in NUM_STATE_LIST: # for each model, calculate 
+			llh_fn_list = list(map(lambda x: os.path.join(model_outdir, 'K562_hg19','all_mark_model', 'state_{num_state}'.format(num_state = num_state), 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'.format(chrom = x)), TEST_CHROMOSOME_LIST)) 
 			llh_list = list(map(lambda x: pd.read_csv(x, header = None, index_col = None, squeeze = True)[0], llh_fn_list)) # read a bunch of 1-line files , outputing a list of numbers, each representing the log llh in one chromosome
 			gw_log_llh = np.sum(llh_list)
-			gw_2neg_logLlh_list.append(- 2 * gw_log_llh)
-			num_params = nstate + nstate ** 2 + nstate * len(CHROM_MARK_LIST) # init, transition, emission 
+			gw_neg2_logLlh_list.append(- 2 * gw_log_llh)
+			num_params = num_state + num_state ** 2 + num_state * len(CHROM_MARK_LIST) # init, transition, emission 
 			aic = 2 * num_params - 2 * gw_log_llh
 			aic_list.append(aic)
 			bic = num_params * np.log(gw_bins) - 2 * gw_log_llh
 			bic_list.append(bic)
-		result_df = pd.DataFrame(data = {'num_state': NUM_STATE_LIST, 'aic': aic_list, 'bic': bic_list, 'log_llh': gw_2neg_logLlh_list}) 
+		result_df = pd.DataFrame(data = {'num_state': NUM_STATE_LIST, 'aic': aic_list, 'bic': bic_list, 'log_llh': gw_neg2_logLlh_list}) 
 		result_df.to_csv(output[0], header = True, index = False, sep = '\t')
 		plot_df = pd.melt(result_df, id_vars = ['num_state'], value_vars = ['aic', 'bic', 'log_llh'])
 		plot_df.columns = ['num_state', 'aic_or_bic', 'values']
@@ -210,16 +211,19 @@ rule compare_aic_bic_models:
 		plt.savefig(os.path.join(params.out_dir, 'aic_bic.png'))
 
 
-def calculate_AIC(num_state, chrom, chrom_length_df):
+def calculate_statistics_for_model_evaluation(num_state, chrom, chrom_length_df):
 	# chrom_length_df: index are of forms chr1, etc.
 	# columns: length and num_bins
-	log_llh_fn = os.path.join(model_outdir, 'K562_hg19','all_mark_model', 'state_{nstate}'.format(nstate = nstate), 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'.format(chrom = chrom)) # there file where we can get the calculation of log likelihood 
-	log_llh = pd.read_csv(llh_fn, header = None, index_col = None, squeeze = True)[0]
-	num_params = nstate + nstate ** 2 + nstate * len(CHROM_MARK_LIST)
+	log_llh_fn = os.path.join(model_outdir, 'K562_hg19','all_mark_model', 'state_{num_state}'.format(num_state = num_state), 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'.format(chrom = chrom)) # there file where we can get the calculation of log likelihood 
+	log_llh = pd.read_csv(log_llh_fn, header = None, index_col = None, squeeze = True)[0]
+	num_params = num_state + num_state ** 2 + num_state * len(CHROM_MARK_LIST)
 	num_bins_this_chrom = chrom_length_df.loc['chr{chrom}'.format(chrom = chrom)]['num_bins']
-	aic = 2 * num_params - 2 * gw_log_llh
+	aic = 2 * num_params - 2 * log_llh
+	bic = num_params * np.log(num_bins_this_chrom) - 2 * log_llh
+	neg2_logLlh = -2 * log_llh
+	return (aic, bic, neg2_logLlh)
 
-rule compare_aic_bic_models:
+rule compare_aic_bic_models_by_chrom:
 	input:
 		expand(os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'state_{num_state}', 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'), num_state = NUM_STATE_LIST, chrom = TEST_CHROMOSOME_LIST), # each file is produced by each time calling rule calcualte_log_llh_one_chrom
 	output:
@@ -229,26 +233,67 @@ rule compare_aic_bic_models:
 	run:	
 		aic_list = []
 		bic_list = []
-		gw_2neg_logLlh_list = []
+		gw_neg2_logLlh_list = []
 		chrom_length_df , _ = count_gw_bins()
 		print(chrom_length_df.head())
-		columns = ['num_state'] + list(map(lambda x: 'AIC_' + x, TEST_CHROMOSOME_LIST)) + list(map(lambda x: 'BIC_' + x), TEST_CHROMOSOME_LIST)
+		columns = ['num_state', 'test_chrom', 'aic', 'bic', 'neg2_logLlh'] 
 		result_df = pd.DataFrame(columns = columns)
-		for nstate in NUM_STATE_LIST: # for each model, calculate 
-			llh_fn_list = list(map(lambda x: os.path.join(model_outdir, 'K562_hg19','all_mark_model', 'state_{nstate}'.format(nstate = nstate), 'half_for_model_evaluation', 'log_llh', 'log_llh_chr{chrom}.txt'.format(chrom = x)), TEST_CHROMOSOME_LIST)) 
-			llh_list = list(map(lambda x: pd.read_csv(x, header = None, index_col = None, squeeze = True)[0], llh_fn_list)) # read a bunch of 1-line files , outputing a list of numbers, each representing the log llh in one chromosome
-			gw_log_llh = np.sum(llh_list)
-			gw_2neg_logLlh_list.append(- 2 * gw_log_llh)
-			num_params = nstate + nstate ** 2 + nstate * len(CHROM_MARK_LIST) # init, transition, emission 
-			aic = 2 * num_params - 2 * gw_log_llh
-			aic_list.append(aic)
-			bic = num_params * np.log(gw_bins) - 2 * gw_log_llh
-			bic_list.append(bic)
-		result_df = pd.DataFrame(data = {'num_state': NUM_STATE_LIST, 'aic': aic_list, 'bic': bic_list, 'log_llh': gw_2neg_logLlh_list}) 
+		for num_state in NUM_STATE_LIST: # for each model, calculate 
+			for chrom in TEST_CHROMOSOME_LIST:
+				aic, bic, neg2_logLlh = calculate_statistics_for_model_evaluation(num_state, chrom, chrom_length_df)
+				row = [num_state, 'chr{chrom}'.format(chrom = chrom), aic, bic, neg2_logLlh]
+				result_df.loc[result_df.shape[0]] = row # append one more row
 		result_df.to_csv(output[0], header = True, index = False, sep = '\t')
-		plot_df = pd.melt(result_df, id_vars = ['num_state'], value_vars = ['aic', 'bic', 'log_llh'])
-		plot_df.columns = ['num_state', 'aic_or_bic', 'values']
-		ax = sns.pointplot(data = plot_df, x = 'num_state', y = 'values', hue = 'aic_or_bic', plot_kws=dict(alpha=0.3))
-		ax.set_xticklabels(plot_df['num_state'], size = 5, rotation = 270) 
-		plt.tight_layout()
-		plt.savefig(os.path.join(params.out_dir, 'aic_bic.png'))
+		# plot_df = pd.melt(result_df, id_vars = ['num_state', 'test_chrom'], value_vars = ['aic', 'bic', 'neg2_logLlh'])
+		# plot_df.columns = ['num_state', 'test_chrom', 'aic_or_bic', 'values']
+		# ax = sns.pointplot(data = plot_df, x = 'num_state', y = 'values', hue = 'aic_or_bic', plot_kws=dict(alpha:0.3))
+		# ax.set_xticklabels(plot_df['num_state'], size = 5, rotation = 270) 
+		# plt.tight_layout()
+		# plt.savefig(os.path.join(params.out_dir, 'aic_bic_all_test_chrom.png'))
+
+rule get_summary_optimal_num_state_by_chrom:
+	input:
+		os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'aic_bic_compare_num_states', 'train_then_test', 'aic_bic_by_chrom.txt') # from rule compare_aic_bic_models_by_chrom
+	output: 
+		os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'aic_bic_compare_num_states', 'train_then_test', 'optimal_state_by_chrom.txt'),
+	run:
+		df = pd.read_csv(input[0], header = 0, index_col = None, sep = '\t')
+		grouped_df = df.groupby('test_chrom')
+		result_df = pd.DataFrame(columns = ['test_chrom', 'aic', 'bic', 'neg2_logLlh'])
+		for chrom, chrom_df in grouped_df:
+			chrom_df = chrom_df.set_index('num_state')
+			chrom_df = chrom_df.drop(['test_chrom'], axis = 1) # only 3 columns left: aic bic neg2_logLlh
+			report_row = chrom_df.idxmin(axis = 0)
+			report_row = report_row.append(pd.Series({'test_chrom': chrom}))
+			result_df.loc[result_df.shape[0]] = report_row
+		result_df.to_csv(output[0], header = True, index = False, sep = '\t')
+
+rule plot_compare_aic_bic_models_by_chrom:
+	input: 
+		os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'aic_bic_compare_num_states', 'train_then_test', 'aic_bic_by_chrom.txt') # from rule compare_aic_bic_models_by_chrom
+	output:
+		os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'aic_bic_compare_num_states', 'train_then_test', 'aic_bic_all_test_chrom.png'),
+	params:
+		out_dir = os.path.join(model_outdir, 'K562_hg19', 'all_mark_model', 'aic_bic_compare_num_states', 'train_then_test')
+	run:	
+		plot_df = pd.read_csv(input[0], header = 0, index_col = None, sep = '\t')
+		plot_df = pd.melt(plot_df, id_vars = ['num_state', 'test_chrom'], value_vars = ['aic', 'bic', 'neg2_logLlh'])
+		plot_df.columns = ['num_state', 'test_chrom', 'aic_or_bic', 'values']
+		plot_nrow = (np.floor(np.sqrt(len(TEST_CHROMOSOME_LIST)))).astype(int)
+		plot_ncol = int(np.ceil((len(TEST_CHROMOSOME_LIST) + 1) / plot_nrow))
+		fig, axes = plt.subplots(ncols = plot_ncol, nrows = plot_nrow, figsize = (18,9))
+		for plot_index, chrom in enumerate(TEST_CHROMOSOME_LIST):
+			ax = (axes.flat)[plot_index]
+			this_chrom_df  = (plot_df[plot_df['test_chrom'] == 'chr{chrom}'.format(chrom = chrom)]).reset_index()
+			sns.pointplot(data = this_chrom_df, x = 'num_state', y = 'values', ax = ax, hue = 'aic_or_bic')
+			ax.set(ylim = (100000, 1550000))
+			xlabels = ax.get_xticklabels() 
+			for i, l in enumerate(xlabels):
+				if i%2 == 0:
+					xlabels[i] = ''
+			ax.set_xticklabels(xlabels, rotation = 270, size = 5)
+		fig.tight_layout()
+		fig.savefig(output[0])
+		# grid = sns.FacetGrid(plot_df, col = 'test_chrom', col_wrap = plot_nrow, hue = 'aic_or_bic', size = 4, aspect = 1.2)
+		# grid.map(sns.pointplot, 'num_state', 'values')
+		# grid.savefig(output[0])

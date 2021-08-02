@@ -11,11 +11,12 @@ rule all:
 	input:
 		# os.path.join(model_analysis_dir, 'train_segments.bed.gz'),
 		# os.path.join(model_analysis_dir, 'test_segments.bed.gz'),
-		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'POSTERIOR', 'entropy','entropy_chr{chrom}.txt.gz'), num_mark_model = ['all_mark_model'], num_state = range(2,26), chrom = ['1', 'X']),
-		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'POSTERIOR', 'entropy','entropy_chr{chrom}.txt.gz'), num_mark_model = ['three_mark_model'], num_state = range(2,9), chrom = ['1', 'X'])
+		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'overlap_crispr_mpra', '{fore_or_back}', 'gw_overlap.xlsx'), num_mark_model = ['all_mark_model'], num_state = range(25,26), fore_or_back = ['foreground', 'background']),
+		expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'overlap_crispr_mpra', '{fore_or_back}', 'gw_overlap.xlsx'), num_mark_model = ['three_mark_model'], num_state = range(8,9), fore_or_back = ['foreground', 'background']),
+		expand(os.path.join(ROADMAP_dir, '25_state', 'overlap_crispr_mpra', '{fore_or_back}', 'gw_overlap.xlsx'), fore_or_back = ['foreground', 'background']),
 		# expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'overlap_crispr_mpra','fg_against_bg','{TT}_overlap_against_bg.txt'), num_mark_model = ['three_mark_model'], num_state = range(2, 9), TT = ['train', 'test']),
 		# expand(os.path.join(all_model_dir, '{num_mark_model}', 'state_{num_state}', 'full_model', 'overlap_crispr_mpra', 'fg_against_bg','{TT}_overlap_against_bg.txt'), num_mark_model = ['all_mark_model'], num_state = range(2, 26), TT = ['train', 'test']),
-		# expand(os.path.join(all_model_dir, 'compare_models_recover_crispr_mpra', 'fg_against_bg', 'auc_{context}.txt'), context = context_list),
+		expand(os.path.join(all_model_dir, 'compare_models_recover_crispr_mpra', 'fg_against_bg', 'auc_{context}.txt'), context = context_list),
 
 rule get_train_test_bed_fn:
 	input:
@@ -89,7 +90,7 @@ rule get_segment_file_train_test:
 		"""
 
 
-rule overlap_with_genome_contexts: # for both the model trained by me and roadmap published 25-state model
+rule overlap_with_genome_contexts_train_test: # for both the model trained by me and roadmap published 25-state model
 	input:
 		expand(os.path.join('{{model_folder}}', 'train_and_test_segments_sorted', '{TT}_segments.bed.gz'), TT = ['train', 'test']),
 	output:
@@ -103,11 +104,34 @@ rule overlap_with_genome_contexts: # for both the model trained by me and roadma
 		java -jar ../../program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage {input[1]} {COORD_CRISPR_MPRA_DIR}/{wildcards.fore_or_back} {params.test_out_prefix}
 		"""
 
-rule overlap_against_background:
+rule overlap_with_genome_contexts_gw: # for both the model trained by me and roadmap published 25-state model
 	input:
-		expand(os.path.join('{{model_folder}}', 'overlap_crispr_mpra', '{fore_or_back}', '{{TT}}_overlap.txt'), fore_or_back = ['foreground', 'background']) # from overlap_with_genome_contexts
+		os.path.join('{model_folder}', 'genome_segments_sorted.bed.gz'),
 	output:
-		os.path.join('{model_folder}', 'overlap_crispr_mpra','fg_against_bg', '{TT}_overlap_against_bg.txt'), # TT: train or test
+		os.path.join('{model_folder}', 'overlap_crispr_mpra', '{fore_or_back}', 'gw_overlap.txt')
+	params:
+		output_prefix = os.path.join('{model_folder}', 'overlap_crispr_mpra', '{fore_or_back}', 'gw_overlap'),
+	shell:
+		"""
+		java -jar ../../program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage {input[0]} {COORD_CRISPR_MPRA_DIR}/{wildcards.fore_or_back} {params.output_prefix}
+		"""
+
+rule get_colored_excel_enrichment_gw:
+	input:
+		os.path.join('{model_folder}', 'overlap_crispr_mpra','{fore_or_back}', '{TT}_{overlap_type}.txt'), # TT: train or test or gw, fore_or_back can be foreground, background, or fg_against_bg, overlap_type can be overlap or overlap_against_bg
+	output:	
+		os.path.join('{model_folder}', 'overlap_crispr_mpra','{fore_or_back}', '{TT}_{overlap_type}.xlsx'), # TT: train or test or gw, fore_or_back can be foreground, background, or fg_against_bg, overlap_type can be overlap or overlap_against_bg
+	shell:
+		"""
+		python ../utils/create_excel_overlap_enrichment.py {input[0]} {output[0]} ''
+		"""
+
+rule overlap_against_background:
+### the TT wildcards here can be: train, test or gw
+	input:
+		expand(os.path.join('{{model_folder}}', 'overlap_crispr_mpra', '{fore_or_back}', '{{TT}}_overlap.txt'), fore_or_back = ['foreground', 'background']) # from overlap_with_genome_contexts_train_test
+	output:
+		os.path.join('{model_folder}', 'overlap_crispr_mpra','fg_against_bg', '{TT}_overlap_against_bg.txt'), # TT: train or test or gw
 	params:
 		foreground_fn = os.path.join('{model_folder}', 'overlap_crispr_mpra', 'foreground', '{TT}_overlap.txt'),
 		background_fn = os.path.join('{model_folder}', 'overlap_crispr_mpra', 'background', '{TT}_overlap.txt'),
