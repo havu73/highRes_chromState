@@ -1,0 +1,2312 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	127	download_roadmap_S25_segment
+	128
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E024/E024_25_imputed12marks_segments.bed.gz
+    jobid: 10
+    wildcards: ct=E024
+
+Submitted job 10 with external jobid 'Submitted batch job 5390332'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E062/E062_25_imputed12marks_segments.bed.gz
+    jobid: 25
+    wildcards: ct=E062
+
+Submitted job 25 with external jobid 'Submitted batch job 5390333'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E031/E031_25_imputed12marks_segments.bed.gz
+    jobid: 40
+    wildcards: ct=E031
+
+Submitted job 40 with external jobid 'Submitted batch job 5390334'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E059/E059_25_imputed12marks_segments.bed.gz
+    jobid: 55
+    wildcards: ct=E059
+
+Submitted job 55 with external jobid 'Submitted batch job 5390335'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E065/E065_25_imputed12marks_segments.bed.gz
+    jobid: 85
+    wildcards: ct=E065
+
+Submitted job 85 with external jobid 'Submitted batch job 5390336'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E079/E079_25_imputed12marks_segments.bed.gz
+    jobid: 100
+    wildcards: ct=E079
+
+Submitted job 100 with external jobid 'Submitted batch job 5390337'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E116/E116_25_imputed12marks_segments.bed.gz
+    jobid: 115
+    wildcards: ct=E116
+
+Submitted job 115 with external jobid 'Submitted batch job 5390338'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E020/E020_25_imputed12marks_segments.bed.gz
+    jobid: 11
+    wildcards: ct=E020
+
+Submitted job 11 with external jobid 'Submitted batch job 5390339'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E034/E034_25_imputed12marks_segments.bed.gz
+    jobid: 26
+    wildcards: ct=E034
+
+Submitted job 26 with external jobid 'Submitted batch job 5390340'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E035/E035_25_imputed12marks_segments.bed.gz
+    jobid: 41
+    wildcards: ct=E035
+
+Submitted job 41 with external jobid 'Submitted batch job 5390341'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E061/E061_25_imputed12marks_segments.bed.gz
+    jobid: 56
+    wildcards: ct=E061
+
+Submitted job 56 with external jobid 'Submitted batch job 5390342'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E078/E078_25_imputed12marks_segments.bed.gz
+    jobid: 86
+    wildcards: ct=E078
+
+Submitted job 86 with external jobid 'Submitted batch job 5390343'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E094/E094_25_imputed12marks_segments.bed.gz
+    jobid: 101
+    wildcards: ct=E094
+
+Submitted job 101 with external jobid 'Submitted batch job 5390344'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E117/E117_25_imputed12marks_segments.bed.gz
+    jobid: 116
+    wildcards: ct=E117
+
+Submitted job 116 with external jobid 'Submitted batch job 5390345'.
+
+[Sun Aug  1 17:02:32 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E019/E019_25_imputed12marks_segments.bed.gz
+    jobid: 12
+    wildcards: ct=E019
+
+Submitted job 12 with external jobid 'Submitted batch job 5390346'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E045/E045_25_imputed12marks_segments.bed.gz
+    jobid: 27
+    wildcards: ct=E045
+
+Submitted job 27 with external jobid 'Submitted batch job 5390347'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E051/E051_25_imputed12marks_segments.bed.gz
+    jobid: 42
+    wildcards: ct=E051
+
+Submitted job 42 with external jobid 'Submitted batch job 5390348'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E057/E057_25_imputed12marks_segments.bed.gz
+    jobid: 57
+    wildcards: ct=E057
+
+Submitted job 57 with external jobid 'Submitted batch job 5390349'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E076/E076_25_imputed12marks_segments.bed.gz
+    jobid: 87
+    wildcards: ct=E076
+
+Submitted job 87 with external jobid 'Submitted batch job 5390350'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E099/E099_25_imputed12marks_segments.bed.gz
+    jobid: 102
+    wildcards: ct=E099
+
+Submitted job 102 with external jobid 'Submitted batch job 5390351'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E118/E118_25_imputed12marks_segments.bed.gz
+    jobid: 117
+    wildcards: ct=E118
+
+Submitted job 117 with external jobid 'Submitted batch job 5390352'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E018/E018_25_imputed12marks_segments.bed.gz
+    jobid: 13
+    wildcards: ct=E018
+
+Submitted job 13 with external jobid 'Submitted batch job 5390353'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E033/E033_25_imputed12marks_segments.bed.gz
+    jobid: 28
+    wildcards: ct=E033
+
+Submitted job 28 with external jobid 'Submitted batch job 5390354'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E050/E050_25_imputed12marks_segments.bed.gz
+    jobid: 43
+    wildcards: ct=E050
+
+Submitted job 43 with external jobid 'Submitted batch job 5390355'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E058/E058_25_imputed12marks_segments.bed.gz
+    jobid: 58
+    wildcards: ct=E058
+
+Submitted job 58 with external jobid 'Submitted batch job 5390356'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E103/E103_25_imputed12marks_segments.bed.gz
+    jobid: 88
+    wildcards: ct=E103
+
+Submitted job 88 with external jobid 'Submitted batch job 5390357'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E086/E086_25_imputed12marks_segments.bed.gz
+    jobid: 103
+    wildcards: ct=E086
+
+Submitted job 103 with external jobid 'Submitted batch job 5390358'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E119/E119_25_imputed12marks_segments.bed.gz
+    jobid: 118
+    wildcards: ct=E119
+
+Submitted job 118 with external jobid 'Submitted batch job 5390359'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E021/E021_25_imputed12marks_segments.bed.gz
+    jobid: 14
+    wildcards: ct=E021
+
+Submitted job 14 with external jobid 'Submitted batch job 5390360'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E044/E044_25_imputed12marks_segments.bed.gz
+    jobid: 29
+    wildcards: ct=E044
+
+Submitted job 29 with external jobid 'Submitted batch job 5390361'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E036/E036_25_imputed12marks_segments.bed.gz
+    jobid: 44
+    wildcards: ct=E036
+
+Submitted job 44 with external jobid 'Submitted batch job 5390362'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E028/E028_25_imputed12marks_segments.bed.gz
+    jobid: 59
+    wildcards: ct=E028
+
+Submitted job 59 with external jobid 'Submitted batch job 5390363'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E111/E111_25_imputed12marks_segments.bed.gz
+    jobid: 89
+    wildcards: ct=E111
+
+Submitted job 89 with external jobid 'Submitted batch job 5390364'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E088/E088_25_imputed12marks_segments.bed.gz
+    jobid: 104
+    wildcards: ct=E088
+
+Submitted job 104 with external jobid 'Submitted batch job 5390365'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E120/E120_25_imputed12marks_segments.bed.gz
+    jobid: 119
+    wildcards: ct=E120
+
+Submitted job 119 with external jobid 'Submitted batch job 5390366'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E022/E022_25_imputed12marks_segments.bed.gz
+    jobid: 15
+    wildcards: ct=E022
+
+Submitted job 15 with external jobid 'Submitted batch job 5390367'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E043/E043_25_imputed12marks_segments.bed.gz
+    jobid: 30
+    wildcards: ct=E043
+
+Submitted job 30 with external jobid 'Submitted batch job 5390368'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E032/E032_25_imputed12marks_segments.bed.gz
+    jobid: 45
+    wildcards: ct=E032
+
+Submitted job 45 with external jobid 'Submitted batch job 5390369'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E027/E027_25_imputed12marks_segments.bed.gz
+    jobid: 60
+    wildcards: ct=E027
+
+Submitted job 60 with external jobid 'Submitted batch job 5390370'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E092/E092_25_imputed12marks_segments.bed.gz
+    jobid: 90
+    wildcards: ct=E092
+
+Submitted job 90 with external jobid 'Submitted batch job 5390371'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E097/E097_25_imputed12marks_segments.bed.gz
+    jobid: 105
+    wildcards: ct=E097
+
+Submitted job 105 with external jobid 'Submitted batch job 5390372'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E121/E121_25_imputed12marks_segments.bed.gz
+    jobid: 120
+    wildcards: ct=E121
+
+Submitted job 120 with external jobid 'Submitted batch job 5390373'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E007/E007_25_imputed12marks_segments.bed.gz
+    jobid: 16
+    wildcards: ct=E007
+
+Submitted job 16 with external jobid 'Submitted batch job 5390374'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E039/E039_25_imputed12marks_segments.bed.gz
+    jobid: 31
+    wildcards: ct=E039
+
+Submitted job 31 with external jobid 'Submitted batch job 5390375'.
+
+[Sun Aug  1 17:02:33 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E046/E046_25_imputed12marks_segments.bed.gz
+    jobid: 46
+    wildcards: ct=E046
+
+Submitted job 46 with external jobid 'Submitted batch job 5390376'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E054/E054_25_imputed12marks_segments.bed.gz
+    jobid: 61
+    wildcards: ct=E054
+
+Submitted job 61 with external jobid 'Submitted batch job 5390377'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E085/E085_25_imputed12marks_segments.bed.gz
+    jobid: 91
+    wildcards: ct=E085
+
+Submitted job 91 with external jobid 'Submitted batch job 5390378'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E087/E087_25_imputed12marks_segments.bed.gz
+    jobid: 106
+    wildcards: ct=E087
+
+Submitted job 106 with external jobid 'Submitted batch job 5390379'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E122/E122_25_imputed12marks_segments.bed.gz
+    jobid: 121
+    wildcards: ct=E122
+
+Submitted job 121 with external jobid 'Submitted batch job 5390380'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E041/E041_25_imputed12marks_segments.bed.gz
+    jobid: 32
+    wildcards: ct=E041
+
+Submitted job 32 with external jobid 'Submitted batch job 5390381'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E009/E009_25_imputed12marks_segments.bed.gz
+    jobid: 17
+    wildcards: ct=E009
+
+Submitted job 17 with external jobid 'Submitted batch job 5390382'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E053/E053_25_imputed12marks_segments.bed.gz
+    jobid: 62
+    wildcards: ct=E053
+
+Submitted job 62 with external jobid 'Submitted batch job 5390383'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E002/E002_25_imputed12marks_segments.bed.gz
+    jobid: 3
+    wildcards: ct=E002
+
+Submitted job 3 with external jobid 'Submitted batch job 5390384'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E030/E030_25_imputed12marks_segments.bed.gz
+    jobid: 47
+    wildcards: ct=E030
+
+Submitted job 47 with external jobid 'Submitted batch job 5390385'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E084/E084_25_imputed12marks_segments.bed.gz
+    jobid: 92
+    wildcards: ct=E084
+
+Submitted job 92 with external jobid 'Submitted batch job 5390386'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E080/E080_25_imputed12marks_segments.bed.gz
+    jobid: 107
+    wildcards: ct=E080
+
+Submitted job 107 with external jobid 'Submitted batch job 5390387'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E123/E123_25_imputed12marks_segments.bed.gz
+    jobid: 122
+    wildcards: ct=E123
+
+Submitted job 122 with external jobid 'Submitted batch job 5390388'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E017/E017_25_imputed12marks_segments.bed.gz
+    jobid: 2
+    wildcards: ct=E017
+
+Submitted job 2 with external jobid 'Submitted batch job 5390389'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E010/E010_25_imputed12marks_segments.bed.gz
+    jobid: 18
+    wildcards: ct=E010
+
+Submitted job 18 with external jobid 'Submitted batch job 5390390'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E042/E042_25_imputed12marks_segments.bed.gz
+    jobid: 33
+    wildcards: ct=E042
+
+Submitted job 33 with external jobid 'Submitted batch job 5390391'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E026/E026_25_imputed12marks_segments.bed.gz
+    jobid: 48
+    wildcards: ct=E026
+
+Submitted job 48 with external jobid 'Submitted batch job 5390392'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E112/E112_25_imputed12marks_segments.bed.gz
+    jobid: 63
+    wildcards: ct=E112
+
+Submitted job 63 with external jobid 'Submitted batch job 5390393'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E109/E109_25_imputed12marks_segments.bed.gz
+    jobid: 93
+    wildcards: ct=E109
+
+Submitted job 93 with external jobid 'Submitted batch job 5390394'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E091/E091_25_imputed12marks_segments.bed.gz
+    jobid: 108
+    wildcards: ct=E091
+
+Submitted job 108 with external jobid 'Submitted batch job 5390395'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E124/E124_25_imputed12marks_segments.bed.gz
+    jobid: 123
+    wildcards: ct=E124
+
+Submitted job 123 with external jobid 'Submitted batch job 5390396'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E013/E013_25_imputed12marks_segments.bed.gz
+    jobid: 19
+    wildcards: ct=E013
+
+Submitted job 19 with external jobid 'Submitted batch job 5390397'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E008/E008_25_imputed12marks_segments.bed.gz
+    jobid: 4
+    wildcards: ct=E008
+
+Submitted job 4 with external jobid 'Submitted batch job 5390398'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E040/E040_25_imputed12marks_segments.bed.gz
+    jobid: 34
+    wildcards: ct=E040
+
+Submitted job 34 with external jobid 'Submitted batch job 5390399'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E049/E049_25_imputed12marks_segments.bed.gz
+    jobid: 49
+    wildcards: ct=E049
+
+Submitted job 49 with external jobid 'Submitted batch job 5390400'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E093/E093_25_imputed12marks_segments.bed.gz
+    jobid: 64
+    wildcards: ct=E093
+
+Submitted job 64 with external jobid 'Submitted batch job 5390401'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E106/E106_25_imputed12marks_segments.bed.gz
+    jobid: 94
+    wildcards: ct=E106
+
+Submitted job 94 with external jobid 'Submitted batch job 5390402'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E066/E066_25_imputed12marks_segments.bed.gz
+    jobid: 109
+    wildcards: ct=E066
+
+Submitted job 109 with external jobid 'Submitted batch job 5390403'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E125/E125_25_imputed12marks_segments.bed.gz
+    jobid: 124
+    wildcards: ct=E125
+
+Submitted job 124 with external jobid 'Submitted batch job 5390404'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E001/E001_25_imputed12marks_segments.bed.gz
+    jobid: 5
+    wildcards: ct=E001
+
+Submitted job 5 with external jobid 'Submitted batch job 5390405'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E012/E012_25_imputed12marks_segments.bed.gz
+    jobid: 20
+    wildcards: ct=E012
+
+Submitted job 20 with external jobid 'Submitted batch job 5390406'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E037/E037_25_imputed12marks_segments.bed.gz
+    jobid: 35
+    wildcards: ct=E037
+
+Submitted job 35 with external jobid 'Submitted batch job 5390407'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E025/E025_25_imputed12marks_segments.bed.gz
+    jobid: 50
+    wildcards: ct=E025
+
+Submitted job 50 with external jobid 'Submitted batch job 5390408'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E071/E071_25_imputed12marks_segments.bed.gz
+    jobid: 65
+    wildcards: ct=E071
+
+Submitted job 65 with external jobid 'Submitted batch job 5390409'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E075/E075_25_imputed12marks_segments.bed.gz
+    jobid: 95
+    wildcards: ct=E075
+
+Submitted job 95 with external jobid 'Submitted batch job 5390410'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E098/E098_25_imputed12marks_segments.bed.gz
+    jobid: 110
+    wildcards: ct=E098
+
+Submitted job 110 with external jobid 'Submitted batch job 5390411'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E126/E126_25_imputed12marks_segments.bed.gz
+    jobid: 125
+    wildcards: ct=E126
+
+Submitted job 125 with external jobid 'Submitted batch job 5390412'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E011/E011_25_imputed12marks_segments.bed.gz
+    jobid: 21
+    wildcards: ct=E011
+
+Submitted job 21 with external jobid 'Submitted batch job 5390413'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E015/E015_25_imputed12marks_segments.bed.gz
+    jobid: 6
+    wildcards: ct=E015
+
+Submitted job 6 with external jobid 'Submitted batch job 5390414'.
+
+[Sun Aug  1 17:02:34 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E048/E048_25_imputed12marks_segments.bed.gz
+    jobid: 36
+    wildcards: ct=E048
+
+Submitted job 36 with external jobid 'Submitted batch job 5390415'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E023/E023_25_imputed12marks_segments.bed.gz
+    jobid: 51
+    wildcards: ct=E023
+
+Submitted job 51 with external jobid 'Submitted batch job 5390416'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E074/E074_25_imputed12marks_segments.bed.gz
+    jobid: 66
+    wildcards: ct=E074
+
+Submitted job 66 with external jobid 'Submitted batch job 5390417'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E101/E101_25_imputed12marks_segments.bed.gz
+    jobid: 96
+    wildcards: ct=E101
+
+Submitted job 96 with external jobid 'Submitted batch job 5390418'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E096/E096_25_imputed12marks_segments.bed.gz
+    jobid: 111
+    wildcards: ct=E096
+
+Submitted job 111 with external jobid 'Submitted batch job 5390419'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E127/E127_25_imputed12marks_segments.bed.gz
+    jobid: 126
+    wildcards: ct=E127
+
+Submitted job 126 with external jobid 'Submitted batch job 5390420'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E014/E014_25_imputed12marks_segments.bed.gz
+    jobid: 7
+    wildcards: ct=E014
+
+Submitted job 7 with external jobid 'Submitted batch job 5390421'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E004/E004_25_imputed12marks_segments.bed.gz
+    jobid: 22
+    wildcards: ct=E004
+
+Submitted job 22 with external jobid 'Submitted batch job 5390422'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E038/E038_25_imputed12marks_segments.bed.gz
+    jobid: 37
+    wildcards: ct=E038
+
+Submitted job 37 with external jobid 'Submitted batch job 5390423'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E052/E052_25_imputed12marks_segments.bed.gz
+    jobid: 52
+    wildcards: ct=E052
+
+Submitted job 52 with external jobid 'Submitted batch job 5390424'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E068/E068_25_imputed12marks_segments.bed.gz
+    jobid: 67
+    wildcards: ct=E068
+
+Submitted job 67 with external jobid 'Submitted batch job 5390425'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E102/E102_25_imputed12marks_segments.bed.gz
+    jobid: 97
+    wildcards: ct=E102
+
+Submitted job 97 with external jobid 'Submitted batch job 5390426'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E113/E113_25_imputed12marks_segments.bed.gz
+    jobid: 112
+    wildcards: ct=E113
+
+Submitted job 112 with external jobid 'Submitted batch job 5390427'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E128/E128_25_imputed12marks_segments.bed.gz
+    jobid: 127
+    wildcards: ct=E128
+
+Submitted job 127 with external jobid 'Submitted batch job 5390428'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E016/E016_25_imputed12marks_segments.bed.gz
+    jobid: 8
+    wildcards: ct=E016
+
+Submitted job 8 with external jobid 'Submitted batch job 5390429'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E005/E005_25_imputed12marks_segments.bed.gz
+    jobid: 23
+    wildcards: ct=E005
+
+Submitted job 23 with external jobid 'Submitted batch job 5390430'.
+
+[Sun Aug  1 17:02:35 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E047/E047_25_imputed12marks_segments.bed.gz
+    jobid: 38
+    wildcards: ct=E047
+
+Submitted job 38 with external jobid 'Submitted batch job 5390431'.
+[Sun Aug  1 17:02:42 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 10
+    output: ../../data/hg19/roadmap/S25_segment/E024/E024_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E024_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E024
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390332
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 10, external: Submitted batch job 5390332, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.10.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:42 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 25
+    output: ../../data/hg19/roadmap/S25_segment/E062/E062_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E062_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E062
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390333
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 25, external: Submitted batch job 5390333, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.25.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:42 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 40
+    output: ../../data/hg19/roadmap/S25_segment/E031/E031_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E031_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E031
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390334
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 40, external: Submitted batch job 5390334, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.40.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:42 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 55
+    output: ../../data/hg19/roadmap/S25_segment/E059/E059_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E059_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E059
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390335
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 55, external: Submitted batch job 5390335, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.55.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:42 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 85
+    output: ../../data/hg19/roadmap/S25_segment/E065/E065_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E065_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E065
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390336
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 85, external: Submitted batch job 5390336, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.85.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:42 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 100
+    output: ../../data/hg19/roadmap/S25_segment/E079/E079_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E079_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E079
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390337
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 100, external: Submitted batch job 5390337, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.100.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:42 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 115
+    output: ../../data/hg19/roadmap/S25_segment/E116/E116_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E116_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E116
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390338
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 115, external: Submitted batch job 5390338, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.115.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:42 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 11
+    output: ../../data/hg19/roadmap/S25_segment/E020/E020_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E020_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E020
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390339
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 11, external: Submitted batch job 5390339, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:42 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 26
+    output: ../../data/hg19/roadmap/S25_segment/E034/E034_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E034_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E034
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390340
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 26, external: Submitted batch job 5390340, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.26.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:42 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 41
+    output: ../../data/hg19/roadmap/S25_segment/E035/E035_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E035_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E035
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390341
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 41, external: Submitted batch job 5390341, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.41.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:43 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 56
+    output: ../../data/hg19/roadmap/S25_segment/E061/E061_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E061_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E061
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390342
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 56, external: Submitted batch job 5390342, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.56.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:43 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 86
+    output: ../../data/hg19/roadmap/S25_segment/E078/E078_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E078_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E078
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390343
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 86, external: Submitted batch job 5390343, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.86.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:43 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 101
+    output: ../../data/hg19/roadmap/S25_segment/E094/E094_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E094_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E094
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390344
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 101, external: Submitted batch job 5390344, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.101.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:43 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 116
+    output: ../../data/hg19/roadmap/S25_segment/E117/E117_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E117_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E117
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390345
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 116, external: Submitted batch job 5390345, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.116.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:43 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 12
+    output: ../../data/hg19/roadmap/S25_segment/E019/E019_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E019_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E019
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390346
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 12, external: Submitted batch job 5390346, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.12.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:43 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 27
+    output: ../../data/hg19/roadmap/S25_segment/E045/E045_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E045_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E045
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390347
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 27, external: Submitted batch job 5390347, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.27.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:43 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 42
+    output: ../../data/hg19/roadmap/S25_segment/E051/E051_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E051_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E051
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390348
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 42, external: Submitted batch job 5390348, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.42.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:43 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 57
+    output: ../../data/hg19/roadmap/S25_segment/E057/E057_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E057_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E057
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390349
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 57, external: Submitted batch job 5390349, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.57.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:43 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 87
+    output: ../../data/hg19/roadmap/S25_segment/E076/E076_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E076_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E076
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390350
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 87, external: Submitted batch job 5390350, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.87.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:43 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 102
+    output: ../../data/hg19/roadmap/S25_segment/E099/E099_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E099_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E099
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390351
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 102, external: Submitted batch job 5390351, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.102.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:44 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 117
+    output: ../../data/hg19/roadmap/S25_segment/E118/E118_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E118_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E118
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390352
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 117, external: Submitted batch job 5390352, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.117.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:44 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 13
+    output: ../../data/hg19/roadmap/S25_segment/E018/E018_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E018_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E018
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390353
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 13, external: Submitted batch job 5390353, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.13.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:44 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 28
+    output: ../../data/hg19/roadmap/S25_segment/E033/E033_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E033_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E033
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390354
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 28, external: Submitted batch job 5390354, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.28.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:44 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 43
+    output: ../../data/hg19/roadmap/S25_segment/E050/E050_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E050_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E050
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390355
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 43, external: Submitted batch job 5390355, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.43.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:44 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 58
+    output: ../../data/hg19/roadmap/S25_segment/E058/E058_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E058_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E058
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390356
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 58, external: Submitted batch job 5390356, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.58.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:44 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 88
+    output: ../../data/hg19/roadmap/S25_segment/E103/E103_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E103_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E103
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390357
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 88, external: Submitted batch job 5390357, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.88.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:44 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 103
+    output: ../../data/hg19/roadmap/S25_segment/E086/E086_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E086_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E086
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390358
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 103, external: Submitted batch job 5390358, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.103.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:44 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 118
+    output: ../../data/hg19/roadmap/S25_segment/E119/E119_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E119_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E119
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390359
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 118, external: Submitted batch job 5390359, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.118.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:44 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 14
+    output: ../../data/hg19/roadmap/S25_segment/E021/E021_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E021_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E021
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390360
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 14, external: Submitted batch job 5390360, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.14.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:44 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 29
+    output: ../../data/hg19/roadmap/S25_segment/E044/E044_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E044_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E044
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390361
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 29, external: Submitted batch job 5390361, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.29.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:45 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 44
+    output: ../../data/hg19/roadmap/S25_segment/E036/E036_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E036_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E036
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390362
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 44, external: Submitted batch job 5390362, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.44.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:45 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 59
+    output: ../../data/hg19/roadmap/S25_segment/E028/E028_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E028_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E028
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390363
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 59, external: Submitted batch job 5390363, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.59.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:45 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 89
+    output: ../../data/hg19/roadmap/S25_segment/E111/E111_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E111_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E111
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390364
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 89, external: Submitted batch job 5390364, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.89.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:45 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 104
+    output: ../../data/hg19/roadmap/S25_segment/E088/E088_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E088_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E088
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390365
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 104, external: Submitted batch job 5390365, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.104.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:45 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 119
+    output: ../../data/hg19/roadmap/S25_segment/E120/E120_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E120_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E120
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390366
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 119, external: Submitted batch job 5390366, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.119.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:45 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 15
+    output: ../../data/hg19/roadmap/S25_segment/E022/E022_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E022_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E022
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390367
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 15, external: Submitted batch job 5390367, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.15.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:45 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 30
+    output: ../../data/hg19/roadmap/S25_segment/E043/E043_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E043_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E043
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390368
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 30, external: Submitted batch job 5390368, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.30.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:45 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 45
+    output: ../../data/hg19/roadmap/S25_segment/E032/E032_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E032_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E032
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390369
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 45, external: Submitted batch job 5390369, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.45.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:45 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 60
+    output: ../../data/hg19/roadmap/S25_segment/E027/E027_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E027_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E027
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390370
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 60, external: Submitted batch job 5390370, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.60.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:45 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 90
+    output: ../../data/hg19/roadmap/S25_segment/E092/E092_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E092_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E092
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390371
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 90, external: Submitted batch job 5390371, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.90.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:46 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 105
+    output: ../../data/hg19/roadmap/S25_segment/E097/E097_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E097_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E097
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390372
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 105, external: Submitted batch job 5390372, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.105.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:46 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 120
+    output: ../../data/hg19/roadmap/S25_segment/E121/E121_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E121_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E121
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390373
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 120, external: Submitted batch job 5390373, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.120.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:46 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 16
+    output: ../../data/hg19/roadmap/S25_segment/E007/E007_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E007_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E007
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390374
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 16, external: Submitted batch job 5390374, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.16.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:46 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 31
+    output: ../../data/hg19/roadmap/S25_segment/E039/E039_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E039_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E039
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390375
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 31, external: Submitted batch job 5390375, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.31.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:46 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 46
+    output: ../../data/hg19/roadmap/S25_segment/E046/E046_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E046_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E046
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390376
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 46, external: Submitted batch job 5390376, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.46.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:46 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 61
+    output: ../../data/hg19/roadmap/S25_segment/E054/E054_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E054_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E054
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390377
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 61, external: Submitted batch job 5390377, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.61.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:46 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 91
+    output: ../../data/hg19/roadmap/S25_segment/E085/E085_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E085_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E085
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390378
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 91, external: Submitted batch job 5390378, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.91.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:46 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 106
+    output: ../../data/hg19/roadmap/S25_segment/E087/E087_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E087_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E087
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390379
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 106, external: Submitted batch job 5390379, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.106.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:46 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 121
+    output: ../../data/hg19/roadmap/S25_segment/E122/E122_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E122_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E122
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390380
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 121, external: Submitted batch job 5390380, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.121.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:46 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 32
+    output: ../../data/hg19/roadmap/S25_segment/E041/E041_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E041_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E041
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390381
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 32, external: Submitted batch job 5390381, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.32.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:47 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 17
+    output: ../../data/hg19/roadmap/S25_segment/E009/E009_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E009_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E009
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390382
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 17, external: Submitted batch job 5390382, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.17.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:47 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 62
+    output: ../../data/hg19/roadmap/S25_segment/E053/E053_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E053_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E053
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390383
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 62, external: Submitted batch job 5390383, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.62.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:47 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 3
+    output: ../../data/hg19/roadmap/S25_segment/E002/E002_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E002_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E002
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390384
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 3, external: Submitted batch job 5390384, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.3.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:47 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 47
+    output: ../../data/hg19/roadmap/S25_segment/E030/E030_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E030_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E030
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390385
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 47, external: Submitted batch job 5390385, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.47.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:47 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 92
+    output: ../../data/hg19/roadmap/S25_segment/E084/E084_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E084_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E084
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390386
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 92, external: Submitted batch job 5390386, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.92.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:47 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 107
+    output: ../../data/hg19/roadmap/S25_segment/E080/E080_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E080_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E080
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390387
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 107, external: Submitted batch job 5390387, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.107.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:47 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 122
+    output: ../../data/hg19/roadmap/S25_segment/E123/E123_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E123_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E123
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390388
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 122, external: Submitted batch job 5390388, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.122.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:47 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 2
+    output: ../../data/hg19/roadmap/S25_segment/E017/E017_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E017_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E017
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390389
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 2, external: Submitted batch job 5390389, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:47 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 18
+    output: ../../data/hg19/roadmap/S25_segment/E010/E010_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E010_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E010
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390390
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 18, external: Submitted batch job 5390390, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.18.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:47 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 33
+    output: ../../data/hg19/roadmap/S25_segment/E042/E042_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E042_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E042
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390391
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 33, external: Submitted batch job 5390391, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.33.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:48 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 48
+    output: ../../data/hg19/roadmap/S25_segment/E026/E026_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E026_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E026
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390392
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 48, external: Submitted batch job 5390392, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.48.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:48 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 63
+    output: ../../data/hg19/roadmap/S25_segment/E112/E112_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E112_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E112
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390393
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 63, external: Submitted batch job 5390393, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.63.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:48 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 93
+    output: ../../data/hg19/roadmap/S25_segment/E109/E109_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E109_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E109
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390394
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 93, external: Submitted batch job 5390394, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.93.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:48 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 108
+    output: ../../data/hg19/roadmap/S25_segment/E091/E091_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E091_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E091
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390395
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 108, external: Submitted batch job 5390395, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.108.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:48 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 123
+    output: ../../data/hg19/roadmap/S25_segment/E124/E124_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E124_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E124
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390396
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 123, external: Submitted batch job 5390396, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.123.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:48 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 19
+    output: ../../data/hg19/roadmap/S25_segment/E013/E013_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E013_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E013
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390397
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 19, external: Submitted batch job 5390397, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.19.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:48 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 4
+    output: ../../data/hg19/roadmap/S25_segment/E008/E008_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E008_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E008
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390398
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 4, external: Submitted batch job 5390398, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.4.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:48 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 34
+    output: ../../data/hg19/roadmap/S25_segment/E040/E040_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E040_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E040
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390399
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 34, external: Submitted batch job 5390399, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.34.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:48 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 49
+    output: ../../data/hg19/roadmap/S25_segment/E049/E049_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E049_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E049
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390400
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 49, external: Submitted batch job 5390400, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.49.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:48 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 64
+    output: ../../data/hg19/roadmap/S25_segment/E093/E093_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E093_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E093
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390401
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 64, external: Submitted batch job 5390401, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.64.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:49 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 94
+    output: ../../data/hg19/roadmap/S25_segment/E106/E106_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E106_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E106
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390402
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 94, external: Submitted batch job 5390402, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.94.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:49 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 109
+    output: ../../data/hg19/roadmap/S25_segment/E066/E066_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E066_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E066
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390403
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 109, external: Submitted batch job 5390403, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.109.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:49 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 124
+    output: ../../data/hg19/roadmap/S25_segment/E125/E125_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E125_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E125
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390404
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 124, external: Submitted batch job 5390404, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.124.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:49 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 5
+    output: ../../data/hg19/roadmap/S25_segment/E001/E001_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E001_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E001
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390405
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 5, external: Submitted batch job 5390405, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:49 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 20
+    output: ../../data/hg19/roadmap/S25_segment/E012/E012_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E012_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E012
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390406
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 20, external: Submitted batch job 5390406, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.20.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:49 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 35
+    output: ../../data/hg19/roadmap/S25_segment/E037/E037_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E037_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E037
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390407
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 35, external: Submitted batch job 5390407, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.35.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:49 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 50
+    output: ../../data/hg19/roadmap/S25_segment/E025/E025_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E025_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E025
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390408
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 50, external: Submitted batch job 5390408, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.50.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:49 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 65
+    output: ../../data/hg19/roadmap/S25_segment/E071/E071_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E071_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E071
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390409
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 65, external: Submitted batch job 5390409, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.65.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:49 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 95
+    output: ../../data/hg19/roadmap/S25_segment/E075/E075_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E075_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E075
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390410
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 95, external: Submitted batch job 5390410, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.95.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:49 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 110
+    output: ../../data/hg19/roadmap/S25_segment/E098/E098_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E098_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E098
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390411
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 110, external: Submitted batch job 5390411, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.110.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:50 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 125
+    output: ../../data/hg19/roadmap/S25_segment/E126/E126_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E126_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E126
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390412
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 125, external: Submitted batch job 5390412, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.125.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:50 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 21
+    output: ../../data/hg19/roadmap/S25_segment/E011/E011_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E011_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E011
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390413
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 21, external: Submitted batch job 5390413, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.21.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:50 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 6
+    output: ../../data/hg19/roadmap/S25_segment/E015/E015_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E015_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E015
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390414
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 6, external: Submitted batch job 5390414, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.6.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:50 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 36
+    output: ../../data/hg19/roadmap/S25_segment/E048/E048_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E048_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E048
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390415
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 36, external: Submitted batch job 5390415, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.36.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:50 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 51
+    output: ../../data/hg19/roadmap/S25_segment/E023/E023_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E023_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E023
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390416
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 51, external: Submitted batch job 5390416, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.51.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:50 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 66
+    output: ../../data/hg19/roadmap/S25_segment/E074/E074_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E074_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E074
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390417
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 66, external: Submitted batch job 5390417, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.66.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:50 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 96
+    output: ../../data/hg19/roadmap/S25_segment/E101/E101_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E101_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E101
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390418
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 96, external: Submitted batch job 5390418, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.96.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:50 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 111
+    output: ../../data/hg19/roadmap/S25_segment/E096/E096_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E096_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E096
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390419
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 111, external: Submitted batch job 5390419, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.111.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:50 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 126
+    output: ../../data/hg19/roadmap/S25_segment/E127/E127_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E127_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E127
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390420
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 126, external: Submitted batch job 5390420, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.126.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:50 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 7
+    output: ../../data/hg19/roadmap/S25_segment/E014/E014_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E014_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E014
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390421
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 7, external: Submitted batch job 5390421, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.7.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:51 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 22
+    output: ../../data/hg19/roadmap/S25_segment/E004/E004_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E004_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E004
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390422
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 22, external: Submitted batch job 5390422, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.22.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:51 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 37
+    output: ../../data/hg19/roadmap/S25_segment/E038/E038_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E038_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E038
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390423
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 37, external: Submitted batch job 5390423, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.37.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:51 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 52
+    output: ../../data/hg19/roadmap/S25_segment/E052/E052_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E052_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E052
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390424
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 52, external: Submitted batch job 5390424, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.52.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:51 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 67
+    output: ../../data/hg19/roadmap/S25_segment/E068/E068_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E068_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E068
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390425
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 67, external: Submitted batch job 5390425, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.67.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:51 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 97
+    output: ../../data/hg19/roadmap/S25_segment/E102/E102_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E102_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E102
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390426
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 97, external: Submitted batch job 5390426, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.97.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:51 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 112
+    output: ../../data/hg19/roadmap/S25_segment/E113/E113_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E113_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E113
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390427
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 112, external: Submitted batch job 5390427, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.112.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:51 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 127
+    output: ../../data/hg19/roadmap/S25_segment/E128/E128_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E128_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E128
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390428
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 127, external: Submitted batch job 5390428, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.127.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:51 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 8
+    output: ../../data/hg19/roadmap/S25_segment/E016/E016_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E016_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E016
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390429
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 8, external: Submitted batch job 5390429, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:51 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 23
+    output: ../../data/hg19/roadmap/S25_segment/E005/E005_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E005_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E005
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390430
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 23, external: Submitted batch job 5390430, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.23.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sun Aug  1 17:02:51 2021]
+Error in rule download_roadmap_S25_segment:
+    jobid: 38
+    output: ../../data/hg19/roadmap/S25_segment/E047/E047_25_imputed12marks_segments.bed.gz
+    shell:
+        
+		link_prefix='https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/imputed12marks/jointModel/final/'
+		link='${link_prefix}/E047_25_imputed12marks_segments.bed.gz'
+		wget $link -p ../../data/hg19/roadmap/S25_segment/E047
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 5390431
+
+Error executing rule download_roadmap_S25_segment on cluster (jobid: 38, external: Submitted batch job 5390431, jobscript: /gstore/home/vuh6/source/train_model/.snakemake/tmp.tu90pvfs/snakejob.download_roadmap_S25_segment.38.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Terminating processes on user request, this might take some time.
+Will exit after finishing currently running jobs.
+Complete log: /gstore/home/vuh6/source/train_model/.snakemake/log/2021-08-01T170230.466108.snakemake.log

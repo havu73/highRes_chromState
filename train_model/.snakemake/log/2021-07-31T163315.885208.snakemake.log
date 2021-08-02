@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	process_raw_metadata
+	2
+
+[Sat Jul 31 16:33:16 2021]
+rule process_raw_metadata:
+    input: ../../data/hg19/roadmap_metadata_consolidated_epig_summary.csv
+    output: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    jobid: 1
+
+RuleException in line 13 of /gstore/home/vuh6/source/train_model/input_data_preparation.snakefile:
+NameError: The name 'print $2,$4,$5,$6,$17' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 115, in run_jobs
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 402, in run
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 203, in _run
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 131, in _run
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 137, in printjob

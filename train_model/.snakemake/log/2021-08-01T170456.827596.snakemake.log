@@ -1,0 +1,1542 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	127	download_roadmap_S25_segment
+	128
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E024/E024_25_imputed12marks_segments.bed.gz
+    jobid: 10
+    wildcards: ct=E024
+
+Submitted job 10 with external jobid 'Submitted batch job 5390535'.
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E062/E062_25_imputed12marks_segments.bed.gz
+    jobid: 25
+    wildcards: ct=E062
+
+Submitted job 25 with external jobid 'Submitted batch job 5390536'.
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E031/E031_25_imputed12marks_segments.bed.gz
+    jobid: 40
+    wildcards: ct=E031
+
+Submitted job 40 with external jobid 'Submitted batch job 5390537'.
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E059/E059_25_imputed12marks_segments.bed.gz
+    jobid: 55
+    wildcards: ct=E059
+
+Submitted job 55 with external jobid 'Submitted batch job 5390538'.
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E065/E065_25_imputed12marks_segments.bed.gz
+    jobid: 85
+    wildcards: ct=E065
+
+Submitted job 85 with external jobid 'Submitted batch job 5390539'.
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E079/E079_25_imputed12marks_segments.bed.gz
+    jobid: 100
+    wildcards: ct=E079
+
+Submitted job 100 with external jobid 'Submitted batch job 5390540'.
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E020/E020_25_imputed12marks_segments.bed.gz
+    jobid: 11
+    wildcards: ct=E020
+
+Submitted job 11 with external jobid 'Submitted batch job 5390541'.
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E034/E034_25_imputed12marks_segments.bed.gz
+    jobid: 26
+    wildcards: ct=E034
+
+Submitted job 26 with external jobid 'Submitted batch job 5390542'.
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E035/E035_25_imputed12marks_segments.bed.gz
+    jobid: 41
+    wildcards: ct=E035
+
+Submitted job 41 with external jobid 'Submitted batch job 5390543'.
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E061/E061_25_imputed12marks_segments.bed.gz
+    jobid: 56
+    wildcards: ct=E061
+
+Submitted job 56 with external jobid 'Submitted batch job 5390544'.
+
+[Sun Aug  1 17:04:57 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E078/E078_25_imputed12marks_segments.bed.gz
+    jobid: 86
+    wildcards: ct=E078
+
+Submitted job 86 with external jobid 'Submitted batch job 5390545'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E094/E094_25_imputed12marks_segments.bed.gz
+    jobid: 101
+    wildcards: ct=E094
+
+Submitted job 101 with external jobid 'Submitted batch job 5390546'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E019/E019_25_imputed12marks_segments.bed.gz
+    jobid: 12
+    wildcards: ct=E019
+
+Submitted job 12 with external jobid 'Submitted batch job 5390547'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E045/E045_25_imputed12marks_segments.bed.gz
+    jobid: 27
+    wildcards: ct=E045
+
+Submitted job 27 with external jobid 'Submitted batch job 5390548'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E051/E051_25_imputed12marks_segments.bed.gz
+    jobid: 42
+    wildcards: ct=E051
+
+Submitted job 42 with external jobid 'Submitted batch job 5390549'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E057/E057_25_imputed12marks_segments.bed.gz
+    jobid: 57
+    wildcards: ct=E057
+
+Submitted job 57 with external jobid 'Submitted batch job 5390550'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E076/E076_25_imputed12marks_segments.bed.gz
+    jobid: 87
+    wildcards: ct=E076
+
+Submitted job 87 with external jobid 'Submitted batch job 5390551'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E099/E099_25_imputed12marks_segments.bed.gz
+    jobid: 102
+    wildcards: ct=E099
+
+Submitted job 102 with external jobid 'Submitted batch job 5390552'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E018/E018_25_imputed12marks_segments.bed.gz
+    jobid: 13
+    wildcards: ct=E018
+
+Submitted job 13 with external jobid 'Submitted batch job 5390553'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E033/E033_25_imputed12marks_segments.bed.gz
+    jobid: 28
+    wildcards: ct=E033
+
+Submitted job 28 with external jobid 'Submitted batch job 5390554'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E050/E050_25_imputed12marks_segments.bed.gz
+    jobid: 43
+    wildcards: ct=E050
+
+Submitted job 43 with external jobid 'Submitted batch job 5390555'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E058/E058_25_imputed12marks_segments.bed.gz
+    jobid: 58
+    wildcards: ct=E058
+
+Submitted job 58 with external jobid 'Submitted batch job 5390556'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E103/E103_25_imputed12marks_segments.bed.gz
+    jobid: 88
+    wildcards: ct=E103
+
+Submitted job 88 with external jobid 'Submitted batch job 5390557'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E086/E086_25_imputed12marks_segments.bed.gz
+    jobid: 103
+    wildcards: ct=E086
+
+Submitted job 103 with external jobid 'Submitted batch job 5390558'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E021/E021_25_imputed12marks_segments.bed.gz
+    jobid: 14
+    wildcards: ct=E021
+
+Submitted job 14 with external jobid 'Submitted batch job 5390559'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E044/E044_25_imputed12marks_segments.bed.gz
+    jobid: 29
+    wildcards: ct=E044
+
+Submitted job 29 with external jobid 'Submitted batch job 5390560'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E036/E036_25_imputed12marks_segments.bed.gz
+    jobid: 44
+    wildcards: ct=E036
+
+Submitted job 44 with external jobid 'Submitted batch job 5390561'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E028/E028_25_imputed12marks_segments.bed.gz
+    jobid: 59
+    wildcards: ct=E028
+
+Submitted job 59 with external jobid 'Submitted batch job 5390562'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E111/E111_25_imputed12marks_segments.bed.gz
+    jobid: 89
+    wildcards: ct=E111
+
+Submitted job 89 with external jobid 'Submitted batch job 5390563'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E088/E088_25_imputed12marks_segments.bed.gz
+    jobid: 104
+    wildcards: ct=E088
+
+Submitted job 104 with external jobid 'Submitted batch job 5390564'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E022/E022_25_imputed12marks_segments.bed.gz
+    jobid: 15
+    wildcards: ct=E022
+
+Submitted job 15 with external jobid 'Submitted batch job 5390565'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E043/E043_25_imputed12marks_segments.bed.gz
+    jobid: 30
+    wildcards: ct=E043
+
+Submitted job 30 with external jobid 'Submitted batch job 5390566'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E032/E032_25_imputed12marks_segments.bed.gz
+    jobid: 45
+    wildcards: ct=E032
+
+Submitted job 45 with external jobid 'Submitted batch job 5390567'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E027/E027_25_imputed12marks_segments.bed.gz
+    jobid: 60
+    wildcards: ct=E027
+
+Submitted job 60 with external jobid 'Submitted batch job 5390568'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E092/E092_25_imputed12marks_segments.bed.gz
+    jobid: 90
+    wildcards: ct=E092
+
+Submitted job 90 with external jobid 'Submitted batch job 5390569'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E097/E097_25_imputed12marks_segments.bed.gz
+    jobid: 105
+    wildcards: ct=E097
+
+Submitted job 105 with external jobid 'Submitted batch job 5390570'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E007/E007_25_imputed12marks_segments.bed.gz
+    jobid: 16
+    wildcards: ct=E007
+
+Submitted job 16 with external jobid 'Submitted batch job 5390571'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E039/E039_25_imputed12marks_segments.bed.gz
+    jobid: 31
+    wildcards: ct=E039
+
+Submitted job 31 with external jobid 'Submitted batch job 5390572'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E046/E046_25_imputed12marks_segments.bed.gz
+    jobid: 46
+    wildcards: ct=E046
+
+Submitted job 46 with external jobid 'Submitted batch job 5390573'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E054/E054_25_imputed12marks_segments.bed.gz
+    jobid: 61
+    wildcards: ct=E054
+
+Submitted job 61 with external jobid 'Submitted batch job 5390574'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E085/E085_25_imputed12marks_segments.bed.gz
+    jobid: 91
+    wildcards: ct=E085
+
+Submitted job 91 with external jobid 'Submitted batch job 5390575'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E087/E087_25_imputed12marks_segments.bed.gz
+    jobid: 106
+    wildcards: ct=E087
+
+Submitted job 106 with external jobid 'Submitted batch job 5390576'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E041/E041_25_imputed12marks_segments.bed.gz
+    jobid: 32
+    wildcards: ct=E041
+
+Submitted job 32 with external jobid 'Submitted batch job 5390577'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E009/E009_25_imputed12marks_segments.bed.gz
+    jobid: 17
+    wildcards: ct=E009
+
+Submitted job 17 with external jobid 'Submitted batch job 5390578'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E053/E053_25_imputed12marks_segments.bed.gz
+    jobid: 62
+    wildcards: ct=E053
+
+Submitted job 62 with external jobid 'Submitted batch job 5390579'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E002/E002_25_imputed12marks_segments.bed.gz
+    jobid: 3
+    wildcards: ct=E002
+
+Submitted job 3 with external jobid 'Submitted batch job 5390580'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E030/E030_25_imputed12marks_segments.bed.gz
+    jobid: 47
+    wildcards: ct=E030
+
+Submitted job 47 with external jobid 'Submitted batch job 5390581'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E084/E084_25_imputed12marks_segments.bed.gz
+    jobid: 92
+    wildcards: ct=E084
+
+Submitted job 92 with external jobid 'Submitted batch job 5390582'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E080/E080_25_imputed12marks_segments.bed.gz
+    jobid: 107
+    wildcards: ct=E080
+
+Submitted job 107 with external jobid 'Submitted batch job 5390583'.
+
+[Sun Aug  1 17:04:58 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E017/E017_25_imputed12marks_segments.bed.gz
+    jobid: 2
+    wildcards: ct=E017
+
+Submitted job 2 with external jobid 'Submitted batch job 5390584'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E010/E010_25_imputed12marks_segments.bed.gz
+    jobid: 18
+    wildcards: ct=E010
+
+Submitted job 18 with external jobid 'Submitted batch job 5390585'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E042/E042_25_imputed12marks_segments.bed.gz
+    jobid: 33
+    wildcards: ct=E042
+
+Submitted job 33 with external jobid 'Submitted batch job 5390586'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E026/E026_25_imputed12marks_segments.bed.gz
+    jobid: 48
+    wildcards: ct=E026
+
+Submitted job 48 with external jobid 'Submitted batch job 5390587'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E112/E112_25_imputed12marks_segments.bed.gz
+    jobid: 63
+    wildcards: ct=E112
+
+Submitted job 63 with external jobid 'Submitted batch job 5390588'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E109/E109_25_imputed12marks_segments.bed.gz
+    jobid: 93
+    wildcards: ct=E109
+
+Submitted job 93 with external jobid 'Submitted batch job 5390589'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E091/E091_25_imputed12marks_segments.bed.gz
+    jobid: 108
+    wildcards: ct=E091
+
+Submitted job 108 with external jobid 'Submitted batch job 5390590'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E013/E013_25_imputed12marks_segments.bed.gz
+    jobid: 19
+    wildcards: ct=E013
+
+Submitted job 19 with external jobid 'Submitted batch job 5390591'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E008/E008_25_imputed12marks_segments.bed.gz
+    jobid: 4
+    wildcards: ct=E008
+
+Submitted job 4 with external jobid 'Submitted batch job 5390592'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E040/E040_25_imputed12marks_segments.bed.gz
+    jobid: 34
+    wildcards: ct=E040
+
+Submitted job 34 with external jobid 'Submitted batch job 5390593'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E049/E049_25_imputed12marks_segments.bed.gz
+    jobid: 49
+    wildcards: ct=E049
+
+Submitted job 49 with external jobid 'Submitted batch job 5390594'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E093/E093_25_imputed12marks_segments.bed.gz
+    jobid: 64
+    wildcards: ct=E093
+
+Submitted job 64 with external jobid 'Submitted batch job 5390595'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E106/E106_25_imputed12marks_segments.bed.gz
+    jobid: 94
+    wildcards: ct=E106
+
+Submitted job 94 with external jobid 'Submitted batch job 5390596'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E066/E066_25_imputed12marks_segments.bed.gz
+    jobid: 109
+    wildcards: ct=E066
+
+Submitted job 109 with external jobid 'Submitted batch job 5390597'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E001/E001_25_imputed12marks_segments.bed.gz
+    jobid: 5
+    wildcards: ct=E001
+
+Submitted job 5 with external jobid 'Submitted batch job 5390598'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E012/E012_25_imputed12marks_segments.bed.gz
+    jobid: 20
+    wildcards: ct=E012
+
+Submitted job 20 with external jobid 'Submitted batch job 5390599'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E037/E037_25_imputed12marks_segments.bed.gz
+    jobid: 35
+    wildcards: ct=E037
+
+Submitted job 35 with external jobid 'Submitted batch job 5390600'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E025/E025_25_imputed12marks_segments.bed.gz
+    jobid: 50
+    wildcards: ct=E025
+
+Submitted job 50 with external jobid 'Submitted batch job 5390601'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E071/E071_25_imputed12marks_segments.bed.gz
+    jobid: 65
+    wildcards: ct=E071
+
+Submitted job 65 with external jobid 'Submitted batch job 5390602'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E075/E075_25_imputed12marks_segments.bed.gz
+    jobid: 95
+    wildcards: ct=E075
+
+Submitted job 95 with external jobid 'Submitted batch job 5390603'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E098/E098_25_imputed12marks_segments.bed.gz
+    jobid: 110
+    wildcards: ct=E098
+
+Submitted job 110 with external jobid 'Submitted batch job 5390604'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E011/E011_25_imputed12marks_segments.bed.gz
+    jobid: 21
+    wildcards: ct=E011
+
+Submitted job 21 with external jobid 'Submitted batch job 5390605'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E015/E015_25_imputed12marks_segments.bed.gz
+    jobid: 6
+    wildcards: ct=E015
+
+Submitted job 6 with external jobid 'Submitted batch job 5390606'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E048/E048_25_imputed12marks_segments.bed.gz
+    jobid: 36
+    wildcards: ct=E048
+
+Submitted job 36 with external jobid 'Submitted batch job 5390607'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E023/E023_25_imputed12marks_segments.bed.gz
+    jobid: 51
+    wildcards: ct=E023
+
+Submitted job 51 with external jobid 'Submitted batch job 5390608'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E074/E074_25_imputed12marks_segments.bed.gz
+    jobid: 66
+    wildcards: ct=E074
+
+Submitted job 66 with external jobid 'Submitted batch job 5390609'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E101/E101_25_imputed12marks_segments.bed.gz
+    jobid: 96
+    wildcards: ct=E101
+
+Submitted job 96 with external jobid 'Submitted batch job 5390610'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E096/E096_25_imputed12marks_segments.bed.gz
+    jobid: 111
+    wildcards: ct=E096
+
+Submitted job 111 with external jobid 'Submitted batch job 5390611'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E014/E014_25_imputed12marks_segments.bed.gz
+    jobid: 7
+    wildcards: ct=E014
+
+Submitted job 7 with external jobid 'Submitted batch job 5390612'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E004/E004_25_imputed12marks_segments.bed.gz
+    jobid: 22
+    wildcards: ct=E004
+
+Submitted job 22 with external jobid 'Submitted batch job 5390613'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E038/E038_25_imputed12marks_segments.bed.gz
+    jobid: 37
+    wildcards: ct=E038
+
+Submitted job 37 with external jobid 'Submitted batch job 5390614'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E052/E052_25_imputed12marks_segments.bed.gz
+    jobid: 52
+    wildcards: ct=E052
+
+Submitted job 52 with external jobid 'Submitted batch job 5390615'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E068/E068_25_imputed12marks_segments.bed.gz
+    jobid: 67
+    wildcards: ct=E068
+
+Submitted job 67 with external jobid 'Submitted batch job 5390616'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E102/E102_25_imputed12marks_segments.bed.gz
+    jobid: 97
+    wildcards: ct=E102
+
+Submitted job 97 with external jobid 'Submitted batch job 5390617'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E113/E113_25_imputed12marks_segments.bed.gz
+    jobid: 112
+    wildcards: ct=E113
+
+Submitted job 112 with external jobid 'Submitted batch job 5390618'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E016/E016_25_imputed12marks_segments.bed.gz
+    jobid: 8
+    wildcards: ct=E016
+
+Submitted job 8 with external jobid 'Submitted batch job 5390619'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E005/E005_25_imputed12marks_segments.bed.gz
+    jobid: 23
+    wildcards: ct=E005
+
+Submitted job 23 with external jobid 'Submitted batch job 5390620'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E047/E047_25_imputed12marks_segments.bed.gz
+    jobid: 38
+    wildcards: ct=E047
+
+Submitted job 38 with external jobid 'Submitted batch job 5390621'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E055/E055_25_imputed12marks_segments.bed.gz
+    jobid: 53
+    wildcards: ct=E055
+
+Submitted job 53 with external jobid 'Submitted batch job 5390622'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E069/E069_25_imputed12marks_segments.bed.gz
+    jobid: 68
+    wildcards: ct=E069
+
+Submitted job 68 with external jobid 'Submitted batch job 5390623'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E110/E110_25_imputed12marks_segments.bed.gz
+    jobid: 98
+    wildcards: ct=E110
+
+Submitted job 98 with external jobid 'Submitted batch job 5390624'.
+
+[Sun Aug  1 17:04:59 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E114/E114_25_imputed12marks_segments.bed.gz
+    jobid: 113
+    wildcards: ct=E114
+
+Submitted job 113 with external jobid 'Submitted batch job 5390625'.
+
+[Sun Aug  1 17:05:00 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E003/E003_25_imputed12marks_segments.bed.gz
+    jobid: 9
+    wildcards: ct=E003
+
+Submitted job 9 with external jobid 'Submitted batch job 5390626'.
+
+[Sun Aug  1 17:05:00 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E006/E006_25_imputed12marks_segments.bed.gz
+    jobid: 24
+    wildcards: ct=E006
+
+Submitted job 24 with external jobid 'Submitted batch job 5390627'.
+
+[Sun Aug  1 17:05:00 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E029/E029_25_imputed12marks_segments.bed.gz
+    jobid: 39
+    wildcards: ct=E029
+
+Submitted job 39 with external jobid 'Submitted batch job 5390628'.
+
+[Sun Aug  1 17:05:00 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E056/E056_25_imputed12marks_segments.bed.gz
+    jobid: 54
+    wildcards: ct=E056
+
+Submitted job 54 with external jobid 'Submitted batch job 5390629'.
+
+[Sun Aug  1 17:05:00 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E072/E072_25_imputed12marks_segments.bed.gz
+    jobid: 69
+    wildcards: ct=E072
+
+Submitted job 69 with external jobid 'Submitted batch job 5390630'.
+
+[Sun Aug  1 17:05:00 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E077/E077_25_imputed12marks_segments.bed.gz
+    jobid: 99
+    wildcards: ct=E077
+
+Submitted job 99 with external jobid 'Submitted batch job 5390631'.
+
+[Sun Aug  1 17:05:00 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E115/E115_25_imputed12marks_segments.bed.gz
+    jobid: 114
+    wildcards: ct=E115
+
+Submitted job 114 with external jobid 'Submitted batch job 5390632'.
+
+[Sun Aug  1 17:05:00 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E067/E067_25_imputed12marks_segments.bed.gz
+    jobid: 70
+    wildcards: ct=E067
+
+Submitted job 70 with external jobid 'Submitted batch job 5390633'.
+
+[Sun Aug  1 17:05:00 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E116/E116_25_imputed12marks_segments.bed.gz
+    jobid: 115
+    wildcards: ct=E116
+
+Submitted job 115 with external jobid 'Submitted batch job 5390634'.
+[Sun Aug  1 17:05:07 2021]
+Finished job 10.
+1 of 128 steps (0.78%) done
+
+[Sun Aug  1 17:05:07 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E073/E073_25_imputed12marks_segments.bed.gz
+    jobid: 71
+    wildcards: ct=E073
+
+Submitted job 71 with external jobid 'Submitted batch job 5390635'.
+[Sun Aug  1 17:05:07 2021]
+Finished job 25.
+2 of 128 steps (2%) done
+
+[Sun Aug  1 17:05:07 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E117/E117_25_imputed12marks_segments.bed.gz
+    jobid: 116
+    wildcards: ct=E117
+
+Submitted job 116 with external jobid 'Submitted batch job 5390636'.
+[Sun Aug  1 17:05:07 2021]
+Finished job 55.
+3 of 128 steps (2%) done
+
+[Sun Aug  1 17:05:07 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E070/E070_25_imputed12marks_segments.bed.gz
+    jobid: 72
+    wildcards: ct=E070
+
+Submitted job 72 with external jobid 'Submitted batch job 5390637'.
+[Sun Aug  1 17:05:08 2021]
+Finished job 85.
+4 of 128 steps (3%) done
+
+[Sun Aug  1 17:05:08 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E118/E118_25_imputed12marks_segments.bed.gz
+    jobid: 117
+    wildcards: ct=E118
+
+[Sun Aug  1 17:05:08 2021]
+Finished job 100.
+5 of 128 steps (4%) done
+Submitted job 117 with external jobid 'Submitted batch job 5390638'.
+[Sun Aug  1 17:05:08 2021]
+Finished job 11.
+6 of 128 steps (5%) done
+
+[Sun Aug  1 17:05:08 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E082/E082_25_imputed12marks_segments.bed.gz
+    jobid: 73
+    wildcards: ct=E082
+
+[Sun Aug  1 17:05:08 2021]
+Finished job 26.
+7 of 128 steps (5%) done
+Submitted job 73 with external jobid 'Submitted batch job 5390639'.
+
+[Sun Aug  1 17:05:08 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E119/E119_25_imputed12marks_segments.bed.gz
+    jobid: 118
+    wildcards: ct=E119
+
+[Sun Aug  1 17:05:08 2021]
+Finished job 41.
+8 of 128 steps (6%) done
+Submitted job 118 with external jobid 'Submitted batch job 5390640'.
+
+[Sun Aug  1 17:05:08 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E081/E081_25_imputed12marks_segments.bed.gz
+    jobid: 74
+    wildcards: ct=E081
+
+[Sun Aug  1 17:05:08 2021]
+Finished job 56.
+9 of 128 steps (7%) done
+Submitted job 74 with external jobid 'Submitted batch job 5390641'.
+
+[Sun Aug  1 17:05:08 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E120/E120_25_imputed12marks_segments.bed.gz
+    jobid: 119
+    wildcards: ct=E120
+
+Submitted job 119 with external jobid 'Submitted batch job 5390642'.
+
+[Sun Aug  1 17:05:08 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E063/E063_25_imputed12marks_segments.bed.gz
+    jobid: 75
+    wildcards: ct=E063
+
+Submitted job 75 with external jobid 'Submitted batch job 5390643'.
+[Sun Aug  1 17:05:08 2021]
+Finished job 86.
+10 of 128 steps (8%) done
+
+[Sun Aug  1 17:05:08 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E121/E121_25_imputed12marks_segments.bed.gz
+    jobid: 120
+    wildcards: ct=E121
+
+Submitted job 120 with external jobid 'Submitted batch job 5390644'.
+[Sun Aug  1 17:05:08 2021]
+Finished job 101.
+11 of 128 steps (9%) done
+
+[Sun Aug  1 17:05:08 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E100/E100_25_imputed12marks_segments.bed.gz
+    jobid: 76
+    wildcards: ct=E100
+
+[Sun Aug  1 17:05:08 2021]
+Finished job 12.
+12 of 128 steps (9%) done
+Submitted job 76 with external jobid 'Submitted batch job 5390645'.
+
+[Sun Aug  1 17:05:08 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E122/E122_25_imputed12marks_segments.bed.gz
+    jobid: 121
+    wildcards: ct=E122
+
+Submitted job 121 with external jobid 'Submitted batch job 5390646'.
+[Sun Aug  1 17:05:08 2021]
+Finished job 27.
+13 of 128 steps (10%) done
+
+[Sun Aug  1 17:05:08 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E108/E108_25_imputed12marks_segments.bed.gz
+    jobid: 77
+    wildcards: ct=E108
+
+Submitted job 77 with external jobid 'Submitted batch job 5390647'.
+[Sun Aug  1 17:05:09 2021]
+Finished job 42.
+14 of 128 steps (11%) done
+
+[Sun Aug  1 17:05:09 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E123/E123_25_imputed12marks_segments.bed.gz
+    jobid: 122
+    wildcards: ct=E123
+
+Submitted job 122 with external jobid 'Submitted batch job 5390648'.
+[Sun Aug  1 17:05:09 2021]
+Finished job 57.
+15 of 128 steps (12%) done
+
+[Sun Aug  1 17:05:09 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E107/E107_25_imputed12marks_segments.bed.gz
+    jobid: 78
+    wildcards: ct=E107
+
+[Sun Aug  1 17:05:09 2021]
+Finished job 87.
+16 of 128 steps (12%) done
+Submitted job 78 with external jobid 'Submitted batch job 5390649'.
+
+[Sun Aug  1 17:05:09 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E124/E124_25_imputed12marks_segments.bed.gz
+    jobid: 123
+    wildcards: ct=E124
+
+Submitted job 123 with external jobid 'Submitted batch job 5390650'.
+[Sun Aug  1 17:05:09 2021]
+Finished job 102.
+17 of 128 steps (13%) done
+
+[Sun Aug  1 17:05:09 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E089/E089_25_imputed12marks_segments.bed.gz
+    jobid: 79
+    wildcards: ct=E089
+
+Submitted job 79 with external jobid 'Submitted batch job 5390651'.
+[Sun Aug  1 17:05:09 2021]
+Finished job 13.
+18 of 128 steps (14%) done
+
+[Sun Aug  1 17:05:09 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E125/E125_25_imputed12marks_segments.bed.gz
+    jobid: 124
+    wildcards: ct=E125
+
+[Sun Aug  1 17:05:09 2021]
+Finished job 28.
+19 of 128 steps (15%) done
+Submitted job 124 with external jobid 'Submitted batch job 5390652'.
+
+[Sun Aug  1 17:05:09 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E090/E090_25_imputed12marks_segments.bed.gz
+    jobid: 80
+    wildcards: ct=E090
+
+Submitted job 80 with external jobid 'Submitted batch job 5390653'.
+[Sun Aug  1 17:05:09 2021]
+Finished job 43.
+20 of 128 steps (16%) done
+
+[Sun Aug  1 17:05:09 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E126/E126_25_imputed12marks_segments.bed.gz
+    jobid: 125
+    wildcards: ct=E126
+
+Submitted job 125 with external jobid 'Submitted batch job 5390654'.
+[Sun Aug  1 17:05:09 2021]
+Finished job 58.
+21 of 128 steps (16%) done
+
+[Sun Aug  1 17:05:09 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E083/E083_25_imputed12marks_segments.bed.gz
+    jobid: 81
+    wildcards: ct=E083
+
+[Sun Aug  1 17:05:09 2021]
+Finished job 88.
+22 of 128 steps (17%) done
+Submitted job 81 with external jobid 'Submitted batch job 5390655'.
+
+[Sun Aug  1 17:05:09 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E127/E127_25_imputed12marks_segments.bed.gz
+    jobid: 126
+    wildcards: ct=E127
+
+Submitted job 126 with external jobid 'Submitted batch job 5390656'.
+[Sun Aug  1 17:05:09 2021]
+Finished job 103.
+23 of 128 steps (18%) done
+
+[Sun Aug  1 17:05:09 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E104/E104_25_imputed12marks_segments.bed.gz
+    jobid: 82
+    wildcards: ct=E104
+
+Submitted job 82 with external jobid 'Submitted batch job 5390657'.
+[Sun Aug  1 17:05:10 2021]
+Finished job 14.
+24 of 128 steps (19%) done
+
+[Sun Aug  1 17:05:10 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E128/E128_25_imputed12marks_segments.bed.gz
+    jobid: 127
+    wildcards: ct=E128
+
+Submitted job 127 with external jobid 'Submitted batch job 5390658'.
+[Sun Aug  1 17:05:10 2021]
+Finished job 29.
+25 of 128 steps (20%) done
+
+[Sun Aug  1 17:05:10 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E095/E095_25_imputed12marks_segments.bed.gz
+    jobid: 83
+    wildcards: ct=E095
+
+Submitted job 83 with external jobid 'Submitted batch job 5390659'.
+[Sun Aug  1 17:05:10 2021]
+Finished job 44.
+26 of 128 steps (20%) done
+
+[Sun Aug  1 17:05:10 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E129/E129_25_imputed12marks_segments.bed.gz
+    jobid: 128
+    wildcards: ct=E129
+
+Submitted job 128 with external jobid 'Submitted batch job 5390660'.
+[Sun Aug  1 17:05:10 2021]
+Finished job 59.
+27 of 128 steps (21%) done
+
+[Sun Aug  1 17:05:10 2021]
+rule download_roadmap_S25_segment:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    output: ../../data/hg19/roadmap/S25_segment/E105/E105_25_imputed12marks_segments.bed.gz
+    jobid: 84
+    wildcards: ct=E105
+
+Submitted job 84 with external jobid 'Submitted batch job 5390661'.
+[Sun Aug  1 17:05:10 2021]
+Finished job 89.
+28 of 128 steps (22%) done
+[Sun Aug  1 17:05:10 2021]
+Finished job 104.
+29 of 128 steps (23%) done
+[Sun Aug  1 17:05:10 2021]
+Finished job 15.
+30 of 128 steps (23%) done
+[Sun Aug  1 17:05:10 2021]
+Finished job 30.
+31 of 128 steps (24%) done
+[Sun Aug  1 17:05:10 2021]
+Finished job 45.
+32 of 128 steps (25%) done
+[Sun Aug  1 17:05:10 2021]
+Finished job 60.
+33 of 128 steps (26%) done
+[Sun Aug  1 17:05:11 2021]
+Finished job 90.
+34 of 128 steps (27%) done
+[Sun Aug  1 17:05:11 2021]
+Finished job 105.
+35 of 128 steps (27%) done
+[Sun Aug  1 17:05:11 2021]
+Finished job 16.
+36 of 128 steps (28%) done
+[Sun Aug  1 17:05:11 2021]
+Finished job 31.
+37 of 128 steps (29%) done
+[Sun Aug  1 17:05:11 2021]
+Finished job 46.
+38 of 128 steps (30%) done
+[Sun Aug  1 17:05:11 2021]
+Finished job 61.
+39 of 128 steps (30%) done
+[Sun Aug  1 17:05:11 2021]
+Finished job 91.
+40 of 128 steps (31%) done
+[Sun Aug  1 17:05:11 2021]
+Finished job 106.
+41 of 128 steps (32%) done
+[Sun Aug  1 17:05:11 2021]
+Finished job 32.
+42 of 128 steps (33%) done
+[Sun Aug  1 17:05:12 2021]
+Finished job 17.
+43 of 128 steps (34%) done
+[Sun Aug  1 17:05:12 2021]
+Finished job 62.
+44 of 128 steps (34%) done
+[Sun Aug  1 17:05:12 2021]
+Finished job 3.
+45 of 128 steps (35%) done
+[Sun Aug  1 17:05:12 2021]
+Finished job 47.
+46 of 128 steps (36%) done
+[Sun Aug  1 17:05:12 2021]
+Finished job 92.
+47 of 128 steps (37%) done
+[Sun Aug  1 17:05:12 2021]
+Finished job 107.
+48 of 128 steps (38%) done
+[Sun Aug  1 17:05:12 2021]
+Finished job 2.
+49 of 128 steps (38%) done
+[Sun Aug  1 17:05:12 2021]
+Finished job 18.
+50 of 128 steps (39%) done
+[Sun Aug  1 17:05:12 2021]
+Finished job 33.
+51 of 128 steps (40%) done
+[Sun Aug  1 17:05:12 2021]
+Finished job 48.
+52 of 128 steps (41%) done
+[Sun Aug  1 17:05:13 2021]
+Finished job 63.
+53 of 128 steps (41%) done
+[Sun Aug  1 17:05:13 2021]
+Finished job 93.
+54 of 128 steps (42%) done
+[Sun Aug  1 17:05:13 2021]
+Finished job 108.
+55 of 128 steps (43%) done
+[Sun Aug  1 17:05:13 2021]
+Finished job 19.
+56 of 128 steps (44%) done
+[Sun Aug  1 17:05:13 2021]
+Finished job 4.
+57 of 128 steps (45%) done
+[Sun Aug  1 17:05:13 2021]
+Finished job 34.
+58 of 128 steps (45%) done
+[Sun Aug  1 17:05:13 2021]
+Finished job 49.
+59 of 128 steps (46%) done
+[Sun Aug  1 17:05:13 2021]
+Finished job 64.
+60 of 128 steps (47%) done
+[Sun Aug  1 17:05:13 2021]
+Finished job 94.
+61 of 128 steps (48%) done
+[Sun Aug  1 17:05:13 2021]
+Finished job 109.
+62 of 128 steps (48%) done
+[Sun Aug  1 17:05:14 2021]
+Finished job 5.
+63 of 128 steps (49%) done
+[Sun Aug  1 17:05:14 2021]
+Finished job 20.
+64 of 128 steps (50%) done
+[Sun Aug  1 17:05:14 2021]
+Finished job 35.
+65 of 128 steps (51%) done
+[Sun Aug  1 17:05:14 2021]
+Finished job 50.
+66 of 128 steps (52%) done
+[Sun Aug  1 17:05:14 2021]
+Finished job 65.
+67 of 128 steps (52%) done
+[Sun Aug  1 17:05:14 2021]
+Finished job 95.
+68 of 128 steps (53%) done
+[Sun Aug  1 17:05:14 2021]
+Finished job 110.
+69 of 128 steps (54%) done
+[Sun Aug  1 17:05:14 2021]
+Finished job 21.
+70 of 128 steps (55%) done
+[Sun Aug  1 17:05:14 2021]
+Finished job 6.
+71 of 128 steps (55%) done
+[Sun Aug  1 17:05:14 2021]
+Finished job 36.
+72 of 128 steps (56%) done
+[Sun Aug  1 17:05:15 2021]
+Finished job 51.
+73 of 128 steps (57%) done
+[Sun Aug  1 17:05:15 2021]
+Finished job 66.
+74 of 128 steps (58%) done
+[Sun Aug  1 17:05:15 2021]
+Finished job 96.
+75 of 128 steps (59%) done
+[Sun Aug  1 17:05:15 2021]
+Finished job 111.
+76 of 128 steps (59%) done
+[Sun Aug  1 17:05:15 2021]
+Finished job 7.
+77 of 128 steps (60%) done
+[Sun Aug  1 17:05:15 2021]
+Finished job 22.
+78 of 128 steps (61%) done
+[Sun Aug  1 17:05:15 2021]
+Finished job 37.
+79 of 128 steps (62%) done
+[Sun Aug  1 17:05:15 2021]
+Finished job 52.
+80 of 128 steps (62%) done
+[Sun Aug  1 17:05:15 2021]
+Finished job 67.
+81 of 128 steps (63%) done
+[Sun Aug  1 17:05:15 2021]
+Finished job 97.
+82 of 128 steps (64%) done
+[Sun Aug  1 17:05:16 2021]
+Finished job 112.
+83 of 128 steps (65%) done
+[Sun Aug  1 17:05:16 2021]
+Finished job 8.
+84 of 128 steps (66%) done
+[Sun Aug  1 17:05:16 2021]
+Finished job 23.
+85 of 128 steps (66%) done
+[Sun Aug  1 17:05:16 2021]
+Finished job 38.
+86 of 128 steps (67%) done
+[Sun Aug  1 17:05:16 2021]
+Finished job 53.
+87 of 128 steps (68%) done
+[Sun Aug  1 17:05:16 2021]
+Finished job 68.
+88 of 128 steps (69%) done
+[Sun Aug  1 17:05:16 2021]
+Finished job 98.
+89 of 128 steps (70%) done
+[Sun Aug  1 17:05:16 2021]
+Finished job 113.
+90 of 128 steps (70%) done
+[Sun Aug  1 17:05:16 2021]
+Finished job 9.
+91 of 128 steps (71%) done
+[Sun Aug  1 17:05:17 2021]
+Finished job 24.
+92 of 128 steps (72%) done
+[Sun Aug  1 17:05:17 2021]
+Finished job 39.
+93 of 128 steps (73%) done
+[Sun Aug  1 17:05:17 2021]
+Finished job 54.
+94 of 128 steps (73%) done
+[Sun Aug  1 17:05:17 2021]
+Finished job 69.
+95 of 128 steps (74%) done
+[Sun Aug  1 17:05:17 2021]
+Finished job 99.
+96 of 128 steps (75%) done
+[Sun Aug  1 17:05:17 2021]
+Finished job 114.
+97 of 128 steps (76%) done
+[Sun Aug  1 17:05:17 2021]
+Finished job 70.
+98 of 128 steps (77%) done
+[Sun Aug  1 17:05:17 2021]
+Finished job 115.
+99 of 128 steps (77%) done
+[Sun Aug  1 17:05:27 2021]
+Finished job 71.
+100 of 128 steps (78%) done
+[Sun Aug  1 17:05:27 2021]
+Finished job 116.
+101 of 128 steps (79%) done
+[Sun Aug  1 17:05:27 2021]
+Finished job 72.
+102 of 128 steps (80%) done
+[Sun Aug  1 17:05:27 2021]
+Finished job 117.
+103 of 128 steps (80%) done
+[Sun Aug  1 17:05:27 2021]
+Finished job 73.
+104 of 128 steps (81%) done
+[Sun Aug  1 17:05:27 2021]
+Finished job 118.
+105 of 128 steps (82%) done
+[Sun Aug  1 17:05:28 2021]
+Finished job 74.
+106 of 128 steps (83%) done
+[Sun Aug  1 17:05:28 2021]
+Finished job 119.
+107 of 128 steps (84%) done
+[Sun Aug  1 17:05:28 2021]
+Finished job 75.
+108 of 128 steps (84%) done
+[Sun Aug  1 17:05:28 2021]
+Finished job 120.
+109 of 128 steps (85%) done
+[Sun Aug  1 17:05:28 2021]
+Finished job 76.
+110 of 128 steps (86%) done
+[Sun Aug  1 17:05:28 2021]
+Finished job 121.
+111 of 128 steps (87%) done
+[Sun Aug  1 17:05:28 2021]
+Finished job 77.
+112 of 128 steps (88%) done
+[Sun Aug  1 17:05:28 2021]
+Finished job 122.
+113 of 128 steps (88%) done
+[Sun Aug  1 17:05:29 2021]
+Finished job 78.
+114 of 128 steps (89%) done
+[Sun Aug  1 17:05:29 2021]
+Finished job 123.
+115 of 128 steps (90%) done
+[Sun Aug  1 17:05:29 2021]
+Finished job 79.
+116 of 128 steps (91%) done
+[Sun Aug  1 17:05:29 2021]
+Finished job 124.
+117 of 128 steps (91%) done
+[Sun Aug  1 17:05:29 2021]
+Finished job 80.
+118 of 128 steps (92%) done
+[Sun Aug  1 17:05:29 2021]
+Finished job 125.
+119 of 128 steps (93%) done
+[Sun Aug  1 17:05:29 2021]
+Finished job 81.
+120 of 128 steps (94%) done
+[Sun Aug  1 17:05:29 2021]
+Finished job 126.
+121 of 128 steps (95%) done
+[Sun Aug  1 17:05:29 2021]
+Finished job 82.
+122 of 128 steps (95%) done
+[Sun Aug  1 17:05:30 2021]
+Finished job 127.
+123 of 128 steps (96%) done
+[Sun Aug  1 17:05:30 2021]
+Finished job 83.
+124 of 128 steps (97%) done
+[Sun Aug  1 17:05:30 2021]
+Finished job 128.
+125 of 128 steps (98%) done
+[Sun Aug  1 17:05:30 2021]
+Finished job 84.
+126 of 128 steps (98%) done
+[Sun Aug  1 17:05:30 2021]
+Finished job 40.
+127 of 128 steps (99%) done
+
+[Sun Aug  1 17:05:30 2021]
+localrule all:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv, ../../data/hg19/roadmap/S25_segment/E017/E017_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E002/E002_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E008/E008_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E001/E001_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E015/E015_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E014/E014_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E016/E016_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E003/E003_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E024/E024_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E020/E020_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E019/E019_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E018/E018_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E021/E021_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E022/E022_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E007/E007_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E009/E009_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E010/E010_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E013/E013_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E012/E012_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E011/E011_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E004/E004_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E005/E005_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E006/E006_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E062/E062_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E034/E034_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E045/E045_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E033/E033_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E044/E044_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E043/E043_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E039/E039_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E041/E041_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E042/E042_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E040/E040_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E037/E037_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E048/E048_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E038/E038_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E047/E047_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E029/E029_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E031/E031_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E035/E035_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E051/E051_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E050/E050_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E036/E036_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E032/E032_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E046/E046_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E030/E030_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E026/E026_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E049/E049_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E025/E025_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E023/E023_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E052/E052_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E055/E055_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E056/E056_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E059/E059_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E061/E061_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E057/E057_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E058/E058_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E028/E028_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E027/E027_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E054/E054_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E053/E053_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E112/E112_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E093/E093_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E071/E071_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E074/E074_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E068/E068_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E069/E069_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E072/E072_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E067/E067_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E073/E073_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E070/E070_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E082/E082_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E081/E081_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E063/E063_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E100/E100_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E108/E108_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E107/E107_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E089/E089_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E090/E090_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E083/E083_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E104/E104_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E095/E095_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E105/E105_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E065/E065_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E078/E078_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E076/E076_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E103/E103_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E111/E111_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E092/E092_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E085/E085_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E084/E084_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E109/E109_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E106/E106_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E075/E075_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E101/E101_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E102/E102_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E110/E110_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E077/E077_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E079/E079_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E094/E094_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E099/E099_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E086/E086_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E088/E088_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E097/E097_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E087/E087_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E080/E080_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E091/E091_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E066/E066_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E098/E098_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E096/E096_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E113/E113_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E114/E114_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E115/E115_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E116/E116_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E117/E117_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E118/E118_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E119/E119_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E120/E120_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E121/E121_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E122/E122_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E123/E123_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E124/E124_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E125/E125_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E126/E126_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E127/E127_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E128/E128_25_imputed12marks_segments.bed.gz, ../../data/hg19/roadmap/S25_segment/E129/E129_25_imputed12marks_segments.bed.gz
+    jobid: 0
+
+[Sun Aug  1 17:05:30 2021]
+Finished job 0.
+128 of 128 steps (100%) done
+Complete log: /gstore/home/vuh6/source/train_model/.snakemake/log/2021-08-01T170456.827596.snakemake.log

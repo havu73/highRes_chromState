@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	process_raw_metadata
+	2
+
+[Sat Jul 31 16:33:50 2021]
+rule process_raw_metadata:
+    input: ../../data/hg19/roadmap_metadata_consolidated_epig_summary.csv
+    output: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    jobid: 1
+
+[Sat Jul 31 16:33:50 2021]
+Finished job 1.
+1 of 2 steps (50%) done
+
+[Sat Jul 31 16:33:50 2021]
+localrule all:
+    input: ../../data/hg19/processed_raw_metadata_roadmap_epig_summary.csv
+    jobid: 0
+
+[Sat Jul 31 16:33:50 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /gstore/home/vuh6/source/train_model/.snakemake/log/2021-07-31T163349.855108.snakemake.log
