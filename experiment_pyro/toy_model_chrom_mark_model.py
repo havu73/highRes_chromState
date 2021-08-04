@@ -11,6 +11,7 @@ def generate_data(N, num_state): # N: number of genomic positions
 	### first we define some toy parameters to the model
 	num_mark = 1
 	num_ref_epig = 3
+	num_obs = 5
 	alpha = torch.tensor([0.3,0.3,0.4])
 	ref_state_df = np.array([[0,0,0],[1,0,1], [2,2,0], [1,1,1], [0,1,2]])  # observed data of the reference epig's state maps in N positions. Rows; positions, columns: ref. epig. This dataframe should have dimension N * num_ref_epig
 	bernouli_mark = torch.tensor([0.1,0.9,0.5]) # probabilty of the one mark being present given each state. indices correspond to states. We are currently assuming there is only one mark as observed data.
@@ -22,10 +23,10 @@ def generate_data(N, num_state): # N: number of genomic positions
 	Z = torch.zeros(N) # initilize an array of length N, each will correspond to the zero-based index of ref_epig chosen at each position
 	S = torch.zeros(N) # initilize an array of length N, each will correspond to the zero-based index of hidden state at each position
 	for i in pyro.plate('genome_loop', num_obs):
-		Z[i] = pyro.sample('z_{}'.format(i), dist.Categorical(pi)) # sample reference epig from pi at this genomic position 
-		R_i = ref_state_df[i,z_i] # index of state that is observed at the pick refernece epigenome at the current position
+		Z[i] = (pyro.sample('z_{}'.format(i), dist.Categorical(pi))).type(torch.long) # sample reference epig from pi at this genomic position 
+		R_i = ref_state_df[i,int(Z[i])] # index of state that is observed at the pick refernece epigenome at the current position
 		S[i] = pyro.sample('S_{}'.format(i), dist.Categorical(pyro.param('beta_{}'.format(R_i)))) # We can get access to parameters by just using pyro.param('<param_name>')
-		mark_data[i] = pyro.sample('M_{}'.format(i), dist.Bernoulli(bernouli_mark[S_i.type(torch.long)]))
+		mark_data[i] = pyro.sample('M_{}'.format(i), dist.Bernoulli(bernouli_mark[S[i].type(torch.long)]))
 	return alpha, ref_state_df, bernouli_mark, pi, Z, S, transiton_mat, mark_data
 
 
@@ -70,7 +71,7 @@ def main():
 	num_state = 3
 	alpha, ref_state_df, bernouli_mark, pi, Z, S, transiton_mat, mark_data = generate_data(num_obs, num_state) # this will need to be changed so that we can get ref_state_df from pandas dataframes outside
 	transiton_mat = torch.tensor(transiton_mat)
-	posterior_params = train(alpha, bernouli_mark, ref_state_df, mark, num_state, transiton_mat) # turns out, posterior_param is a dictionary of parameters, keys are the names of the parameters, values are the parameter values at the end of all iterations 
+	posterior_params = train(alpha, bernouli_mark, ref_state_df, mark_data, num_state, transiton_mat) # turns out, posterior_param is a dictionary of parameters, keys are the names of the parameters, values are the parameter values at the end of all iterations 
 	print(posterior_params) 
 
 main()
