@@ -23,6 +23,7 @@ rule all:
 		#get sample data
 		expand(os.path.join(train_folder, 'train_data', 'frac_{train_frac}', 'ref_epig_segment_for_training.bed.gz'), train_frac = 0.1) , # data of chromatin state maps in reference epigenomes
 		expand(os.path.join(train_folder, 'train_data', 'frac_{train_frac}', 'observed_mark_signals_for_training.bed.gz'), train_frac = 0.1), # data of chromatin mark signals from experiments
+		expand(os.path.join(train_folder, 'train_data', 'frac_{train_frac}', 'uniform_alpha.txt'), train_frac = 0.1)
 
 rule process_raw_metadata: # get clean metadata
 	input:
@@ -112,3 +113,15 @@ rule get_chrom_mark_signals_for_training:
 		"""
 		python get_chrom_mark_signals_for_training.py {three_mark_signal_dir} {input[0]} {output[0]}
 		"""
+
+rule get_uniform_alpha_for_training:
+	input:
+		processed_raw_metadata_fn
+	output:
+		os.path.join(train_folder, 'train_data', 'frac_{train_frac}', 'uniform_alpha.txt')
+	run:
+		ct_list = get_ct_list(processed_raw_metadata_fn)
+		alpha = np.array([1.5] * len(ct_list))
+		alpha = pd.Series(alpha)
+		alpha.index = ct_list
+		alpha.to_csv(output[0], header = None, index = True, sep = '\t')
