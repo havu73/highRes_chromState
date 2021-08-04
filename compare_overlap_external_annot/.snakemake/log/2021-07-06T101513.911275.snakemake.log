@@ -1,5 +1,0 @@
-ValueError in line 26 of /gstore/home/vuh6/source/compare_overlap_external_annot/prepare_expData_for_enrichment.snakefile:
-Single '}' encountered in format string
-  File "/gstore/home/vuh6/source/compare_overlap_external_annot/prepare_expData_for_enrichment.snakefile", line 26, in <module>
-  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/string.py", line 190, in vformat
-  File "/gstore/apps/Anaconda3/5.0.1/lib/python3.6/string.py", line 200, in _vformat

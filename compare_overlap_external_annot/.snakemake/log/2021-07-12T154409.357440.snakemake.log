@@ -1,3 +1,0 @@
-KeyError in line 57 of /gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile:
-'{num_mark_model}'
-  File "/gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile", line 57, in <module>

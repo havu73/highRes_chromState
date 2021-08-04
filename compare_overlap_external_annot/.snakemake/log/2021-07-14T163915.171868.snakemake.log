@@ -1,5 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 214 of /gstore/home/vuh6/source/compare_overlap_external_annot/entropy_posterior_analysis.snakefile:
-Missing input files for rule calculate_train_test_ROC_precall_against_bg:
-../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/segment_based_on_entropy/fg_against_bg/test_overlap_against_bg.txt
-../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/segment_based_on_entropy/fg_against_bg/train_overlap_against_bg.txt

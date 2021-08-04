@@ -1,7 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 10 of /gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile:
-Missing input files for rule all:
-../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/background/gw_overlap.xlsx
-../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/background/gw_overlap.xlsx
-../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/foreground/gw_overlap.xlsx
-../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/gw_overlap.xlsx

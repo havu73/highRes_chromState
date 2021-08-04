@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 13 of /gstore/home/vuh6/source/train_model/input_data_preparation.snakefile:
-Missing input files for rule process_raw_metadata:
-../data/hg19/roadmap_metadata_consolidated_epig_summary.csv
