@@ -1,0 +1,42 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	2	calculate_entropy_posterior
+	3
+
+[Tue Jul 13 09:44:07 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/genome_8_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/genome_8_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 2
+    wildcards: num_mark_model=three_mark_model, num_state=8
+
+Submitted job 2 with external jobid 'Submitted batch job 2300280'.
+
+[Tue Jul 13 09:44:07 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/genome_25_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/genome_25_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 1
+    wildcards: num_mark_model=all_mark_model, num_state=25
+
+Submitted job 1 with external jobid 'Submitted batch job 2300281'.
+[Tue Jul 13 09:52:47 2021]
+Finished job 1.
+1 of 3 steps (33%) done
+[Tue Jul 13 09:53:17 2021]
+Finished job 2.
+2 of 3 steps (67%) done
+
+[Tue Jul 13 09:53:17 2021]
+localrule all:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 0
+
+[Tue Jul 13 09:53:17 2021]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-13T094405.199881.snakemake.log

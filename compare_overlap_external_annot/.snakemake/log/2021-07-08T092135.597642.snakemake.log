@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	ROADMAP_get_segment_file_train_test
+	1	all
+	1	calculate_train_test_ROC_precall
+	1	overlap_with_genome_contexts
+	4
+
+[Thu Jul  8 09:21:36 2021]
+rule ROADMAP_get_segment_file_train_test:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/E123_25_imputed12marks_segments.bed.gz, ../../model_analysis/train_segments_sorted.bed.gz, ../../model_analysis/test_segments_sorted.bed.gz
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/train_segments.bed.gz, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 65
+
+[Thu Jul  8 09:21:42 2021]
+Error in rule ROADMAP_get_segment_file_train_test:
+    jobid: 65
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/train_segments.bed.gz, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/test_segments.bed.gz
+    shell:
+        	
+		bedtools map -a ../../model_analysis/train_segments_sorted.bed.gz -b ../../data/hg19/K562/roadmap_published_chromHMM/25_state/E123_25_imputed12marks_segments.bed.gz -c 4 -o collapse > ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/train_segments.bed
+		gzip ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/train_segments.bed
+		bedtools map -a ../../model_analysis/test_segments_sorted.bed.gz -b ../../data/hg19/K562/roadmap_published_chromHMM/25_state/E123_25_imputed12marks_segments.bed.gz -c 4 -o collapse > ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/test_segments.bed
+		gzip ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/test_segments.bed
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-08T092135.597642.snakemake.log

@@ -1,0 +1,3 @@
+TypeError in line 14 of /gstore/home/vuh6/source/train_model/input_data_preparation.snakefile:
+object of type 'function' has no len()
+  File "/gstore/home/vuh6/source/train_model/input_data_preparation.snakefile", line 14, in <module>

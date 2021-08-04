@@ -1,0 +1,3 @@
+WildcardError in line 43 of /gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile:
+No values given for wildcard 'num_mark_model'.
+  File "/gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile", line 43, in <module>

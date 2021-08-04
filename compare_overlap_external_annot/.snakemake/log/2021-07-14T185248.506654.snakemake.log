@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	get_segmentation_based_on_entropy
+	2
+
+[Wed Jul 14 18:52:50 2021]
+rule get_segmentation_based_on_entropy:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/genome_segments_sorted.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/higher/genome_segments_sorted.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/leq/genome_segments_sorted.bed.gz
+    jobid: 3
+    wildcards: model_folder=../../model_analysis/K562_hg19/three_mark_model/state_8/full_model
+
+Terminating processes on user request, this might take some time.
+[Wed Jul 14 18:53:06 2021]
+Error in rule get_segmentation_based_on_entropy:
+    jobid: 3
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/genome_segments_sorted.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/higher/genome_segments_sorted.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/leq/genome_segments_sorted.bed.gz
+    shell:
+        
+		python ./scripts/change_segmentation_based_on_entropy.py ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/genome_segments_sorted.bed.gz 
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-14T185248.506654.snakemake.log

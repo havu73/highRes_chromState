@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 129 of /gstore/home/vuh6/source/chromHMM_training/train_big_model/learn_model.snakefile:
+Missing input files for rule overlap_enrichment:
+../../../model_analysis/K562_hg19/all_mark_model/state_25/full_modelgenome_25_segments_clean.bed.gz

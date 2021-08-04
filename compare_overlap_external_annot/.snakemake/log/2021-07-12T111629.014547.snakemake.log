@@ -1,0 +1,101 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	calculate_train_test_ROC_precall_against_bg
+	2	overlap_against_background
+	2	overlap_with_genome_contexts
+	6
+
+[Mon Jul 12 11:16:31 2021]
+rule overlap_with_genome_contexts:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/train_segments.bed.gz, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/train_overlap.txt, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 128
+    wildcards: model_folder=../../data/hg19/K562/roadmap_published_chromHMM/25_state, fore_or_back=foreground
+
+[Mon Jul 12 11:17:10 2021]
+Finished job 128.
+1 of 6 steps (17%) done
+
+[Mon Jul 12 11:17:10 2021]
+rule overlap_with_genome_contexts:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/train_segments.bed.gz, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/train_overlap.txt, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 129
+    wildcards: model_folder=../../data/hg19/K562/roadmap_published_chromHMM/25_state, fore_or_back=background
+
+[Mon Jul 12 11:20:22 2021]
+Finished job 129.
+2 of 6 steps (33%) done
+
+[Mon Jul 12 11:20:22 2021]
+rule overlap_against_background:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/test_overlap.txt, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/test_overlap.txt
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 65
+    wildcards: model_folder=../../data/hg19/K562/roadmap_published_chromHMM/25_state, TT=test
+
+[Mon Jul 12 11:20:28 2021]
+Finished job 65.
+3 of 6 steps (50%) done
+
+[Mon Jul 12 11:20:28 2021]
+rule overlap_against_background:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/train_overlap.txt, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/train_overlap.txt
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 64
+    wildcards: model_folder=../../data/hg19/K562/roadmap_published_chromHMM/25_state, TT=train
+
+[Mon Jul 12 11:20:31 2021]
+Finished job 64.
+4 of 6 steps (67%) done
+
+[Mon Jul 12 11:20:31 2021]
+rule calculate_train_test_ROC_precall_against_bg:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    output: ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_Fulco19_significant_DE_G_ST6a.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_gasperini19_altScale_664_enhancerGenePairs_ST2B.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_gasperini19_pilot_145_EnhancerGenePairs_ST1B.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S1_discovery_K562_sgrna.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S2_discovery_K562_bin2.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S3_discovery_K562_bin3.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S5_discovery_K562_dhs.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S6_validation_K562_sgrna.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S7_validation_K562_bin2.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S8_validation_K562_bin3.txt
+    jobid: 1
+
+[Mon Jul 12 11:20:37 2021]
+Error in rule calculate_train_test_ROC_precall_against_bg:
+    jobid: 1
+    output: ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_Fulco19_significant_DE_G_ST6a.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_gasperini19_altScale_664_enhancerGenePairs_ST2B.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_gasperini19_pilot_145_EnhancerGenePairs_ST1B.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S1_discovery_K562_sgrna.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S2_discovery_K562_bin2.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S3_discovery_K562_bin3.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S5_discovery_K562_dhs.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S6_validation_K562_sgrna.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S7_validation_K562_bin2.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S8_validation_K562_bin3.txt
+    shell:
+        
+		model_type="all_mark_model three_mark_model"
+		all_mark_max_nState=25
+		three_mark_max_nState=8
+		overlap_folder_list=""
+		model_name_list=""
+		num_model=0
+		for ns in `seq 2 ${all_mark_max_nState}`
+		do
+			this_overlap_folder=../../model_analysis/K562_hg19/all_mark_model/state_${ns}/full_model/overlap_crispr_mpra/
+			overlap_folder_list="$overlap_folder_list $this_overlap_folder"
+			this_model_name="M13_S${ns}"
+			model_name_list="$model_name_list $this_model_name"
+			num_model=$(( $num_model + 1 ))
+		done
+		for ns in `seq 2 ${three_mark_max_nState}`
+		do
+			this_overlap_folder=../../model_analysis/K562_hg19/three_mark_model/state_${ns}/full_model/overlap_crispr_mpra/
+			overlap_folder_list="$overlap_folder_list $this_overlap_folder"
+			this_model_name="M3_S${ns}"
+			model_name_list="$model_name_list $this_model_name"
+			num_model=$(( $num_model + 1 ))
+		done
+		num_model=$(( $num_model + 1 ))
+		roadmap_overlap_folder=../../data/hg19/K562/roadmap_published_chromHMM//25_state/overlap_crispr_mpra/
+		overlap_folder_list="$overlap_folder_list $roadmap_overlap_folder"
+		model_name_list="$model_name_list roadmap_S25" 
+		python ./scripts/calculate_roc_train_test_enrichment.py $num_model ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg ${overlap_folder_list} ${model_name_list}
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-12T111629.014547.snakemake.log

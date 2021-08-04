@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	plot_histogram_entropy
+	3
+
+[Tue Jul 13 10:30:26 2021]
+rule plot_histogram_entropy:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/plots/entropy_density_gw.png
+    jobid: 1
+    wildcards: num_mark_model=all_mark_model, num_state=25
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-13T103024.775717.snakemake.log

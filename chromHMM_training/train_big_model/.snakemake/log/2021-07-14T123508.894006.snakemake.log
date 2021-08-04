@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	get_summary_optimal_num_state_by_chrom
+	2
+
+[Wed Jul 14 12:35:14 2021]
+rule get_summary_optimal_num_state_by_chrom:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/aic_bic_compare_num_states/train_then_test/aic_bic_by_chrom.txt
+    output: ../../../model_analysis/K562_hg19/all_mark_model/aic_bic_compare_num_states/train_then_test/optimal_state_by_chrom.txt
+    jobid: 2
+
+[Wed Jul 14 12:35:16 2021]
+Finished job 2.
+1 of 2 steps (50%) done
+
+[Wed Jul 14 12:35:16 2021]
+localrule all:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/aic_bic_compare_num_states/train_then_test/aic_bic_all_test_chrom.png, ../../../model_analysis/K562_hg19/all_mark_model/aic_bic_compare_num_states/train_then_test/optimal_state_by_chrom.txt
+    jobid: 0
+
+[Wed Jul 14 12:35:16 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-07-14T123508.894006.snakemake.log

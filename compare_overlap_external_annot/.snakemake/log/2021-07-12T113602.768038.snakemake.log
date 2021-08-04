@@ -1,0 +1,57 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	soft_link_segments
+	2
+
+[Mon Jul 12 11:36:03 2021]
+rule soft_link_segments:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/genome_2_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/genome_3_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/genome_4_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/genome_5_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/genome_6_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/genome_7_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/genome_8_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/genome_9_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/genome_10_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/genome_11_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/genome_12_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/genome_13_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/genome_14_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/genome_15_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/genome_16_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/genome_17_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/genome_18_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/genome_19_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/genome_20_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/genome_21_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/genome_22_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/genome_23_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/genome_24_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/genome_25_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/genome_3_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/genome_4_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/genome_5_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/genome_6_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/genome_7_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/genome_8_segments.bed.gz, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/E123_25_imputed12marks_segments.bed.gz, ../../model_analysis/K562_hg19/simple_rules_from_natalie/genome_simple_3_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/genome_segments.bed.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/genome_segments.bed.gz, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/genome_segments.bed.gz, ../../model_analysis/K562_hg19/simple_rules_from_natalie/genome_segments.bed.gz
+    jobid: 1
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 41 of /gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile:
+Job completed successfully, but some output files are missing. Missing files after 5 seconds:
+../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/genome_segments.bed.gz
+../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/genome_segments.bed.gz
+../../data/hg19/K562/roadmap_published_chromHMM/25_state/genome_segments.bed.gz
+../../model_analysis/K562_hg19/simple_rules_from_natalie/genome_segments.bed.gz
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 544, in handle_job_success
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 231, in handle_job_success
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-12T113602.768038.snakemake.log

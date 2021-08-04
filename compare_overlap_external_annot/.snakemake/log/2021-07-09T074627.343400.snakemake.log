@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules overlap_with_genome_contexts and overlap_against_background are ambiguous for the file ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap.txt.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	overlap_with_genome_contexts: fore_or_back=fg_against_bg,model_folder=../../model_analysis/K562_hg19/three_mark_model/state_2/full_model
+	overlap_against_background: TT=train,model_folder=../../model_analysis/K562_hg19/three_mark_model/state_2/full_model
+Expected input files:
+	overlap_with_genome_contexts: ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/train_and_test_segments_sorted/train_segments.bed.gz ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+	overlap_against_background: ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/overlap_crispr_mpra/foreground/train_overlap.txt ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/overlap_crispr_mpra/background/train_overlap.txtExpected output files:
+	overlap_with_genome_contexts: ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap.txt ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap.txt
+	overlap_against_background: ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap.txt

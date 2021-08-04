@@ -1,0 +1,35 @@
+Building DAG of jobs...
+MissingInputException in line 41 of /gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile:
+Missing input files for rule soft_link_segments:
+/gstore/home/vuh6model_analysis/K562_hg19/three_mark_model/state_5/full_model/genome_5_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/three_mark_model/state_6/full_model/genome_6_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_4/full_model/genome_4_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_13/full_model/genome_13_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/three_mark_model/state_7/full_model/genome_7_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_25/full_model/genome_25_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/simple_rules_from_natalie/genome_simple_3_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_15/full_model/genome_15_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_5/full_model/genome_5_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_12/full_model/genome_12_segments.bed.gz
+/gstore/home/vuh6data/hg19/K562/roadmap_published_chromHMM/25_state/E123_25_imputed12marks_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/three_mark_model/state_4/full_model/genome_4_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_21/full_model/genome_21_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/three_mark_model/state_3/full_model/genome_3_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_9/full_model/genome_9_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_16/full_model/genome_16_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_7/full_model/genome_7_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/three_mark_model/state_8/full_model/genome_8_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_22/full_model/genome_22_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_20/full_model/genome_20_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_14/full_model/genome_14_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_24/full_model/genome_24_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_6/full_model/genome_6_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_18/full_model/genome_18_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_2/full_model/genome_2_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_23/full_model/genome_23_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_19/full_model/genome_19_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_8/full_model/genome_8_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_3/full_model/genome_3_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_11/full_model/genome_11_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_10/full_model/genome_10_segments.bed.gz
+/gstore/home/vuh6model_analysis/K562_hg19/all_mark_model/state_17/full_model/genome_17_segments.bed.gz

@@ -1,0 +1,153 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	6	get_colored_excel_enrichment_gw
+	2	overlap_against_background
+	4	overlap_with_genome_contexts_gw
+	13
+
+[Wed Jul 14 18:23:32 2021]
+rule overlap_with_genome_contexts_gw:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/genome_segments_sorted.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/foreground/gw_overlap.txt
+    jobid: 11
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy, fore_or_back=foreground
+
+[Wed Jul 14 18:24:07 2021]
+Finished job 11.
+1 of 13 steps (8%) done
+
+[Wed Jul 14 18:24:07 2021]
+rule overlap_with_genome_contexts_gw:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/genome_segments_sorted.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/background/gw_overlap.txt
+    jobid: 12
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy, fore_or_back=background
+
+[Wed Jul 14 18:25:57 2021]
+Finished job 12.
+2 of 13 steps (15%) done
+
+[Wed Jul 14 18:25:57 2021]
+rule overlap_with_genome_contexts_gw:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/genome_segments_sorted.bed.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/foreground/gw_overlap.txt
+    jobid: 13
+    wildcards: model_folder=../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy, fore_or_back=foreground
+
+[Wed Jul 14 18:26:31 2021]
+Finished job 13.
+3 of 13 steps (23%) done
+
+[Wed Jul 14 18:26:31 2021]
+rule overlap_with_genome_contexts_gw:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/genome_segments_sorted.bed.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/background/gw_overlap.txt
+    jobid: 14
+    wildcards: model_folder=../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy, fore_or_back=background
+
+[Wed Jul 14 18:28:19 2021]
+Finished job 14.
+4 of 13 steps (31%) done
+
+[Wed Jul 14 18:28:19 2021]
+rule overlap_against_background:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/foreground/gw_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/background/gw_overlap.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.txt
+    jobid: 15
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy, TT=gw
+
+[Wed Jul 14 18:28:20 2021]
+Finished job 15.
+5 of 13 steps (38%) done
+
+[Wed Jul 14 18:28:20 2021]
+rule get_colored_excel_enrichment_gw:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.xlsx
+    jobid: 7
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy, fore_or_back=fg_against_bg, TT=gw_overlap_against, overlap_type=bg
+
+[Wed Jul 14 18:28:22 2021]
+Finished job 7.
+6 of 13 steps (46%) done
+
+[Wed Jul 14 18:28:22 2021]
+rule get_colored_excel_enrichment_gw:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/foreground/gw_overlap.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/foreground/gw_overlap.xlsx
+    jobid: 3
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy, fore_or_back=foreground, TT=gw, overlap_type=overlap
+
+[Wed Jul 14 18:28:23 2021]
+Finished job 3.
+7 of 13 steps (54%) done
+
+[Wed Jul 14 18:28:23 2021]
+rule get_colored_excel_enrichment_gw:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/background/gw_overlap.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/background/gw_overlap.xlsx
+    jobid: 4
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy, fore_or_back=background, TT=gw, overlap_type=overlap
+
+[Wed Jul 14 18:28:25 2021]
+Finished job 4.
+8 of 13 steps (62%) done
+
+[Wed Jul 14 18:28:25 2021]
+rule overlap_against_background:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/foreground/gw_overlap.txt, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/background/gw_overlap.txt
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.txt
+    jobid: 16
+    wildcards: model_folder=../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy, TT=gw
+
+[Wed Jul 14 18:28:26 2021]
+Finished job 16.
+9 of 13 steps (69%) done
+
+[Wed Jul 14 18:28:26 2021]
+rule get_colored_excel_enrichment_gw:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.txt
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.xlsx
+    jobid: 8
+    wildcards: model_folder=../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy, fore_or_back=fg_against_bg, TT=gw_overlap_against, overlap_type=bg
+
+[Wed Jul 14 18:28:27 2021]
+Finished job 8.
+10 of 13 steps (77%) done
+
+[Wed Jul 14 18:28:27 2021]
+rule get_colored_excel_enrichment_gw:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/foreground/gw_overlap.txt
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/foreground/gw_overlap.xlsx
+    jobid: 5
+    wildcards: model_folder=../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy, fore_or_back=foreground, TT=gw, overlap_type=overlap
+
+[Wed Jul 14 18:28:29 2021]
+Finished job 5.
+11 of 13 steps (85%) done
+
+[Wed Jul 14 18:28:29 2021]
+rule get_colored_excel_enrichment_gw:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/background/gw_overlap.txt
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/background/gw_overlap.xlsx
+    jobid: 6
+    wildcards: model_folder=../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy, fore_or_back=background, TT=gw, overlap_type=overlap
+
+[Wed Jul 14 18:28:30 2021]
+Finished job 6.
+12 of 13 steps (92%) done
+
+[Wed Jul 14 18:28:30 2021]
+localrule all:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/plots/entropy_density_gw.png, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/plots/entropy_density_gw.png, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/foreground/gw_overlap.xlsx, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/background/gw_overlap.xlsx, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/foreground/gw_overlap.xlsx, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/background/gw_overlap.xlsx, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.xlsx, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/segment_based_on_entropy/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.xlsx
+    jobid: 0
+
+[Wed Jul 14 18:28:30 2021]
+Finished job 0.
+13 of 13 steps (100%) done
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-14T182330.226266.snakemake.log

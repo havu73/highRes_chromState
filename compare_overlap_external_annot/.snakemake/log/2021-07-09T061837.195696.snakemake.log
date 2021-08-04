@@ -1,0 +1,306 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	24	overlap_with_genome_contexts
+	25
+
+[Fri Jul  9 06:18:37 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 26
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_3/full_model, fore_or_back=background
+
+Submitted job 26 with external jobid 'Submitted batch job 1956870'.
+
+[Fri Jul  9 06:18:37 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 41
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_18/full_model, fore_or_back=background
+
+Submitted job 41 with external jobid 'Submitted batch job 1956871'.
+
+[Fri Jul  9 06:18:37 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 34
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_11/full_model, fore_or_back=background
+
+Submitted job 34 with external jobid 'Submitted batch job 1956872'.
+
+[Fri Jul  9 06:18:37 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 27
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_4/full_model, fore_or_back=background
+
+Submitted job 27 with external jobid 'Submitted batch job 1956873'.
+
+[Fri Jul  9 06:18:37 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 42
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_19/full_model, fore_or_back=background
+
+Submitted job 42 with external jobid 'Submitted batch job 1956874'.
+
+[Fri Jul  9 06:18:37 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 35
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_12/full_model, fore_or_back=background
+
+Submitted job 35 with external jobid 'Submitted batch job 1956875'.
+
+[Fri Jul  9 06:18:37 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 28
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_5/full_model, fore_or_back=background
+
+Submitted job 28 with external jobid 'Submitted batch job 1956876'.
+
+[Fri Jul  9 06:18:37 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 43
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_20/full_model, fore_or_back=background
+
+Submitted job 43 with external jobid 'Submitted batch job 1956877'.
+
+[Fri Jul  9 06:18:38 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 36
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_13/full_model, fore_or_back=background
+
+Submitted job 36 with external jobid 'Submitted batch job 1956878'.
+
+[Fri Jul  9 06:18:38 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 48
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_25/full_model, fore_or_back=background
+
+Submitted job 48 with external jobid 'Submitted batch job 1956879'.
+
+[Fri Jul  9 06:18:38 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 29
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_6/full_model, fore_or_back=background
+
+Submitted job 29 with external jobid 'Submitted batch job 1956880'.
+
+[Fri Jul  9 06:18:38 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 44
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_21/full_model, fore_or_back=background
+
+Submitted job 44 with external jobid 'Submitted batch job 1956881'.
+
+[Fri Jul  9 06:18:38 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 37
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_14/full_model, fore_or_back=background
+
+Submitted job 37 with external jobid 'Submitted batch job 1956882'.
+
+[Fri Jul  9 06:18:38 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 30
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_7/full_model, fore_or_back=background
+
+Submitted job 30 with external jobid 'Submitted batch job 1956883'.
+
+[Fri Jul  9 06:18:38 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 45
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_22/full_model, fore_or_back=background
+
+Submitted job 45 with external jobid 'Submitted batch job 1956884'.
+
+[Fri Jul  9 06:18:39 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 38
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_15/full_model, fore_or_back=background
+
+Submitted job 38 with external jobid 'Submitted batch job 1956885'.
+
+[Fri Jul  9 06:18:39 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 31
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_8/full_model, fore_or_back=background
+
+Submitted job 31 with external jobid 'Submitted batch job 1956886'.
+
+[Fri Jul  9 06:18:39 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 46
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_23/full_model, fore_or_back=background
+
+Submitted job 46 with external jobid 'Submitted batch job 1956887'.
+
+[Fri Jul  9 06:18:39 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 39
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_16/full_model, fore_or_back=background
+
+Submitted job 39 with external jobid 'Submitted batch job 1956888'.
+
+[Fri Jul  9 06:18:39 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 32
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_9/full_model, fore_or_back=background
+
+Submitted job 32 with external jobid 'Submitted batch job 1956889'.
+
+[Fri Jul  9 06:18:39 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 47
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_24/full_model, fore_or_back=background
+
+Submitted job 47 with external jobid 'Submitted batch job 1956890'.
+
+[Fri Jul  9 06:18:39 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 25
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_2/full_model, fore_or_back=background
+
+Submitted job 25 with external jobid 'Submitted batch job 1956891'.
+
+[Fri Jul  9 06:18:39 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 40
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_17/full_model, fore_or_back=background
+
+Submitted job 40 with external jobid 'Submitted batch job 1956892'.
+
+[Fri Jul  9 06:18:39 2021]
+rule overlap_with_genome_contexts:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/train_and_test_segments_sorted/train_segments.bed.gz, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 33
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_10/full_model, fore_or_back=background
+
+Submitted job 33 with external jobid 'Submitted batch job 1956893'.
+[Fri Jul  9 06:21:59 2021]
+Finished job 42.
+1 of 25 steps (4%) done
+[Fri Jul  9 06:22:00 2021]
+Finished job 44.
+2 of 25 steps (8%) done
+[Fri Jul  9 06:22:00 2021]
+Finished job 37.
+3 of 25 steps (12%) done
+[Fri Jul  9 06:22:00 2021]
+Finished job 30.
+4 of 25 steps (16%) done
+[Fri Jul  9 06:22:01 2021]
+Finished job 45.
+5 of 25 steps (20%) done
+[Fri Jul  9 06:22:01 2021]
+Finished job 38.
+6 of 25 steps (24%) done
+[Fri Jul  9 06:22:01 2021]
+Finished job 31.
+7 of 25 steps (28%) done
+[Fri Jul  9 06:22:12 2021]
+Finished job 41.
+8 of 25 steps (32%) done
+[Fri Jul  9 06:22:12 2021]
+Finished job 34.
+9 of 25 steps (36%) done
+[Fri Jul  9 06:22:12 2021]
+Finished job 27.
+10 of 25 steps (40%) done
+[Fri Jul  9 06:22:12 2021]
+Finished job 35.
+11 of 25 steps (44%) done
+[Fri Jul  9 06:22:12 2021]
+Finished job 28.
+12 of 25 steps (48%) done
+[Fri Jul  9 06:22:23 2021]
+Finished job 43.
+13 of 25 steps (52%) done
+[Fri Jul  9 06:22:23 2021]
+Finished job 36.
+14 of 25 steps (56%) done
+[Fri Jul  9 06:22:23 2021]
+Finished job 46.
+15 of 25 steps (60%) done
+[Fri Jul  9 06:22:23 2021]
+Finished job 39.
+16 of 25 steps (64%) done
+[Fri Jul  9 06:22:23 2021]
+Finished job 32.
+17 of 25 steps (68%) done
+[Fri Jul  9 06:22:23 2021]
+Finished job 47.
+18 of 25 steps (72%) done
+[Fri Jul  9 06:22:23 2021]
+Finished job 25.
+19 of 25 steps (76%) done
+[Fri Jul  9 06:22:24 2021]
+Finished job 33.
+20 of 25 steps (80%) done
+[Fri Jul  9 06:22:34 2021]
+Finished job 26.
+21 of 25 steps (84%) done
+[Fri Jul  9 06:22:34 2021]
+Finished job 48.
+22 of 25 steps (88%) done
+[Fri Jul  9 06:22:34 2021]
+Finished job 29.
+23 of 25 steps (92%) done
+[Fri Jul  9 06:22:34 2021]
+Finished job 40.
+24 of 25 steps (96%) done
+
+[Fri Jul  9 06:22:34 2021]
+localrule all:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/background/test_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/background/train_overlap.txt, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 0
+
+[Fri Jul  9 06:22:34 2021]
+Finished job 0.
+25 of 25 steps (100%) done
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-09T061837.195696.snakemake.log

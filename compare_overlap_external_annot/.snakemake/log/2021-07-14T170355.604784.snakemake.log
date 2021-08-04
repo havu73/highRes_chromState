@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	all
+	2	overlap_against_background
+	4	overlap_with_genome_contexts_gw
+	7
+
+[Wed Jul 14 17:03:56 2021]
+rule overlap_with_genome_contexts_gw:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/genome_segments_sorted.bed.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/foreground/gw_overlap.txt
+    jobid: 4
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_25/full_model, fore_or_back=foreground
+
+RuleException in line 106 of /gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile:
+'Params' object has no attribute 'train_out_prefix'
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 115, in run_jobs
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 120, in run
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 131, in _run
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 151, in printjob
+  File "/gstore/apps/snakemake/5.22.0-foss-2017a-Python-3.6.3/lib/python3.6/site-packages/snakemake/executors/__init__.py", line 137, in printjob

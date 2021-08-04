@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	calculate_entropy_posterior_ROADMAP
+	1	plot_histogram_entropy
+	3
+
+[Wed Jul 14 16:40:14 2021]
+rule calculate_entropy_posterior_ROADMAP:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/POSTERIOR/E123_25_imputed12marks_chr1_posterior.txt.gz, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/POSTERIOR/E123_25_imputed12marks_chrX_posterior.txt.gz
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 6
+
+[Wed Jul 14 16:50:46 2021]
+Finished job 6.
+1 of 3 steps (33%) done
+
+[Wed Jul 14 16:50:46 2021]
+rule plot_histogram_entropy:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/POSTERIOR/entropy/entropy_chrX.txt.gz
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/POSTERIOR/entropy/plots/entropy_density_gw.png
+    jobid: 3
+    wildcards: model_folder=../../data/hg19/K562/roadmap_published_chromHMM/25_state
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-14T164012.412179.snakemake.log

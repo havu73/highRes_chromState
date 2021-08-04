@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	24	get_posterior_chromHMM
+	25
+
+[Mon Jul 12 15:49:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/model_25.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/genome_25_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/genome_25_chrX_posterior.txt.gz
+    jobid: 24
+    wildcards: num_mark_model=all_mark_model, num_state=25
+
+[Mon Jul 12 16:06:54 2021]
+Finished job 24.
+1 of 25 steps (4%) done
+
+[Mon Jul 12 16:06:54 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/model_24.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/genome_24_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/genome_24_chrX_posterior.txt.gz
+    jobid: 23
+    wildcards: num_mark_model=all_mark_model, num_state=24
+
+Terminating processes on user request, this might take some time.
+[Mon Jul 12 16:06:59 2021]
+Error in rule get_posterior_chromHMM:
+    jobid: 23
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/genome_24_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/genome_24_chrX_posterior.txt.gz
+    shell:
+        
+		echo ../../data/hg19/K562/big_model_training/full
+		java -jar ../../program_source/ChromHMM/ChromHMM/ChromHMM.jar MakeSegmentation -gzip -splitrows -printposterior ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/model_24.txt ../../data/hg19/K562/big_model_training/full ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-12T154934.066680.snakemake.log

@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 55 of /gstore/home/vuh6/source/compare_overlap_external_annot/entropy_posterior_analysis.snakefile:
+Wildcards in input files cannot be determined from output files:
+'prefix'

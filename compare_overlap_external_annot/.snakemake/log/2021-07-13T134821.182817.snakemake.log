@@ -1,0 +1,3 @@
+Building DAG of jobs...
+MissingRuleException:
+No rule to produce ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/segment_based_on_entropy/genome_25_segments.bed.gz (if you use input functions make sure that they don't raise unexpected exceptions).

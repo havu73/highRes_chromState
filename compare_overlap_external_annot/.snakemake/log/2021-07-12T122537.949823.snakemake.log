@@ -1,0 +1,153 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	1	calculate_train_test_ROC_precall_against_bg
+	10	overlap_against_background
+	2	overlap_with_genome_contexts
+	14
+
+[Mon Jul 12 12:25:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 13
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model, TT=test
+
+Submitted job 13 with external jobid 'Submitted batch job 2188759'.
+
+[Mon Jul 12 12:25:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 4
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model, TT=train
+
+Submitted job 4 with external jobid 'Submitted batch job 2188760'.
+
+[Mon Jul 12 12:25:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 34
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model, TT=train
+
+Submitted job 34 with external jobid 'Submitted batch job 2188761'.
+
+[Mon Jul 12 12:25:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 8
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model, TT=train
+
+Submitted job 8 with external jobid 'Submitted batch job 2188762'.
+
+[Mon Jul 12 12:25:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 35
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model, TT=test
+
+Submitted job 35 with external jobid 'Submitted batch job 2188763'.
+
+[Mon Jul 12 12:25:38 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 133
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie, fore_or_back=background
+
+Submitted job 133 with external jobid 'Submitted batch job 2188764'.
+
+[Mon Jul 12 12:25:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 12
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model, TT=train
+
+Submitted job 12 with external jobid 'Submitted batch job 2188765'.
+
+[Mon Jul 12 12:25:38 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 132
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie, fore_or_back=foreground
+
+Submitted job 132 with external jobid 'Submitted batch job 2188766'.
+
+[Mon Jul 12 12:25:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 5
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model, TT=test
+
+Submitted job 5 with external jobid 'Submitted batch job 2188767'.
+
+[Mon Jul 12 12:25:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 9
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model, TT=test
+
+Submitted job 9 with external jobid 'Submitted batch job 2188768'.
+[Mon Jul 12 12:25:48 2021]
+Finished job 13.
+1 of 14 steps (7%) done
+[Mon Jul 12 12:25:48 2021]
+Finished job 4.
+2 of 14 steps (14%) done
+[Mon Jul 12 12:25:48 2021]
+Finished job 34.
+3 of 14 steps (21%) done
+[Mon Jul 12 12:25:48 2021]
+Finished job 8.
+4 of 14 steps (29%) done
+[Mon Jul 12 12:25:48 2021]
+Finished job 35.
+5 of 14 steps (36%) done
+[Mon Jul 12 12:25:48 2021]
+Error in rule overlap_with_genome_contexts:
+    jobid: 133
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/test_overlap.txt
+    shell:
+        
+		java -jar /gstore/home/vuh6/program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/train_segments.bed.gz /gstore/home/vuh6/data/hg19/K562/COORD_CRISPR_MPRA_DATA/for_enrichment/background /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/train_overlap
+		java -jar /gstore/home/vuh6/program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/test_segments.bed.gz /gstore/home/vuh6/data/hg19/K562/COORD_CRISPR_MPRA_DATA/for_enrichment/background /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/test_overlap
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 2188764
+
+Error executing rule overlap_with_genome_contexts on cluster (jobid: 133, external: Submitted batch job 2188764, jobscript: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/tmp.gn8ujvzs/snakejob.overlap_with_genome_contexts.133.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul 12 12:25:48 2021]
+Finished job 12.
+6 of 14 steps (43%) done
+[Mon Jul 12 12:25:48 2021]
+Error in rule overlap_with_genome_contexts:
+    jobid: 132
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/test_overlap.txt
+    shell:
+        
+		java -jar /gstore/home/vuh6/program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/train_segments.bed.gz /gstore/home/vuh6/data/hg19/K562/COORD_CRISPR_MPRA_DATA/for_enrichment/foreground /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/train_overlap
+		java -jar /gstore/home/vuh6/program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/test_segments.bed.gz /gstore/home/vuh6/data/hg19/K562/COORD_CRISPR_MPRA_DATA/for_enrichment/foreground /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/test_overlap
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 2188766
+
+Error executing rule overlap_with_genome_contexts on cluster (jobid: 132, external: Submitted batch job 2188766, jobscript: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/tmp.gn8ujvzs/snakejob.overlap_with_genome_contexts.132.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul 12 12:25:48 2021]
+Finished job 5.
+7 of 14 steps (50%) done
+[Mon Jul 12 12:25:48 2021]
+Finished job 9.
+8 of 14 steps (57%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-12T122537.949823.snakemake.log

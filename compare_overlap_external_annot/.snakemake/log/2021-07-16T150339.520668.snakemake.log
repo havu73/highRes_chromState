@@ -1,0 +1,64 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	get_colored_excel_enrichment_gw
+	2	overlap_with_genome_contexts_gw
+	5
+
+[Fri Jul 16 15:03:40 2021]
+rule overlap_with_genome_contexts_gw:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/genome_segments_sorted.bed.gz
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/gw_overlap.txt
+    jobid: 12
+    wildcards: model_folder=../../data/hg19/K562/roadmap_published_chromHMM/25_state, fore_or_back=foreground
+
+
+[Fri Jul 16 15:03:40 2021]
+rule overlap_with_genome_contexts_gw:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/genome_segments_sorted.bed.gz
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/gw_overlap.txt
+    jobid: 13
+    wildcards: model_folder=../../data/hg19/K562/roadmap_published_chromHMM/25_state, fore_or_back=background
+
+[Fri Jul 16 15:03:52 2021]
+Finished job 12.
+1 of 5 steps (20%) done
+
+[Fri Jul 16 15:03:52 2021]
+rule get_colored_excel_enrichment_gw:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/gw_overlap.txt
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/gw_overlap.xlsx
+    jobid: 5
+    wildcards: model_folder=../../data/hg19/K562/roadmap_published_chromHMM/25_state, fore_or_back=foreground, TT=gw, overlap_type=overlap
+
+[Fri Jul 16 15:05:07 2021]
+Finished job 13.
+2 of 5 steps (40%) done
+
+[Fri Jul 16 15:05:07 2021]
+rule get_colored_excel_enrichment_gw:
+    input: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/gw_overlap.txt
+    output: ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/gw_overlap.xlsx
+    jobid: 6
+    wildcards: model_folder=../../data/hg19/K562/roadmap_published_chromHMM/25_state, fore_or_back=background, TT=gw, overlap_type=overlap
+
+[Fri Jul 16 15:05:09 2021]
+Finished job 5.
+3 of 5 steps (60%) done
+[Fri Jul 16 15:05:09 2021]
+Finished job 6.
+4 of 5 steps (80%) done
+
+[Fri Jul 16 15:05:09 2021]
+localrule all:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/foreground/gw_overlap.xlsx, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/background/gw_overlap.xlsx, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/gw_overlap.xlsx, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/background/gw_overlap.xlsx, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/gw_overlap.xlsx, ../../data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/gw_overlap.xlsx, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_Fulco19_significant_DE_G_ST6a.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_gasperini19_altScale_664_enhancerGenePairs_ST2B.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_gasperini19_pilot_145_EnhancerGenePairs_ST1B.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S1_discovery_K562_sgrna.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S2_discovery_K562_bin2.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S3_discovery_K562_bin3.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S5_discovery_K562_dhs.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S6_validation_K562_sgrna.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S7_validation_K562_bin2.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S8_validation_K562_bin3.txt
+    jobid: 0
+
+[Fri Jul 16 15:05:09 2021]
+Finished job 0.
+5 of 5 steps (100%) done
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-16T150339.520668.snakemake.log

@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	plot_compare_aic_bic_models_by_chrom
+	2
+
+[Wed Jul 14 11:14:52 2021]
+rule plot_compare_aic_bic_models_by_chrom:
+    input: ../../../model_analysis/K562_hg19/all_mark_model/aic_bic_compare_num_states/train_then_test/aic_bic_by_chrom.txt
+    output: ../../../model_analysis/K562_hg19/all_mark_model/aic_bic_compare_num_states/train_then_test/aic_bic_all_test_chrom.png
+    jobid: 1
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/chromHMM_training/train_big_model/.snakemake/log/2021-07-14T111446.054705.snakemake.log

@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	get_colored_excel_enrichment_gw
+	3
+
+[Wed Jul 14 17:41:40 2021]
+rule get_colored_excel_enrichment_gw:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.xlsx
+    jobid: 1
+    wildcards: model_folder=../../model_analysis/K562_hg19/all_mark_model/state_25/full_model, fore_or_back=fg_against_bg, TT=gw
+
+[Wed Jul 14 17:41:42 2021]
+Finished job 1.
+1 of 3 steps (33%) done
+
+[Wed Jul 14 17:41:42 2021]
+rule get_colored_excel_enrichment_gw:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.txt
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.xlsx
+    jobid: 2
+    wildcards: model_folder=../../model_analysis/K562_hg19/three_mark_model/state_8/full_model, fore_or_back=fg_against_bg, TT=gw
+
+[Wed Jul 14 17:41:44 2021]
+Finished job 2.
+2 of 3 steps (67%) done
+
+[Wed Jul 14 17:41:44 2021]
+localrule all:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.xlsx, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/gw_overlap_against_bg.xlsx, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_Fulco19_significant_DE_G_ST6a.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_gasperini19_altScale_664_enhancerGenePairs_ST2B.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_gasperini19_pilot_145_EnhancerGenePairs_ST1B.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S1_discovery_K562_sgrna.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S2_discovery_K562_bin2.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S3_discovery_K562_bin3.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S5_discovery_K562_dhs.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S6_validation_K562_sgrna.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S7_validation_K562_bin2.txt, ../../model_analysis/K562_hg19/compare_models_recover_crispr_mpra/fg_against_bg/auc_klann21_S8_validation_K562_bin3.txt
+    jobid: 0
+
+[Wed Jul 14 17:41:44 2021]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-14T174139.819552.snakemake.log

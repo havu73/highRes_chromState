@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	plot_histogram_entropy
+	3
+
+[Tue Jul 13 11:27:02 2021]
+rule plot_histogram_entropy:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/plots/entropy_density_gw.png
+    jobid: 1
+    wildcards: num_mark_model=all_mark_model, num_state=25
+
+[Tue Jul 13 11:27:07 2021]
+Finished job 1.
+1 of 3 steps (33%) done
+
+[Tue Jul 13 11:27:07 2021]
+rule plot_histogram_entropy:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/plots/entropy_density_gw.png
+    jobid: 2
+    wildcards: num_mark_model=three_mark_model, num_state=8
+
+[Tue Jul 13 11:27:11 2021]
+Finished job 2.
+2 of 3 steps (67%) done
+
+[Tue Jul 13 11:27:11 2021]
+localrule all:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/plots/entropy_density_gw.png, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/plots/entropy_density_gw.png
+    jobid: 0
+
+[Tue Jul 13 11:27:11 2021]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-13T112700.935051.snakemake.log

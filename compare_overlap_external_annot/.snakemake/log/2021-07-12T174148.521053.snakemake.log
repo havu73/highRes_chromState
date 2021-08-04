@@ -1,0 +1,378 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	30	calculate_entropy_posterior
+	31
+
+[Mon Jul 12 17:41:48 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/POSTERIOR/genome_12_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/POSTERIOR/genome_12_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 11
+    wildcards: num_mark_model=all_mark_model, num_state=12
+
+Submitted job 11 with external jobid 'Submitted batch job 2231610'.
+
+[Mon Jul 12 17:41:48 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/POSTERIOR/genome_3_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/POSTERIOR/genome_3_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 26
+    wildcards: num_mark_model=three_mark_model, num_state=3
+
+Submitted job 26 with external jobid 'Submitted batch job 2231611'.
+
+[Mon Jul 12 17:41:48 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/POSTERIOR/genome_5_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/POSTERIOR/genome_5_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 4
+    wildcards: num_mark_model=all_mark_model, num_state=5
+
+Submitted job 4 with external jobid 'Submitted batch job 2231612'.
+
+[Mon Jul 12 17:41:48 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/POSTERIOR/genome_20_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/POSTERIOR/genome_20_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 19
+    wildcards: num_mark_model=all_mark_model, num_state=20
+
+Submitted job 19 with external jobid 'Submitted batch job 2231613'.
+
+[Mon Jul 12 17:41:48 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/POSTERIOR/genome_13_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/POSTERIOR/genome_13_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 12
+    wildcards: num_mark_model=all_mark_model, num_state=13
+
+Submitted job 12 with external jobid 'Submitted batch job 2231614'.
+
+[Mon Jul 12 17:41:48 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/POSTERIOR/genome_4_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/POSTERIOR/genome_4_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 27
+    wildcards: num_mark_model=three_mark_model, num_state=4
+
+Submitted job 27 with external jobid 'Submitted batch job 2231615'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/POSTERIOR/genome_21_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/POSTERIOR/genome_21_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 20
+    wildcards: num_mark_model=all_mark_model, num_state=21
+
+Submitted job 20 with external jobid 'Submitted batch job 2231616'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/POSTERIOR/genome_6_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/POSTERIOR/genome_6_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 5
+    wildcards: num_mark_model=all_mark_model, num_state=6
+
+Submitted job 5 with external jobid 'Submitted batch job 2231617'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/POSTERIOR/genome_14_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/POSTERIOR/genome_14_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 13
+    wildcards: num_mark_model=all_mark_model, num_state=14
+
+Submitted job 13 with external jobid 'Submitted batch job 2231618'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/POSTERIOR/genome_5_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/POSTERIOR/genome_5_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 28
+    wildcards: num_mark_model=three_mark_model, num_state=5
+
+Submitted job 28 with external jobid 'Submitted batch job 2231619'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/POSTERIOR/genome_7_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/POSTERIOR/genome_7_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 6
+    wildcards: num_mark_model=all_mark_model, num_state=7
+
+Submitted job 6 with external jobid 'Submitted batch job 2231620'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/POSTERIOR/genome_22_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/POSTERIOR/genome_22_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 21
+    wildcards: num_mark_model=all_mark_model, num_state=22
+
+Submitted job 21 with external jobid 'Submitted batch job 2231621'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/POSTERIOR/genome_15_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/POSTERIOR/genome_15_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 14
+    wildcards: num_mark_model=all_mark_model, num_state=15
+
+Submitted job 14 with external jobid 'Submitted batch job 2231622'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/POSTERIOR/genome_6_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/POSTERIOR/genome_6_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 29
+    wildcards: num_mark_model=three_mark_model, num_state=6
+
+Submitted job 29 with external jobid 'Submitted batch job 2231623'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/POSTERIOR/genome_8_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/POSTERIOR/genome_8_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 7
+    wildcards: num_mark_model=all_mark_model, num_state=8
+
+Submitted job 7 with external jobid 'Submitted batch job 2231624'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/POSTERIOR/genome_23_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/POSTERIOR/genome_23_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 22
+    wildcards: num_mark_model=all_mark_model, num_state=23
+
+Submitted job 22 with external jobid 'Submitted batch job 2231625'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/POSTERIOR/genome_4_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/POSTERIOR/genome_4_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 3
+    wildcards: num_mark_model=all_mark_model, num_state=4
+
+Submitted job 3 with external jobid 'Submitted batch job 2231626'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/POSTERIOR/genome_3_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/POSTERIOR/genome_3_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 2
+    wildcards: num_mark_model=all_mark_model, num_state=3
+
+Submitted job 2 with external jobid 'Submitted batch job 2231628'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/POSTERIOR/genome_16_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/POSTERIOR/genome_16_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 15
+    wildcards: num_mark_model=all_mark_model, num_state=16
+
+Submitted job 15 with external jobid 'Submitted batch job 2231629'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/POSTERIOR/genome_7_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/POSTERIOR/genome_7_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 30
+    wildcards: num_mark_model=three_mark_model, num_state=7
+
+Submitted job 30 with external jobid 'Submitted batch job 2231630'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/POSTERIOR/genome_9_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/POSTERIOR/genome_9_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 8
+    wildcards: num_mark_model=all_mark_model, num_state=9
+
+Submitted job 8 with external jobid 'Submitted batch job 2231631'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/genome_24_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/genome_24_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 23
+    wildcards: num_mark_model=all_mark_model, num_state=24
+
+Submitted job 23 with external jobid 'Submitted batch job 2231632'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/POSTERIOR/genome_2_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/POSTERIOR/genome_2_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 1
+    wildcards: num_mark_model=all_mark_model, num_state=2
+
+Submitted job 1 with external jobid 'Submitted batch job 2231633'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/POSTERIOR/genome_17_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/POSTERIOR/genome_17_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 16
+    wildcards: num_mark_model=all_mark_model, num_state=17
+
+Submitted job 16 with external jobid 'Submitted batch job 2231634'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/genome_8_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/genome_8_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 31
+    wildcards: num_mark_model=three_mark_model, num_state=8
+
+Submitted job 31 with external jobid 'Submitted batch job 2231635'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/POSTERIOR/genome_10_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/POSTERIOR/genome_10_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 9
+    wildcards: num_mark_model=all_mark_model, num_state=10
+
+Submitted job 9 with external jobid 'Submitted batch job 2231636'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/genome_25_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/genome_25_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 24
+    wildcards: num_mark_model=all_mark_model, num_state=25
+
+Submitted job 24 with external jobid 'Submitted batch job 2231637'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/POSTERIOR/genome_18_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/POSTERIOR/genome_18_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 17
+    wildcards: num_mark_model=all_mark_model, num_state=18
+
+Submitted job 17 with external jobid 'Submitted batch job 2231638'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/POSTERIOR/genome_11_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/POSTERIOR/genome_11_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 10
+    wildcards: num_mark_model=all_mark_model, num_state=11
+
+Submitted job 10 with external jobid 'Submitted batch job 2231639'.
+
+[Mon Jul 12 17:41:49 2021]
+rule calculate_entropy_posterior:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/POSTERIOR/genome_19_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/POSTERIOR/genome_19_chrX_posterior.txt.gz
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 18
+    wildcards: num_mark_model=all_mark_model, num_state=19
+
+Submitted job 18 with external jobid 'Submitted batch job 2231640'.
+[Mon Jul 12 17:52:36 2021]
+Finished job 4.
+1 of 31 steps (3%) done
+[Mon Jul 12 17:52:50 2021]
+Finished job 29.
+2 of 31 steps (6%) done
+[Mon Jul 12 17:52:51 2021]
+Finished job 1.
+3 of 31 steps (10%) done
+[Mon Jul 12 17:53:02 2021]
+Finished job 3.
+4 of 31 steps (13%) done
+[Mon Jul 12 17:53:14 2021]
+Finished job 2.
+5 of 31 steps (16%) done
+[Mon Jul 12 17:53:25 2021]
+Finished job 26.
+6 of 31 steps (19%) done
+[Mon Jul 12 17:53:25 2021]
+Finished job 27.
+7 of 31 steps (23%) done
+[Mon Jul 12 17:53:25 2021]
+Finished job 28.
+8 of 31 steps (26%) done
+[Mon Jul 12 17:53:26 2021]
+Finished job 30.
+9 of 31 steps (29%) done
+[Mon Jul 12 17:53:37 2021]
+Finished job 6.
+10 of 31 steps (32%) done
+[Mon Jul 12 17:53:38 2021]
+Finished job 9.
+11 of 31 steps (35%) done
+[Mon Jul 12 17:53:49 2021]
+Finished job 11.
+12 of 31 steps (39%) done
+[Mon Jul 12 17:53:50 2021]
+Finished job 15.
+13 of 31 steps (42%) done
+[Mon Jul 12 17:53:50 2021]
+Finished job 8.
+14 of 31 steps (45%) done
+[Mon Jul 12 17:53:50 2021]
+Finished job 10.
+15 of 31 steps (48%) done
+[Mon Jul 12 17:54:00 2021]
+Finished job 7.
+16 of 31 steps (52%) done
+[Mon Jul 12 17:54:01 2021]
+Finished job 16.
+17 of 31 steps (55%) done
+[Mon Jul 12 17:54:01 2021]
+Finished job 18.
+18 of 31 steps (58%) done
+[Mon Jul 12 17:54:11 2021]
+Finished job 12.
+19 of 31 steps (61%) done
+[Mon Jul 12 17:54:11 2021]
+Finished job 20.
+20 of 31 steps (65%) done
+[Mon Jul 12 17:54:11 2021]
+Finished job 13.
+21 of 31 steps (68%) done
+[Mon Jul 12 17:54:11 2021]
+Finished job 21.
+22 of 31 steps (71%) done
+[Mon Jul 12 17:54:11 2021]
+Finished job 14.
+23 of 31 steps (74%) done
+[Mon Jul 12 17:54:12 2021]
+Finished job 17.
+24 of 31 steps (77%) done
+[Mon Jul 12 17:54:22 2021]
+Finished job 19.
+25 of 31 steps (81%) done
+[Mon Jul 12 17:54:22 2021]
+Finished job 22.
+26 of 31 steps (84%) done
+[Mon Jul 12 17:54:23 2021]
+Finished job 24.
+27 of 31 steps (87%) done
+[Mon Jul 12 17:56:23 2021]
+Finished job 5.
+28 of 31 steps (90%) done
+[Mon Jul 12 17:57:03 2021]
+Finished job 23.
+29 of 31 steps (94%) done
+[Mon Jul 12 17:58:43 2021]
+Finished job 31.
+30 of 31 steps (97%) done
+
+[Mon Jul 12 17:58:43 2021]
+localrule all:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chr1.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/entropy/entropy_chrX.txt.gz
+    jobid: 0
+
+[Mon Jul 12 17:58:43 2021]
+Finished job 0.
+31 of 31 steps (100%) done
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-12T174148.521053.snakemake.log

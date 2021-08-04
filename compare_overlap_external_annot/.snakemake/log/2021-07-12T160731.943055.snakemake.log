@@ -1,0 +1,294 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	23	get_posterior_chromHMM
+	24
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/model_12.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/POSTERIOR/genome_12_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/POSTERIOR/genome_12_chrX_posterior.txt.gz
+    jobid: 11
+    wildcards: num_mark_model=all_mark_model, num_state=12
+
+Submitted job 11 with external jobid 'Submitted batch job 2208249'.
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/model_5.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/POSTERIOR/genome_5_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/POSTERIOR/genome_5_chrX_posterior.txt.gz
+    jobid: 4
+    wildcards: num_mark_model=all_mark_model, num_state=5
+
+Submitted job 4 with external jobid 'Submitted batch job 2208250'.
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/model_20.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/POSTERIOR/genome_20_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/POSTERIOR/genome_20_chrX_posterior.txt.gz
+    jobid: 19
+    wildcards: num_mark_model=all_mark_model, num_state=20
+
+Submitted job 19 with external jobid 'Submitted batch job 2208251'.
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/model_13.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/POSTERIOR/genome_13_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/POSTERIOR/genome_13_chrX_posterior.txt.gz
+    jobid: 12
+    wildcards: num_mark_model=all_mark_model, num_state=13
+
+Submitted job 12 with external jobid 'Submitted batch job 2208252'.
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/model_21.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/POSTERIOR/genome_21_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/POSTERIOR/genome_21_chrX_posterior.txt.gz
+    jobid: 20
+    wildcards: num_mark_model=all_mark_model, num_state=21
+
+Submitted job 20 with external jobid 'Submitted batch job 2208253'.
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/model_6.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/POSTERIOR/genome_6_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/POSTERIOR/genome_6_chrX_posterior.txt.gz
+    jobid: 5
+    wildcards: num_mark_model=all_mark_model, num_state=6
+
+Submitted job 5 with external jobid 'Submitted batch job 2208254'.
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/model_14.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/POSTERIOR/genome_14_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/POSTERIOR/genome_14_chrX_posterior.txt.gz
+    jobid: 13
+    wildcards: num_mark_model=all_mark_model, num_state=14
+
+Submitted job 13 with external jobid 'Submitted batch job 2208255'.
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/model_7.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/POSTERIOR/genome_7_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/POSTERIOR/genome_7_chrX_posterior.txt.gz
+    jobid: 6
+    wildcards: num_mark_model=all_mark_model, num_state=7
+
+Submitted job 6 with external jobid 'Submitted batch job 2208257'.
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/model_22.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/POSTERIOR/genome_22_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/POSTERIOR/genome_22_chrX_posterior.txt.gz
+    jobid: 21
+    wildcards: num_mark_model=all_mark_model, num_state=22
+
+Submitted job 21 with external jobid 'Submitted batch job 2208258'.
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/model_15.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/POSTERIOR/genome_15_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/POSTERIOR/genome_15_chrX_posterior.txt.gz
+    jobid: 14
+    wildcards: num_mark_model=all_mark_model, num_state=15
+
+Submitted job 14 with external jobid 'Submitted batch job 2208259'.
+
+[Mon Jul 12 16:07:32 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/model_8.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/POSTERIOR/genome_8_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/POSTERIOR/genome_8_chrX_posterior.txt.gz
+    jobid: 7
+    wildcards: num_mark_model=all_mark_model, num_state=8
+
+Submitted job 7 with external jobid 'Submitted batch job 2208260'.
+
+[Mon Jul 12 16:07:33 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/model_23.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/POSTERIOR/genome_23_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/POSTERIOR/genome_23_chrX_posterior.txt.gz
+    jobid: 22
+    wildcards: num_mark_model=all_mark_model, num_state=23
+
+Submitted job 22 with external jobid 'Submitted batch job 2208261'.
+
+[Mon Jul 12 16:07:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/model_4.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/POSTERIOR/genome_4_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/POSTERIOR/genome_4_chrX_posterior.txt.gz
+    jobid: 3
+    wildcards: num_mark_model=all_mark_model, num_state=4
+
+Submitted job 3 with external jobid 'Submitted batch job 2208263'.
+
+[Mon Jul 12 16:07:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/model_3.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/POSTERIOR/genome_3_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/POSTERIOR/genome_3_chrX_posterior.txt.gz
+    jobid: 2
+    wildcards: num_mark_model=all_mark_model, num_state=3
+
+Submitted job 2 with external jobid 'Submitted batch job 2208264'.
+
+[Mon Jul 12 16:07:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/model_16.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/POSTERIOR/genome_16_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/POSTERIOR/genome_16_chrX_posterior.txt.gz
+    jobid: 15
+    wildcards: num_mark_model=all_mark_model, num_state=16
+
+Submitted job 15 with external jobid 'Submitted batch job 2208265'.
+
+[Mon Jul 12 16:07:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/model_9.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/POSTERIOR/genome_9_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/POSTERIOR/genome_9_chrX_posterior.txt.gz
+    jobid: 8
+    wildcards: num_mark_model=all_mark_model, num_state=9
+
+Submitted job 8 with external jobid 'Submitted batch job 2208266'.
+
+[Mon Jul 12 16:07:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/model_24.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/genome_24_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/genome_24_chrX_posterior.txt.gz
+    jobid: 23
+    wildcards: num_mark_model=all_mark_model, num_state=24
+
+Submitted job 23 with external jobid 'Submitted batch job 2208267'.
+
+[Mon Jul 12 16:07:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/model_2.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/POSTERIOR/genome_2_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/POSTERIOR/genome_2_chrX_posterior.txt.gz
+    jobid: 1
+    wildcards: num_mark_model=all_mark_model, num_state=2
+
+Submitted job 1 with external jobid 'Submitted batch job 2208268'.
+
+[Mon Jul 12 16:07:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/model_17.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/POSTERIOR/genome_17_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/POSTERIOR/genome_17_chrX_posterior.txt.gz
+    jobid: 16
+    wildcards: num_mark_model=all_mark_model, num_state=17
+
+Submitted job 16 with external jobid 'Submitted batch job 2208270'.
+
+[Mon Jul 12 16:07:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/model_10.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/POSTERIOR/genome_10_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/POSTERIOR/genome_10_chrX_posterior.txt.gz
+    jobid: 9
+    wildcards: num_mark_model=all_mark_model, num_state=10
+
+Submitted job 9 with external jobid 'Submitted batch job 2208271'.
+
+[Mon Jul 12 16:07:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/model_18.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/POSTERIOR/genome_18_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/POSTERIOR/genome_18_chrX_posterior.txt.gz
+    jobid: 17
+    wildcards: num_mark_model=all_mark_model, num_state=18
+
+Submitted job 17 with external jobid 'Submitted batch job 2208272'.
+
+[Mon Jul 12 16:07:34 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/model_11.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/POSTERIOR/genome_11_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/POSTERIOR/genome_11_chrX_posterior.txt.gz
+    jobid: 10
+    wildcards: num_mark_model=all_mark_model, num_state=11
+
+Submitted job 10 with external jobid 'Submitted batch job 2208276'.
+
+[Mon Jul 12 16:07:36 2021]
+rule get_posterior_chromHMM:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/model_19.txt
+    output: ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/POSTERIOR/genome_19_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/POSTERIOR/genome_19_chrX_posterior.txt.gz
+    jobid: 18
+    wildcards: num_mark_model=all_mark_model, num_state=19
+
+Submitted job 18 with external jobid 'Submitted batch job 2208277'.
+[Mon Jul 12 16:09:19 2021]
+Finished job 1.
+1 of 24 steps (4%) done
+[Mon Jul 12 16:10:07 2021]
+Finished job 2.
+2 of 24 steps (8%) done
+[Mon Jul 12 16:10:55 2021]
+Finished job 3.
+3 of 24 steps (12%) done
+[Mon Jul 12 16:11:42 2021]
+Finished job 4.
+4 of 24 steps (17%) done
+[Mon Jul 12 16:12:16 2021]
+Finished job 5.
+5 of 24 steps (21%) done
+[Mon Jul 12 16:13:22 2021]
+Finished job 6.
+6 of 24 steps (25%) done
+[Mon Jul 12 16:14:06 2021]
+Finished job 7.
+7 of 24 steps (29%) done
+[Mon Jul 12 16:15:12 2021]
+Finished job 8.
+8 of 24 steps (33%) done
+[Mon Jul 12 16:15:57 2021]
+Finished job 10.
+9 of 24 steps (38%) done
+[Mon Jul 12 16:16:51 2021]
+Finished job 11.
+10 of 24 steps (42%) done
+[Mon Jul 12 16:17:03 2021]
+Finished job 9.
+11 of 24 steps (46%) done
+[Mon Jul 12 16:18:31 2021]
+Finished job 13.
+12 of 24 steps (50%) done
+[Mon Jul 12 16:19:04 2021]
+Finished job 14.
+13 of 24 steps (54%) done
+[Mon Jul 12 16:19:26 2021]
+Finished job 12.
+14 of 24 steps (58%) done
+[Mon Jul 12 16:20:27 2021]
+Finished job 15.
+15 of 24 steps (62%) done
+[Mon Jul 12 16:20:47 2021]
+Finished job 17.
+16 of 24 steps (67%) done
+[Mon Jul 12 16:21:57 2021]
+Finished job 18.
+17 of 24 steps (71%) done
+[Mon Jul 12 16:22:57 2021]
+Finished job 19.
+18 of 24 steps (75%) done
+[Mon Jul 12 16:23:07 2021]
+Finished job 16.
+19 of 24 steps (79%) done
+[Mon Jul 12 16:23:37 2021]
+Finished job 21.
+20 of 24 steps (83%) done
+[Mon Jul 12 16:24:57 2021]
+Finished job 22.
+21 of 24 steps (88%) done
+[Mon Jul 12 16:25:27 2021]
+Finished job 20.
+22 of 24 steps (92%) done
+[Mon Jul 12 16:25:27 2021]
+Finished job 23.
+23 of 24 steps (96%) done
+
+[Mon Jul 12 16:25:27 2021]
+localrule all:
+    input: ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/POSTERIOR/genome_2_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_2/full_model/POSTERIOR/genome_2_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/POSTERIOR/genome_3_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_3/full_model/POSTERIOR/genome_3_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/POSTERIOR/genome_4_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_4/full_model/POSTERIOR/genome_4_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/POSTERIOR/genome_5_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_5/full_model/POSTERIOR/genome_5_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/POSTERIOR/genome_6_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_6/full_model/POSTERIOR/genome_6_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/POSTERIOR/genome_7_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_7/full_model/POSTERIOR/genome_7_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/POSTERIOR/genome_8_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_8/full_model/POSTERIOR/genome_8_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/POSTERIOR/genome_9_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_9/full_model/POSTERIOR/genome_9_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/POSTERIOR/genome_10_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_10/full_model/POSTERIOR/genome_10_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/POSTERIOR/genome_11_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_11/full_model/POSTERIOR/genome_11_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/POSTERIOR/genome_12_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_12/full_model/POSTERIOR/genome_12_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/POSTERIOR/genome_13_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_13/full_model/POSTERIOR/genome_13_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/POSTERIOR/genome_14_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_14/full_model/POSTERIOR/genome_14_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/POSTERIOR/genome_15_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_15/full_model/POSTERIOR/genome_15_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/POSTERIOR/genome_16_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_16/full_model/POSTERIOR/genome_16_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/POSTERIOR/genome_17_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_17/full_model/POSTERIOR/genome_17_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/POSTERIOR/genome_18_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_18/full_model/POSTERIOR/genome_18_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/POSTERIOR/genome_19_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_19/full_model/POSTERIOR/genome_19_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/POSTERIOR/genome_20_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_20/full_model/POSTERIOR/genome_20_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/POSTERIOR/genome_21_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_21/full_model/POSTERIOR/genome_21_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/POSTERIOR/genome_22_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_22/full_model/POSTERIOR/genome_22_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/POSTERIOR/genome_23_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_23/full_model/POSTERIOR/genome_23_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/genome_24_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_24/full_model/POSTERIOR/genome_24_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/genome_25_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/all_mark_model/state_25/full_model/POSTERIOR/genome_25_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/POSTERIOR/genome_2_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_2/full_model/POSTERIOR/genome_2_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/POSTERIOR/genome_3_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_3/full_model/POSTERIOR/genome_3_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/POSTERIOR/genome_4_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_4/full_model/POSTERIOR/genome_4_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/POSTERIOR/genome_5_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_5/full_model/POSTERIOR/genome_5_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/POSTERIOR/genome_6_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_6/full_model/POSTERIOR/genome_6_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/POSTERIOR/genome_7_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_7/full_model/POSTERIOR/genome_7_chrX_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/genome_8_chr1_posterior.txt.gz, ../../model_analysis/K562_hg19/three_mark_model/state_8/full_model/POSTERIOR/genome_8_chrX_posterior.txt.gz
+    jobid: 0
+
+[Mon Jul 12 16:25:27 2021]
+Finished job 0.
+24 of 24 steps (100%) done
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-12T160731.943055.snakemake.log

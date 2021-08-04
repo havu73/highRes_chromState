@@ -1,0 +1,3 @@
+WildcardError in line 16 of /gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile:
+No values given for wildcard 'fore_or_back'.
+  File "/gstore/home/vuh6/source/compare_overlap_external_annot/compare_models_recover_GC.snakefile", line 16, in <module>

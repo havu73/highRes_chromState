@@ -1,0 +1,2219 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	1	calculate_train_test_ROC_precall_against_bg
+	32	get_segment_file_train_test
+	64	overlap_against_background
+	64	overlap_with_genome_contexts
+	32	sort_segment_file
+	194
+
+[Mon Jul 12 12:19:10 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/genome_segments_sorted.bed.gz
+    jobid: 167
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model
+
+Submitted job 167 with external jobid 'Submitted batch job 2188000'.
+
+[Mon Jul 12 12:19:10 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/genome_segments_sorted.bed.gz
+    jobid: 175
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model
+
+Submitted job 175 with external jobid 'Submitted batch job 2188001'.
+
+[Mon Jul 12 12:19:10 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/genome_segments_sorted.bed.gz
+    jobid: 190
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model
+
+Submitted job 190 with external jobid 'Submitted batch job 2188002'.
+
+[Mon Jul 12 12:19:10 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/genome_segments_sorted.bed.gz
+    jobid: 177
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model
+
+Submitted job 177 with external jobid 'Submitted batch job 2188003'.
+
+[Mon Jul 12 12:19:10 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/genome_segments_sorted.bed.gz
+    jobid: 179
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model
+
+Submitted job 179 with external jobid 'Submitted batch job 2188004'.
+
+[Mon Jul 12 12:19:10 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/genome_segments_sorted.bed.gz
+    jobid: 193
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model
+
+Submitted job 193 with external jobid 'Submitted batch job 2188005'.
+
+[Mon Jul 12 12:19:10 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/genome_segments_sorted.bed.gz
+    jobid: 181
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model
+
+Submitted job 181 with external jobid 'Submitted batch job 2188006'.
+
+[Mon Jul 12 12:19:10 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/genome_segments_sorted.bed.gz
+    jobid: 195
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model
+
+Submitted job 195 with external jobid 'Submitted batch job 2188007'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/genome_segments_sorted.bed.gz
+    jobid: 183
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model
+
+Submitted job 183 with external jobid 'Submitted batch job 2188008'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/genome_segments_sorted.bed.gz
+    jobid: 197
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model
+
+Submitted job 197 with external jobid 'Submitted batch job 2188009'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/genome_segments_sorted.bed.gz
+    jobid: 170
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model
+
+Submitted job 170 with external jobid 'Submitted batch job 2188010'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/genome_segments_sorted.bed.gz
+    jobid: 185
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model
+
+Submitted job 185 with external jobid 'Submitted batch job 2188011'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/genome_segments_sorted.bed.gz
+    jobid: 199
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie
+
+Submitted job 199 with external jobid 'Submitted batch job 2188012'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/genome_segments_sorted.bed.gz
+    jobid: 173
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model
+
+Submitted job 173 with external jobid 'Submitted batch job 2188013'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/genome_segments_sorted.bed.gz
+    jobid: 172
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model
+
+Submitted job 172 with external jobid 'Submitted batch job 2188014'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/genome_segments_sorted.bed.gz
+    jobid: 187
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model
+
+Submitted job 187 with external jobid 'Submitted batch job 2188015'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/genome_segments_sorted.bed.gz
+    jobid: 174
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model
+
+Submitted job 174 with external jobid 'Submitted batch job 2188016'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/genome_segments_sorted.bed.gz
+    jobid: 189
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model
+
+Submitted job 189 with external jobid 'Submitted batch job 2188017'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/genome_segments_sorted.bed.gz
+    jobid: 176
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model
+
+Submitted job 176 with external jobid 'Submitted batch job 2188018'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/genome_segments_sorted.bed.gz
+    jobid: 191
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model
+
+Submitted job 191 with external jobid 'Submitted batch job 2188019'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/genome_segments_sorted.bed.gz
+    jobid: 178
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model
+
+Submitted job 178 with external jobid 'Submitted batch job 2188020'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/genome_segments_sorted.bed.gz
+    jobid: 192
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model
+
+Submitted job 192 with external jobid 'Submitted batch job 2188021'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/genome_segments_sorted.bed.gz
+    jobid: 180
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model
+
+Submitted job 180 with external jobid 'Submitted batch job 2188022'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/genome_segments_sorted.bed.gz
+    jobid: 194
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model
+
+Submitted job 194 with external jobid 'Submitted batch job 2188023'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/genome_segments_sorted.bed.gz
+    jobid: 182
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model
+
+Submitted job 182 with external jobid 'Submitted batch job 2188024'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/genome_segments_sorted.bed.gz
+    jobid: 196
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model
+
+Submitted job 196 with external jobid 'Submitted batch job 2188026'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/genome_segments_sorted.bed.gz
+    jobid: 169
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model
+
+Submitted job 169 with external jobid 'Submitted batch job 2188027'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/genome_segments_sorted.bed.gz
+    jobid: 184
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model
+
+Submitted job 184 with external jobid 'Submitted batch job 2188028'.
+
+[Mon Jul 12 12:19:11 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/genome_segments.bed.gz
+    output: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/genome_segments_sorted.bed.gz
+    jobid: 198
+    wildcards: model_folder=/gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state
+
+Submitted job 198 with external jobid 'Submitted batch job 2188029'.
+
+[Mon Jul 12 12:19:12 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/genome_segments_sorted.bed.gz
+    jobid: 171
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model
+
+Submitted job 171 with external jobid 'Submitted batch job 2188030'.
+
+[Mon Jul 12 12:19:12 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/genome_segments_sorted.bed.gz
+    jobid: 186
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model
+
+Submitted job 186 with external jobid 'Submitted batch job 2188031'.
+
+[Mon Jul 12 12:19:12 2021]
+rule sort_segment_file:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/genome_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/genome_segments_sorted.bed.gz
+    jobid: 188
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model
+
+Submitted job 188 with external jobid 'Submitted batch job 2188032'.
+[Mon Jul 12 12:19:20 2021]
+Finished job 167.
+1 of 194 steps (0.52%) done
+
+[Mon Jul 12 12:19:20 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 134
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model
+
+[Mon Jul 12 12:19:20 2021]
+Finished job 193.
+2 of 194 steps (1%) done
+Submitted job 134 with external jobid 'Submitted batch job 2188035'.
+[Mon Jul 12 12:19:20 2021]
+Finished job 195.
+3 of 194 steps (2%) done
+
+[Mon Jul 12 12:19:20 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 160
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model
+
+Submitted job 160 with external jobid 'Submitted batch job 2188037'.
+
+[Mon Jul 12 12:19:20 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 162
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model
+
+Submitted job 162 with external jobid 'Submitted batch job 2188038'.
+[Mon Jul 12 12:19:20 2021]
+Finished job 197.
+4 of 194 steps (2%) done
+
+[Mon Jul 12 12:19:20 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 164
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model
+
+Submitted job 164 with external jobid 'Submitted batch job 2188039'.
+[Mon Jul 12 12:19:21 2021]
+Finished job 170.
+5 of 194 steps (3%) done
+[Mon Jul 12 12:19:21 2021]
+Finished job 173.
+6 of 194 steps (3%) done
+
+[Mon Jul 12 12:19:21 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 136
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model
+
+[Mon Jul 12 12:19:21 2021]
+Finished job 172.
+7 of 194 steps (4%) done
+Submitted job 136 with external jobid 'Submitted batch job 2188040'.
+[Mon Jul 12 12:19:21 2021]
+Finished job 174.
+8 of 194 steps (4%) done
+
+[Mon Jul 12 12:19:21 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 138
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model
+
+Submitted job 138 with external jobid 'Submitted batch job 2188041'.
+
+[Mon Jul 12 12:19:21 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 140
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model
+
+Submitted job 140 with external jobid 'Submitted batch job 2188042'.
+
+[Mon Jul 12 12:19:21 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 139
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model
+
+Submitted job 139 with external jobid 'Submitted batch job 2188043'.
+[Mon Jul 12 12:19:22 2021]
+Finished job 178.
+9 of 194 steps (5%) done
+[Mon Jul 12 12:19:22 2021]
+Finished job 192.
+10 of 194 steps (5%) done
+
+[Mon Jul 12 12:19:22 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 144
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model
+
+[Mon Jul 12 12:19:22 2021]
+Finished job 180.
+11 of 194 steps (6%) done
+Submitted job 144 with external jobid 'Submitted batch job 2188044'.
+[Mon Jul 12 12:19:22 2021]
+Finished job 194.
+12 of 194 steps (6%) done
+
+[Mon Jul 12 12:19:22 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 159
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model
+
+[Mon Jul 12 12:19:22 2021]
+Finished job 182.
+13 of 194 steps (7%) done
+Submitted job 159 with external jobid 'Submitted batch job 2188045'.
+[Mon Jul 12 12:19:22 2021]
+Finished job 196.
+14 of 194 steps (7%) done
+
+[Mon Jul 12 12:19:22 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 146
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model
+
+Submitted job 146 with external jobid 'Submitted batch job 2188046'.
+[Mon Jul 12 12:19:22 2021]
+Finished job 169.
+15 of 194 steps (8%) done
+
+[Mon Jul 12 12:19:22 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 161
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model
+
+Submitted job 161 with external jobid 'Submitted batch job 2188047'.
+[Mon Jul 12 12:19:22 2021]
+Finished job 171.
+16 of 194 steps (8%) done
+
+[Mon Jul 12 12:19:22 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 148
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model
+
+Submitted job 148 with external jobid 'Submitted batch job 2188048'.
+
+[Mon Jul 12 12:19:23 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 163
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model
+
+Submitted job 163 with external jobid 'Submitted batch job 2188049'.
+
+[Mon Jul 12 12:19:23 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 135
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model
+
+Submitted job 135 with external jobid 'Submitted batch job 2188050'.
+
+[Mon Jul 12 12:19:23 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 137
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model
+
+Submitted job 137 with external jobid 'Submitted batch job 2188052'.
+[Mon Jul 12 12:19:34 2021]
+Finished job 175.
+17 of 194 steps (9%) done
+[Mon Jul 12 12:19:34 2021]
+Finished job 190.
+18 of 194 steps (9%) done
+[Mon Jul 12 12:19:34 2021]
+Finished job 177.
+19 of 194 steps (10%) done
+
+[Mon Jul 12 12:19:34 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 141
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model
+
+[Mon Jul 12 12:19:34 2021]
+Finished job 179.
+20 of 194 steps (10%) done
+Submitted job 141 with external jobid 'Submitted batch job 2188060'.
+
+[Mon Jul 12 12:19:34 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 145
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model
+
+Submitted job 145 with external jobid 'Submitted batch job 2188061'.
+
+[Mon Jul 12 12:19:34 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 143
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model
+
+Submitted job 143 with external jobid 'Submitted batch job 2188062'.
+
+[Mon Jul 12 12:19:34 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 156
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model
+
+Submitted job 156 with external jobid 'Submitted batch job 2188063'.
+[Mon Jul 12 12:19:35 2021]
+Finished job 181.
+21 of 194 steps (11%) done
+[Mon Jul 12 12:19:35 2021]
+Finished job 183.
+22 of 194 steps (11%) done
+
+[Mon Jul 12 12:19:35 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 147
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model
+
+[Mon Jul 12 12:19:35 2021]
+Finished job 185.
+23 of 194 steps (12%) done
+Submitted job 147 with external jobid 'Submitted batch job 2188064'.
+[Mon Jul 12 12:19:35 2021]
+Finished job 187.
+24 of 194 steps (12%) done
+
+[Mon Jul 12 12:19:35 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 149
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model
+
+[Mon Jul 12 12:19:35 2021]
+Finished job 189.
+25 of 194 steps (13%) done
+[Mon Jul 12 12:19:35 2021]
+Finished job 176.
+26 of 194 steps (13%) done
+Submitted job 149 with external jobid 'Submitted batch job 2188065'.
+[Mon Jul 12 12:19:35 2021]
+Finished job 191.
+27 of 194 steps (14%) done
+
+[Mon Jul 12 12:19:35 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 151
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model
+
+[Mon Jul 12 12:19:35 2021]
+Finished job 184.
+28 of 194 steps (14%) done
+Submitted job 151 with external jobid 'Submitted batch job 2188066'.
+[Mon Jul 12 12:19:35 2021]
+Finished job 198.
+29 of 194 steps (15%) done
+
+[Mon Jul 12 12:19:35 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 153
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model
+
+Submitted job 153 with external jobid 'Submitted batch job 2188067'.
+
+[Mon Jul 12 12:19:35 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 155
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model
+
+Submitted job 155 with external jobid 'Submitted batch job 2188068'.
+
+[Mon Jul 12 12:19:35 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 142
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model
+
+Submitted job 142 with external jobid 'Submitted batch job 2188069'.
+
+[Mon Jul 12 12:19:36 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 157
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model
+
+Submitted job 157 with external jobid 'Submitted batch job 2188070'.
+
+[Mon Jul 12 12:19:36 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 150
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model
+
+Submitted job 150 with external jobid 'Submitted batch job 2188071'.
+
+[Mon Jul 12 12:19:36 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 165
+    wildcards: model_folder=/gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state
+
+Submitted job 165 with external jobid 'Submitted batch job 2188072'.
+[Mon Jul 12 12:19:36 2021]
+Finished job 186.
+30 of 194 steps (15%) done
+[Mon Jul 12 12:19:36 2021]
+Finished job 188.
+31 of 194 steps (16%) done
+
+[Mon Jul 12 12:19:36 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 152
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model
+
+Submitted job 152 with external jobid 'Submitted batch job 2188073'.
+
+[Mon Jul 12 12:19:36 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 154
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model
+
+Submitted job 154 with external jobid 'Submitted batch job 2188074'.
+[Mon Jul 12 12:20:13 2021]
+Finished job 160.
+32 of 194 steps (16%) done
+[Mon Jul 12 12:20:13 2021]
+Finished job 162.
+33 of 194 steps (17%) done
+
+[Mon Jul 12 12:20:13 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 120
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model, fore_or_back=foreground
+
+Submitted job 120 with external jobid 'Submitted batch job 2188092'.
+
+[Mon Jul 12 12:20:14 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 121
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model, fore_or_back=background
+
+Submitted job 121 with external jobid 'Submitted batch job 2188093'.
+
+[Mon Jul 12 12:20:14 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 124
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model, fore_or_back=foreground
+
+Submitted job 124 with external jobid 'Submitted batch job 2188094'.
+
+[Mon Jul 12 12:20:14 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 125
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model, fore_or_back=background
+
+Submitted job 125 with external jobid 'Submitted batch job 2188095'.
+[Mon Jul 12 12:20:14 2021]
+Finished job 161.
+34 of 194 steps (18%) done
+
+[Mon Jul 12 12:20:14 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 122
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model, fore_or_back=foreground
+
+Submitted job 122 with external jobid 'Submitted batch job 2188096'.
+
+[Mon Jul 12 12:20:14 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 123
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model, fore_or_back=background
+
+Submitted job 123 with external jobid 'Submitted batch job 2188097'.
+[Mon Jul 12 12:20:26 2021]
+Finished job 134.
+35 of 194 steps (18%) done
+
+[Mon Jul 12 12:20:26 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 68
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model, fore_or_back=foreground
+
+Submitted job 68 with external jobid 'Submitted batch job 2188106'.
+
+[Mon Jul 12 12:20:27 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 69
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model, fore_or_back=background
+
+Submitted job 69 with external jobid 'Submitted batch job 2188107'.
+[Mon Jul 12 12:20:27 2021]
+Finished job 164.
+36 of 194 steps (19%) done
+[Mon Jul 12 12:20:27 2021]
+Finished job 136.
+37 of 194 steps (19%) done
+
+[Mon Jul 12 12:20:27 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 129
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model, fore_or_back=background
+
+Submitted job 129 with external jobid 'Submitted batch job 2188108'.
+[Mon Jul 12 12:20:27 2021]
+Finished job 138.
+38 of 194 steps (20%) done
+
+[Mon Jul 12 12:20:27 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 128
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model, fore_or_back=foreground
+
+[Mon Jul 12 12:20:27 2021]
+Finished job 140.
+39 of 194 steps (20%) done
+Submitted job 128 with external jobid 'Submitted batch job 2188109'.
+[Mon Jul 12 12:20:27 2021]
+Finished job 139.
+40 of 194 steps (21%) done
+[Mon Jul 12 12:20:27 2021]
+Finished job 144.
+41 of 194 steps (21%) done
+[Mon Jul 12 12:20:27 2021]
+Finished job 159.
+42 of 194 steps (22%) done
+
+[Mon Jul 12 12:20:27 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 76
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model, fore_or_back=foreground
+
+[Mon Jul 12 12:20:28 2021]
+Finished job 146.
+43 of 194 steps (22%) done
+Submitted job 76 with external jobid 'Submitted batch job 2188110'.
+[Mon Jul 12 12:20:28 2021]
+Finished job 148.
+44 of 194 steps (23%) done
+[Mon Jul 12 12:20:28 2021]
+Finished job 163.
+45 of 194 steps (23%) done
+
+[Mon Jul 12 12:20:28 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 73
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model, fore_or_back=background
+
+Submitted job 73 with external jobid 'Submitted batch job 2188111'.
+
+[Mon Jul 12 12:20:28 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 80
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model, fore_or_back=foreground
+
+[Mon Jul 12 12:20:28 2021]
+Finished job 135.
+46 of 194 steps (24%) done
+[Mon Jul 12 12:20:28 2021]
+Finished job 137.
+47 of 194 steps (24%) done
+Submitted job 80 with external jobid 'Submitted batch job 2188112'.
+
+[Mon Jul 12 12:20:29 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 77
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model, fore_or_back=background
+
+Submitted job 77 with external jobid 'Submitted batch job 2188114'.
+
+[Mon Jul 12 12:20:29 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 81
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model, fore_or_back=background
+
+Submitted job 81 with external jobid 'Submitted batch job 2188115'.
+
+[Mon Jul 12 12:20:29 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 72
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model, fore_or_back=foreground
+
+Submitted job 72 with external jobid 'Submitted batch job 2188116'.
+
+[Mon Jul 12 12:20:29 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 78
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model, fore_or_back=foreground
+
+Submitted job 78 with external jobid 'Submitted batch job 2188117'.
+
+[Mon Jul 12 12:20:29 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 79
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_7/full_model, fore_or_back=background
+
+Submitted job 79 with external jobid 'Submitted batch job 2188118'.
+
+[Mon Jul 12 12:20:29 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 88
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model, fore_or_back=foreground
+
+Submitted job 88 with external jobid 'Submitted batch job 2188119'.
+
+[Mon Jul 12 12:20:30 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 118
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model, fore_or_back=foreground
+
+Submitted job 118 with external jobid 'Submitted batch job 2188120'.
+
+[Mon Jul 12 12:20:30 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 92
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model, fore_or_back=foreground
+
+Submitted job 92 with external jobid 'Submitted batch job 2188121'.
+
+[Mon Jul 12 12:20:30 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 89
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model, fore_or_back=background
+
+Submitted job 89 with external jobid 'Submitted batch job 2188122'.
+
+[Mon Jul 12 12:20:30 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 119
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model, fore_or_back=background
+
+Submitted job 119 with external jobid 'Submitted batch job 2188123'.
+
+[Mon Jul 12 12:20:30 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 96
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model, fore_or_back=foreground
+
+Submitted job 96 with external jobid 'Submitted batch job 2188124'.
+
+[Mon Jul 12 12:20:30 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 126
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model, fore_or_back=foreground
+
+Submitted job 126 with external jobid 'Submitted batch job 2188125'.
+
+[Mon Jul 12 12:20:31 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 93
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model, fore_or_back=background
+
+Submitted job 93 with external jobid 'Submitted batch job 2188126'.
+
+[Mon Jul 12 12:20:31 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 97
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model, fore_or_back=background
+
+Submitted job 97 with external jobid 'Submitted batch job 2188127'.
+
+[Mon Jul 12 12:20:31 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 127
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model, fore_or_back=background
+
+Submitted job 127 with external jobid 'Submitted batch job 2188128'.
+
+[Mon Jul 12 12:20:31 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 70
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model, fore_or_back=foreground
+
+Submitted job 70 with external jobid 'Submitted batch job 2188129'.
+
+[Mon Jul 12 12:20:31 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 74
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model, fore_or_back=foreground
+
+Submitted job 74 with external jobid 'Submitted batch job 2188130'.
+
+[Mon Jul 12 12:20:33 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 71
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_3/full_model, fore_or_back=background
+
+Submitted job 71 with external jobid 'Submitted batch job 2188132'.
+
+[Mon Jul 12 12:20:33 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 75
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_5/full_model, fore_or_back=background
+
+Submitted job 75 with external jobid 'Submitted batch job 2188133'.
+[Mon Jul 12 12:20:39 2021]
+Finished job 141.
+48 of 194 steps (25%) done
+
+[Mon Jul 12 12:20:40 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 82
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model, fore_or_back=foreground
+
+[Mon Jul 12 12:20:40 2021]
+Finished job 145.
+49 of 194 steps (25%) done
+[Mon Jul 12 12:20:40 2021]
+Finished job 143.
+50 of 194 steps (26%) done
+[Mon Jul 12 12:20:40 2021]
+Finished job 156.
+51 of 194 steps (26%) done
+[Mon Jul 12 12:20:40 2021]
+Finished job 147.
+52 of 194 steps (27%) done
+Submitted job 82 with external jobid 'Submitted batch job 2188136'.
+[Mon Jul 12 12:20:40 2021]
+Finished job 149.
+53 of 194 steps (27%) done
+
+[Mon Jul 12 12:20:40 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 83
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model, fore_or_back=background
+
+Submitted job 83 with external jobid 'Submitted batch job 2188137'.
+[Mon Jul 12 12:20:40 2021]
+Finished job 151.
+54 of 194 steps (28%) done
+
+[Mon Jul 12 12:20:40 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 95
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model, fore_or_back=background
+
+[Mon Jul 12 12:20:40 2021]
+Finished job 153.
+55 of 194 steps (28%) done
+Submitted job 95 with external jobid 'Submitted batch job 2188138'.
+
+[Mon Jul 12 12:20:40 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 99
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model, fore_or_back=background
+
+Submitted job 99 with external jobid 'Submitted batch job 2188139'.
+
+[Mon Jul 12 12:20:40 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 103
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model, fore_or_back=background
+
+Submitted job 103 with external jobid 'Submitted batch job 2188140'.
+
+[Mon Jul 12 12:20:40 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 112
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model, fore_or_back=foreground
+
+Submitted job 112 with external jobid 'Submitted batch job 2188141'.
+
+[Mon Jul 12 12:20:40 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 86
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model, fore_or_back=foreground
+
+Submitted job 86 with external jobid 'Submitted batch job 2188142'.
+
+[Mon Jul 12 12:20:40 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 90
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model, fore_or_back=foreground
+
+[Mon Jul 12 12:20:40 2021]
+Finished job 155.
+56 of 194 steps (29%) done
+[Mon Jul 12 12:20:41 2021]
+Finished job 142.
+57 of 194 steps (29%) done
+[Mon Jul 12 12:20:41 2021]
+Finished job 157.
+58 of 194 steps (30%) done
+[Mon Jul 12 12:20:41 2021]
+Finished job 165.
+59 of 194 steps (30%) done
+[Mon Jul 12 12:20:41 2021]
+Finished job 152.
+60 of 194 steps (31%) done
+[Mon Jul 12 12:20:41 2021]
+Finished job 154.
+61 of 194 steps (31%) done
+Submitted job 90 with external jobid 'Submitted batch job 2188144'.
+
+[Mon Jul 12 12:20:41 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 113
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model, fore_or_back=background
+
+Submitted job 113 with external jobid 'Submitted batch job 2188145'.
+
+[Mon Jul 12 12:20:41 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 102
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model, fore_or_back=foreground
+
+Submitted job 102 with external jobid 'Submitted batch job 2188146'.
+
+[Mon Jul 12 12:20:41 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 87
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model, fore_or_back=background
+
+Submitted job 87 with external jobid 'Submitted batch job 2188147'.
+
+[Mon Jul 12 12:20:41 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 94
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model, fore_or_back=foreground
+
+Submitted job 94 with external jobid 'Submitted batch job 2188148'.
+
+[Mon Jul 12 12:20:41 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 91
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model, fore_or_back=background
+
+Submitted job 91 with external jobid 'Submitted batch job 2188149'.
+
+[Mon Jul 12 12:20:41 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 98
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model, fore_or_back=foreground
+
+Submitted job 98 with external jobid 'Submitted batch job 2188150'.
+
+[Mon Jul 12 12:20:41 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 106
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model, fore_or_back=foreground
+
+Submitted job 106 with external jobid 'Submitted batch job 2188151'.
+
+[Mon Jul 12 12:20:41 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 110
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model, fore_or_back=foreground
+
+Submitted job 110 with external jobid 'Submitted batch job 2188153'.
+
+[Mon Jul 12 12:20:43 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 107
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model, fore_or_back=background
+
+Submitted job 107 with external jobid 'Submitted batch job 2188154'.
+
+[Mon Jul 12 12:20:43 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 84
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model, fore_or_back=foreground
+
+Submitted job 84 with external jobid 'Submitted batch job 2188155'.
+
+[Mon Jul 12 12:20:43 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 114
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model, fore_or_back=foreground
+
+Submitted job 114 with external jobid 'Submitted batch job 2188156'.
+
+[Mon Jul 12 12:20:44 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 111
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model, fore_or_back=background
+
+Submitted job 111 with external jobid 'Submitted batch job 2188157'.
+
+[Mon Jul 12 12:20:44 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 85
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model, fore_or_back=background
+
+Submitted job 85 with external jobid 'Submitted batch job 2188158'.
+
+[Mon Jul 12 12:20:44 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 115
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model, fore_or_back=background
+
+Submitted job 115 with external jobid 'Submitted batch job 2188159'.
+
+[Mon Jul 12 12:20:44 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 130
+    wildcards: model_folder=/gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state, fore_or_back=foreground
+
+Submitted job 130 with external jobid 'Submitted batch job 2188160'.
+
+[Mon Jul 12 12:20:44 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 104
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model, fore_or_back=foreground
+
+Submitted job 104 with external jobid 'Submitted batch job 2188161'.
+
+[Mon Jul 12 12:20:44 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 131
+    wildcards: model_folder=/gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state, fore_or_back=background
+
+Submitted job 131 with external jobid 'Submitted batch job 2188162'.
+
+[Mon Jul 12 12:20:44 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 108
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model, fore_or_back=foreground
+
+Submitted job 108 with external jobid 'Submitted batch job 2188163'.
+
+[Mon Jul 12 12:20:44 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 105
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model, fore_or_back=background
+
+Submitted job 105 with external jobid 'Submitted batch job 2188164'.
+
+[Mon Jul 12 12:20:44 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 109
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model, fore_or_back=background
+
+Submitted job 109 with external jobid 'Submitted batch job 2188165'.
+[Mon Jul 12 12:20:55 2021]
+Finished job 124.
+62 of 194 steps (32%) done
+[Mon Jul 12 12:20:55 2021]
+Finished job 122.
+63 of 194 steps (32%) done
+[Mon Jul 12 12:21:11 2021]
+Finished job 120.
+64 of 194 steps (33%) done
+[Mon Jul 12 12:21:11 2021]
+Finished job 150.
+65 of 194 steps (34%) done
+
+[Mon Jul 12 12:21:11 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 100
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model, fore_or_back=foreground
+
+Submitted job 100 with external jobid 'Submitted batch job 2188185'.
+
+[Mon Jul 12 12:21:11 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 101
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_18/full_model, fore_or_back=background
+
+Submitted job 101 with external jobid 'Submitted batch job 2188186'.
+[Mon Jul 12 12:21:12 2021]
+Finished job 118.
+66 of 194 steps (34%) done
+[Mon Jul 12 12:21:12 2021]
+Finished job 126.
+67 of 194 steps (35%) done
+[Mon Jul 12 12:21:13 2021]
+Finished job 70.
+68 of 194 steps (35%) done
+[Mon Jul 12 12:21:25 2021]
+Finished job 82.
+69 of 194 steps (36%) done
+[Mon Jul 12 12:21:25 2021]
+Finished job 112.
+70 of 194 steps (36%) done
+[Mon Jul 12 12:21:25 2021]
+Finished job 90.
+71 of 194 steps (37%) done
+[Mon Jul 12 12:21:26 2021]
+Finished job 102.
+72 of 194 steps (37%) done
+[Mon Jul 12 12:21:26 2021]
+Finished job 94.
+73 of 194 steps (38%) done
+[Mon Jul 12 12:21:26 2021]
+Finished job 98.
+74 of 194 steps (38%) done
+[Mon Jul 12 12:21:26 2021]
+Finished job 106.
+75 of 194 steps (39%) done
+[Mon Jul 12 12:21:26 2021]
+Finished job 68.
+76 of 194 steps (39%) done
+[Mon Jul 12 12:21:27 2021]
+Finished job 128.
+77 of 194 steps (40%) done
+[Mon Jul 12 12:21:27 2021]
+Finished job 76.
+78 of 194 steps (40%) done
+[Mon Jul 12 12:21:27 2021]
+Finished job 80.
+79 of 194 steps (41%) done
+[Mon Jul 12 12:21:28 2021]
+Finished job 72.
+80 of 194 steps (41%) done
+[Mon Jul 12 12:21:28 2021]
+Finished job 78.
+81 of 194 steps (42%) done
+[Mon Jul 12 12:21:28 2021]
+Finished job 88.
+82 of 194 steps (42%) done
+[Mon Jul 12 12:21:28 2021]
+Finished job 92.
+83 of 194 steps (43%) done
+[Mon Jul 12 12:21:28 2021]
+Finished job 96.
+84 of 194 steps (43%) done
+[Mon Jul 12 12:21:29 2021]
+Finished job 110.
+85 of 194 steps (44%) done
+[Mon Jul 12 12:21:29 2021]
+Finished job 84.
+86 of 194 steps (44%) done
+[Mon Jul 12 12:21:29 2021]
+Finished job 114.
+87 of 194 steps (45%) done
+[Mon Jul 12 12:21:30 2021]
+Finished job 130.
+88 of 194 steps (45%) done
+[Mon Jul 12 12:21:30 2021]
+Finished job 104.
+89 of 194 steps (46%) done
+[Mon Jul 12 12:21:30 2021]
+Finished job 108.
+90 of 194 steps (46%) done
+[Mon Jul 12 12:21:40 2021]
+Finished job 86.
+91 of 194 steps (47%) done
+[Mon Jul 12 12:21:42 2021]
+Finished job 74.
+92 of 194 steps (47%) done
+[Mon Jul 12 12:21:53 2021]
+Finished job 100.
+93 of 194 steps (48%) done
+[Mon Jul 12 12:23:12 2021]
+Finished job 199.
+94 of 194 steps (48%) done
+
+[Mon Jul 12 12:23:12 2021]
+rule get_segment_file_train_test:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/genome_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/train_segments_sorted.bed.gz, /gstore/home/vuh6/model_analysis/test_segments_sorted.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/test_segments.bed.gz
+    jobid: 166
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie
+
+Submitted job 166 with external jobid 'Submitted batch job 2188544'.
+[Mon Jul 12 12:23:38 2021]
+Finished job 121.
+95 of 194 steps (49%) done
+[Mon Jul 12 12:23:38 2021]
+Finished job 125.
+96 of 194 steps (49%) done
+[Mon Jul 12 12:23:38 2021]
+Finished job 123.
+97 of 194 steps (50%) done
+
+[Mon Jul 12 12:23:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 54
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model, TT=train
+
+Submitted job 54 with external jobid 'Submitted batch job 2188563'.
+
+[Mon Jul 12 12:23:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 55
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_4/full_model, TT=test
+
+Submitted job 55 with external jobid 'Submitted batch job 2188564'.
+
+[Mon Jul 12 12:23:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 56
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model, TT=train
+
+Submitted job 56 with external jobid 'Submitted batch job 2188565'.
+
+[Mon Jul 12 12:23:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 57
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_5/full_model, TT=test
+
+Submitted job 57 with external jobid 'Submitted batch job 2188566'.
+
+[Mon Jul 12 12:23:38 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 58
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model, TT=train
+
+Submitted job 58 with external jobid 'Submitted batch job 2188567'.
+
+[Mon Jul 12 12:23:39 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 59
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_6/full_model, TT=test
+
+Submitted job 59 with external jobid 'Submitted batch job 2188568'.
+[Mon Jul 12 12:23:50 2021]
+Finished job 54.
+98 of 194 steps (51%) done
+[Mon Jul 12 12:23:50 2021]
+Finished job 55.
+99 of 194 steps (51%) done
+[Mon Jul 12 12:23:50 2021]
+Finished job 56.
+100 of 194 steps (52%) done
+[Mon Jul 12 12:23:50 2021]
+Finished job 57.
+101 of 194 steps (52%) done
+[Mon Jul 12 12:23:50 2021]
+Finished job 58.
+102 of 194 steps (53%) done
+[Mon Jul 12 12:23:50 2021]
+Finished job 59.
+103 of 194 steps (53%) done
+[Mon Jul 12 12:23:51 2021]
+Finished job 129.
+104 of 194 steps (54%) done
+
+[Mon Jul 12 12:23:51 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 62
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model, TT=train
+
+Submitted job 62 with external jobid 'Submitted batch job 2188576'.
+
+[Mon Jul 12 12:23:51 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 63
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_8/full_model, TT=test
+
+Submitted job 63 with external jobid 'Submitted batch job 2188577'.
+[Mon Jul 12 12:24:03 2021]
+Finished job 62.
+105 of 194 steps (54%) done
+[Mon Jul 12 12:24:03 2021]
+Finished job 63.
+106 of 194 steps (55%) done
+[Mon Jul 12 12:24:03 2021]
+Finished job 83.
+107 of 194 steps (55%) done
+
+[Mon Jul 12 12:24:03 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 16
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model, TT=train
+
+Submitted job 16 with external jobid 'Submitted batch job 2188586'.
+
+[Mon Jul 12 12:24:03 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 17
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_9/full_model, TT=test
+
+Submitted job 17 with external jobid 'Submitted batch job 2188587'.
+[Mon Jul 12 12:24:04 2021]
+Finished job 91.
+108 of 194 steps (56%) done
+
+[Mon Jul 12 12:24:04 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 24
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model, TT=train
+
+Submitted job 24 with external jobid 'Submitted batch job 2188589'.
+[Mon Jul 12 12:24:04 2021]
+Finished job 69.
+109 of 194 steps (56%) done
+
+[Mon Jul 12 12:24:04 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 25
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_13/full_model, TT=test
+
+[Mon Jul 12 12:24:04 2021]
+Finished job 73.
+110 of 194 steps (57%) done
+Submitted job 25 with external jobid 'Submitted batch job 2188590'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 6
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model, TT=train
+
+[Mon Jul 12 12:24:05 2021]
+Finished job 81.
+111 of 194 steps (57%) done
+[Mon Jul 12 12:24:05 2021]
+Finished job 89.
+112 of 194 steps (58%) done
+Submitted job 6 with external jobid 'Submitted batch job 2188591'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 7
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_4/full_model, TT=test
+
+[Mon Jul 12 12:24:05 2021]
+Finished job 119.
+113 of 194 steps (58%) done
+Submitted job 7 with external jobid 'Submitted batch job 2188592'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 2
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model, TT=train
+
+[Mon Jul 12 12:24:05 2021]
+Finished job 93.
+114 of 194 steps (59%) done
+Submitted job 2 with external jobid 'Submitted batch job 2188593'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 3
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_2/full_model, TT=test
+
+[Mon Jul 12 12:24:05 2021]
+Finished job 97.
+115 of 194 steps (59%) done
+Submitted job 3 with external jobid 'Submitted batch job 2188594'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 26
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model, TT=train
+
+Submitted job 26 with external jobid 'Submitted batch job 2188595'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 27
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_14/full_model, TT=test
+
+Submitted job 27 with external jobid 'Submitted batch job 2188596'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 14
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model, TT=train
+
+Submitted job 14 with external jobid 'Submitted batch job 2188597'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 22
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model, TT=train
+
+Submitted job 22 with external jobid 'Submitted batch job 2188598'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 52
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model, TT=train
+
+Submitted job 52 with external jobid 'Submitted batch job 2188599'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 15
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_8/full_model, TT=test
+
+Submitted job 15 with external jobid 'Submitted batch job 2188600'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 23
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_12/full_model, TT=test
+
+Submitted job 23 with external jobid 'Submitted batch job 2188601'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 53
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_3/full_model, TT=test
+
+Submitted job 53 with external jobid 'Submitted batch job 2188602'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 30
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model, TT=train
+
+Submitted job 30 with external jobid 'Submitted batch job 2188603'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 31
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_16/full_model, TT=test
+
+Submitted job 31 with external jobid 'Submitted batch job 2188604'.
+[Mon Jul 12 12:24:05 2021]
+Finished job 127.
+116 of 194 steps (60%) done
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 60
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model, TT=train
+
+Submitted job 60 with external jobid 'Submitted batch job 2188606'.
+
+[Mon Jul 12 12:24:05 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 61
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/three_mark_model/state_7/full_model, TT=test
+
+Submitted job 61 with external jobid 'Submitted batch job 2188608'.
+[Mon Jul 12 12:24:06 2021]
+Finished job 107.
+117 of 194 steps (60%) done
+
+[Mon Jul 12 12:24:06 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 41
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model, TT=test
+
+Submitted job 41 with external jobid 'Submitted batch job 2188612'.
+[Mon Jul 12 12:24:06 2021]
+Finished job 85.
+118 of 194 steps (61%) done
+
+[Mon Jul 12 12:24:06 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 40
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_21/full_model, TT=train
+
+Submitted job 40 with external jobid 'Submitted batch job 2188615'.
+[Mon Jul 12 12:24:06 2021]
+Finished job 131.
+119 of 194 steps (61%) done
+
+[Mon Jul 12 12:24:06 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 19
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model, TT=test
+
+Submitted job 19 with external jobid 'Submitted batch job 2188619'.
+[Mon Jul 12 12:24:06 2021]
+Finished job 109.
+120 of 194 steps (62%) done
+
+[Mon Jul 12 12:24:06 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 64
+    wildcards: model_folder=/gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state, TT=train
+
+Submitted job 64 with external jobid 'Submitted batch job 2188626'.
+
+[Mon Jul 12 12:24:06 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 65
+    wildcards: model_folder=/gstore/home/vuh6/data/hg19/K562/roadmap_published_chromHMM/25_state, TT=test
+
+Submitted job 65 with external jobid 'Submitted batch job 2188630'.
+
+[Mon Jul 12 12:24:06 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 18
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_10/full_model, TT=train
+
+Submitted job 18 with external jobid 'Submitted batch job 2188632'.
+
+[Mon Jul 12 12:24:06 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 42
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model, TT=train
+
+Submitted job 42 with external jobid 'Submitted batch job 2188635'.
+
+[Mon Jul 12 12:24:06 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 43
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_22/full_model, TT=test
+
+Submitted job 43 with external jobid 'Submitted batch job 2188637'.
+[Mon Jul 12 12:24:16 2021]
+Finished job 16.
+121 of 194 steps (62%) done
+[Mon Jul 12 12:24:16 2021]
+Finished job 17.
+122 of 194 steps (63%) done
+[Mon Jul 12 12:24:16 2021]
+Finished job 24.
+123 of 194 steps (63%) done
+[Mon Jul 12 12:24:16 2021]
+Finished job 25.
+124 of 194 steps (64%) done
+[Mon Jul 12 12:24:17 2021]
+Finished job 6.
+125 of 194 steps (64%) done
+[Mon Jul 12 12:24:17 2021]
+Finished job 7.
+126 of 194 steps (65%) done
+[Mon Jul 12 12:24:17 2021]
+Finished job 2.
+127 of 194 steps (65%) done
+[Mon Jul 12 12:24:17 2021]
+Finished job 3.
+128 of 194 steps (66%) done
+[Mon Jul 12 12:24:17 2021]
+Finished job 26.
+129 of 194 steps (66%) done
+[Mon Jul 12 12:24:17 2021]
+Finished job 27.
+130 of 194 steps (67%) done
+[Mon Jul 12 12:24:17 2021]
+Finished job 14.
+131 of 194 steps (68%) done
+[Mon Jul 12 12:24:17 2021]
+Finished job 22.
+132 of 194 steps (68%) done
+[Mon Jul 12 12:24:18 2021]
+Finished job 52.
+133 of 194 steps (69%) done
+[Mon Jul 12 12:24:18 2021]
+Finished job 15.
+134 of 194 steps (69%) done
+[Mon Jul 12 12:24:18 2021]
+Finished job 23.
+135 of 194 steps (70%) done
+[Mon Jul 12 12:24:18 2021]
+Finished job 53.
+136 of 194 steps (70%) done
+[Mon Jul 12 12:24:18 2021]
+Finished job 30.
+137 of 194 steps (71%) done
+[Mon Jul 12 12:24:18 2021]
+Finished job 31.
+138 of 194 steps (71%) done
+[Mon Jul 12 12:24:18 2021]
+Finished job 60.
+139 of 194 steps (72%) done
+[Mon Jul 12 12:24:18 2021]
+Finished job 61.
+140 of 194 steps (72%) done
+[Mon Jul 12 12:24:18 2021]
+Finished job 41.
+141 of 194 steps (73%) done
+[Mon Jul 12 12:24:19 2021]
+Finished job 40.
+142 of 194 steps (73%) done
+[Mon Jul 12 12:24:19 2021]
+Finished job 19.
+143 of 194 steps (74%) done
+[Mon Jul 12 12:24:19 2021]
+Finished job 95.
+144 of 194 steps (74%) done
+
+[Mon Jul 12 12:24:19 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 28
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model, TT=train
+
+[Mon Jul 12 12:24:19 2021]
+Finished job 99.
+145 of 194 steps (75%) done
+Submitted job 28 with external jobid 'Submitted batch job 2188651'.
+
+[Mon Jul 12 12:24:19 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 29
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_15/full_model, TT=test
+
+[Mon Jul 12 12:24:19 2021]
+Finished job 103.
+146 of 194 steps (75%) done
+[Mon Jul 12 12:24:19 2021]
+Finished job 113.
+147 of 194 steps (76%) done
+Submitted job 29 with external jobid 'Submitted batch job 2188653'.
+[Mon Jul 12 12:24:19 2021]
+Finished job 87.
+148 of 194 steps (76%) done
+
+[Mon Jul 12 12:24:19 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 36
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model, TT=train
+
+Submitted job 36 with external jobid 'Submitted batch job 2188654'.
+
+[Mon Jul 12 12:24:19 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 37
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_19/full_model, TT=test
+
+Submitted job 37 with external jobid 'Submitted batch job 2188655'.
+
+[Mon Jul 12 12:24:19 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 46
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model, TT=train
+
+Submitted job 46 with external jobid 'Submitted batch job 2188656'.
+
+[Mon Jul 12 12:24:19 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 32
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model, TT=train
+
+Submitted job 32 with external jobid 'Submitted batch job 2188657'.
+
+[Mon Jul 12 12:24:19 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 47
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_24/full_model, TT=test
+
+Submitted job 47 with external jobid 'Submitted batch job 2188658'.
+
+[Mon Jul 12 12:24:19 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 33
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_17/full_model, TT=test
+
+Submitted job 33 with external jobid 'Submitted batch job 2188659'.
+
+[Mon Jul 12 12:24:19 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 20
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model, TT=train
+
+Submitted job 20 with external jobid 'Submitted batch job 2188660'.
+
+[Mon Jul 12 12:24:19 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 21
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_11/full_model, TT=test
+
+Submitted job 21 with external jobid 'Submitted batch job 2188661'.
+[Mon Jul 12 12:24:20 2021]
+Finished job 77.
+149 of 194 steps (77%) done
+
+[Mon Jul 12 12:24:20 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 11
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model, TT=test
+
+Submitted job 11 with external jobid 'Submitted batch job 2188666'.
+[Mon Jul 12 12:24:20 2021]
+Finished job 111.
+150 of 194 steps (77%) done
+
+[Mon Jul 12 12:24:20 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 10
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_6/full_model, TT=train
+
+Submitted job 10 with external jobid 'Submitted batch job 2188668'.
+[Mon Jul 12 12:24:20 2021]
+Finished job 115.
+151 of 194 steps (78%) done
+
+[Mon Jul 12 12:24:20 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 49
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model, TT=test
+
+Submitted job 49 with external jobid 'Submitted batch job 2188669'.
+
+[Mon Jul 12 12:24:20 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 44
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model, TT=train
+
+[Mon Jul 12 12:24:20 2021]
+Finished job 64.
+152 of 194 steps (78%) done
+Submitted job 44 with external jobid 'Submitted batch job 2188670'.
+
+[Mon Jul 12 12:24:20 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 45
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_23/full_model, TT=test
+
+[Mon Jul 12 12:24:20 2021]
+Finished job 65.
+153 of 194 steps (79%) done
+[Mon Jul 12 12:24:20 2021]
+Finished job 18.
+154 of 194 steps (79%) done
+Submitted job 45 with external jobid 'Submitted batch job 2188671'.
+
+[Mon Jul 12 12:24:20 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 48
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_25/full_model, TT=train
+
+Submitted job 48 with external jobid 'Submitted batch job 2188672'.
+[Mon Jul 12 12:24:21 2021]
+Finished job 42.
+155 of 194 steps (80%) done
+[Mon Jul 12 12:24:21 2021]
+Finished job 43.
+156 of 194 steps (80%) done
+[Mon Jul 12 12:24:31 2021]
+Finished job 28.
+157 of 194 steps (81%) done
+[Mon Jul 12 12:24:31 2021]
+Finished job 29.
+158 of 194 steps (81%) done
+[Mon Jul 12 12:24:31 2021]
+Finished job 36.
+159 of 194 steps (82%) done
+[Mon Jul 12 12:24:31 2021]
+Finished job 37.
+160 of 194 steps (82%) done
+[Mon Jul 12 12:24:31 2021]
+Finished job 46.
+161 of 194 steps (83%) done
+[Mon Jul 12 12:24:31 2021]
+Finished job 32.
+162 of 194 steps (84%) done
+[Mon Jul 12 12:24:31 2021]
+Finished job 47.
+163 of 194 steps (84%) done
+[Mon Jul 12 12:24:31 2021]
+Finished job 33.
+164 of 194 steps (85%) done
+[Mon Jul 12 12:24:31 2021]
+Finished job 20.
+165 of 194 steps (85%) done
+[Mon Jul 12 12:24:31 2021]
+Finished job 21.
+166 of 194 steps (86%) done
+[Mon Jul 12 12:24:32 2021]
+Finished job 11.
+167 of 194 steps (86%) done
+[Mon Jul 12 12:24:32 2021]
+Finished job 10.
+168 of 194 steps (87%) done
+[Mon Jul 12 12:24:32 2021]
+Finished job 49.
+169 of 194 steps (87%) done
+[Mon Jul 12 12:24:32 2021]
+Finished job 44.
+170 of 194 steps (88%) done
+[Mon Jul 12 12:24:32 2021]
+Finished job 45.
+171 of 194 steps (88%) done
+[Mon Jul 12 12:24:32 2021]
+Finished job 48.
+172 of 194 steps (89%) done
+[Mon Jul 12 12:24:32 2021]
+Finished job 166.
+173 of 194 steps (89%) done
+
+[Mon Jul 12 12:24:32 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/test_overlap.txt
+    jobid: 133
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie, fore_or_back=background
+
+Submitted job 133 with external jobid 'Submitted batch job 2188719'.
+
+[Mon Jul 12 12:24:32 2021]
+rule overlap_with_genome_contexts:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/train_segments.bed.gz, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/test_segments.bed.gz
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/test_overlap.txt
+    jobid: 132
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie, fore_or_back=foreground
+
+Submitted job 132 with external jobid 'Submitted batch job 2188720'.
+[Mon Jul 12 12:24:33 2021]
+Finished job 105.
+174 of 194 steps (90%) done
+
+[Mon Jul 12 12:24:33 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/background/train_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/fg_against_bg/train_overlap_against_bg.txt
+    jobid: 38
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model, TT=train
+
+Submitted job 38 with external jobid 'Submitted batch job 2188722'.
+
+[Mon Jul 12 12:24:33 2021]
+rule overlap_against_background:
+    input: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/foreground/test_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/background/test_overlap.txt
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model/overlap_crispr_mpra/fg_against_bg/test_overlap_against_bg.txt
+    jobid: 39
+    wildcards: model_folder=/gstore/home/vuh6/model_analysis/K562_hg19/all_mark_model/state_20/full_model, TT=test
+
+Submitted job 39 with external jobid 'Submitted batch job 2188723'.
+[Mon Jul 12 12:24:43 2021]
+Error in rule overlap_with_genome_contexts:
+    jobid: 133
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/test_overlap.txt
+    shell:
+        
+		java -jar /gstore/home/vuh6/program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/train_segments.bed.gz /gstore/home/vuh6/data/hg19/K562/COORD_CRISPR_MPRA_DATA/for_enrichment/background /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/train_overlap
+		java -jar /gstore/home/vuh6/program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/test_segments.bed.gz /gstore/home/vuh6/data/hg19/K562/COORD_CRISPR_MPRA_DATA/for_enrichment/background /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/background/test_overlap
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 2188719
+
+Error executing rule overlap_with_genome_contexts on cluster (jobid: 133, external: Submitted batch job 2188719, jobscript: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/tmp.sb38w2x7/snakejob.overlap_with_genome_contexts.133.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul 12 12:24:43 2021]
+Error in rule overlap_with_genome_contexts:
+    jobid: 132
+    output: /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/train_overlap.txt, /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/test_overlap.txt
+    shell:
+        
+		java -jar /gstore/home/vuh6/program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/train_segments.bed.gz /gstore/home/vuh6/data/hg19/K562/COORD_CRISPR_MPRA_DATA/for_enrichment/foreground /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/train_overlap
+		java -jar /gstore/home/vuh6/program_source/ChromHMM/ChromHMM/ChromHMM.jar OverlapEnrichment -noimage /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/train_and_test_segments_sorted/test_segments.bed.gz /gstore/home/vuh6/data/hg19/K562/COORD_CRISPR_MPRA_DATA/for_enrichment/foreground /gstore/home/vuh6/model_analysis/K562_hg19/simple_rules_from_natalie/overlap_crispr_mpra/foreground/test_overlap
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 2188720
+
+Error executing rule overlap_with_genome_contexts on cluster (jobid: 132, external: Submitted batch job 2188720, jobscript: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/tmp.sb38w2x7/snakejob.overlap_with_genome_contexts.132.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jul 12 12:24:43 2021]
+Finished job 79.
+175 of 194 steps (90%) done
+[Mon Jul 12 12:24:43 2021]
+Finished job 71.
+176 of 194 steps (91%) done
+[Mon Jul 12 12:24:43 2021]
+Finished job 38.
+177 of 194 steps (91%) done
+[Mon Jul 12 12:24:43 2021]
+Finished job 39.
+178 of 194 steps (92%) done
+[Mon Jul 12 12:24:53 2021]
+Finished job 101.
+179 of 194 steps (92%) done
+[Mon Jul 12 12:25:13 2021]
+Finished job 75.
+180 of 194 steps (93%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /gstore/home/vuh6/source/compare_overlap_external_annot/.snakemake/log/2021-07-12T121909.759093.snakemake.log
