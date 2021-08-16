@@ -1,0 +1,51 @@
+Building DAG of jobs...
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n10_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n10_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n100_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n100_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n200_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n200_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n500_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n500_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n1000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n1000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n4000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n4000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n10_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n10_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n100_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n100_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n200_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n200_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n500_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n500_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n1000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n1000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n4000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n4000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n10_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n10_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n100_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n100_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n200_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n200_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n500_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n500_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n1000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n1000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n4000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n4000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+MissingInputException in line 4 of /gstore/home/vuh6/source/experiment_pyro/evaluate_beta_pi_tiny_example.snakefile:
+Missing input files for rule all:
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n500_b1000.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n4000_b1000.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n1000_b100.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n10_b100.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n200_b1000.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n10_b1000.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n4000_b100.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n200_b100.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n100_b100.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n500_b100.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n1000_b1000.txt
+ ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n100_b1000.txt

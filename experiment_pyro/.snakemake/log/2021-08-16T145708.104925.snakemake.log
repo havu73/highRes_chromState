@@ -1,0 +1,249 @@
+Building DAG of jobs...
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n10_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n10_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n100_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n100_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n200_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n200_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n500_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n500_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n1000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n1000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n4000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n4000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n10_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n10_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n100_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n100_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n200_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n200_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n500_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n500_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n1000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n1000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n4000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n4000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n10_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n10_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n100_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n100_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n200_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n200_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n500_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n500_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n1000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n1000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n4000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n4000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n10_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n10_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n100_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n100_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n200_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n200_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n500_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n500_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n1000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n1000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n4000_b100.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path ' ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n4000_b1000.txt' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job counts:
+	count	jobs
+	1	all
+	12	tiny_example_no_beta_guide
+	12	tiny_example_with_beta_guide
+	25
+
+[Mon Aug 16 14:57:08 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n10_b1000.txt
+    jobid: 14
+    wildcards: NUM_TRAIN_ITERATIONS=10, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 14 with external jobid 'Submitted batch job 7724740'.
+
+[Mon Aug 16 14:57:08 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n100_b100.txt
+    jobid: 3
+    wildcards: NUM_TRAIN_ITERATIONS=100, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 3 with external jobid 'Submitted batch job 7724741'.
+
+[Mon Aug 16 14:57:08 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n200_b1000.txt
+    jobid: 18
+    wildcards: NUM_TRAIN_ITERATIONS=200, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 18 with external jobid 'Submitted batch job 7724742'.
+
+[Mon Aug 16 14:57:10 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n4000_b100.txt
+    jobid: 11
+    wildcards: NUM_TRAIN_ITERATIONS=4000, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 11 with external jobid 'Submitted batch job 7724743'.
+
+[Mon Aug 16 14:57:10 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n500_b100.txt
+    jobid: 19
+    wildcards: NUM_TRAIN_ITERATIONS=500, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 19 with external jobid 'Submitted batch job 7724744'.
+
+[Mon Aug 16 14:57:10 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n100_b1000.txt
+    jobid: 4
+    wildcards: NUM_TRAIN_ITERATIONS=100, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 4 with external jobid 'Submitted batch job 7724745'.
+
+[Mon Aug 16 14:57:10 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n4000_b1000.txt
+    jobid: 12
+    wildcards: NUM_TRAIN_ITERATIONS=4000, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 12 with external jobid 'Submitted batch job 7724746'.
+
+[Mon Aug 16 14:57:10 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n200_b100.txt
+    jobid: 5
+    wildcards: NUM_TRAIN_ITERATIONS=200, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 5 with external jobid 'Submitted batch job 7724747'.
+
+[Mon Aug 16 14:57:10 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n500_b1000.txt
+    jobid: 20
+    wildcards: NUM_TRAIN_ITERATIONS=500, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 20 with external jobid 'Submitted batch job 7724748'.
+
+[Mon Aug 16 14:57:10 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n10_b100.txt
+    jobid: 13
+    wildcards: NUM_TRAIN_ITERATIONS=10, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 13 with external jobid 'Submitted batch job 7724750'.
+
+[Mon Aug 16 14:57:12 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n1000_b100.txt
+    jobid: 21
+    wildcards: NUM_TRAIN_ITERATIONS=1000, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 21 with external jobid 'Submitted batch job 7724751'.
+
+[Mon Aug 16 14:57:12 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n200_b1000.txt
+    jobid: 6
+    wildcards: NUM_TRAIN_ITERATIONS=200, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 6 with external jobid 'Submitted batch job 7724752'.
+
+[Mon Aug 16 14:57:12 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n10_b1000.txt
+    jobid: 2
+    wildcards: NUM_TRAIN_ITERATIONS=10, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 2 with external jobid 'Submitted batch job 7724753'.
+
+[Mon Aug 16 14:57:12 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n500_b100.txt
+    jobid: 7
+    wildcards: NUM_TRAIN_ITERATIONS=500, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 7 with external jobid 'Submitted batch job 7724754'.
+
+[Mon Aug 16 14:57:12 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n1000_b1000.txt
+    jobid: 22
+    wildcards: NUM_TRAIN_ITERATIONS=1000, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 22 with external jobid 'Submitted batch job 7724755'.
+
+[Mon Aug 16 14:57:12 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n100_b100.txt
+    jobid: 15
+    wildcards: NUM_TRAIN_ITERATIONS=100, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 15 with external jobid 'Submitted batch job 7724756'.
+
+[Mon Aug 16 14:57:12 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n1000_b1000.txt
+    jobid: 10
+    wildcards: NUM_TRAIN_ITERATIONS=1000, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 10 with external jobid 'Submitted batch job 7724757'.
+
+[Mon Aug 16 14:57:13 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n500_b1000.txt
+    jobid: 8
+    wildcards: NUM_TRAIN_ITERATIONS=500, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 8 with external jobid 'Submitted batch job 7724758'.
+
+[Mon Aug 16 14:57:13 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n4000_b100.txt
+    jobid: 23
+    wildcards: NUM_TRAIN_ITERATIONS=4000, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 23 with external jobid 'Submitted batch job 7724759'.
+
+[Mon Aug 16 14:57:15 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n10_b100.txt
+    jobid: 1
+    wildcards: NUM_TRAIN_ITERATIONS=10, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 1 with external jobid 'Submitted batch job 7724760'.
+
+[Mon Aug 16 14:57:15 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n100_b1000.txt
+    jobid: 16
+    wildcards: NUM_TRAIN_ITERATIONS=100, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 16 with external jobid 'Submitted batch job 7724761'.
+
+[Mon Aug 16 14:57:15 2021]
+rule tiny_example_with_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/with_beta_guide/n1000_b100.txt
+    jobid: 9
+    wildcards: NUM_TRAIN_ITERATIONS=1000, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 9 with external jobid 'Submitted batch job 7724762'.
+
+[Mon Aug 16 14:57:15 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n4000_b1000.txt
+    jobid: 24
+    wildcards: NUM_TRAIN_ITERATIONS=4000, NUM_BINS_SAMPLE_PER_ITER=1000
+
+Submitted job 24 with external jobid 'Submitted batch job 7724763'.
+
+[Mon Aug 16 14:57:15 2021]
+rule tiny_example_no_beta_guide:
+    output:  ../../pyro_model/simulation_study/tiny_toy/no_beta_guide/n200_b100.txt
+    jobid: 17
+    wildcards: NUM_TRAIN_ITERATIONS=200, NUM_BINS_SAMPLE_PER_ITER=100
+
+Submitted job 17 with external jobid 'Submitted batch job 7724764'.
