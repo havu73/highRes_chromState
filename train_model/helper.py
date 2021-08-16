@@ -9,6 +9,18 @@ NUM_BP_PER_WINDOW = 1000000
 NUM_BP_PER_BIN = 200
 NUM_BIN_PER_WINDOW = int(NUM_BP_PER_WINDOW / NUM_BP_PER_BIN)
 
+class argument_log(object):
+	def __init__(self, command, output_folder, log_prefix):
+		self.command = command
+		self.output_folder = output_folder
+		self.log_prefix = log_prefix
+	def write_log(self):
+		output_fn = os.path.join(self.output_folder, 'logger_{}.txt'.format(log_prefix))
+		outF = open(output_fn, 'w')
+		outF.write('\n'.join(self.command))
+		outF.close()
+		return 
+
 def make_dir(directory):
 	try:
 		os.makedirs(directory)
@@ -42,6 +54,14 @@ def get_command_line_integer(arg):
 	except:
 		print ( "Integer: " + str(arg) + " IS NOT VALID")
 		exit(1)
+
+def get_command_line_int_with_default(arg, default_value):
+	try: 
+		arg = int(arg)
+		return arg
+	except:
+		print ( "Integer: " + str(arg) + " IS NOT VALID. Changing to default value {}".format(default_value))
+		return default_value
 
 def get_command_line_float(arg):
 	try: 

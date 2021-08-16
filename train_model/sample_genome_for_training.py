@@ -6,7 +6,7 @@ import os
 import helper 
 
 
-def sample_genome_positions(chrom_length_fn, sample_fraction, output_fn):
+def sample_genome_positions(chrom_length_fn, sample_fraction, output_fn, chrom_list):
 	NUM_BP_PER_BIN = 200
 	chr_length_df = pd.read_table(chrom_length_fn, sep = '\t', header = None)
 	if chr_length_df.shape[1] == 3: # if there are 3 columns: chrom, start (0), end
@@ -18,7 +18,7 @@ def sample_genome_positions(chrom_length_fn, sample_fraction, output_fn):
 		usage()
 	chr_length_df.columns = ['chrom', 'length'] 
 	sample_df = pd.DataFrame(columns = ['chrom', 'start_bp', 'end_bp']) # all bp index are zero-based --> a dataframe of all the positions that we will sample
-	for chrom_index in helper.CHROMOSOME_LIST: # 1 --> 22, X
+	for chrom_index in chrom_list: #user's choice of chromsomes, or all of them 1 --> 22, X
 		this_chrom_length = (chr_length_df[chr_length_df['chrom'] == 'chr' + chrom_index])['length']
 		num_bin_this_chrom = int(this_chrom_length / NUM_BP_PER_BIN )
 		num_bin_to_sample = int(num_bin_this_chrom * sample_fraction) 
@@ -36,7 +36,7 @@ def sample_genome_positions(chrom_length_fn, sample_fraction, output_fn):
 
 
 def main():
-	if len(sys.argv) != 4:
+	if len(sys.argv) < 4:
 		usage()
 	chrom_length_fn = sys.argv[1]
 	helper.check_file_exist(chrom_length_fn)
@@ -48,10 +48,17 @@ def main():
 		usage()
 	assert sample_fraction > 0 and sample_fraction < 1.0, "sample_fraction should be greater than 0 and smaller than 1"
 	output_fn = sys.argv[3]
+	try: 
+		chrom_list = sys.argv[4:]
+	except:
+		chrom_list = helper.CHROMOSOME_LIST
+	assert set(chrom_list).issubset(set(helper.CHROMOSOME_LIST)), "The chromosome list should be a subset of all the chomosomes {}".format(chrom_list) 
 	helper.create_folder_for_file(output_fn)
 	print ("Done getting command line arguments")
 	# select regions on the genome that we will sample from
-	genome_sample_df = sample_genome_positions(chrom_length_fn, sample_fraction, output_fn) # --> a dataframe of 3 columns: "chromosome", "start_bp", 'end_bp'
+	genome_sample_df = sample_genome_positions(chrom_length_fn, sample_fraction, output_fn, chrom_list) # --> a dataframe of 3 columns: "chromosome", "start_bp", 'end_bp'
+	print('Done')
+	return
 
 	
 def usage():
@@ -59,6 +66,7 @@ def usage():
 	print ("chrom_length_fn: a bed file with 2 or 3 columns, no headers. If 3 columns: Columns should correspond to: chromsoome (chr1, chr2, etc.), start_bp (0 in all chromsomes), end_bp (the length of the chromosome, which will be a multiple of 200 because it's the resolution of the chromatin state annotation). If 2 columns (chrom length from ucsc genome browser: chromosome, length (not multiple of 200)")
 	print ("sampling fraction: the fraction of the genome that we want to sample. Remember fractions are not percentages.")
 	print ("output_fn: where the data of sampled regions and state segementation will be stored for all the cell types that we chose")
-	print ("The result should give us around 1518140 200-bp bins")
+	print ('chromosome (1, 2, ... X, Y, etc): what chromosome we restrict our sampling from. If not provided, then we sample whole-genome')
+	print ("The result should give us around 1518140 200-bp bins, genome-wide, 10%")
 	exit(1)
 main()

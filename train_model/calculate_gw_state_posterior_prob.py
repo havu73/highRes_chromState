@@ -15,7 +15,7 @@ def calculate_join_emission_multiple_marks(row, binary_tuple, chrom_mark_list):
 	exponent = pd.Series(binary_tuple, index = chrom_mark_list)
 	return np.prod(base**exponent * (1-base)**(1-exponent))
 
-def read_emission_matrix_into_categorical_prob(emission_fn, chrom_mark_list): # exactly the same function as in train_model_using_pyro.py. May need to rearrange my code later but keep this for now
+def read_emission_matrix_into_categorical_prob(emission_fn, chrom_mark_list): # exactly the same function as in train_model_using_pyro.py. May need to rearrange my code later but keep this for now. Tested on excel 08122021
 	emission_df = pd.read_csv(emission_fn, header = 0,index_col = 0, sep = '\t') # row indices are states 
 	all_possible_obs_marks = list(itertools.product(range(2), repeat = len(chrom_mark_list))) # list of tuples, each of length # num_marks --> all possible observations of marks 
 	all_possible_obs_marks_str = list(map(lambda x: ''.join(list(map(str, x))), all_possible_obs_marks)) # convert (0,0,0) --> '000'
@@ -35,7 +35,7 @@ def get_parameters(parameter_folder, emission_fn, obs_chromMark_signal_fn):
 	emission_tt = read_emission_matrix_into_categorical_prob(emission_fn, chrom_mark_list) # rows: states, columns: if len(chrom_mark_list) == 3, then columns will be 0 --> 7, meaning the different combinations of 0/1 signals of different marks
 	# 2. Pi: mixture probabilities of different reference epigenomes
 	pi_fn = os.path.join(parameter_folder, 'posterior_pi.txt')
-	pi_df = pd.read_csv(pi_fn, header = 0, index_col = 0, sep = '\t', squeeze = True)
+	pi_df = pd.read_csv(pi_fn, header = None, index_col = 0, sep = '\t', squeeze = True)
 	ref_epig_name_list = pi_df.index
 	pi_tt = torch.tensor(pi_df.values)
 	# 3. beta matrix: rows: states in reference epigenome, columns: states in the sample of interest
@@ -145,6 +145,7 @@ def main():
 	# 2. Prepare the input data of ref_epig's chromatin state maps and observed chromatin mark signals
 	obs_signal_tt, chrom_mark_list = read_chrom_mark_observed_signals(obs_chromMark_signal_fn) # obs_signal_tt: 1D tensor, each element corresponds to a genomic position (200bp), values are the 0-based numbers representing different combinations of presence/ absence signals of marks. Ex: 3 marks --> values 0...7 representing 8 combinations.
 	all_epig_df = prepare_ref_epig_state_df(all_refEpig_segment_folder, ref_epig_name_list, chrom_basic_bed) # all_epig_df: rows: genomic positions (200bp), columns: reference epigenome ordered similarly to those in pi, column names are 0-based indices. values: 0-based state assignment at each genomic position at each ref_epig
+	# all_epig_df = pd.read_csv('./toy_data/ref_state_toy.txt', header = None, index_col = None, sep = '\t')
 	print("Done reading input observed data")
 	# 3. Calculate the posterior probabilities and write the output
 	calculate_state_posterior_probabilities(emission_tt, pi_tt, beta_tt, obs_signal_tt, all_epig_df, output_fn)
