@@ -33,7 +33,7 @@ parser.add_argument('--output_folder', type=str,
                     help='where files of reconstruction results, and files of posterior probabilities are stored')
 parser.add_argument('--emission_fn', type=str,
                     help='emission probabilities from roadmap')
-parser.add_argument('--emission_scale', default=100, type=str,
+parser.add_argument('--emission_scale', default=100, type=float,
                     help='multiply emission probabilities with this number to get p (fixed_signalP)')
 parser.add_argument('--num_states', default=25, type=int,
                     help='number of hidden states')
@@ -89,6 +89,7 @@ def get_signals_params_p(emission_fn, emission_scale, mark_fn):
     emission_df = pd.read_csv(emission_fn, header = 0, index_col = 0, sep = '\t')
     emission_df = emission_df[mark_name_list] # get only emissions of marks associated with observed data
     p = torch.tensor(emission_df.values).float() * float(emission_scale)
+    p = p - float(emission_scale / 2.0) # if emission scale = 200, we want to convert the emission probabilities to be between -100 and 100
     return p
 
 
@@ -165,10 +166,10 @@ if __name__ == '__main__':
     print(isinstance(m_SigRef, (type, MSR.model_signals_refStates)))
     print(isinstance(m_SigRefBeta, (type, MSRB.model_signals_refStates_fixedBeta)))
     result_df = pd.DataFrame(columns = ['model', 'num_signals', 'num_references', 'num_states', 'hidden', 'dropout', 'ratio_m_CR', 'ratio_r_CR'])
-    result_df.loc[0] = get_one_line_to_report(m_SigOnly, 'SigOnly', m, r, p, args.output_folder, args.batch_size, args.num_epochs)
-    result_df.loc[1] = get_one_line_to_report(m_SigBeta, 'SigBeta', m, r, p, args.output_folder, args.batch_size, args.num_epochs)
-    # result_df.loc[2] = get_one_line_to_report(m_SigRef, 'SigRef', m, r, p, args.output_folder, arg.batch_size, args.num_epochs)
-    # result_df.loc[3] = get_one_line_to_report(m_SigRefBeta, 'SigRefBeta', m, r, p, args.output_folder, arg.batch_size, args.num_epochs)
+    # result_df.loc[0] = get_one_line_to_report(m_SigOnly, 'SigOnly', m, r, p, args.output_folder, args.batch_size, args.num_epochs)
+    # result_df.loc[1] = get_one_line_to_report(m_SigBeta, 'SigBeta', m, r, p, args.output_folder, args.batch_size, args.num_epochs)
+    result_df.loc[0] = get_one_line_to_report(m_SigRef, 'SigRef', m, r, p, args.output_folder, args.batch_size, args.num_epochs)
+    result_df.loc[1] = get_one_line_to_report(m_SigRefBeta, 'SigRefBeta', m, r, p, args.output_folder, args.batch_size, args.num_epochs)
     output_fn = os.path.join(args.output_folder, 'test_models_CR.txt')
     result_df.to_csv(output_fn, header = True, index = False, sep = '\t')
 
