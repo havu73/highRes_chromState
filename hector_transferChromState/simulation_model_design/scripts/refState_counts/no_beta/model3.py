@@ -147,7 +147,7 @@ class Model_three(nn.Module):
 		signals_CR = (re_m==m).sum() # correct reconstruct entries of signals
 		total_r_entries = re_r.shape[0] * self.num_groups
 		# for each reference at each position, if the state assignment is different between re_r and r, there are 2 out of num_states entries that are different between re_r and r
-		wrong_r = torch.abs(re_r - r)/self.num_ref_per_groups # # bins and average references per group that re_r got wrong
+		wrong_r = torch.abs(re_r - r)/(self.num_ref_per_groups*2) # # bins and average references per group that re_r got wrong
 		r_CR = total_r_entries - wrong_r.sum()
 		ratio_m_CR = (signals_CR / total_m_entries).item()
 		ratio_r_CR = (r_CR / total_r_entries).item()
