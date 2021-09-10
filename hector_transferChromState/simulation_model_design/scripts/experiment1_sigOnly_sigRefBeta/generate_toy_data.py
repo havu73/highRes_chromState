@@ -27,22 +27,15 @@ r: reference state at each bin. one-hot encoding, matrix size : #bins * #ref * #
 theta: the mixture probabilities of reference ethetagenome
 '''
 
-class CircularStateGenerator:
-    # Within the number of references, there is a group of references that will be similar to the 
-    # sample of interests in terms of state assignments
+class ToyGenerator:
     def __init__(self,  
                  num_bins=5, 
                  num_references=10, 
-                 num_groups=3,
-                 state_vary_rate=0.01, 
-                 # fraction of the genome where the state assignments among references of the same group are diff
                  num_signals=3,
                  num_states=5,
                  high_w=100):
         self.num_bins = num_bins
         self.num_references = num_references
-        self.num_groups = num_groups
-        self.state_vary_rate = state_vary_rate
         self.num_signals = num_signals
         self.num_states = num_states
         self.high_w = high_w
@@ -63,31 +56,13 @@ class CircularStateGenerator:
     # generate a state assignment tensor
     # shape is (num_regions, num_bins_per_region, num_references)
     def generate_ref_states(self):
-        # this is code for the case where we want varied state patterns from each reference
-        # and that there are actually groups of references that are similar to each other
-        num_ref_per_groups = np.ceil(self.num_references/self.num_groups).astype(int)
-        sample_r = torch.zeros(self.num_states, self.num_groups)
-        for i in range(self.num_groups):
-            sample_r[:,i] = torch.arange(self.num_states).roll(i)
-            # each group has a circular permutation of states that are characteristics to that group
-        sample_r = sample_r.repeat(np.ceil(self.num_bins / self.num_states).astype(int), 1)
-        # now r is just a repeated sequence of sample_r
-        r = torch.zeros(sample_r.shape[0], self.num_references)
+        ref_states = torch.zeros(
+            (self.num_bins, 
+             self.num_references))
+        
         for i in range(self.num_references):
-            r[:,i] = sample_r[:, i % self.num_groups]
-        # now we will start to introduce some random changes to the state assignments among references from
-        # the same groups
-        num_change = int(self.state_vary_rate * self.num_bins)
-        for i in range(self.num_states, self.num_references): 
-            # for the first num_states columns, keep all the state assignments
-            # if num_references < num_states, this loop will not be called
-            org_r = r[:,i]
-            indices_to_change = np.random.choice(self.num_bins, num_change)
-            indices_to_change = torch.tensor(indices_to_change).type(torch.LongTensor)
-            states_to_change = torch.tensor(np.random.choice(self.num_states, num_change)).float()
-            r[indices_to_change,i] = states_to_change
-        r = r[:self.num_bins,:self.num_references]
-        return r.long() # num_bins, num_references --> values: state-0-based 
+            ref_states[:,i] = i % self.num_states
+        return ref_states.long()
     
     # set parameters of the data generator
     def set_params(self):
@@ -97,10 +72,7 @@ class CircularStateGenerator:
         # reference 0
         # shape is (num_references,)
         alpha = torch.ones(self.num_references)
-        num_ref_per_groups = np.ceil(self.num_references/self.num_groups).astype(int)
-        for i in range(self.num_references):
-            if i % self.num_groups == 0:
-                alpha[i] = self.high_w # all refs in group 1 will be more similar to sample of interest
+        alpha[0] = self.high_w
         
         # parameters of bernoulli distribution for each signal
         # for each state
@@ -160,7 +132,6 @@ class CircularStateGenerator:
         self.sample = result
         return self.sample
     
-
     def get_sampled_collapsed_theta(self):
         if self.sample is None:
             self.generate_sample()
@@ -183,7 +154,7 @@ class CircularStateGenerator:
         if self.sample is None:
             self.generate_sample()
         return self.sample['theta']
-    
+
     def get_signal_parms(self):
         collapsed_theta = self.get_sampled_collapsed_theta()
         return torch.sigmoid(torch.matmul(collapsed_theta, self.params['p']))
@@ -192,7 +163,6 @@ class CircularStateGenerator:
         if self.params is None:
             self.set_params()
         return self.params['ref_states_indicator']
-    
 
 class CircularStateGenerator:
     # Within the number of references, there is a group of references that will be similar to the 
