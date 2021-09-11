@@ -10,7 +10,7 @@ from tqdm import tqdm
 import sys
 import helper
 import itertools
-
+from scipy import stats
 ######## FOLLOWING WE DEFINE A CLASS THAT WILL KEEP TRACK OF THE SAMPLE POSTERIOR DATA ########
 class Posterior_pi_log(object):
 	def __init__(self, ref_epig_name_list):
@@ -29,12 +29,20 @@ def generate_tiny_toy_data(num_obs):
 	num_ref_epig = 5
 	num_state = 3
 	num_mark = 3
-	alpha = np.random.uniform(1, 6, num_ref_epig)
-	pi = pyro.sample('pi', dist.Dirichlet(torch.tensor(alpha)))
-	ref_state_np = np.random.choice(num_state, size = num_obs * num_ref_epig, replace = True).reshape(num_obs, num_ref_epig)
-	emission_np = np.array([[0.1,0.1,0.8], [0.2,0.1,0.7], [0.3, 0.1,0.6]])
+	alpha = np.array([9, 0.5, 0.5])
+	pi = torch.tensor(alpha / np.sum(alpha)) # expectation of Dirichlet distribution with parameter alpha
+	# now we sample the chromatin state in reference epigenome
+	sample_state_probability = np.eye(num_state) - 0.075 * np.eye(num_state) + 0.025 # a matrix with 0.95 on the diagonal and 0.025 on the off-diag. Each row is the prob of sampling from the corresponding (column) state in the corresponding (row) ref epig. 
+	ref_state_np = np.empty((num_obs, num_ref_epig))
+	for i in range(num_ref_epig):
+		main_state_in_this_ref_epig = np.random.randint(num_state)
+		ref_state_np[:,i] = np.random.choice(np.arange(num_state), num_obs, replace = True, p = sample_state_probability[:,main_state_in_this_ref_epig])
+	ref_state_np = ref_state_np.astype(int)
+	# point of samling ref_state_np is that we will allow each ref_epig to be mostly annotated as a state, with a prob of 0.05 of being from another random state rather than from the main state
+	# now we let the emission probabilty to also be most one mark per state
+	emission_np = sample_state_probability.copy() # this is because num_state = num_mark in our case
 	emission_df = pd.DataFrame(emission_np, columns = list(map(lambda x: 'M{}'.format(x), range(emission_np.shape[1])))) # columns: M0 --> M...
-	transition_mat = torch.tensor(np.array([[0.8,0.1,0.1], [0.3,0.5,0.2], [0.2,0.2,0.6]]))
+	transition_mat = torch.eye(num_state)
 	mark_data = np.zeros((num_obs, num_mark))
 	Z = torch.zeros(num_obs)
 	S = torch.zeros(num_obs)
@@ -66,14 +74,13 @@ def guide(alpha, transformed_emission_tt, ref_state_np, transformed_mark_data, n
 	num_ct = len(alpha)
 	q_lambda = pyro.param('q_lambda', alpha, constraint = constraints.positive)
 	pi = pyro.sample('pi', dist.Dirichlet(q_lambda))
-	for i in pyro.plate('state_loop', num_state):
-		trans_from_state = pyro.param('beta_{}'.format(i), torch.randn(num_state).exp(), constraint = constraints.simplex) # sample transition from state i in ref_epig to other states in the sample of interest	
 	for i in pyro.plate('genome_loop', num_obs, subsample_size = NUM_BINS_SAMPLE_PER_ITER): # for subsampling, we only need to specify the subsampling in guide function, not in the model function
 		z_probs = pyro.param("q_z_{}".format(i), torch.randn(num_ct).exp(), constraint=constraints.simplex) 
 		# i added .exp() as suggested by https://www.programcreek.com/python/example/123171/torch.distributions.constraints.positive, constraints.simplex is to guarantee that they sum up to 1, based on https://pytorch.org/docs/stable/distributions.html (search for simplex in this page)
 		z_i = pyro.sample('z_{}'.format(i), dist.Categorical(z_probs))
 		R_i = (ref_state_np[i,z_i]).astype(int) # Ha also checked that when doing subsampling, the model still got the exact data as expected
-		S_i = pyro.sample('S_{}'.format(i), dist.Categorical(pyro.param('beta_{}'.format(R_i)))) 
+		state_probs = pyro.param('q_s_{}'.format(i), torch.randn(num_state).exp(), constraint=constraints.simplex) 
+		pyro.sample('S_{}'.format(i), dist.Categorical(state_probs))
 
 def train(alpha, ref_state_np, transformed_mark_data, transformed_emission_tt, num_state, num_obs, NUM_TRAIN_ITERATIONS, NUM_BINS_SAMPLE_PER_ITER):
 	pyro.clear_param_store()
@@ -116,10 +123,8 @@ def read_emission_matrix_into_categorical_prob(emission_df, chrom_mark_list):
 def evaluate(alpha, pi, transition_mat, num_state, posterior_params, NUM_TRAIN_ITERATIONS, NUM_BINS_SAMPLE_PER_ITER, output_fn):
 	result_df = pd.DataFrame(columns = ['param_pred', 'metric', 'value'])
 	print(alpha)
-	print(alpha.numpy())
-	alpha = alpha.numpy()
 	q_lambda = posterior_params['q_lambda']	
-	alpha_corr = stats.pearsonr(alpha.numpy(), q_lambda) 
+	alpha_corr = stats.pearsonr(alpha, q_lambda) 
 	alpha_diff = np.average(q_lambda) - np.average(alpha)
 	# (correlation, p-value)
 	print(posterior_params['q_lambda'])
@@ -141,10 +146,11 @@ def evaluate(alpha, pi, transition_mat, num_state, posterior_params, NUM_TRAIN_I
 	result_df.to_csv(output_fn, header = True, index = False, sep = '\t')
 	return 
 
-
 def main(args):
 	NUM_TRAIN_ITERATIONS = args.NUM_TRAIN_ITERATIONS
 	NUM_BINS_SAMPLE_PER_ITER = args.NUM_BINS_SAMPLE_PER_ITER
+	output_fn = args.output_fn
+	helper.create_folder_for_file(output_fn)
 	num_obs = 10000
 	alpha, pi, ref_state_np, emission_df, transition_mat, mark_data = generate_tiny_toy_data(num_obs)
 	# mark_data and emission_df are pd.DataFrame that share the same column names
@@ -164,7 +170,8 @@ if __name__ == "__main__":
     assert pyro.__version__.startswith("1.7.0")
     parser = argparse.ArgumentParser(description="Tiny toy example")
     parser.add_argument("-n", "--NUM_TRAIN_ITERATIONS", default=4000, type=int)
-    parser.add_argument("-o", "--NUM_BINS_SAMPLE_PER_ITER", default=1000, type=int)
+    parser.add_argument("-b", "--NUM_BINS_SAMPLE_PER_ITER", default=1000, type=int)
+    parser.add_argument('-out', '--output_fn', type = str)
     args = parser.parse_args()
     main(args)
 

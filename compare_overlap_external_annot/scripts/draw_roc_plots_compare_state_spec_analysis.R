@@ -22,42 +22,52 @@ get_roc_df <- function(roc_fn){
 
 draw_precall_three_models <- function(precall_fn){
 	df <- get_roc_df (precall_fn)
-	df <- df %>% select(c('M3_S8_recall', 'M3_S8_precision', 'M13_S25_recall', 'M13_S25_precision', 'roadmap_S25_recall', 'roadmap_S25_precision', 'simpleRules_S3_precision', 'simpleRules_S3_recall'))
 	context_name <- get_enrichment_context_name(precall_fn, '_prec_recall.csv')
-	p <- ggplot() +
-  geom_point(data = df, aes(x = M3_S8_recall, y = M3_S8_precision, color = 'M3_S8', alpha = 0.5, size = 5)) +
-  geom_line(data = df, aes(x = M3_S8_recall, y = M3_S8_precision, color = 'M3_S8', alpha = 0.5), size = 1) +
-  theme_bw()+ 
-  geom_point(data = df, aes(x = M13_S25_recall, y = M13_S25_precision, color = 'M13_S25', alpha = 0.5, size = 5)) + 
-  geom_line(data = df, aes(x = M13_S25_recall, y = M13_S25_precision, color = 'M3_S25', alpha = 0.5), size = 1) +
-  geom_point(data = df, aes(x = roadmap_S25_recall, y = roadmap_S25_precision, color = 'roadmap_S25', alpha = 0.5, size = 5)) + 
-  geom_line(data = df, aes(x = roadmap_S25_recall, y = roadmap_S25_precision, color = 'roadmap_S25', alpha = 0.5), size = 1) + 
-  geom_point(data = df, aes(x = simpleRules_S3_recall, y = simpleRules_S3_precision, color = 'simpleRules_S3', alpha = 0.5, size = 5)) +
-  geom_line(data = df, aes(x = simpleRules_S3_recall, y = simpleRules_S3_precision, color = 'simpleRules_S3', alpha = 0.5), size = 1) +
-  scale_color_manual(values = c('M3_S8' = 'blue', 'M13_S25' = 'red', 'roadmap_S25' = 'green', 'simpleRules_S3' = 'black')) +
-  theme(legend.position = 'bottom') +
-  ggtitle(context_name)
+	p <- ggplot() 
+	for (i in seq(1,25)){
+		x_name <- paste0('M13_S25_posterior_E', i, '_recall')
+		y_name <- paste0('M13_S25_posterior_E', i, '_precision')
+		p <- p + geom_point(data = df, aes_string(x = x_name, y = y_name), color = 'red', alpha = 0.5, size = 3)+
+		geom_line(data = df, aes_string(x = x_name, y = y_name), color = 'red', alpha = 0.5)
+	}
+	for (i in seq(1,8)){
+		x_name <- paste0('M3_S8_posterior_E', i, '_recall')
+		y_name <- paste0('M3_S8_posterior_E', i, '_precision')
+		p <- p + geom_point(data = df, aes_string(x = x_name, y = y_name), color = 'blue', alpha = 0.5, size = 3) + 
+		geom_line(data = df, aes_string(x = x_name, y = y_name), color = 'blue', alpha = 0.5)
+	}
+	p <- p + 
+	geom_point(data = df, aes_string(x = 'simpleRules_S3_recall', y = 'simpleRules_S3_precision'), color = 'black', alpha = 0.5, size = 5) +
+	geom_line(data = df, aes_string(x = 'simpleRules_S3_recall', y = 'simpleRules_S3_precision'), color = 'black', alpha = 0.5) +
+	theme(legend.position = 'bottom') +
+	ggtitle(context_name) +
+	theme_bw()
   # ggsave(save_fn) 
   return (p)
 }
 
 draw_roc_three_models <- function(roc_fn){
 	df <- get_roc_df(roc_fn)
-	df <- df %>% select(c('M3_S8_false_pos', 'M3_S8_true_pos', 'M13_S25_false_pos', 'M13_S25_true_pos', 'roadmap_S25_false_pos', 'roadmap_S25_true_pos', 'simpleRules_S3_false_pos', 'simpleRules_S3_true_pos'))
 	context_name <- get_enrichment_context_name(roc_fn, '_roc.csv')
-	p <- ggplot() +
-  geom_point(data = df, aes(x = M3_S8_false_pos, y = M3_S8_true_pos, color = 'M3_S8', alpha = 0.5, size = 5)) +
-  geom_line(data = df, aes(x = M3_S8_false_pos, y = M3_S8_true_pos, color = 'M3_S8', alpha = 0.5), size = 1) +
-  theme_bw()+ 
-  geom_point(data = df, aes(x = M13_S25_false_pos, y = M13_S25_true_pos, color = 'M13_S25', alpha = 0.5, size = 5)) +
-  geom_line(data = df, aes(x = M13_S25_false_pos, y = M13_S25_true_pos, color = 'M13_S25', alpha = 0.5), size = 1) + 
-  geom_point(data = df, aes(x = roadmap_S25_false_pos, y = roadmap_S25_true_pos, color = 'roadmap_S25', alpha = 0.5, size = 5)) + 
-  geom_line(data = df, aes(x = roadmap_S25_false_pos, y = roadmap_S25_true_pos, color = 'roadmap_S25', alpha = 0.5), size = 1) +
-  geom_point(data = df, aes(x = simpleRules_S3_false_pos, y = simpleRules_S3_true_pos, color = 'simpleRules_S3', alpha = 0.5, size = 5)) +
-  geom_line(data = df, aes(x = simpleRules_S3_false_pos, y = simpleRules_S3_true_pos, color = 'simpleRules_S3', alpha = 0.5), size = 1) +
-  scale_color_manual(values = c('M3_S8' = 'blue', 'M13_S25' = 'red', 'roadmap_S25' = 'green', 'simpleRules_S3' = 'black')) +
-  theme(legend.position = 'bottom') +
-  ggtitle(context_name)
+	p <- ggplot() 
+	for (i in seq(1,25)){
+		x_name <- paste0('M13_S25_posterior_E', i, '_false_pos')
+		y_name <- paste0('M13_S25_posterior_E', i, '_true_pos')
+		p <- p + geom_point(data = df, aes_string(x = x_name, y = y_name), color = 'red', alpha = 0.5, size = 3)+
+		geom_line(data = df, aes_string(x = x_name, y = y_name), color = 'red', alpha = 0.5)
+	}
+	for (i in seq(1,8)){
+		x_name <- paste0('M3_S8_posterior_E', i, '_false_pos')
+		y_name <- paste0('M3_S8_posterior_E', i, '_true_pos')
+		p <- p + geom_point(data = df, aes_string(x = x_name, y = y_name), color = 'blue', alpha = 0.5, size = 3) + 
+		geom_line(data = df, aes_string(x = x_name, y = y_name), color = 'blue', alpha = 0.5)
+	}
+	p <- p + 
+	geom_point(data = df, aes_string(x = 'simpleRules_S3_false_pos', y = 'simpleRules_S3_true_pos'), color = 'black', alpha = 0.5, size = 5) +
+	geom_line(data = df, aes_string(x = 'simpleRules_S3_false_pos', y = 'simpleRules_S3_true_pos'), color = 'black', alpha = 0.5) +
+	theme(legend.position = 'bottom') +
+	ggtitle(context_name) +
+	theme_bw()
   # ggsave(save_fn) 
   return (p)
 }

@@ -1,0 +1,7 @@
+calculate_gw_state_posterior_actual_code.py
+../train_model/toy_data/
+../train_model/toy_data/emission.txt
+./
+../train_model/toy_data/toy_obs_mark_signals.txt
+../train_model/toy_data/posterior/posterior_state.txt.gz
+/gstore/home/vuh6/data/hg19/basic_bed/chr22.bed.gz

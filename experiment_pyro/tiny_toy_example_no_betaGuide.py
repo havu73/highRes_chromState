@@ -144,7 +144,7 @@ def main(args):
 	NUM_TRAIN_ITERATIONS = args.NUM_TRAIN_ITERATIONS
 	NUM_BINS_SAMPLE_PER_ITER = args.NUM_BINS_SAMPLE_PER_ITER
 	output_fn = args.output_fn
-	num_obs = 1000
+	num_obs = 10000
 	alpha, pi, ref_state_np, emission_df, transition_mat, mark_data = generate_tiny_toy_data(num_obs)
 	# mark_data and emission_df are pd.DataFrame that share the same column names
 	print ('Done generating data')
@@ -157,7 +157,7 @@ def main(args):
 	# 2D tensor with rows: states, columns: possible combinations of chromatin marks 
 	print(transformed_emission_tt)
 	posterior_params = train(alpha, ref_state_np, transformed_mark_data, transformed_emission_tt, num_state, num_obs, NUM_TRAIN_ITERATIONS, NUM_BINS_SAMPLE_PER_ITER)
-	evaluate(alpha, pi, transition_mat, num_state, posterior_params, output_fn)
+	evaluate(alpha, pi, transition_mat, num_state, posterior_params, NUM_TRAIN_ITERATIONS, NUM_BINS_SAMPLE_PER_ITER, output_fn)
 
 if __name__ == "__main__":
     assert pyro.__version__.startswith("1.7.0")

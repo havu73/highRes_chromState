@@ -9,23 +9,21 @@ bins_list = [10000]
 hidden_ref_list = range(10, 31, 10)
 hidden_comb_list = range(10, 31, 10)
 
-genData_outDir='./experiments/experiments/strict_genData_realScen/counts/'
 genData_beta_outDir='./experiments/experiments/strict_genData_realScen/counts/with_beta/'
-genData_outDir
 real_data_outdir = '/gstore/home/vuh6/source/hector_transferChromState/simulation_model_design/experiments/real_data'
 rule all:
 	input:
-		# expand(os.path.join(genData_outDir, 'b{bins}_r{reference}_m{signal}_s{state}', 'report_ratio_CR.txt'), bins = bins_list, reference = reference_list, signal = mark_list, state = state_list),
-		expand(os.path.join(genData_outDir, 'b{batch}_e{epoch}_s{hidden_sig}_r{hidden_ref}_c{hidden_comb}_h{hidden}', 'report_ratio_CR.txt'), bins = bins_list, epoch = [1000], batch = [200], hidden_sig=[1],  hidden_ref = hidden_ref_list, hidden_comb = hidden_comb_list, hidden = [32]),
-		expand(os.path.join(genData_outDir, 'b{batch}_e{epoch}_s{hidden_sig}_r{hidden_ref}_c{hidden_comb}_h{hidden}', 'report_ratio_CR.txt'), bins = bins_list, epoch = [1000], batch = [200], hidden_sig=[1],  hidden_ref = 25, hidden_comb = 15, hidden = range(10,31,10))
+		# expand(os.path.join(genData_beta_outDir, 'b{bins}_r{reference}_m{signal}_s{state}', 'report_ratio_CR.txt'), bins = bins_list, reference = reference_list, signal = mark_list, state = state_list),
+		expand(os.path.join(genData_beta_outDir, 'b{batch}_e{epoch}_s{hidden_sig}_r{hidden_ref}_c{hidden_comb}_h{hidden}', 'report_ratio_CR.txt'), bins = bins_list, epoch = [4000], batch = [200], hidden_sig=[1],  hidden_ref = hidden_ref_list, hidden_comb = hidden_comb_list, hidden = [32]),
+		expand(os.path.join(genData_beta_outDir, 'b{batch}_e{epoch}_s{hidden_sig}_r{hidden_ref}_c{hidden_comb}_h{hidden}', 'report_ratio_CR.txt'), bins = bins_list, epoch = [4000], batch = [200], hidden_sig=[1],  hidden_ref = 25, hidden_comb = 15, hidden = range(10,31,10))
 
 rule test_one_genData_param_set: 
 # run test model on simulated data generated from generate_toy_data.py
 	input:
 	output:
-		os.path.join(genData_outDir, 'b{bins}_r{reference}_m{signal}_s{state}', 'report_ratio_CR.txt')
+		os.path.join(genData_beta_outDir, 'b{bins}_r{reference}_m{signal}_s{state}', 'report_ratio_CR.txt')
 	params:
-		output_folder=os.path.join(genData_outDir, 'b{bins}_r{reference}_m{signal}_s{state}')
+		output_folder=os.path.join(genData_beta_outDir, 'b{bins}_r{reference}_m{signal}_s{state}')
 	shell:
 		"""
 		python scripts/test_model.py  --num_bins {wildcards.bins} --num_references {wildcards.reference} --num_signals {wildcards.signal} --num_states {wildcards.state} --output_folder {params.output_folder}
@@ -34,12 +32,12 @@ rule test_one_genData_param_set:
 rule test_one_genData_realSce_counts_param_set:
 	input:
 	output:
-		os.path.join(genData_outDir, 'b{batch}_e{epoch}_s{hidden_sig}_r{hidden_ref}_c{hidden_comb}_h{hidden}', 'report_ratio_CR.txt')
+		os.path.join(genData_beta_outDir, 'b{batch}_e{epoch}_s{hidden_sig}_r{hidden_ref}_c{hidden_comb}_h{hidden}', 'report_ratio_CR.txt')
 	params:
-		output_folder = os.path.join(genData_outDir, 'b{batch}_e{epoch}_s{hidden_sig}_r{hidden_ref}_c{hidden_comb}_h{hidden}')
+		output_folder = os.path.join(genData_beta_outDir, 'b{batch}_e{epoch}_s{hidden_sig}_r{hidden_ref}_c{hidden_comb}_h{hidden}')
 	shell:
 		"""
-		python scripts/refState_counts/test_realScen_simulation.py --output_folder {params.output_folder} --num_epochs {wildcards.epoch} --batch_size {wildcards.batch} --num_hidden_sig={wildcards.hidden_sig} --num_hidden_ref={wildcards.hidden_ref} --num_hidden_comb={wildcards.hidden_comb} --num_hidden={wildcards.hidden} 
+		python scripts/refState_counts/test_realScen_withBeta.py --output_folder {params.output_folder} --num_epochs {wildcards.epoch} --batch_size {wildcards.batch} --num_hidden_sig={wildcards.hidden_sig} --num_hidden_ref={wildcards.hidden_ref} --num_hidden_comb={wildcards.hidden_comb} --num_hidden={wildcards.hidden} 
 		"""
 
 rule test_one_realData_param_set:

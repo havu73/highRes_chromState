@@ -113,34 +113,21 @@ def read_emission_matrix_into_categorical_prob(emission_df, chrom_mark_list):
 	result_df = torch.tensor(result_df.values) # tensor with rows: states, columns: possible combinations of chromatin marks 
 	return result_df
 
-def evaluate(alpha, pi, transition_mat, num_state, posterior_params, NUM_TRAIN_ITERATIONS, NUM_BINS_SAMPLE_PER_ITER, output_fn):
-	result_df = pd.DataFrame(columns = ['param_pred', 'metric', 'value'])
+def evaluate(alpha, pi, transition_mat, num_state, posterior_params):
+	print(posterior_params)
+	print ("alpha")
 	print(alpha)
-	print(alpha.numpy())
-	alpha = alpha.numpy()
 	q_lambda = posterior_params['q_lambda']	
-	alpha_corr = stats.pearsonr(alpha.numpy(), q_lambda) 
-	alpha_diff = np.average(q_lambda) - np.average(alpha)
-	# (correlation, p-value)
 	print(posterior_params['q_lambda'])
-	result_df.loc[result_df.shape[0]] = ['alpha_qLabmda', 'pearsonr', alpha_corr[0]]
-	result_df.loc[result_df.shape[0]] = ['alpha_qLabmda', 'avg_pred_minus_real', alpha_diff]
 	print("pi")
 	print(pi)
 	pred_p = q_lambda / q_lambda.sum() # expected valye of pi given q_lambda
 	print(pred_p)
-	result_df.loc[result_df.shape[0]] = ['pi_expLambda', 'pearsonr', stats.pearsonr(pi.numpy(), pred_p)[0]]
 	print('beta')
 	print(transition_mat)
 	for i in range(num_state):
-		pearsonr = stats.pearsonr((transition_mat[i,:]).numpy(), posterior_params['beta_{}'.format(i)])
-		result_df.loc[result_df.shape[0]] = ['beta_'.format(i), 'pearsonr', pearsonr]
 		print(posterior_params['beta_{}'.format(i)])
-	result_df['NUM_TRAIN_ITERATIONS'] = NUM_TRAIN_ITERATIONS
-	result_df['NUM_BINS_SAMPLE_PER_ITER'] = NUM_BINS_SAMPLE_PER_ITER
-	result_df.to_csv(output_fn, header = True, index = False, sep = '\t')
 	return 
-
 
 def main(args):
 	NUM_TRAIN_ITERATIONS = args.NUM_TRAIN_ITERATIONS
@@ -158,7 +145,7 @@ def main(args):
 	# 2D tensor with rows: states, columns: possible combinations of chromatin marks 
 	print(transformed_emission_tt)
 	posterior_params = train(alpha, ref_state_np, transformed_mark_data, transformed_emission_tt, num_state, num_obs, NUM_TRAIN_ITERATIONS, NUM_BINS_SAMPLE_PER_ITER)
-	evaluate(alpha, pi, transition_mat, num_state, posterior_params, NUM_TRAIN_ITERATIONS, NUM_BINS_SAMPLE_PER_ITER, output_fn)
+	evaluate(alpha, pi, transition_mat, num_state, posterior_params)
 
 if __name__ == "__main__":
     assert pyro.__version__.startswith("1.7.0")

@@ -9,7 +9,7 @@ def get_rid_of_stupid_file_tail(context_name):
 
 def get_enrichment_df(enrichment_fn):
     enrichment_df = pd.read_csv(enrichment_fn, sep = "\t", header = 0)
-    enrichment_df = enrichment_df.rename(columns = {u'state (Emission order)': 'state', u'Genome %' : 'percent_in_genome', u'State (Emission order)': 'state'})
+    enrichment_df = enrichment_df.rename(columns = {u'state (Emission order)': 'state', u'Genome %' : 'percent_in_genome', u'State (Emission order)': 'state', 'State (User order)': 'state'})
     enrichment_df.columns = map(get_rid_of_stupid_file_tail, enrichment_df.columns)
     (num_state, num_enr_cont) = (enrichment_df.shape[0] - 1, enrichment_df.shape[1] - 2) # substract the first two columns: state and percent_in_genome 
     percent_genome_of_cont = enrichment_df.iloc[num_state, 2:]

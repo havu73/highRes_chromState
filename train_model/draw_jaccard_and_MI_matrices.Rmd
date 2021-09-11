@@ -1,0 +1,70 @@
+---
+title: "draw_jaccard_index_matrix"
+author: "Ha Vu"
+date: "8/9/2021"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(tidyverse)
+library(ggpubr)
+library(reshape2)
+library(pheatmap)
+```
+draw figures of jaccard index
+```{r}
+jaccard_fn = '/Users/vuh6/Desktop/mount_ros/pyro_model/similarity_between_ref_epig/H3K4me3_chr22/jaccard_index_H3K4me3_chr22.txt.gz'
+save_fn = '/Users/vuh6/Desktop/mount_ros/pyro_model/similarity_between_ref_epig/H3K4me3_chr22/jaccard_index_H3K4me3_chr22.png'
+jaccard_df <- as.data.frame(read.table(jaccard_fn, header = T, row.names = 1, sep = '\t'))
+ct_annot_fn <- '/Users/vuh6/Desktop/mount_ros/data/hg19/processed_raw_metadata_roadmap_epig_summary.csv'
+CELL_GROUP_COLOR_CODE = c('Neurosph'= '#FFD924', 'HSC & B-cell'= '#678C69', 'Mesench'= '#B65C73', 'Brain'= '#C5912B', 'Adipose'= '#AF5B39', 'Thymus'= '#DAB92E', 'Sm. Muscle'= '#F182BC', 'IMR90'= '#E41A1C', 'Myosat'= '#E67326', 'iPSC'= '#69608A', 'Muscle'= '#C2655D', 'Digestive'= '#C58DAA', 'ESC'= '#924965', 'Epithelial'= '#FF9D0C', 'Heart'= '#D56F80', 'ENCODE2012'= '#000000', 'ES-deriv'= '#4178AE', 'Other'= '#999999', 'Blood & T-cell'= '#55A354', 'NA' = 'black')
+calculate_gap_columns_among_group <- function(plot_annot_df){
+	group_ordered_by_appearance <- unique(plot_annot_df$GROUP) # list of different chromatin marks, ordered by how they appear in the heatmap from left to right
+	count_df <- plot_annot_df %>% count(GROUP)
+	count_df <- count_df[match(group_ordered_by_appearance, count_df$GROUP),] # order the rows such that the group are ordered based on group_ordered_by_appearance
+	results <- cumsum(count_df$n) # cumulative sum of the count for groups of chrom_mark, which will be used to generate the gaps between columns of the heatmaps
+	return(results)
+}
+
+ct_annot_df <- as.data.frame(read.csv(ct_annot_fn, header = T, sep = ',', stringsAsFactors = F, as.is = seq(1,6))) %>% rename(c('eid' = 'Epigenome.ID..EID.', 'Mneumonic' = 'Epigenome.Mnemonic')) %>% arrange('GROUP')
+plot_df <- jaccard_df %>% slice(match(ct_annot_df$eid, rownames(jaccard_df))) %>% select(ct_annot_df$eid)
+plot_annot_df <- ct_annot_df %>% select(c('eid', 'GROUP')) %>% column_to_rownames(var = 'eid')
+emission_value_ranges <- seq(0, 0.7, 0.01)
+gap_indices <- calculate_gap_columns_among_group(plot_annot_df)
+pheatmap(plot_df, breaks = emission_value_ranges, 
+         annotation_col = plot_annot_df, annotation_row = plot_annot_df, 
+         annotation_colors = list(GROUP = CELL_GROUP_COLOR_CODE), cluster_rows = FALSE, 
+         cluster_cols = FALSE, show_colnames = T, filename = save_fn,
+         gaps_row = gap_indices, gaps_col = gap_indices,
+         fontsize_col = 5, angle_col = 90 , cellheight = 4, cellwidth = 5, fontsize_row = 4)
+```
+
+```{r}
+jaccard_fn = '/Users/vuh6/Desktop/mount_ros/pyro_model/similarity_between_ref_epig/H3K4me3_chr22/H3K4me3_chr22_MI.txt.gz'
+save_fn = '/Users/vuh6/Desktop/mount_ros/pyro_model/similarity_between_ref_epig/H3K4me3_chr22/H3K4me3_chr22_MI.png'
+jaccard_df <- as.data.frame(read.table(jaccard_fn, header = T, row.names = 1, sep = '\t'))
+ct_annot_fn <- '/Users/vuh6/Desktop/mount_ros/data/hg19/processed_raw_metadata_roadmap_epig_summary.csv'
+CELL_GROUP_COLOR_CODE = c('Neurosph'= '#FFD924', 'HSC & B-cell'= '#678C69', 'Mesench'= '#B65C73', 'Brain'= '#C5912B', 'Adipose'= '#AF5B39', 'Thymus'= '#DAB92E', 'Sm. Muscle'= '#F182BC', 'IMR90'= '#E41A1C', 'Myosat'= '#E67326', 'iPSC'= '#69608A', 'Muscle'= '#C2655D', 'Digestive'= '#C58DAA', 'ESC'= '#924965', 'Epithelial'= '#FF9D0C', 'Heart'= '#D56F80', 'ENCODE2012'= '#000000', 'ES-deriv'= '#4178AE', 'Other'= '#999999', 'Blood & T-cell'= '#55A354', 'NA' = 'black')
+calculate_gap_columns_among_group <- function(plot_annot_df){
+	group_ordered_by_appearance <- unique(plot_annot_df$GROUP) # list of different chromatin marks, ordered by how they appear in the heatmap from left to right
+	count_df <- plot_annot_df %>% count(GROUP)
+	count_df <- count_df[match(group_ordered_by_appearance, count_df$GROUP),] # order the rows such that the group are ordered based on group_ordered_by_appearance
+	results <- cumsum(count_df$n) # cumulative sum of the count for groups of chrom_mark, which will be used to generate the gaps between columns of the heatmaps
+	return(results)
+}
+
+ct_annot_df <- as.data.frame(read.csv(ct_annot_fn, header = T, sep = ',', stringsAsFactors = F, as.is = seq(1,6))) %>% rename(c('eid' = 'Epigenome.ID..EID.', 'Mneumonic' = 'Epigenome.Mnemonic')) %>% arrange('GROUP')
+plot_df <- jaccard_df %>% slice(match(ct_annot_df$eid, rownames(jaccard_df))) %>% select(ct_annot_df$eid)
+plot_annot_df <- ct_annot_df %>% select(c('eid', 'GROUP')) %>% column_to_rownames(var = 'eid')
+#emission_value_ranges <- seq(0, 0.7, 0.01)
+gap_indices <- calculate_gap_columns_among_group(plot_annot_df)
+pheatmap(plot_df,
+         annotation_col = plot_annot_df, annotation_row = plot_annot_df, 
+         annotation_colors = list(GROUP = CELL_GROUP_COLOR_CODE), cluster_rows = FALSE, 
+         cluster_cols = FALSE, show_colnames = T, filename = save_fn,
+         gaps_row = gap_indices, gaps_col = gap_indices,
+         fontsize_col = 5, angle_col = 90 , cellheight = 4, cellwidth = 5, fontsize_row = 4)
+```
