@@ -1,0 +1,2 @@
+Fulco19_significant_DE_G_ST6a.txt	Fulco19_DE_G_ST6a.txt
+Fulco19_significant_CRIPSRi_flowFish_EGpairs.txt	Fulco19_CRIPSRi_flowFish_EGpairs.txt

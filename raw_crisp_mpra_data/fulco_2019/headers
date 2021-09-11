@@ -1,0 +1,24 @@
+chr
+start
+end
+Element name
+Gene
+class
+Cell type
+Fraction change in gene expr
+Adjusted p-value
+Significant
+RNA readout method
+Perturbation method
+nKO
+nCtrl
+semKO
+semCtrl
+Power to detect 25% effects
+Gene TSS
+Normalized HiC Contacts
+DHS (RPM)
+H3K27ac (RPM)
+Activity
+ABC Score
+Reference
